@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fffbf6;
-  --foreground: #1c1917;
-  --terracotta: #c4622d;
-  --terracotta-light: #e8855a;
-  --cream: #fef3e8;
-  --gold: #d4a843;
+  --background: #F5ECD7;
+  --foreground: #2C1810;
+  --terracotta: #C8614A;
+  --terracotta-hover: #A84D3A;
+  --cream-dark: #EDE0C8;
+  --gold: #E8A838;
+  --olive: #7A8C5E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-dm-sans);
   --font-display: var(--font-playfair);
 }
 

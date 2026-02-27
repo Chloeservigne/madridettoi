@@ -27,12 +27,12 @@ export default function EmailForm() {
         placeholder="ton@email.fr"
         required
         disabled={status === "loading" || status === "success"}
-        className="flex-1 px-4 py-3 rounded-full border border-stone-200 bg-white text-stone-800 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-[#c4622d] focus:border-transparent disabled:opacity-50 font-[family-name:var(--font-inter)]"
+        className="flex-1 px-4 py-3 rounded-full border border-[#EDE0C8] bg-white text-[#2C1810] placeholder:text-[#2C1810]/40 focus:outline-none focus:ring-2 focus:ring-[#C8614A] focus:border-transparent disabled:opacity-50 font-[family-name:var(--font-dm-sans)]"
       />
       <button
         type="submit"
         disabled={status === "loading" || status === "success"}
-        className="px-6 py-3 rounded-full bg-[#c4622d] text-white font-semibold hover:bg-[#a8521f] transition-colors disabled:opacity-60 whitespace-nowrap font-[family-name:var(--font-inter)] cursor-pointer"
+        className="px-6 py-3 rounded-full bg-[#2C1810] text-[#F5ECD7] font-semibold hover:bg-[#1a0e09] transition-colors disabled:opacity-60 whitespace-nowrap font-[family-name:var(--font-dm-sans)] cursor-pointer"
       >
         {status === "loading"
           ? "..."
