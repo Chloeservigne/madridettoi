@@ -218,7 +218,7 @@ export default function BudgetPage() {
               💡 Le bon deal
             </p>
             <p className="text-[#F5ECD7]/90 text-sm leading-relaxed">
-              Tetuán et Hortaleza offrent le meilleur rapport qualité-prix en ce
+              <Link href="/quartiers" className="text-[#E8A838] underline underline-offset-2 hover:text-white transition-colors">Tetuán et Hortaleza</Link> offrent le meilleur rapport qualité-prix en ce
               moment. Bien desservis, appartements plus grands, et encore
               quelques offres sous les 1 000 €. Pas pour longtemps, probablement.
             </p>

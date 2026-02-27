@@ -14,7 +14,7 @@ const steps = [
     number: "01",
     title: "C'est quoi le NIE ?",
     content:
-      "Le NIE (Número de Identificación de Extranjero) est ton numéro d'identification en Espagne. Il est indispensable pour presque tout : signer un bail, ouvrir un compte bancaire, acheter une voiture, travailler légalement, ou s'inscrire à la sécu. C'est le premier document à obtenir après ton arrivée.",
+      <>Le NIE (Número de Identificación de Extranjero) est ton numéro d&apos;identification en Espagne. Il est indispensable pour presque tout : <Link href="/appartement" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">signer un bail</Link>, ouvrir un compte bancaire, acheter une voiture, travailler légalement, ou s&apos;inscrire à la sécu. C&apos;est le premier document à obtenir après ton arrivée.</>,
   },
   {
     number: "02",
