@@ -49,7 +49,7 @@ const raisons = [
     number: "06",
     title: "L'espagnol et les Espagnols",
     content:
-      "L'espagnol castillan — celui de Madrid — est une langue claire, bien articulée, accessible. Pas de lisp inventé, contrairement à ce qu'on entend parfois : c'est juste la prononciation du 'c' et du 'z' qui diffère. En quelques mois, on progresse vite. Et au-delà de la langue, il y a les gens. Les Espagnols sont chaleureux, directs, accueillants. Ils t'intègrent facilement dans leurs cercles, ils ne font pas la différence entre un voisin de palier et un ami de dix ans pour t'inviter à une fiesta. C'est une culture du lien social qui, venant de Paris, fait un effet saisissant.",
+      "L'espagnol castillan — celui de Madrid — est une langue claire, bien articulée, accessible. Ce qui est frappant, c'est que les Espagnols transforment peu leur langue : pas de verlan, peu d'argot impénétrable, pas de codes qui excluent. On comprend assez vite, et on progresse vite. En quelques mois, tu passes de la survie à la vraie conversation. Et au-delà de la langue, il y a les gens. Les Espagnols sont chaleureux, directs, accueillants. Ils t'intègrent facilement dans leurs cercles, ils ne font pas la différence entre un voisin de palier et un ami de dix ans pour t'inviter à une fiesta. C'est une culture du lien social qui, venant de Paris, fait un effet saisissant.",
     nuance: null,
   },
 ];
