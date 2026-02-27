@@ -143,16 +143,22 @@ export default function Home() {
             <span className="italic text-[#C8614A]">Madrid & Toi&nbsp;?</span>
           </h2>
           <p className="text-[#5a3e35] text-lg leading-relaxed mb-6">
-            Un projet né d'un déménagement — le nôtre. On a quitté la France
-            pour Madrid avec des milliers de questions et peu de réponses
-            claires. On a tout appris en faisant.
+            Un projet né d'un déménagement — le mien. En 2020, j'ai quitté
+            Paris pour Madrid, seule, avec une valise et beaucoup de questions
+            sans réponses claires. J'ai tout appris en faisant.
           </p>
           <p className="text-[#5a3e35] text-lg leading-relaxed mb-6">
-            Aujourd'hui, on construit la ressource qu'on aurait aimé avoir :
-            des guides pratiques, des témoignages, des contacts utiles. Pour
-            que ton installation soit une aventure, pas un parcours du
+            Aujourd'hui je construis la ressource que j'aurais aimé avoir :
+            des guides pratiques, des infos honnêtes, des contacts utiles.
+            Pour que ton installation soit une aventure, pas un parcours du
             combattant.
           </p>
+          <Link
+            href="/mon-histoire"
+            className="inline-flex items-center gap-2 text-[#C8614A] font-semibold hover:gap-3 transition-all mb-8"
+          >
+            Lire mon histoire →
+          </Link>
           <p className="font-[family-name:var(--font-playfair)] text-2xl italic text-[#2C1810]">
             C'est en train de se construire — et tu peux en faire partie.
           </p>
