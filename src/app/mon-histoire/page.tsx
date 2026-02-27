@@ -75,12 +75,12 @@ export default function MonHistoirePage() {
             connaissais absolument pas.
           </p>
 
-          <div className="py-8 px-8 bg-[#EDE0C8] rounded-2xl border-l-4 border-[#C8614A]">
-            <p className="font-[family-name:var(--font-playfair)] text-xl italic text-[#2C1810]">
-              &quot;1er septembre 2020. Deux valises, une coloc de 6 à Malasaña —
-              des Américaines, des Allemands, un Colombien, des Français. Et
-              une sensation immédiate, inexplicable, d&apos;être exactement là où
-              je devais être.&quot;
+          <div className="py-8 px-8 bg-[#2C1810] rounded-2xl">
+            <p className="text-[#F5ECD7] text-xl leading-relaxed">
+              &laquo;&nbsp;1er septembre 2020. Deux valises, une coloc de 6 à
+              Malasaña — des Américaines, des Allemands, un Colombien, des
+              Français. Et une sensation immédiate, inexplicable, d&apos;être
+              exactement là où je devais être.&nbsp;&raquo;
             </p>
           </div>
 
