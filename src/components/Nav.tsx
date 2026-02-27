@@ -64,13 +64,13 @@ export default function Nav() {
             </button>
 
             {guidesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-[#F5ECD7] border border-[#EDE0C8] rounded-2xl shadow-xl p-3 grid grid-cols-2 gap-1 w-64">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-[#F5ECD7] border border-[#EDE0C8] rounded-2xl shadow-xl p-2 flex flex-col w-48">
                 {guideLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
                     onClick={() => setGuidesOpen(false)}
-                    className="px-3 py-2 text-sm text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-xl transition-colors"
+                    className="px-3 py-2 text-sm text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-xl transition-colors whitespace-nowrap"
                   >
                     {link.label}
                   </Link>
