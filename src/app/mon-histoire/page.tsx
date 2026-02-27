@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
@@ -80,12 +79,12 @@ export default function MonHistoirePage() {
           </p>
 
           <div className="flex justify-center my-4">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/images/valise-depart.svg"
               alt="Illustration valise de départ"
               width={320}
               height={320}
-              unoptimized
             />
           </div>
 
