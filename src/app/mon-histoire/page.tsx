@@ -78,9 +78,9 @@ export default function MonHistoirePage() {
           <div className="py-8 px-8 bg-[#EDE0C8] rounded-2xl border-l-4 border-[#C8614A]">
             <p className="text-xl text-[#2C1810] leading-relaxed">
               &laquo;&nbsp;1er septembre 2020. Deux valises, une coloc de 6 à
-              Malasaña — des Américaines, des Allemands, un Colombien, des
-              Français. Et une sensation immédiate, inexplicable, d&apos;être
-              exactement là où je devais être.&nbsp;&raquo;
+              Malasaña — un mélange improbable de nationalités. Et une
+              sensation immédiate, inexplicable, d&apos;être exactement là où je
+              devais être.&nbsp;&raquo;
             </p>
           </div>
 
