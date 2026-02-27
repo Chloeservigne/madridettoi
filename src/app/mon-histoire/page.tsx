@@ -45,10 +45,12 @@ export default function MonHistoirePage() {
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-2xl mx-auto space-y-10 text-[#5a3e35] text-lg leading-relaxed">
           <p>
-            À la fin de mon master, je savais une chose avec certitude : je ne
-            voulais pas rester à Paris. Peut-être même pas en France. Le
-            problème, c&apos;est que savoir où on ne veut <em>pas</em> être, ça
-            ne dit pas grand chose sur où on veut aller.
+            À la fin de mon master, j&apos;avais une certitude : Paris, c&apos;était
+            terminé pour moi. La vie à 100 à l&apos;heure, le métro bondé, cette
+            impression de courir en permanence sans trop savoir vers quoi —
+            j&apos;avais besoin d&apos;autre chose. D&apos;une ville où on a le temps de
+            vivre, pas juste de performer. Le problème, c&apos;est que savoir ce
+            qu&apos;on ne veut <em>plus</em>, ça ne dit pas forcément où aller.
           </p>
 
           <p>
