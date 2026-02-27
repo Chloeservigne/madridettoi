@@ -127,7 +127,7 @@ export default function QuartiersPage() {
       </section>
 
       {/* Centre */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
             <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-2">
@@ -145,7 +145,7 @@ export default function QuartiersPage() {
             {quartiersCenter.map((q) => (
               <div
                 key={q.name}
-                className="p-6 rounded-2xl bg-white border border-[#EDE0C8] hover:border-[#C8614A]/30 hover:shadow-lg transition-all"
+                className="p-6 rounded-3xl bg-white shadow-md hover:border-[#C8614A]/30 hover:shadow-lg transition-all"
               >
                 <div className="flex items-start justify-between mb-3">
                   <div>
@@ -168,7 +168,7 @@ export default function QuartiersPage() {
       </section>
 
       {/* Hors M30 */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-24 px-6 bg-[#EDE0C8]">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
             <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-2">
@@ -188,7 +188,7 @@ export default function QuartiersPage() {
             {quartiersHorsM30.map((q) => (
               <div
                 key={q.name}
-                className="p-6 rounded-2xl bg-white border border-[#EDE0C8] hover:border-[#C8614A]/30 hover:shadow-lg transition-all"
+                className="p-6 rounded-3xl bg-white shadow-md hover:border-[#C8614A]/30 hover:shadow-lg transition-all"
               >
                 <div className="flex items-start justify-between mb-3">
                   <div>
@@ -233,16 +233,16 @@ export default function QuartiersPage() {
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Trouver un appartement depuis la France
             </Link>
-            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Faut-il un NIE avant d&apos;arriver ?
             </Link>
-            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
-            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Le guide du NIE
             </Link>
           </div>

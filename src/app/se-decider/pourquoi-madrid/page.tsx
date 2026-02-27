@@ -84,7 +84,7 @@ export default function PourquoiMadridPage() {
       </section>
 
       {/* Raisons */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto space-y-16">
           {raisons.map((r) => (
             <div key={r.number} className="flex gap-6">
@@ -138,25 +138,25 @@ export default function PourquoiMadridPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Quel quartier choisir ?
             </Link>
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Trouver un appartement
             </Link>
             <Link
               href="/mon-histoire"
-              className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Mon histoire
             </Link>

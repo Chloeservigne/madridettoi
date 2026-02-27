@@ -6,7 +6,8 @@
       "Bash(git:*)",
       "Bash(sed:*)",
       "WebSearch",
-      "WebFetch(domain:www.idealista.com)"
+      "WebFetch(domain:www.idealista.com)",
+      "WebFetch(domain:www.pretto.fr)"
     ]
   }
 }

@@ -120,7 +120,7 @@ export default function Home() {
             {reasons.map((r) => (
               <div
                 key={r.title}
-                className="p-6 rounded-2xl bg-white border border-[#EDE0C8] hover:border-[#C8614A]/30 hover:shadow-lg transition-all group"
+                className="p-6 rounded-3xl bg-white shadow-md hover:border-[#C8614A]/30 hover:shadow-lg transition-all group"
               >
                 <span className="text-3xl mb-4 block">{r.emoji}</span>
                 <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] mb-2 group-hover:text-[#C8614A] transition-colors">

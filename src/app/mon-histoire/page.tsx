@@ -42,7 +42,7 @@ export default function MonHistoirePage() {
       </section>
 
       {/* Content */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-2xl mx-auto space-y-10 text-[#5a3e35] text-lg leading-relaxed">
           <p>
             À la fin de mon master, j&apos;avais une certitude : Paris, c&apos;était

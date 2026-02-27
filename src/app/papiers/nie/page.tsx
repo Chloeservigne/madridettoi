@@ -94,7 +94,7 @@ export default function NiePage() {
       </section>
 
       {/* Content */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto space-y-12">
           {steps.map((step) => (
             <div key={step.number} className="flex gap-6">
@@ -115,7 +115,7 @@ export default function NiePage() {
       </section>
 
       {/* Checklist infographic */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-24 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-2">
             Checklist
@@ -125,7 +125,7 @@ export default function NiePage() {
           </h2>
 
           {/* Documents */}
-          <div className="bg-white rounded-2xl border border-[#EDE0C8] overflow-hidden mb-8">
+          <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-8">
             <div className="px-6 py-4 bg-[#C8614A]">
               <p className="text-white font-semibold">📋 Documents à apporter le jour J</p>
             </div>
@@ -143,7 +143,7 @@ export default function NiePage() {
           </div>
 
           {/* Tips cita previa */}
-          <div className="bg-white rounded-2xl border border-[#EDE0C8] overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-md overflow-hidden">
             <div className="px-6 py-4 bg-[#2C1810]">
               <p className="text-[#E8A838] font-semibold">💡 Astuces pour la cita previa</p>
             </div>
@@ -180,16 +180,16 @@ export default function NiePage() {
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Trouver un appartement depuis la France
             </Link>
-            <Link href="/logement/quartiers" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/logement/quartiers" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Les quartiers les plus sympa pour les expats
             </Link>
-            <Link href="/papiers/secu" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/papiers/secu" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Comment fonctionne la sécu en Espagne ?
             </Link>
-            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
           </div>

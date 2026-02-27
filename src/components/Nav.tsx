@@ -64,7 +64,7 @@ export default function Nav() {
             </button>
 
             {guidesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-[#F5ECD7] border border-[#EDE0C8] rounded-2xl shadow-xl p-2 flex flex-col w-48">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-[#F5ECD7] rounded-2xl shadow-xl p-2 flex flex-col w-48">
                 {guideLinks.map((link) => (
                   <Link
                     key={link.href}

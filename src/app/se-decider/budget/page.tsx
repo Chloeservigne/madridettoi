@@ -169,7 +169,7 @@ export default function BudgetPage() {
       </section>
 
       {/* Loyers */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-2">
             Le poste principal
@@ -188,7 +188,7 @@ export default function BudgetPage() {
             {loyers.map((item) => (
               <div
                 key={item.quartier}
-                className="bg-white rounded-2xl border border-[#EDE0C8] p-6"
+                className="bg-white rounded-3xl shadow-md p-6"
               >
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
                   <h3 className="font-[family-name:var(--font-playfair)] text-lg font-bold text-[#2C1810]">
@@ -227,7 +227,7 @@ export default function BudgetPage() {
       </section>
 
       {/* Courses */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-24 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-2">
             Faire ses courses
@@ -245,7 +245,7 @@ export default function BudgetPage() {
             {supermarches.map((s) => (
               <div
                 key={s.nom}
-                className="bg-white rounded-2xl border border-[#EDE0C8] overflow-hidden"
+                className="bg-white rounded-3xl shadow-md overflow-hidden"
               >
                 <div className="px-6 py-4 flex items-center justify-between bg-[#F5ECD7]">
                   <div className="flex items-center gap-3">
@@ -285,7 +285,7 @@ export default function BudgetPage() {
       </section>
 
       {/* Restos */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-2">
             Manger dehors
@@ -303,7 +303,7 @@ export default function BudgetPage() {
             {restos.map((r) => (
               <div
                 key={r.type}
-                className="bg-white rounded-2xl border border-[#EDE0C8] p-6 flex gap-5"
+                className="bg-white rounded-3xl shadow-md p-6 flex gap-5"
               >
                 <div className="flex-shrink-0">
                   <span className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#C8614A]">
@@ -345,7 +345,7 @@ export default function BudgetPage() {
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
             L&apos;Abono Transporte
           </h2>
-          <div className="bg-white rounded-2xl border border-[#EDE0C8] p-8 flex flex-col sm:flex-row items-center gap-8">
+          <div className="bg-white rounded-3xl shadow-md p-8 flex flex-col sm:flex-row items-center gap-8">
             <div className="text-center flex-shrink-0">
               <p className="font-[family-name:var(--font-playfair)] text-5xl font-bold text-[#C8614A]">
                 54,60€
@@ -369,7 +369,7 @@ export default function BudgetPage() {
       </section>
 
       {/* Vices */}
-      <section className="py-20 px-6 bg-[#2C1810]">
+      <section className="py-24 px-6 bg-[#2C1810]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#E8A838] font-semibold tracking-widest uppercase text-sm mb-2">
             La section honnête
@@ -418,7 +418,7 @@ export default function BudgetPage() {
       </section>
 
       {/* Budget récap */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-2">
             Récapitulatif
@@ -431,7 +431,7 @@ export default function BudgetPage() {
             situé mais pas au cœur touristique.
           </p>
 
-          <div className="bg-white rounded-2xl border border-[#EDE0C8] overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-md overflow-hidden">
             <div className="px-6 py-4 bg-[#C8614A]">
               <p className="text-white font-semibold">
                 💶 Estimation mensuelle — 1 personne
@@ -484,19 +484,19 @@ export default function BudgetPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Quel quartier choisir ?
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Le guide du NIE
             </Link>
