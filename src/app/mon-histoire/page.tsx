@@ -27,8 +27,8 @@ export default function MonHistoirePage() {
             Mon histoire
           </p>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
-            Paris → Madrid,{" "}
-            <span className="italic text-[#C8614A]">seule et sans filet</span>
+            Barcelone était{" "}
+            <span className="italic text-[#C8614A]">le plan A</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
             En 2020, après mon master, j&apos;ai quitté Paris pour Madrid. Un
