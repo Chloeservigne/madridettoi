@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
-const navLinks = [
-  { label: "Mon histoire", href: "/mon-histoire" },
+const guideLinks = [
   { label: "Se décider", href: "/se-decider" },
   { label: "Déménagement", href: "/demenagement" },
   { label: "Logement", href: "/logement" },
@@ -15,11 +14,23 @@ const navLinks = [
 ];
 
 export default function Nav() {
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [guidesOpen, setGuidesOpen] = useState(false);
+  const guidesRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (guidesRef.current && !guidesRef.current.contains(e.target as Node)) {
+        setGuidesOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F5ECD7]/90 backdrop-blur-sm border-b border-[#EDE0C8]">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
         <Link
           href="/"
           className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] hover:text-[#C8614A] transition-colors flex-shrink-0"
@@ -28,16 +39,45 @@ export default function Nav() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-1 flex-1 justify-center">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="px-3 py-1.5 text-sm text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-full transition-colors whitespace-nowrap"
+        <div className="hidden md:flex items-center gap-1">
+          <Link
+            href="/mon-histoire"
+            className="px-3 py-1.5 text-sm text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-full transition-colors whitespace-nowrap"
+          >
+            Mon histoire
+          </Link>
+
+          {/* Guides dropdown */}
+          <div ref={guidesRef} className="relative">
+            <button
+              onClick={() => setGuidesOpen(!guidesOpen)}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-full transition-colors"
             >
-              {link.label}
-            </Link>
-          ))}
+              Guides
+              <span
+                className={`text-xs transition-transform duration-200 inline-block ${
+                  guidesOpen ? "rotate-180" : ""
+                }`}
+              >
+                ▾
+              </span>
+            </button>
+
+            {guidesOpen && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-[#F5ECD7] border border-[#EDE0C8] rounded-2xl shadow-xl p-3 grid grid-cols-2 gap-1 w-64">
+                {guideLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setGuidesOpen(false)}
+                    className="px-3 py-2 text-sm text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-xl transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="flex items-center gap-3 flex-shrink-0">
@@ -50,23 +90,23 @@ export default function Nav() {
 
           {/* Mobile hamburger */}
           <button
-            onClick={() => setOpen(!open)}
-            className="lg:hidden flex flex-col gap-1.5 p-1"
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden flex flex-col gap-1.5 p-1"
             aria-label="Menu"
           >
             <span
               className={`block w-5 h-0.5 bg-[#2C1810] transition-all duration-200 origin-center ${
-                open ? "rotate-45 translate-y-2" : ""
+                menuOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
               className={`block w-5 h-0.5 bg-[#2C1810] transition-all duration-200 ${
-                open ? "opacity-0" : ""
+                menuOpen ? "opacity-0" : ""
               }`}
             />
             <span
               className={`block w-5 h-0.5 bg-[#2C1810] transition-all duration-200 origin-center ${
-                open ? "-rotate-45 -translate-y-2" : ""
+                menuOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
           </button>
@@ -74,13 +114,23 @@ export default function Nav() {
       </div>
 
       {/* Mobile menu */}
-      {open && (
-        <div className="lg:hidden bg-[#F5ECD7] border-t border-[#EDE0C8] px-6 py-4 flex flex-col gap-1">
-          {navLinks.map((link) => (
+      {menuOpen && (
+        <div className="md:hidden bg-[#F5ECD7] border-t border-[#EDE0C8] px-6 py-4 flex flex-col gap-1">
+          <Link
+            href="/mon-histoire"
+            onClick={() => setMenuOpen(false)}
+            className="py-2 px-3 text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-lg transition-colors text-sm font-medium"
+          >
+            Mon histoire
+          </Link>
+          <p className="px-3 pt-3 pb-1 text-xs uppercase tracking-widest text-[#5a3e35]/50 font-semibold">
+            Guides
+          </p>
+          {guideLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              onClick={() => setOpen(false)}
+              onClick={() => setMenuOpen(false)}
               className="py-2 px-3 text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-lg transition-colors text-sm font-medium"
             >
               {link.label}
