@@ -21,7 +21,7 @@ const raisons = [
     number: "02",
     title: "La gastronomie et la culture",
     content:
-      "Le menu del día à 12€ — entrée, plat, dessert, boisson, pain — c'est une institution. Mais au-delà du budget, c'est la qualité qui surprend : les produits frais, les marchés de quartier, les tapas offertes avec la bière. La gastronomie espagnole est généreuse et sans chichi. Et Madrid, c'est aussi trois musées de rang mondial à dix minutes à pied les uns des autres : le Prado, le Reina Sofía, le Thyssen. Des expositions en permanence. Une vie culturelle dense, accessible, et souvent moins chère qu'à Paris.",
+      "Le menu del día à 12€ — entrée, plat, dessert, boisson, pain — c'est une institution. Mais au-delà du budget, c'est la qualité qui surprend : les produits frais, les marchés de quartier, les tapas offertes avec la bière. La gastronomie espagnole est généreuse et sans chichi. Et Madrid, c'est aussi trois musées de rang mondial à dix minutes à pied les uns des autres : le Prado, le Reina Sofía, le Thyssen. Des expositions en permanence. Une vie culturelle dense, accessible, et souvent moins chère qu'à Paris. Ce qui frappe surtout, c'est que les Espagnols sont fiers de leur culture — vraiment fiers, sans arrogance. Le flamenco, la cuisine, les fêtes locales, les traditions de quartier : ce ne sont pas des décors pour touristes, c'est vivant, pratiqué, transmis. On arrive dans un pays qui sait ce qu'il est, et ça se ressent.",
     nuance: null,
   },
   {
