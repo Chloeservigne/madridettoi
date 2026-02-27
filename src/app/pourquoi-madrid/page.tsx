@@ -21,7 +21,7 @@ const raisons = [
     number: "02",
     title: "La gastronomie",
     content:
-      "La bouffe, quoi. Les croquetas crémeuses à l'intérieur et croustillantes dehors, la charcuterie — jamón ibérico, chorizo, lomo — qu'on mange debout au comptoir d'un bar, les calamares frits servis dans un petit pain au milieu de la Plaza Mayor. Et puis il y a tout ce qu'on ne connaît pas avant d'arriver. Le cocido madrileño, par exemple — ce ragoût de pois chiches, légumes et viandes mijotés des heures, qui réchauffe les dimanches d'hiver. Mon péché mignon, surtout quand c'est la grand-mère de mon copain qui le prépare. La cuisine espagnole est généreuse, sans chichi, et franchement — elle est bonne.",
+      "Oh la bouffe espagnole... Les croquetas crémeuses à l'intérieur et croustillantes dehors, la charcuterie — jamón ibérico, chorizo, lomo — qu'on mange debout au comptoir d'un bar, les calamares frits servis dans un petit pain au milieu de la Plaza Mayor. Et puis il y a tout ce qu'on ne connaît pas avant d'arriver. Le cocido madrileño, par exemple — ce ragoût de pois chiches, légumes et viandes mijotés des heures, qui réchauffe les dimanches d'hiver. Mon péché mignon, surtout quand c'est la grand-mère de mon copain qui le prépare. La cuisine espagnole est généreuse, sans chichi, et franchement — elle est bonne.",
     nuance: null,
   },
   {
