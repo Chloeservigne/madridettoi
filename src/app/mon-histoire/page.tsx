@@ -48,8 +48,8 @@ export default function MonHistoirePage() {
             À la fin de mon master, j&apos;avais une certitude : Paris, c&apos;était
             terminé pour moi. La vie à 100 à l&apos;heure, le métro bondé, cette
             impression de courir en permanence sans trop savoir vers quoi —
-            j&apos;avais besoin d&apos;autre chose. D&apos;une ville où on a le temps de
-            vivre, pas juste de performer. Le problème, c&apos;est que savoir ce
+            j&apos;avais besoin d&apos;autre chose. D&apos;une ville où la vie ne ressemble
+            pas à un sprint permanent. Le problème, c&apos;est que savoir ce
             qu&apos;on ne veut <em>plus</em>, ça ne dit pas forcément où aller.
           </p>
 
