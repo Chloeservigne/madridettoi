@@ -239,11 +239,11 @@ export default function QuartiersPage() {
             <Link href="/nie" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Faut-il un NIE avant d&apos;arriver ?
             </Link>
-            <Link href="/secu" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
-              Comment fonctionne la sécu en Espagne ?
+            <Link href="/budget" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+              Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
-            <Link href="/remote" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
-              Travailler en remote depuis Madrid
+            <Link href="/nie" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+              Le guide du NIE
             </Link>
           </div>
         </div>

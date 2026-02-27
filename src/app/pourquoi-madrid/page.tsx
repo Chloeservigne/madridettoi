@@ -154,6 +154,12 @@ export default function PourquoiMadridPage() {
             >
               Trouver un appartement
             </Link>
+            <Link
+              href="/mon-histoire"
+              className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+            >
+              Mon histoire
+            </Link>
           </div>
         </div>
       </section>
