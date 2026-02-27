@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
@@ -77,6 +78,15 @@ export default function MonHistoirePage() {
             passage. J&apos;ai posé mes valises dans une ville que je ne
             connaissais absolument pas.
           </p>
+
+          <div className="flex justify-center my-4">
+            <Image
+              src="/images/valise-depart.svg"
+              alt="Illustration valise de départ"
+              width={320}
+              height={320}
+            />
+          </div>
 
           <div className="py-8 px-8 bg-[#EDE0C8] rounded-2xl border-l-4 border-[#C8614A]">
             <p className="text-xl text-[#2C1810] leading-relaxed">
@@ -181,6 +191,9 @@ export default function MonHistoirePage() {
         </Link>
         <p className="text-[#F5ECD7]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
+        </p>
+        <p className="text-[#F5ECD7]/20 text-xs mt-2">
+          <a href="https://storyset.com/transport" className="hover:text-[#F5ECD7]/40 transition-colors">Transport illustrations by Storyset</a>
         </p>
       </footer>
     </div>
