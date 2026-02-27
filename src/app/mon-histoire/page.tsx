@@ -52,9 +52,11 @@ export default function MonHistoirePage() {
           <p>
             L&apos;Espagne s&apos;est imposée assez naturellement — j&apos;avais fait
             espagnol en LV2, je me disais que je savais parler la langue{" "}
-            <em>(spoiler : non)</em>, et dans ma tête le pays se résumait
-            surtout à Barcelone. La plage, les souvenirs de week-ends festifs,
-            tout ce qu&apos;on projette sur cette ville depuis Paris.
+            <em>(spoiler : non)</em>, et ma destination c&apos;était Barcelone,
+            sans hésitation. J&apos;avais passé quelques week-ends là-bas avec des
+            amis, j&apos;aimais la ville, et surtout j&apos;avais ce fantasme de la mer
+            accessible après le boulot — moi qui n&apos;avais jamais vécu au bord
+            de la plage.
           </p>
 
           <p>
