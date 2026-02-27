@@ -19,27 +19,34 @@ const raisons = [
   },
   {
     number: "02",
-    title: "La gastronomie et la culture",
+    title: "La bouffe",
     content:
-      "La gastronomie espagnole, c'est d'abord des classiques qu'on ne se lasse pas : les croquetas crémeuses à l'intérieur et croustillantes dehors, la charcuterie — jamón ibérico, chorizo, lomo — qu'on mange debout au comptoir d'un bar, les calamares frits servis dans un petit pain au milieu de la Plaza Mayor. Mais c'est aussi tout ce qu'on ne connaît pas avant d'arriver. Le cocido madrileño, par exemple — ce ragoût de pois chiches, légumes et viandes mijotés des heures, qui réchauffe les dimanches d'hiver. Mon péché mignon, surtout quand c'est la grand-mère de mon copain qui le prépare. Et Madrid, c'est aussi trois musées de rang mondial à dix minutes à pied les uns des autres : le Prado, le Reina Sofía, le Thyssen. Ce qui frappe surtout, c'est que les Espagnols sont fiers de tout ça — vraiment fiers, sans arrogance. Le flamenco, la cuisine, les fêtes locales, les traditions de quartier : ce ne sont pas des décors pour touristes, c'est vivant, pratiqué, transmis. On arrive dans un pays qui sait ce qu'il est, et ça se ressent.",
+      "On va pas l'appeler autrement. Les croquetas crémeuses à l'intérieur et croustillantes dehors, la charcuterie — jamón ibérico, chorizo, lomo — qu'on mange debout au comptoir d'un bar, les calamares frits servis dans un petit pain au milieu de la Plaza Mayor. Et puis il y a tout ce qu'on ne connaît pas avant d'arriver. Le cocido madrileño, par exemple — ce ragoût de pois chiches, légumes et viandes mijotés des heures, qui réchauffe les dimanches d'hiver. Mon péché mignon, surtout quand c'est la grand-mère de mon copain qui le prépare. La cuisine espagnole est généreuse, sans chichi, et franchement — elle est bonne.",
     nuance: null,
   },
   {
     number: "03",
+    title: "La culture",
+    content:
+      "Madrid, c'est trois musées de rang mondial à dix minutes à pied les uns des autres : le Prado, le Reina Sofía, le Thyssen. Des expositions en permanence, une vie culturelle dense, accessible, et souvent moins chère qu'à Paris. Mais ce qui frappe surtout, c'est que les Espagnols sont fiers de leur culture — vraiment fiers, sans arrogance. Le flamenco, la cuisine, les fêtes locales, les traditions de quartier : ce ne sont pas des décors pour touristes, c'est vivant, pratiqué, transmis. On arrive dans un pays qui sait ce qu'il est, et ça se ressent.",
+    nuance: null,
+  },
+  {
+    number: "04",
     title: "Le climat — avec les nuances qu'il faut",
     content:
       "300 jours de soleil par an, c'est réel. La lumière de Madrid est quelque chose de particulier — dorée, franche, elle change l'humeur. Les printemps et les automnes sont magnifiques. Mais il faut être honnête : les étés tapent fort (40°C ne sont pas rares en juillet-août), et l'hiver peut surprendre. Madrid est à 650m d'altitude, les nuits de janvier descendent sous zéro, et il neige — pas souvent, mais ça arrive. Ce n'est pas la Costa del Sol. C'est un vrai climat continental avec ses extrêmes. Ce qu'on gagne vraiment, c'est la lumière et le soleil au quotidien, même en hiver.",
     nuance: "Ce qu'on ne te dit pas : en août, les Madrilènes partent. La ville se vide, beaucoup de restaurants ferment. C'est plutôt un avantage — calme, moins de monde — mais ne t'attends pas à une ville festive en plein mois d'août.",
   },
   {
-    number: "04",
+    number: "05",
     title: "La proximité avec la France",
     content:
       "Paris-Madrid en avion, c'est 2h de vol. Les vols sont fréquents et souvent pas chers si tu réserves à l'avance. Tu peux rentrer pour un week-end sans que ça devienne une expédition. En train, il y a aussi le Renfe-SNCF direct jusqu'à Barcelone, et de là le reste de la France. Pour ceux qui hésitent à franchir le cap par peur de l'éloignement : Madrid est l'une des capitales européennes les mieux connectées à Paris. On est loin, mais pas si loin.",
     nuance: null,
   },
   {
-    number: "05",
+    number: "06",
     title: "L'espagnol et les Espagnols",
     content:
       "L'espagnol castillan — celui de Madrid — est une langue claire, bien articulée, accessible. Pas de lisp inventé, contrairement à ce qu'on entend parfois : c'est juste la prononciation du 'c' et du 'z' qui diffère. En quelques mois, on progresse vite. Et au-delà de la langue, il y a les gens. Les Espagnols sont chaleureux, directs, accueillants. Ils t'intègrent facilement dans leurs cercles, ils ne font pas la différence entre un voisin de palier et un ami de dix ans pour t'inviter à une fiesta. C'est une culture du lien social qui, venant de Paris, fait un effet saisissant.",
