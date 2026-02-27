@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://madridettoi.vercel.app/sitemap.xml",
+    sitemap: "https://madrid-et-toi.com/sitemap.xml",
   };
 }

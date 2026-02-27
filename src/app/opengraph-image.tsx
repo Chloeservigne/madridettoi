@@ -68,7 +68,7 @@ export default function Image() {
             opacity: 0.5,
           }}
         >
-          madridettoi.vercel.app
+          madrid-et-toi.com
         </div>
       </div>
     ),

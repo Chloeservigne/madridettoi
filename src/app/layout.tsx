@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://madridettoi.vercel.app"),
+  metadataBase: new URL("https://madrid-et-toi.com"),
   title: {
     default: "Madrid & Toi — S'installer à Madrid, on t'accompagne",
     template: "%s — Madrid & Toi",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Madrid & Toi — S'installer à Madrid, on t'accompagne",
     description:
       "Tu penses à quitter la France pour Madrid ? Retrouve tous les conseils, ressources et guides pour t'installer à Madrid sans te perdre.",
-    url: "https://madridettoi.vercel.app",
+    url: "https://madrid-et-toi.com",
     siteName: "Madrid & Toi",
     locale: "fr_FR",
     type: "website",
