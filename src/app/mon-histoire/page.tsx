@@ -4,9 +4,9 @@ import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
 export const metadata: Metadata = {
-  title: "Mon histoire avec Madrid — Madrid & Toi",
+  title: "Barcelone était le plan A — Madrid & Toi",
   description:
-    "En 2020, j'ai quitté Paris pour Madrid, seule. Six ans plus tard, Madrid est chez moi. Voilà comment c'est arrivé.",
+    "En 2020, je voulais Barcelone. J'ai atterri à Madrid, seule, sans jamais y avoir mis les pieds. Six ans plus tard, je ne suis toujours pas repartie.",
 };
 
 export default function MonHistoirePage() {
