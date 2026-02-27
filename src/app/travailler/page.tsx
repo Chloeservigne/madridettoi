@@ -70,22 +70,22 @@ export default function TravaillerPage() {
       </section>
 
       {/* Cards */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <section className="py-28 px-6 bg-white">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
           {cards.map((card) =>
             card.href ? (
               <Link
                 key={card.title}
                 href={card.href}
-                className="group p-6 rounded-2xl bg-white border border-[#EDE0C8] hover:border-[#C8614A]/40 hover:shadow-lg transition-all"
+                className="group p-8 rounded-3xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
               >
-                <div className="flex justify-between items-start mb-4">
-                  <span className="text-3xl">{card.emoji}</span>
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-12 h-12 rounded-2xl bg-[#F5ECD7] flex items-center justify-center text-2xl">{card.emoji}</div>
                   <span className="text-[#C8614A] text-xs font-semibold">
                     Lire le guide →
                   </span>
                 </div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] mb-2 group-hover:text-[#C8614A] transition-colors">
+                <h2 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] mb-3 group-hover:text-[#C8614A] transition-colors duration-200">
                   {card.title}
                 </h2>
                 <p className="text-[#5a3e35]/70 text-sm leading-relaxed">
@@ -95,11 +95,11 @@ export default function TravaillerPage() {
             ) : (
               <div
                 key={card.title}
-                className="p-6 rounded-2xl bg-white border border-[#EDE0C8] opacity-60"
+                className="p-8 rounded-3xl bg-white shadow-sm opacity-50"
               >
-                <div className="flex justify-between items-start mb-4">
-                  <span className="text-3xl">{card.emoji}</span>
-                  <span className="text-xs bg-[#E8A838]/20 text-[#E8A838] px-2 py-1 rounded-full font-semibold">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-12 h-12 rounded-2xl bg-[#F5ECD7] flex items-center justify-center text-2xl">{card.emoji}</div>
+                  <span className="text-xs bg-[#E8A838]/20 text-[#E8A838] px-3 py-1 rounded-full font-semibold">
                     Bientôt
                   </span>
                 </div>
