@@ -15,7 +15,7 @@ const cards = [
     title: "Pourquoi Madrid ? Les vraies raisons",
     description:
       "Au-delà des clichés, ce qui fait vraiment la différence au quotidien : le soleil, le rythme de vie, le coût, la proximité avec la France.",
-    href: null,
+    href: "/pourquoi-madrid",
   },
   {
     emoji: "⚖️",
