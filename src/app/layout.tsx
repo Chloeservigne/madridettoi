@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     type: "website",
   },
+  verification: {
+    google: "fEYGrbj2sVhosMtMB_EnX1kqVIVAtNbpjetltw89jWE",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Madrid & Toi — S'installer à Madrid, on t'accompagne",
