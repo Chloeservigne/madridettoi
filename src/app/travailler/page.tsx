@@ -15,7 +15,7 @@ const cards = [
     title: "Travailler en remote depuis Madrid",
     description:
       "C'est légal ? Quel statut adopter ? La règle des 183 jours, les risques à éviter, et comment le faire proprement.",
-    href: "/remote",
+    href: "/travailler/remote",
   },
   {
     emoji: "🔍",

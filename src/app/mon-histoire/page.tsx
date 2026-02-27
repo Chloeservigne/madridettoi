@@ -122,7 +122,7 @@ export default function MonHistoirePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
-              href="/pourquoi-madrid"
+              href="/se-decider/pourquoi-madrid"
               className="px-5 py-2.5 rounded-full bg-[#C8614A] text-white text-sm font-semibold hover:bg-[#A84D3A] transition-colors"
             >
               Pourquoi Madrid ?

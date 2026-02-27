@@ -137,19 +137,19 @@ export default function PourquoiMadridPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/budget"
+              href="/se-decider/budget"
               className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
             <Link
-              href="/quartiers"
+              href="/logement/quartiers"
               className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Quel quartier choisir ?
             </Link>
             <Link
-              href="/appartement"
+              href="/logement/appartement"
               className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Trouver un appartement

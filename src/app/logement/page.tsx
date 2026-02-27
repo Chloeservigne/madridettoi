@@ -15,14 +15,14 @@ const cards = [
     title: "Trouver un appartement depuis la France",
     description:
       "Idealista, Fotocasa, les pièges à éviter, comment visiter à distance, et comment décrocher un bail sans être encore sur place.",
-    href: "/appartement",
+    href: "/logement/appartement",
   },
   {
     emoji: "🗺️",
     title: "Les quartiers pour les expats",
     description:
       "Malasaña, Chamberí, Lavapiés, La Latina — les quartiers préférés des Français, leurs ambiances, leurs prix, leurs avantages.",
-    href: "/quartiers",
+    href: "/logement/quartiers",
   },
   {
     emoji: "🤝",

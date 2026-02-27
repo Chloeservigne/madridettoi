@@ -15,14 +15,14 @@ const cards = [
     title: "Le NIE : tout ce qu'il faut savoir",
     description:
       "C'est quoi, comment l'obtenir depuis la France ou en Espagne, les délais, les pièges. La démarche numéro 1 à faire à l'arrivée.",
-    href: "/nie",
+    href: "/papiers/nie",
   },
   {
     emoji: "🏥",
     title: "La sécu en Espagne",
     description:
       "Comment s'inscrire à la Seguridad Social, les droits selon ton statut, les médecins de ville, les urgences, les mutuelles privées.",
-    href: "/secu",
+    href: "/papiers/secu",
   },
   {
     emoji: "🏦",

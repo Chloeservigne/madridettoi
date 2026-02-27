@@ -218,7 +218,7 @@ export default function BudgetPage() {
               💡 Le bon deal
             </p>
             <p className="text-[#F5ECD7]/90 text-sm leading-relaxed">
-              <Link href="/quartiers" className="text-[#E8A838] underline underline-offset-2 hover:text-white transition-colors">Tetuán et Hortaleza</Link> offrent le meilleur rapport qualité-prix en ce
+              <Link href="/logement/quartiers" className="text-[#E8A838] underline underline-offset-2 hover:text-white transition-colors">Tetuán et Hortaleza</Link> offrent le meilleur rapport qualité-prix en ce
               moment. Bien desservis, appartements plus grands, et encore
               quelques offres sous les 1 000 €. Pas pour longtemps, probablement.
             </p>
@@ -483,19 +483,19 @@ export default function BudgetPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/appartement"
+              href="/logement/appartement"
               className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
-              href="/quartiers"
+              href="/logement/quartiers"
               className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Quel quartier choisir ?
             </Link>
             <Link
-              href="/nie"
+              href="/papiers/nie"
               className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Le guide du NIE

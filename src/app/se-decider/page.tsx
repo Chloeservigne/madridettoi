@@ -15,7 +15,7 @@ const cards = [
     title: "Pourquoi Madrid ? Les vraies raisons",
     description:
       "Au-delà des clichés, ce qui fait vraiment la différence au quotidien : le soleil, le rythme de vie, le coût, la proximité avec la France.",
-    href: "/pourquoi-madrid",
+    href: "/se-decider/pourquoi-madrid",
   },
   {
     emoji: "⚖️",
@@ -29,7 +29,7 @@ const cards = [
     title: "Budget de vie réel à Madrid",
     description:
       "Loyer, courses, transports, resto, sorties : un budget mensuel chiffré, par profil. Sans se raconter d'histoires.",
-    href: "/budget",
+    href: "/se-decider/budget",
   },
   {
     emoji: "🗣️",

@@ -20,13 +20,13 @@ const steps = [
     number: "02",
     title: "Le budget à prévoir",
     content:
-      <>Le marché a évolué : un studio dans un quartier central comme <Link href="/quartiers" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Malasaña ou Chueca</Link> se loue aujourd&apos;hui entre 900 et 1 200 €/mois. Un appartement d&apos;une chambre entre 1 000 et 1 500 €. Lavapiés et Vallecas restent plus abordables. La caution représente généralement 1 à 2 mois de loyer. Pour les fourchettes détaillées par quartier, voir le <Link href="/budget" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">guide budget</Link>.</>,
+      <>Le marché a évolué : un studio dans un quartier central comme <Link href="/logement/quartiers" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Malasaña ou Chueca</Link> se loue aujourd&apos;hui entre 900 et 1 200 €/mois. Un appartement d&apos;une chambre entre 1 000 et 1 500 €. Lavapiés et Vallecas restent plus abordables. La caution représente généralement 1 à 2 mois de loyer. Pour les fourchettes détaillées par quartier, voir le <Link href="/se-decider/budget" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">guide budget</Link>.</>,
   },
   {
     number: "03",
     title: "Les documents demandés",
     content:
-      <>Les propriétaires demandent souvent : un contrat de travail espagnol ou une preuve de revenus, les 3 dernières fiches de paie, et parfois un garant. Si tu arrives sans emploi local, certains acceptent une garantie bancaire ou plusieurs mois de loyer d&apos;avance. <Link href="/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Le NIE</Link> est souvent demandé pour signer.</>,
+      <>Les propriétaires demandent souvent : un contrat de travail espagnol ou une preuve de revenus, les 3 dernières fiches de paie, et parfois un garant. Si tu arrives sans emploi local, certains acceptent une garantie bancaire ou plusieurs mois de loyer d&apos;avance. <Link href="/papiers/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Le NIE</Link> est souvent demandé pour signer.</>,
   },
   {
     number: "04",
@@ -113,16 +113,16 @@ export default function AppartementPage() {
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/nie" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Faut-il un NIE avant d&apos;arriver ?
             </Link>
-            <Link href="/quartiers" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/logement/quartiers" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Les quartiers les plus sympa pour les expats
             </Link>
-            <Link href="/budget" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
-            <Link href="/secu" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/papiers/secu" className="px-4 py-2 rounded-full bg-white border border-[#EDE0C8] text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Comment fonctionne la sécu en Espagne ?
             </Link>
           </div>

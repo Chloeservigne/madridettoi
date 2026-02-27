@@ -42,11 +42,11 @@ const reasons = [
 ];
 
 const questions = [
-  { label: "Comment trouver un appartement depuis la France ?", href: "/appartement" },
-  { label: "Faut-il un NIE avant d'arriver ?", href: "/nie" },
-  { label: "Quels sont les quartiers les plus sympa pour les expats ?", href: "/quartiers" },
-  { label: "Comment fonctionne la sécu en Espagne ?", href: "/secu" },
-  { label: "Peut-on travailler en remote depuis Madrid ?", href: "/remote" },
+  { label: "Comment trouver un appartement depuis la France ?", href: "/logement/appartement" },
+  { label: "Faut-il un NIE avant d'arriver ?", href: "/papiers/nie" },
+  { label: "Quels sont les quartiers les plus sympa pour les expats ?", href: "/logement/quartiers" },
+  { label: "Comment fonctionne la sécu en Espagne ?", href: "/papiers/secu" },
+  { label: "Peut-on travailler en remote depuis Madrid ?", href: "/travailler/remote" },
 ];
 
 export default function Home() {
