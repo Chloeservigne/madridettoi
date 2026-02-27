@@ -85,6 +85,7 @@ export default function MonHistoirePage() {
               alt="Illustration valise de départ"
               width={320}
               height={320}
+              unoptimized
             />
           </div>
 
