@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
@@ -55,29 +56,42 @@ export default function Home() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-24 px-6 text-center bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
-        <div className="max-w-3xl mx-auto">
-          <p className="animate-fade-in-up delay-1 text-[#C8614A] font-semibold tracking-widest uppercase text-sm mb-6">
-            Pour les Français qui rêvent de Madrid
-          </p>
-          <h1 className="animate-fade-in-up delay-2 font-[family-name:var(--font-playfair)] text-5xl sm:text-6xl lg:text-7xl font-bold text-[#2C1810] leading-tight mb-8">
-            Et si tu sautais
-            <br />
-            <span className="italic text-[#C8614A]">le pas&nbsp;?</span>
-          </h1>
-          <p className="animate-fade-in-up delay-3 text-lg sm:text-xl text-[#5a3e35] max-w-xl mx-auto mb-12 leading-relaxed">
-            Madrid fait rêver. Mais entre l'envie et le déménagement, il y a
-            mille questions. <strong>Madrid & Toi</strong> est là pour t'aider
-            à franchir le cap, sans te perdre dans les démarches.
-          </p>
-          <div className="animate-fade-in-up delay-4 flex justify-center">
-            <a
-              href="#newsletter"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#C8614A] text-white font-semibold text-lg hover:bg-[#A84D3A] transition-all hover:scale-105 shadow-lg shadow-[#C8614A]/20"
-            >
-              Je veux en savoir plus
-              <span>→</span>
-            </a>
+      <section className="pt-32 pb-24 px-6 bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+          {/* Texte */}
+          <div className="flex-1 text-center lg:text-left">
+            <p className="animate-fade-in-up delay-1 text-[#C8614A] font-semibold tracking-widest uppercase text-sm mb-6">
+              Pour les Français qui rêvent de Madrid
+            </p>
+            <h1 className="animate-fade-in-up delay-2 font-[family-name:var(--font-playfair)] text-5xl sm:text-6xl lg:text-7xl font-bold text-[#2C1810] leading-tight mb-8">
+              Et si tu sautais
+              <br />
+              <span className="italic text-[#C8614A]">le pas&nbsp;?</span>
+            </h1>
+            <p className="animate-fade-in-up delay-3 text-lg sm:text-xl text-[#5a3e35] max-w-xl mx-auto lg:mx-0 mb-12 leading-relaxed">
+              Madrid fait rêver. Mais entre l&apos;envie et le déménagement, il y a
+              mille questions. <strong>Madrid & Toi</strong> est là pour t&apos;aider
+              à franchir le cap, sans te perdre dans les démarches.
+            </p>
+            <div className="animate-fade-in-up delay-4 flex justify-center lg:justify-start">
+              <a
+                href="#newsletter"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#C8614A] text-white font-semibold text-lg hover:bg-[#A84D3A] transition-all hover:scale-105 shadow-lg shadow-[#C8614A]/20"
+              >
+                Je veux en savoir plus
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+          {/* Illustration */}
+          <div className="flex-shrink-0 w-full max-w-sm lg:max-w-md">
+            <Image
+              src="/images/valise-depart.svg"
+              alt="Illustration valise de départ pour Madrid"
+              width={480}
+              height={480}
+              priority
+            />
           </div>
         </div>
       </section>
@@ -195,6 +209,9 @@ export default function Home() {
         </p>
         <p className="text-[#F5ECD7]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
+        </p>
+        <p className="text-[#F5ECD7]/20 text-xs mt-2">
+          <a href="https://storyset.com/transport" className="hover:text-[#F5ECD7]/40 transition-colors">Transport illustrations by Storyset</a>
         </p>
       </footer>
     </div>
