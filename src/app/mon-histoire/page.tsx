@@ -31,10 +31,11 @@ export default function MonHistoirePage() {
             <span className="italic text-[#C8614A]">le plan A</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
-            En 2020, après mon master, j&apos;ai quitté Paris pour Madrid. Un
-            contrat en VIE, deux valises, et une conviction floue que je ne
-            voulais pas vivre la vie qui m&apos;attendait en France. Six ans plus
-            tard, je ne suis toujours pas repartie.
+            C&apos;était Barcelone. La plage, le soleil, les week-ends entre amis —
+            j&apos;avais tout projeté là-bas. Et puis des proches m&apos;ont dit :
+            regarde Madrid. J&apos;ai regardé. Deux valises, un contrat en VIE, et
+            une ville où je n&apos;avais jamais mis les pieds. Six ans plus tard,
+            je ne suis toujours pas repartie.
           </p>
         </div>
       </section>
