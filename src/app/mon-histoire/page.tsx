@@ -31,11 +31,12 @@ export default function MonHistoirePage() {
             <span className="italic text-[#C8614A]">le plan A</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
-            C&apos;était Barcelone. La plage, le soleil, les week-ends entre amis —
-            j&apos;avais tout projeté là-bas. Et puis des proches m&apos;ont dit :
-            regarde Madrid. J&apos;ai regardé. Deux valises, un contrat en VIE, et
-            une ville où je n&apos;avais jamais mis les pieds. Six ans plus tard,
-            je ne suis toujours pas repartie.
+            Six ans que je vis à Madrid. Je ne l&apos;avais jamais visitée avant
+            d&apos;y déménager. Le plan initial, c&apos;était Barcelone — la plage, le
+            fantasme de finir le boulot et plonger dans la mer. Des proches
+            m&apos;ont convaincue de regarder ailleurs. Madrid n&apos;a pas la mer. Mais
+            il y a tout le reste. Et la plage est à moins de 2h.{" "}
+            <span className="text-[#C8614A]">(Pas si mal, non&nbsp;?)</span>
           </p>
         </div>
       </section>
