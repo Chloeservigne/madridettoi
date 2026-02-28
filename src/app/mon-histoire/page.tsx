@@ -78,23 +78,23 @@ export default function MonHistoirePage() {
             connaissais absolument pas.
           </p>
 
-          <div className="flex justify-center my-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/valise-depart.svg"
-              alt="Illustration valise de départ"
-              width={320}
-              height={320}
-            />
-          </div>
-
-          <div className="py-8 px-8 bg-[#EDE0C8] rounded-2xl border-l-4 border-[#C8614A]">
-            <p className="text-xl text-[#2C1810] leading-relaxed">
-              &laquo;&nbsp;1er septembre 2020. Deux valises, une coloc de 6 à
-              Malasaña — un mélange improbable de nationalités. Et une
-              sensation immédiate, inexplicable, d&apos;être exactement là où je
-              devais être.&nbsp;&raquo;
-            </p>
+          <div>
+            <span className="block font-[family-name:var(--font-playfair)] text-8xl text-[#C8614A] leading-none mb-2 select-none">&ldquo;</span>
+            <div className="overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/valise-depart.svg"
+                alt="Illustration valise de départ"
+                width={180}
+                height={180}
+                className="float-right ml-8 mb-2"
+              />
+              <p className="font-[family-name:var(--font-playfair)] text-2xl italic text-[#2C1810] leading-relaxed">
+                1er septembre 2020. Deux valises, une coloc de 6 à Malasaña —
+                un mélange improbable de nationalités. Et une sensation
+                immédiate, inexplicable, d&apos;être exactement là où je devais être.
+              </p>
+            </div>
           </div>
 
           <p>
