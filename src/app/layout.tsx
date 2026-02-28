@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
-import { Playfair_Display } from "next/font/google";
+import { Jost } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const jost = Jost({
   variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: "300",
 });
 
-const playfair = Playfair_Display({
+const fraunces = Fraunces({
   variable: "--font-playfair",
   subsets: ["latin"],
   style: ["normal", "italic"],
@@ -49,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${dmSans.variable} ${playfair.variable} antialiased`}>
+      <body className={`${jost.variable} ${fraunces.variable} antialiased`}>
         {children}
       </body>
     </html>
