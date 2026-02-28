@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import BarrioQuiz from "@/components/BarrioQuiz";
 
 export const metadata: Metadata = {
   title: "Les quartiers de Madrid pour les expats français — Madrid & Toi",
@@ -123,6 +124,24 @@ export default function QuartiersPage() {
             quartiers du centre — mais Madrid, c&apos;est bien plus grand que la M30.
             On t&apos;aide à trouver l&apos;endroit qui te ressemble vraiment.
           </p>
+        </div>
+      </section>
+
+      {/* Quiz */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-3">
+              5 questions
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-[#2C1810] mb-3">
+              Quel barrio es-tu ?
+            </h2>
+            <p className="text-[#5a3e35]">
+              Réponds honnêtement, on ne juge pas. Même si c&apos;est Salamanca.
+            </p>
+          </div>
+          <BarrioQuiz />
         </div>
       </section>
 
