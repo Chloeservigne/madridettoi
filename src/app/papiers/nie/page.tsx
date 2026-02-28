@@ -42,9 +42,21 @@ const steps = [
   },
   {
     number: "06",
-    title: "Les délais et l'alternative gestoria",
+    title: "Les délais réels",
     content:
-      "Le délai entre la prise de rendez-vous et le rendez-vous lui-même peut aller de 2 à 6 semaines à Madrid selon la période (septembre-octobre c'est le pire moment). Les gestorías — cabinets administratifs espagnols — proposent de gérer la démarche à ta place pour 50 à 150 €. Ça peut valoir le coup si tu n'es pas à l'aise en espagnol ou si tu es pressé(e).",
+      "À Madrid, compte 2 à 6 semaines entre la prise de rendez-vous et le rendez-vous lui-même. Septembre et octobre sont les pires mois — c'est la rentrée des expats, tout le monde cherche un créneau en même temps. Juillet-août est plus calme. Le jour du rendez-vous, la démarche dure 15 à 30 minutes maximum. Pour le Certificado de Registro, tu repars avec le document le jour même. Pour le NIE simple, c'est parfois dans la semaine. Si tu es vraiment pressé(e), certains commissariats en dehors de Madrid (Alcalá de Henares, Getafe) ont des créneaux bien plus disponibles — ça vaut le déplacement.",
+  },
+  {
+    number: "07",
+    title: "Les erreurs fréquentes",
+    content:
+      "Confondre NIE et Certificado de Registro — si tu t'installes durablement, c'est le Certificado qu'il te faut, pas juste le NIE simple. Arriver sans photocopie : les guichets ne font pas de copies sur place, apporte toujours un double de chaque document. Oublier de payer la Tasa 790 avant le rendez-vous — sans le reçu de paiement, tu seras refusé(e). Ne pas apporter de justificatif de motif (bail, contrat de travail). Et enfin : arriver en retard. Les créneaux sont stricts, un retard de 10 minutes et tu perds ton rendez-vous.",
+  },
+  {
+    number: "08",
+    title: "Faut-il parler espagnol ?",
+    content:
+      "Pas indispensable, mais clairement utile. Les agents aux guichets ne parlent généralement ni français ni anglais — la démarche se fait entièrement en espagnol. Les formulaires EX-15 et EX-18 sont en espagnol, mais ils sont simples à remplir avec un peu de vocabulaire de base. Une dizaine de phrases suffisent pour tenir le rendez-vous. Si tu n'es vraiment pas à l'aise, une gestoría (cabinet administratif) gère tout à ta place pour 50 à 150 € — elle prend le rendez-vous, prépare les documents, et t'accompagne parfois le jour J.",
   },
 ];
 
