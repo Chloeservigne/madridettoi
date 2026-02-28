@@ -170,10 +170,10 @@ export default function NiePage() {
               Les erreurs fréquentes
             </h2>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="bg-white rounded-2xl shadow-sm divide-y divide-[#EDE0C8]">
             {erreursFrequentes.map((erreur) => (
-              <div key={erreur} className="flex items-start gap-4 bg-white rounded-2xl px-5 py-4 shadow-sm">
-                <span className="flex-shrink-0 text-lg">❌</span>
+              <div key={erreur} className="flex items-start gap-3 px-5 py-3">
+                <span className="flex-shrink-0 text-sm mt-0.5">❌</span>
                 <p className="text-[#5a3e35] text-sm leading-relaxed">{erreur}</p>
               </div>
             ))}
