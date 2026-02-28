@@ -101,22 +101,23 @@ export default function Home() {
 
       {/* Questions section */}
       <section className="py-16 px-6 bg-[#2C1810]">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#EDE0C8]/60 text-sm uppercase tracking-widest mb-8">
+        <div className="max-w-2xl mx-auto">
+          <p className="text-[#EDE0C8]/60 text-sm uppercase tracking-widest mb-8 text-center">
             Tu te poses ces questions ?
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-col divide-y divide-[#F5ECD7]/10">
             {questions.map((q) => (
               <Link
                 key={q.href}
                 href={q.href}
-                className="px-4 py-2 rounded-full bg-[#3D2418] text-[#F5ECD7] text-sm border border-[#7A8C5E]/40 hover:border-[#C8614A] hover:text-[#E8A838] transition-colors"
+                className="group flex items-center justify-between gap-4 py-4 text-[#F5ECD7]/80 hover:text-[#E8A838] transition-colors"
               >
-                {q.label}
+                <span className="text-base">{q.label}</span>
+                <span className="flex-shrink-0 text-[#C8614A] group-hover:translate-x-1 transition-transform">→</span>
               </Link>
             ))}
           </div>
-          <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl mt-10">
+          <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl mt-10 text-center">
             On y répond, une par une.
           </p>
         </div>
