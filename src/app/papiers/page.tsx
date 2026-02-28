@@ -70,7 +70,7 @@ export default function PapiersPage() {
       </section>
 
       {/* Cards */}
-      <section className="py-28 px-6 bg-white">
+      <section className="py-28 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
           {cards.map((card) =>
             card.href ? (
