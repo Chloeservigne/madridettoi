@@ -40,24 +40,21 @@ const steps = [
     content:
       "Pour le NIE simple (EX-15) : passeport ou carte d'identité (original + copie), formulaire EX-15 rempli, justificatif du motif (bail, contrat de travail, etc.), et la Tasa 790 código 012 (environ 12 €, à payer en banque avant le rendez-vous). Pour le Certificado de Registro : passeport ou carte d'identité, formulaire EX-18, justificatif de résidence (bail), justificatif de ressources ou de travail.",
   },
-  {
-    number: "06",
-    title: "Les délais réels",
-    content:
-      "À Madrid, compte 2 à 6 semaines entre la prise de rendez-vous et le rendez-vous lui-même. Septembre et octobre sont les pires mois — c'est la rentrée des expats, tout le monde cherche un créneau en même temps. Juillet-août est plus calme. Le jour du rendez-vous, la démarche dure 15 à 30 minutes maximum. Pour le Certificado de Registro, tu repars avec le document le jour même. Pour le NIE simple, c'est parfois dans la semaine. Si tu es vraiment pressé(e), certains commissariats en dehors de Madrid (Alcalá de Henares, Getafe) ont des créneaux bien plus disponibles — ça vaut le déplacement.",
-  },
-  {
-    number: "07",
-    title: "Les erreurs fréquentes",
-    content:
-      "Confondre NIE et Certificado de Registro — si tu t'installes durablement, c'est le Certificado qu'il te faut, pas juste le NIE simple. Arriver sans photocopie : les guichets ne font pas de copies sur place, apporte toujours un double de chaque document. Oublier de payer la Tasa 790 avant le rendez-vous — sans le reçu de paiement, tu seras refusé(e). Ne pas apporter de justificatif de motif (bail, contrat de travail). Et enfin : arriver en retard. Les créneaux sont stricts, un retard de 10 minutes et tu perds ton rendez-vous.",
-  },
-  {
-    number: "08",
-    title: "Faut-il parler espagnol ?",
-    content:
-      "Pas indispensable, mais clairement utile. Les agents aux guichets ne parlent généralement ni français ni anglais — la démarche se fait entièrement en espagnol. Les formulaires EX-15 et EX-18 sont en espagnol, mais ils sont simples à remplir avec un peu de vocabulaire de base. Une dizaine de phrases suffisent pour tenir le rendez-vous. Si tu n'es vraiment pas à l'aise, une gestoría (cabinet administratif) gère tout à ta place pour 50 à 150 € — elle prend le rendez-vous, prépare les documents, et t'accompagne parfois le jour J.",
-  },
+];
+
+const delaisStats = [
+  { value: "2 – 6 sem.", label: "d'attente pour un créneau à Madrid" },
+  { value: "15 – 30 min", label: "pour la démarche le jour J" },
+  { value: "Sept – Oct", label: "la période la plus chargée, évite si possible" },
+  { value: "J+0", label: "tu repars avec le Certificado le jour même" },
+];
+
+const erreursFrequentes = [
+  "Confondre NIE simple et Certificado de Registro — si tu t'installes durablement, c'est le Certificado qu'il te faut",
+  "Arriver sans photocopie — les guichets ne font pas de copies sur place",
+  "Oublier de payer la Tasa 790 avant le rendez-vous — sans le reçu, tu seras refusé(e)",
+  "Ne pas apporter de justificatif de motif (bail, contrat de travail, promesse d'embauche)",
+  "Arriver en retard — les créneaux sont stricts, 10 minutes de retard et c'est perdu",
 ];
 
 const checklist = [
@@ -116,7 +113,7 @@ export default function NiePage() {
         </div>
       </section>
 
-      {/* Content */}
+      {/* Content — steps 01 à 05 */}
       <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto space-y-12">
           {steps.map((step) => (
@@ -134,6 +131,75 @@ export default function NiePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Step 06 — Délais : stats visuelles */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex gap-6 mb-10">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
+              <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">06</span>
+            </div>
+            <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] self-center">
+              Les délais réels
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {delaisStats.map((stat) => (
+              <div key={stat.value} className="bg-white rounded-2xl p-5 text-center shadow-sm">
+                <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#C8614A] mb-2">{stat.value}</p>
+                <p className="text-[#5a3e35] text-xs leading-snug">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-[#5a3e35] text-sm mt-6 leading-relaxed">
+            Si tu es pressé(e), les commissariats hors Madrid (Alcalá de Henares, Getafe) ont souvent des créneaux bien plus disponibles — ça vaut le déplacement.
+          </p>
+        </div>
+      </section>
+
+      {/* Step 07 — Erreurs fréquentes : liste ❌ */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex gap-6 mb-10">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
+              <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">07</span>
+            </div>
+            <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] self-center">
+              Les erreurs fréquentes
+            </h2>
+          </div>
+          <div className="flex flex-col gap-3">
+            {erreursFrequentes.map((erreur) => (
+              <div key={erreur} className="flex items-start gap-4 bg-white rounded-2xl px-5 py-4 shadow-sm">
+                <span className="flex-shrink-0 text-lg">❌</span>
+                <p className="text-[#5a3e35] text-sm leading-relaxed">{erreur}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Step 08 — Langue : encadré conseil personnel */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-[#2C1810] rounded-3xl p-8 sm:p-10">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-[#C8614A]/20 flex items-center justify-center">
+                <span className="font-[family-name:var(--font-playfair)] text-[#E8A838] font-bold text-sm">08</span>
+              </div>
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#F5ECD7]">
+                Faut-il parler espagnol ?
+              </h2>
+            </div>
+            <p className="text-[#F5ECD7]/80 leading-relaxed mb-6">
+              Pas indispensable, mais clairement utile. Les agents aux guichets ne parlent généralement ni français ni anglais — la démarche se fait entièrement en espagnol. Les formulaires EX-15 et EX-18 sont en espagnol, mais simples à remplir avec un peu de vocabulaire de base.
+            </p>
+            <p className="font-[family-name:var(--font-playfair)] italic text-[#E8A838] text-lg">
+              Une dizaine de phrases suffisent pour tenir le rendez-vous. Et si vraiment tu n&apos;es pas à l&apos;aise, une gestoría gère tout pour 50 à 150 € — rendez-vous, documents, et parfois accompagnement le jour J.
+            </p>
+          </div>
         </div>
       </section>
 
