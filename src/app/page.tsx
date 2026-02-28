@@ -2,42 +2,48 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
-const reasons = [
+const guides = [
+  {
+    emoji: "🤔",
+    title: "Se décider",
+    description: "Tu hésites encore ? Budget, style de vie, les vraies questions avant de sauter le pas.",
+    href: "/se-decider",
+  },
+  {
+    emoji: "📦",
+    title: "Déménagement",
+    description: "Organiser son départ depuis la France, les étapes dans le bon ordre.",
+    href: "/demenagement",
+  },
+  {
+    emoji: "🏠",
+    title: "Logement",
+    description: "Trouver un appart depuis la France, choisir son quartier, éviter les pièges.",
+    href: "/logement",
+  },
+  {
+    emoji: "📄",
+    title: "Papiers",
+    description: "NIE, sécurité sociale, les démarches admin incontournables expliquées clairement.",
+    href: "/papiers",
+  },
+  {
+    emoji: "💼",
+    title: "Travailler",
+    description: "Remote, recherche d'emploi, freelance — comment gagner sa vie depuis Madrid.",
+    href: "/travailler",
+  },
   {
     emoji: "☀️",
-    title: "300 jours de soleil",
-    description:
-      "Madrid est l'une des capitales européennes les plus ensoleillées. Dis adieu à la grisaille.",
-  },
-  {
-    emoji: "💶",
-    title: "La vie quotidienne, ça reste doux",
-    description:
-      "Les loyers ont augmenté, soyons honnêtes. Mais restaurants, transports, sorties, cafés — le quotidien reste bien plus abordable qu'à Paris.",
-  },
-  {
-    emoji: "🏥",
-    title: "Santé : bien, mais pas magique",
-    description:
-      "Le système public espagnol est de qualité, mais les délais d'attente existent. S'inscrire à la sécu demande des démarches — mieux vaut le savoir avant d'arriver.",
+    title: "Vivre à Madrid",
+    description: "Transports, santé, culture, vie de quartier — se sentir vraiment chez soi.",
+    href: "/vivre",
   },
   {
     emoji: "🤝",
-    title: "Communauté française active",
-    description:
-      "Des milliers de Français vivent déjà à Madrid. Tu ne seras pas seul(e).",
-  },
-  {
-    emoji: "✈️",
-    title: "Paris à 2h15",
-    description:
-      "Les billets Madrid-Paris partent souvent à moins de 50€. La famille reste accessible.",
-  },
-  {
-    emoji: "🎉",
-    title: "Une ville qui vit la nuit",
-    description:
-      "Madrid ne dort jamais. Culture, tapas, musées gratuits le soir, parcs, vie de quartier.",
+    title: "Communauté",
+    description: "Rencontrer des gens, s'intégrer, trouver sa tribu à Madrid.",
+    href: "/communaute",
   },
 ];
 
@@ -105,31 +111,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Reasons */}
+      {/* Guides */}
       <section className="py-24 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
-              Pourquoi Madrid
+              Tous les guides
             </p>
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#2C1810]">
-              Ce que tu vas gagner
+              Par où commencer ?
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {reasons.map((r) => (
-              <div
-                key={r.title}
-                className="p-6 rounded-3xl bg-white shadow-md hover:border-[#C8614A]/30 hover:shadow-lg transition-all group"
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {guides.map((g) => (
+              <Link
+                key={g.href}
+                href={g.href}
+                className="group p-6 rounded-3xl bg-white shadow-sm hover:shadow-md border border-transparent hover:border-[#C8614A]/20 transition-all flex flex-col gap-3"
               >
-                <span className="text-3xl mb-4 block">{r.emoji}</span>
-                <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] mb-2 group-hover:text-[#C8614A] transition-colors">
-                  {r.title}
-                </h3>
-                <p className="text-[#5a3e35]/70 text-sm leading-relaxed">
-                  {r.description}
-                </p>
-              </div>
+                <span className="text-3xl">{g.emoji}</span>
+                <div className="flex-1">
+                  <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] mb-1 group-hover:text-[#C8614A] transition-colors">
+                    {g.title}
+                  </h3>
+                  <p className="text-[#5a3e35]/70 text-sm leading-relaxed">
+                    {g.description}
+                  </p>
+                </div>
+                <span className="text-[#C8614A] text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                  Lire le guide →
+                </span>
+              </Link>
             ))}
           </div>
         </div>
