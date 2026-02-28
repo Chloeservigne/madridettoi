@@ -11,7 +11,7 @@ type BarrioKey =
   | "hortaleza"
   | "carabanchel";
 
-const questions = [
+const questions: { question: string; answers: { label: string; scores: Record<string, number> }[] }[] = [
   {
     question: "Samedi matin à Madrid, t'es plutôt...",
     answers: [
