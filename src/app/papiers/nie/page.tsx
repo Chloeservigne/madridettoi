@@ -181,24 +181,21 @@ export default function NiePage() {
         </div>
       </section>
 
-      {/* Step 08 — Langue : encadré conseil personnel */}
+      {/* Step 08 — Langue */}
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
-          <div className="bg-[#2C1810] rounded-3xl p-8 sm:p-10">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-[#C8614A]/20 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-playfair)] text-[#E8A838] font-bold text-sm">08</span>
-              </div>
-              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#F5ECD7]">
+          <div className="flex gap-6">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
+              <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">08</span>
+            </div>
+            <div>
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] mb-3">
                 Faut-il parler espagnol ?
               </h2>
+              <p className="text-[#5a3e35] leading-relaxed">
+                Pas indispensable, mais clairement utile. Les agents aux guichets ne parlent généralement ni français ni anglais — la démarche se fait entièrement en espagnol. Les formulaires EX-15 et EX-18 sont en espagnol, mais simples à remplir avec un peu de vocabulaire de base. Une dizaine de phrases suffisent pour tenir le rendez-vous. Et si vraiment tu n&apos;es pas à l&apos;aise, une gestoría gère tout pour 50 à 150 € — rendez-vous, documents, et parfois accompagnement le jour J.
+              </p>
             </div>
-            <p className="text-[#F5ECD7]/80 leading-relaxed mb-6">
-              Pas indispensable, mais clairement utile. Les agents aux guichets ne parlent généralement ni français ni anglais — la démarche se fait entièrement en espagnol. Les formulaires EX-15 et EX-18 sont en espagnol, mais simples à remplir avec un peu de vocabulaire de base.
-            </p>
-            <p className="font-[family-name:var(--font-playfair)] italic text-[#E8A838] text-lg">
-              Une dizaine de phrases suffisent pour tenir le rendez-vous. Et si vraiment tu n&apos;es pas à l&apos;aise, une gestoría gère tout pour 50 à 150 € — rendez-vous, documents, et parfois accompagnement le jour J.
-            </p>
           </div>
         </div>
       </section>
