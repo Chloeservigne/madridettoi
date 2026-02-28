@@ -159,24 +159,26 @@ export default function NiePage() {
         </div>
       </section>
 
-      {/* Step 07 — Erreurs fréquentes : liste ❌ */}
+      {/* Step 07 — Erreurs fréquentes */}
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
-          <div className="flex gap-6 mb-10">
+          <div className="flex gap-6">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
               <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">07</span>
             </div>
-            <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] self-center">
-              Les erreurs fréquentes
-            </h2>
-          </div>
-          <div className="bg-white rounded-2xl shadow-sm divide-y divide-[#EDE0C8]">
-            {erreursFrequentes.map((erreur) => (
-              <div key={erreur} className="flex items-start gap-3 px-5 py-3">
-                <span className="flex-shrink-0 text-sm mt-0.5">❌</span>
-                <p className="text-[#5a3e35] text-sm leading-relaxed">{erreur}</p>
-              </div>
-            ))}
+            <div>
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] mb-3">
+                Les erreurs fréquentes
+              </h2>
+              <ul className="text-[#5a3e35] leading-relaxed space-y-2">
+                {erreursFrequentes.map((erreur) => (
+                  <li key={erreur} className="flex items-start gap-2">
+                    <span className="flex-shrink-0 text-[#C8614A] mt-1">—</span>
+                    <span>{erreur}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
