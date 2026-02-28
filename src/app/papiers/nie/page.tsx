@@ -83,25 +83,36 @@ export default function NiePage() {
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
-        <div className="max-w-3xl mx-auto">
-          <Link
-            href="/papiers"
-            className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
-          >
-            ← Retour à Papiers
-          </Link>
-          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
-            Guide administratif
-          </p>
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
-            Le NIE,{" "}
-            <span className="italic text-[#C8614A]">le guide complet</span>
-          </h1>
-          <p className="text-lg text-[#5a3e35] leading-relaxed">
-            Le NIE, tout le monde en parle dès qu&apos;on évoque un déménagement en
-            Espagne. C&apos;est quoi exactement, NIE ou Certificado de Registro,
-            comment prendre un rendez-vous sans devenir fou — on démêle tout.
-          </p>
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex-1">
+            <Link
+              href="/papiers"
+              className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            >
+              ← Retour à Papiers
+            </Link>
+            <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
+              Guide administratif
+            </p>
+            <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
+              Le NIE,{" "}
+              <span className="italic text-[#C8614A]">le guide complet</span>
+            </h1>
+            <p className="text-lg text-[#5a3e35] leading-relaxed">
+              Le NIE, tout le monde en parle dès qu&apos;on évoque un déménagement en
+              Espagne. C&apos;est quoi exactement, NIE ou Certificado de Registro,
+              comment prendre un rendez-vous sans devenir fou — on démêle tout.
+            </p>
+          </div>
+          <div className="flex-shrink-0 w-full max-w-xs lg:max-w-none lg:w-[360px]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/documents.svg"
+              alt="Illustration documents administratifs"
+              width={360}
+              height={360}
+            />
+          </div>
         </div>
       </section>
 
@@ -240,6 +251,9 @@ export default function NiePage() {
         </Link>
         <p className="text-[#F5ECD7]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
+        </p>
+        <p className="text-[#F5ECD7]/20 text-xs mt-2">
+          <a href="https://storyset.com/work" className="hover:text-[#F5ECD7]/40 transition-colors">Work illustrations by Storyset</a>
         </p>
       </footer>
     </div>
