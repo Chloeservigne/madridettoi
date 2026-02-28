@@ -173,7 +173,7 @@ export default function NiePage() {
               <ul className="text-[#5a3e35] leading-relaxed space-y-2">
                 {erreursFrequentes.map((erreur) => (
                   <li key={erreur} className="flex items-start gap-2">
-                    <span className="flex-shrink-0 text-[#C8614A] mt-1">—</span>
+                    <span className="flex-shrink-0 text-[#C8614A] mt-1">✕</span>
                     <span>{erreur}</span>
                   </li>
                 ))}
