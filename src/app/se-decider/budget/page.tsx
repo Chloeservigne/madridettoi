@@ -4,9 +4,9 @@ import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
 export const metadata: Metadata = {
-  title: "Budget de vie réel à Madrid : loyer, courses, restos — Madrid & Toi",
+  title: "Coût de la vie à Madrid : le vrai budget d'un expat français — Madrid & Toi",
   description:
-    "Combien ça coûte vraiment de vivre à Madrid ? Loyer par quartier, courses (Mercadona, Carrefour, Alcampo), menu del día, transports, cigarettes et bière — le vrai budget chiffré.",
+    "Quel est le coût de la vie à Madrid en 2025 ? Loyer par quartier, courses, menu del día, transports, abono — le budget mensuel réel chiffré d'un expat français.",
 };
 
 const loyers = [
@@ -156,8 +156,8 @@ export default function BudgetPage() {
             Avant de partir
           </p>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
-            Combien ça coûte{" "}
-            <span className="italic text-[#C8614A]">vraiment&nbsp;?</span>
+            Le coût de la vie à Madrid —{" "}
+            <span className="italic text-[#C8614A]">chiffres réels&nbsp;2025</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
             Avant de prendre une décision, il faut des chiffres réels. Pas les
