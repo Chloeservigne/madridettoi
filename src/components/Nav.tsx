@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const guideLinks = [
   { label: "Se décider", href: "/se-decider" },
@@ -17,16 +18,32 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [guidesOpen, setGuidesOpen] = useState(false);
   const guidesRef = useRef<HTMLDivElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+
+  // Ferme les menus au changement de route
+  useEffect(() => {
+    setMenuOpen(false);
+    setGuidesOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (guidesRef.current && !guidesRef.current.contains(e.target as Node)) {
         setGuidesOpen(false);
       }
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target as Node)) {
+        setMenuOpen(false);
+      }
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
+
+  const isGuideActive = guideLinks.some((l) => isActive(l.href));
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F5ECD7]/90 backdrop-blur-sm border-b border-[#EDE0C8]">
@@ -42,7 +59,11 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-1">
           <Link
             href="/mon-histoire"
-            className="px-3 py-1.5 text-sm text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-full transition-colors whitespace-nowrap"
+            className={`px-3 py-1.5 text-sm rounded-full transition-colors whitespace-nowrap ${
+              isActive("/mon-histoire")
+                ? "text-[#C8614A] bg-[#EDE0C8] font-semibold"
+                : "text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8]"
+            }`}
           >
             Mon histoire
           </Link>
@@ -51,7 +72,11 @@ export default function Nav() {
           <div ref={guidesRef} className="relative">
             <button
               onClick={() => setGuidesOpen(!guidesOpen)}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-full transition-colors"
+              className={`flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-full transition-colors ${
+                isGuideActive
+                  ? "text-[#C8614A] bg-[#EDE0C8] font-semibold"
+                  : "text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8]"
+              }`}
             >
               Guides
               <span
@@ -115,11 +140,14 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#F5ECD7] border-t border-[#EDE0C8] px-6 py-4 flex flex-col gap-1">
+        <div ref={mobileMenuRef} className="md:hidden bg-[#F5ECD7] border-t border-[#EDE0C8] px-6 py-4 flex flex-col gap-1">
           <Link
             href="/mon-histoire"
-            onClick={() => setMenuOpen(false)}
-            className="py-2 px-3 text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-lg transition-colors text-sm font-medium"
+            className={`py-2 px-3 rounded-lg transition-colors text-sm font-medium ${
+              isActive("/mon-histoire")
+                ? "text-[#C8614A] bg-[#EDE0C8]"
+                : "text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8]"
+            }`}
           >
             Mon histoire
           </Link>
@@ -130,8 +158,11 @@ export default function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="py-2 px-3 text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8] rounded-lg transition-colors text-sm font-medium"
+              className={`py-2 px-3 rounded-lg transition-colors text-sm font-medium ${
+                isActive(link.href)
+                  ? "text-[#C8614A] bg-[#EDE0C8]"
+                  : "text-[#5a3e35] hover:text-[#C8614A] hover:bg-[#EDE0C8]"
+              }`}
             >
               {link.label}
             </Link>
