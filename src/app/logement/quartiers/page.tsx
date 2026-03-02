@@ -161,27 +161,34 @@ export default function QuartiersPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {quartiersCenter.map((q) => (
-              <div
-                key={q.name}
-                className="p-6 rounded-3xl bg-white shadow-md hover:border-[#C8614A]/30 hover:shadow-lg transition-all"
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <div>
-                    <span className="text-2xl mr-2">{q.emoji}</span>
-                    <span className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810]">
-                      {q.name}
-                    </span>
+            {quartiersCenter.map((q) => {
+              const slug = q.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-");
+              return (
+                <Link
+                  key={q.name}
+                  href={`/logement/quartiers/${slug}`}
+                  className="group p-6 rounded-3xl bg-white shadow-md hover:border-[#C8614A]/30 hover:shadow-lg transition-all block"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <span className="text-2xl mr-2">{q.emoji}</span>
+                      <span className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] group-hover:text-[#C8614A] transition-colors">
+                        {q.name}
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <p className="text-[#C8614A] text-sm font-semibold mb-1">{q.vibe}</p>
-                <p className="text-[#7A8C5E] text-xs mb-3">💶 {q.budget}</p>
-                <p className="text-[#5a3e35] text-sm leading-relaxed mb-3">{q.description}</p>
-                <p className="text-xs text-[#2C1810]/50 border-t border-[#EDE0C8] pt-3">
-                  <span className="font-semibold">Idéal pour :</span> {q.forWho}
-                </p>
-              </div>
-            ))}
+                  <p className="text-[#C8614A] text-sm font-semibold mb-1">{q.vibe}</p>
+                  <p className="text-[#7A8C5E] text-xs mb-3">💶 {q.budget}</p>
+                  <p className="text-[#5a3e35] text-sm leading-relaxed mb-3">{q.description}</p>
+                  <p className="text-xs text-[#2C1810]/50 border-t border-[#EDE0C8] pt-3">
+                    <span className="font-semibold">Idéal pour :</span> {q.forWho}
+                  </p>
+                  <p className="text-[#C8614A] text-sm font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Lire le guide →
+                  </p>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
