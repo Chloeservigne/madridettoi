@@ -19,10 +19,10 @@ const cards = [
   },
   {
     emoji: "📦",
-    title: "La logistique du déménagement",
+    title: "Déménagement Paris–Madrid : le guide complet",
     description:
-      "Camion, transport de voiture, affaires à vendre ou stocker, démarches de résiliation en France — le checklist complet.",
-    href: null,
+      "Camion, affaires à emporter ou non, résiliations en France, timing idéal — tout ce qu'il faut savoir pour organiser le trajet.",
+    href: "/demenagement/paris-madrid",
   },
   {
     emoji: "🎒",
