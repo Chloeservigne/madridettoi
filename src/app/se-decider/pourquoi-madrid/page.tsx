@@ -9,51 +9,6 @@ export const metadata: Metadata = {
     "Rythme de vie, gastronomie, climat (avec les nuances qu'il faut), proximité avec la France, les Espagnols — ce qui fait vraiment la différence quand on vit à Madrid.",
 };
 
-const raisons = [
-  {
-    number: "01",
-    title: "Le rythme de vie",
-    content:
-      "C'est probablement la chose qui frappe le plus en arrivant de Paris. À Madrid, personne ne mange à midi pile en regardant son téléphone. Les terrasses se remplissent à toute heure. Les dîners commencent à 21h30, souvent plus tard. Les apéros durent. Les week-ends existent vraiment. Ce n'est pas de la paresse — c'est une autre façon d'organiser le temps, qui laisse de la place aux gens, aux conversations, à la vie qui se passe en dehors du boulot. Après quelques semaines, tu réalises que tu as arrêté de courir.",
-    nuance: null,
-  },
-  {
-    number: "02",
-    title: "La gastronomie",
-    content:
-      "Oh la bouffe espagnole... Les croquetas crémeuses à l'intérieur et croustillantes dehors, la charcuterie — jamón ibérico, chorizo, lomo — qu'on mange debout au comptoir d'un bar, les calamares frits servis dans un petit pain au milieu de la Plaza Mayor. Et puis il y a tout ce qu'on ne connaît pas avant d'arriver. Le cocido madrileño, par exemple — ce ragoût de pois chiches, légumes et viandes mijotés des heures, qui réchauffe les dimanches d'hiver. Mon péché mignon. (Surtout quand c'est la grand-mère de mon copain qui le prépare.) La cuisine espagnole est généreuse, sans chichi, et franchement — elle est bonne.",
-    nuance: null,
-  },
-  {
-    number: "03",
-    title: "La culture",
-    content:
-      "Madrid, c'est trois musées de rang mondial à dix minutes à pied les uns des autres : le Prado, le Reina Sofía, le Thyssen. Des expositions en permanence, une vie culturelle dense, accessible, et souvent moins chère qu'à Paris. Mais ce qui frappe surtout, c'est que les Espagnols sont fiers de leur culture — vraiment fiers, sans arrogance. Le flamenco, la cuisine, les fêtes locales, les traditions de quartier : ce ne sont pas des décors pour touristes, c'est vivant, pratiqué, transmis. On arrive dans un pays qui sait ce qu'il est, et ça se ressent.",
-    nuance: null,
-  },
-  {
-    number: "04",
-    title: "Le climat — avec les nuances qu'il faut",
-    content:
-      "300 jours de soleil par an, c'est réel. La lumière de Madrid est quelque chose de particulier — dorée, franche, elle change l'humeur. Les printemps et les automnes sont magnifiques. Mais il faut être honnête : les étés tapent fort (40°C ne sont pas rares en juillet-août), et l'hiver peut surprendre. Madrid est à 650m d'altitude, les nuits de janvier descendent sous zéro, et il neige — pas souvent, mais ça arrive. Ce n'est pas la Costa del Sol. C'est un vrai climat continental avec ses extrêmes. Ce qu'on gagne vraiment, c'est la lumière et le soleil au quotidien, même en hiver.",
-    nuance: "Ce qu'on ne te dit pas : en août, les Madrilènes partent. La ville se vide, beaucoup de restaurants ferment. C'est plutôt un avantage — calme, moins de monde — mais ne t'attends pas à une ville festive en plein mois d'août.",
-  },
-  {
-    number: "05",
-    title: "La proximité avec la France",
-    content:
-      "Paris-Madrid en avion, c'est 2h de vol. Les vols sont fréquents et souvent pas chers si tu réserves à l'avance. Tu peux rentrer pour un week-end sans que ça devienne une expédition. En train, il y a aussi le Renfe-SNCF direct jusqu'à Barcelone, et de là le reste de la France. Pour ceux qui hésitent à franchir le cap par peur de l'éloignement : Madrid est l'une des capitales européennes les mieux connectées à Paris. On est loin, mais pas si loin.",
-    nuance: null,
-  },
-  {
-    number: "06",
-    title: "L'espagnol et les Espagnols",
-    content:
-      "L'espagnol castillan — celui de Madrid — est une langue claire, bien articulée, accessible. Ce qui est frappant, c'est que les Espagnols transforment peu leur langue : pas de verlan, peu d'argot impénétrable, pas de codes qui excluent. On comprend assez vite, et on progresse vite. En quelques mois, tu passes de la survie à la vraie conversation. Et au-delà de la langue, il y a les gens. Les Espagnols sont chaleureux, directs, accueillants. Ils t'intègrent facilement dans leurs cercles, ils ne font pas la différence entre un voisin de palier et un ami de dix ans pour t'inviter à une fiesta. C'est une culture du lien social qui, venant de Paris, fait un effet saisissant.",
-    nuance: null,
-  },
-];
-
 export default function PourquoiMadridPage() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
@@ -83,36 +38,152 @@ export default function PourquoiMadridPage() {
         </div>
       </section>
 
-      {/* Raisons */}
-      <section className="py-24 px-6 bg-[#F5ECD7]">
-        <div className="max-w-3xl mx-auto space-y-16">
-          {raisons.map((r) => (
-            <div key={r.number} className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">
-                  {r.number}
-                </span>
-              </div>
-              <div className="flex-1">
-                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] mb-3">
-                  {r.title}
-                </h2>
-                <p className="text-[#5a3e35] leading-relaxed">{r.content}</p>
-                {r.nuance && (
-                  <div className="mt-5 p-4 bg-[#EDE0C8] rounded-xl border-l-4 border-[#E8A838]">
-                    <p className="text-[#5a3e35] text-sm leading-relaxed">
-                      <span className="font-semibold text-[#2C1810]">À savoir : </span>
-                      {r.nuance}
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
+      {/* Le rythme de vie */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Le rythme de vie
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            C&apos;est probablement la chose qui frappe le plus en arrivant de
+            Paris. À Madrid, personne ne mange à midi pile en regardant son
+            téléphone. Les terrasses se remplissent à toute heure. Les dîners
+            commencent à 21h30, souvent plus tard. Les apéros durent. Les
+            week-ends existent vraiment.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Ce n&apos;est pas de la paresse — c&apos;est une autre façon
+            d&apos;organiser le temps, qui laisse de la place aux gens, aux
+            conversations, à la vie qui se passe en dehors du boulot. Après
+            quelques semaines, tu réalises que tu as arrêté de courir.
+          </p>
         </div>
       </section>
 
-      {/* Citation */}
+      {/* La gastronomie */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            La gastronomie
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Oh la bouffe espagnole... Les croquetas crémeuses à l&apos;intérieur
+            et croustillantes dehors, la charcuterie — jamón ibérico, chorizo,
+            lomo — qu&apos;on mange debout au comptoir d&apos;un bar, les
+            calamares frits servis dans un petit pain au milieu de la Plaza
+            Mayor.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Et puis il y a tout ce qu&apos;on ne connaît pas avant
+            d&apos;arriver. Le cocido madrileño, par exemple — ce ragoût de
+            pois chiches, légumes et viandes mijotés des heures, qui réchauffe
+            les dimanches d&apos;hiver. La cuisine espagnole est généreuse,
+            sans chichi, et franchement — elle est bonne.
+          </p>
+        </div>
+      </section>
+
+      {/* La culture */}
+      <section className="py-20 px-6 bg-[#2C1810]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-6">
+            La culture
+          </h2>
+          <p className="text-[#F5ECD7]/80 leading-relaxed text-lg">
+            Madrid, c&apos;est trois musées de rang mondial à dix minutes à
+            pied les uns des autres : le Prado, le Reina Sofía, le Thyssen.
+            Des expositions en permanence, une vie culturelle dense, accessible,
+            et souvent moins chère qu&apos;à Paris.
+          </p>
+          <p className="text-[#F5ECD7]/80 leading-relaxed text-lg mt-4">
+            Mais ce qui frappe surtout, c&apos;est que les Espagnols sont fiers
+            de leur culture — vraiment fiers, sans arrogance. Le flamenco, la
+            cuisine, les fêtes locales, les traditions de quartier : ce ne sont
+            pas des décors pour touristes, c&apos;est vivant, pratiqué, transmis.
+          </p>
+          <blockquote className="border-l-4 border-[#E8A838] pl-6 mt-8">
+            <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
+              On arrive dans un pays qui sait ce qu&apos;il est — et ça se
+              ressent dans chaque rue, chaque bar, chaque conversation.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Le climat */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Le climat — avec les nuances qu&apos;il faut
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            300 jours de soleil par an, c&apos;est réel. La lumière de Madrid
+            est quelque chose de particulier — dorée, franche, elle change
+            l&apos;humeur. Les printemps et les automnes sont magnifiques.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Mais il faut être honnête : les étés tapent fort (40°C ne sont pas
+            rares en juillet-août), et l&apos;hiver peut surprendre. Madrid est
+            à 650 m d&apos;altitude, les nuits de janvier descendent sous zéro,
+            et il neige. Ce n&apos;est pas la Costa del Sol. C&apos;est un vrai
+            climat continental avec ses extrêmes.
+          </p>
+          <div className="mt-6 p-4 bg-[#EDE0C8] rounded-xl border-l-4 border-[#E8A838]">
+            <p className="text-[#5a3e35] text-sm leading-relaxed">
+              <span className="font-semibold text-[#2C1810]">À savoir : </span>
+              En août, les Madrilènes partent. La ville se vide, beaucoup de
+              restaurants ferment. C&apos;est plutôt un avantage — calme, moins
+              de monde — mais ne t&apos;attends pas à une ville festive en plein
+              mois d&apos;août.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* La proximité avec la France */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            La proximité avec la France
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Paris-Madrid en avion, c&apos;est 2h de vol. Les vols sont fréquents
+            et souvent pas chers si tu réserves à l&apos;avance. Tu peux rentrer
+            pour un week-end sans que ça devienne une expédition.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Pour ceux qui hésitent à franchir le cap par peur de
+            l&apos;éloignement : Madrid est l&apos;une des capitales européennes
+            les mieux connectées à Paris. On est loin — mais pas si loin.
+          </p>
+        </div>
+      </section>
+
+      {/* L'espagnol et les Espagnols */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            L&apos;espagnol et les Espagnols
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            L&apos;espagnol castillan — celui de Madrid — est une langue claire,
+            bien articulée, accessible. Ce qui est frappant, c&apos;est que les
+            Espagnols transforment peu leur langue : pas de verlan, peu
+            d&apos;argot impénétrable. On comprend assez vite, et on progresse
+            vite.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Et au-delà de la langue, il y a les gens. Les Espagnols sont
+            chaleureux, directs, accueillants. Ils t&apos;intègrent facilement
+            dans leurs cercles, ils ne font pas la différence entre un voisin
+            de palier et un ami de dix ans pour t&apos;inviter à une fiesta.
+            C&apos;est une culture du lien social qui, venant de Paris, fait
+            un effet saisissant.
+          </p>
+        </div>
+      </section>
+
+      {/* Ce qu'on ne peut pas expliquer */}
       <section className="py-16 px-6 bg-[#2C1810]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-2xl mb-4">
@@ -138,25 +209,25 @@ export default function PourquoiMadridPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
               Quel quartier choisir ?
             </Link>
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
               Trouver un appartement
             </Link>
             <Link
               href="/mon-histoire"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
               Mon histoire
             </Link>

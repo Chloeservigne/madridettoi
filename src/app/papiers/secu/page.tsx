@@ -9,45 +9,6 @@ export const metadata: Metadata = {
     "Santé publique, tarjeta sanitaria, médecin généraliste, mutuelle privée... Comment accéder aux soins en Espagne quand on arrive de France ?",
 };
 
-const steps = [
-  {
-    number: "01",
-    title: "Le système de santé espagnol en bref",
-    content:
-      "L'Espagne dispose d'un système de santé public universel (Sistema Nacional de Salud) financé par les cotisations sociales et l'impôt. La qualité des soins est bonne — l'Espagne est régulièrement classée parmi les meilleurs systèmes de santé en Europe. Mais contrairement à la France, tout ne passe pas par la Sécu : l'accès aux soins dépend beaucoup de ta situation (salarié, indépendant, sans emploi, étudiant).",
-  },
-  {
-    number: "02",
-    title: "La tarjeta sanitaria : le sésame",
-    content:
-      "C'est l'équivalent de ta carte vitale. Elle s'appelle tarjeta sanitaria individual (TSI) et te permet d'accéder aux soins publics gratuitement ou à coût réduit. Pour l'obtenir, il faut être inscrit à la sécurité sociale espagnole (Seguridad Social) — via un contrat de travail, le statut d'autónomo (indépendant), ou l'inscription sur les listes de chômage. Elle est délivrée par le centre de santé de ton quartier (centro de salud).",
-  },
-  {
-    number: "03",
-    title: "Si tu arrives avec un contrat de travail",
-    content:
-      "C'est le cas le plus simple. Ton employeur t'inscrit automatiquement à la Seguridad Social. Dès que tu es affilié, tu peux aller dans le centro de salud de ton quartier avec ton NIE et ton numéro de sécurité sociale pour obtenir ta tarjeta sanitaria. Délai : quelques jours à 2 semaines.",
-  },
-  {
-    number: "04",
-    title: "Si tu es indépendant (autónomo) ou sans emploi",
-    content:
-      "En tant qu'autónomo, tu cotises toi-même à la Seguridad Social (cotisation minimale d'environ 230-290 €/mois en 2024) et tu as accès aux soins publics. Si tu arrives sans emploi et sans statut, l'accès au système public peut être limité — c'est une zone grise. Dans ce cas, beaucoup d'expats optent pour une mutuelle privée (Adeslas, Sanitas, Asisa) le temps de régulariser leur situation, à partir de 40-80 €/mois.",
-  },
-  {
-    number: "05",
-    title: "Le médecin généraliste (médico de cabecera)",
-    content:
-      "Une fois ta tarjeta obtenue, tu es rattaché à un centro de salud et un médecin généraliste. Pour consulter un spécialiste, il faut passer par le généraliste (système de référence). Les délais peuvent être longs pour certaines spécialités. Beaucoup d'expats choisissent une mutuelle privée en complément pour accéder aux spécialistes directement et sans attente.",
-  },
-  {
-    number: "06",
-    title: "Les médicaments",
-    content:
-      "Les médicaments sur ordonnance sont remboursés partiellement par la Seguridad Social (entre 40 et 90 % selon ta situation et tes revenus). Les ordonnances françaises ne sont généralement pas acceptées en Espagne — il faut un médecin espagnol. Pour les médicaments courants, les pharmacies espagnoles sont nombreuses et souvent plus accessibles qu'en France pour l'automédication.",
-  },
-];
-
 export default function SecuPage() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
@@ -71,65 +32,168 @@ export default function SecuPage() {
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
             Accéder aux soins quand on arrive dans un nouveau pays, c&apos;est
-            souvent la grande inconnue. On t&apos;explique le système espagnol pas à
-            pas, pour que tu ne sois pas pris au dépourvu.
+            souvent la grande inconnue. On t&apos;explique le système espagnol,
+            pour que tu ne sois pas pris au dépourvu.
           </p>
         </div>
       </section>
 
-      {/* Content */}
-      <section className="py-24 px-6 bg-[#F5ECD7]">
-        <div className="max-w-3xl mx-auto space-y-12">
-          {steps.map((step) => (
-            <div key={step.number} className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">
-                  {step.number}
-                </span>
-              </div>
-              <div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] mb-3">
-                  {step.title}
-                </h2>
-                <p className="text-[#5a3e35] leading-relaxed">{step.content}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Tip block */}
-      <section className="py-16 px-6 bg-[#2C1810]">
+      {/* Le système */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-2xl mb-4">
-            Notre conseil en une phrase
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Le système de santé espagnol en bref
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            L&apos;Espagne dispose d&apos;un système de santé public universel
+            (Sistema Nacional de Salud) financé par les cotisations sociales et
+            l&apos;impôt. La qualité des soins est bonne — l&apos;Espagne est
+            régulièrement classée parmi les meilleurs systèmes de santé en
+            Europe.
           </p>
-          <p className="text-[#F5ECD7] text-lg leading-relaxed">
-            Prends une mutuelle privée le temps de te régulariser si tu arrives
-            sans statut clair — c&apos;est 50 à 80 €/mois pour avoir accès à un
-            médecin sans attendre. Une fois inscrit à la Seguridad Social, tu
-            pourras décider si tu la gardes en complément.
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Mais contrairement à la France, tout ne passe pas par la Sécu :
+            l&apos;accès aux soins dépend beaucoup de ta situation — salarié,
+            indépendant, sans emploi, étudiant. Le point d&apos;entrée, dans
+            tous les cas, c&apos;est la <strong>tarjeta sanitaria</strong>.
           </p>
+        </div>
+      </section>
+
+      {/* La tarjeta */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            La tarjeta sanitaria : le sésame
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            C&apos;est l&apos;équivalent de ta carte vitale. Elle s&apos;appelle{" "}
+            <em>tarjeta sanitaria individual</em> (TSI) et te permet
+            d&apos;accéder aux soins publics gratuitement ou à coût réduit.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Pour l&apos;obtenir, il faut être inscrit à la sécurité sociale
+            espagnole (Seguridad Social) — via un contrat de travail, le statut
+            d&apos;autónomo (indépendant), ou l&apos;inscription sur les listes
+            de chômage. Elle est délivrée par le centre de santé de ton quartier
+            (<em>centro de salud</em>).
+          </p>
+        </div>
+      </section>
+
+      {/* Selon ta situation */}
+      <section className="py-20 px-6 bg-[#2C1810]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-8">
+            Selon ta situation
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-white/10 rounded-2xl p-5">
+              <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-3">
+                Tu arrives avec un contrat
+              </p>
+              <p className="text-[#F5ECD7]/80 text-sm leading-relaxed">
+                Ton employeur t&apos;inscrit automatiquement à la Seguridad
+                Social. Dès que tu es affilié, tu vas au <em>centro de salud</em>{" "}
+                de ton quartier avec ton NIE et ton numéro de sécurité sociale.
+                Délai : quelques jours à 2 semaines.
+              </p>
+            </div>
+            <div className="bg-white/10 rounded-2xl p-5">
+              <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-3">
+                Tu es autónomo ou sans emploi
+              </p>
+              <p className="text-[#F5ECD7]/80 text-sm leading-relaxed">
+                En tant qu&apos;autónomo, tu cotises toi-même (~230–290 €/mois)
+                et tu accèdes aux soins publics. Sans statut, l&apos;accès peut
+                être limité. Beaucoup d&apos;expats prennent une mutuelle privée
+                (Adeslas, Sanitas, Asisa) le temps de régulariser — à partir de
+                40–80 €/mois.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Médecin généraliste */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Le médecin généraliste
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Une fois ta tarjeta obtenue, tu es rattaché à un{" "}
+            <em>centro de salud</em> et un médecin généraliste (
+            <em>médico de cabecera</em>). Pour consulter un spécialiste, il
+            faut passer par lui — c&apos;est un système de référence. Les délais
+            peuvent être longs pour certaines spécialités.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Beaucoup d&apos;expats choisissent une mutuelle privée en complément
+            pour accéder aux spécialistes directement et sans attente.
+            C&apos;est souvent le bon équilibre : santé publique pour le
+            quotidien, privé pour les urgences non urgentes.
+          </p>
+        </div>
+      </section>
+
+      {/* Médicaments */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Les médicaments
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Les médicaments sur ordonnance sont remboursés partiellement par la
+            Seguridad Social (entre 40 et 90 % selon ta situation et tes
+            revenus). Les ordonnances françaises ne sont généralement pas
+            acceptées en Espagne — il faut un médecin espagnol.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Pour les médicaments courants, les pharmacies espagnoles sont
+            nombreuses et souvent plus accessibles qu&apos;en France pour
+            l&apos;automédication.
+          </p>
+          <blockquote className="border-l-4 border-[#C8614A] pl-6 mt-8">
+            <p className="text-[#5a3e35] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
+              Prends une mutuelle privée le temps de te régulariser si tu
+              arrives sans statut clair — c&apos;est 50 à 80 €/mois pour avoir
+              accès à un médecin sans attendre. Une fois inscrit à la Seguridad
+              Social, tu pourras décider si tu la gardes en complément.
+            </p>
+          </blockquote>
         </div>
       </section>
 
       {/* Other guides */}
-      <section className="py-16 px-6 bg-[#EDE0C8]">
+      <section className="py-16 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#5a3e35] font-semibold uppercase tracking-widest text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link
+              href="/logement/appartement"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
               Trouver un appartement depuis la France
             </Link>
-            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link
+              href="/papiers/nie"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
               Faut-il un NIE avant d&apos;arriver ?
             </Link>
-            <Link href="/logement/quartiers" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link
+              href="/logement/quartiers"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
               Les quartiers les plus sympa pour les expats
             </Link>
-            <Link href="/travailler/remote" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link
+              href="/travailler/remote"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
               Travailler en remote depuis Madrid
             </Link>
           </div>
