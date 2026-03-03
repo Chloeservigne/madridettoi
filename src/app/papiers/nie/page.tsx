@@ -189,7 +189,7 @@ export default function NiePage() {
                 </p>
                 <div className="flex flex-wrap gap-3 mt-4">
                   <a
-                    href="https://extranjeros.inclusion.gob.es/ficheros/Modelos_solicitudes/mod_solicitudes2/15-Formulario_NIE_y_certificados.pdf"
+                    href="https://www.inclusion.gob.es/documents/410169/2156469/15-Formulario_NIE_y_certificados.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-[#F5ECD7] text-sm font-semibold hover:bg-white/20 transition-colors"
@@ -197,7 +197,7 @@ export default function NiePage() {
                     Formulaire EX-15 ↗
                   </a>
                   <a
-                    href="https://extranjeros.inclusion.gob.es/ficheros/Modelos_solicitudes/mod_solicitudes2/18-Certificado_registro_ciudadano_UE.pdf"
+                    href="https://www.inclusion.gob.es/documents/410169/2156469/18-Certificado_residencia_comunitaria.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-[#F5ECD7] text-sm font-semibold hover:bg-white/20 transition-colors"
