@@ -377,6 +377,12 @@ export default function NiePage() {
               Trouver un appartement depuis la France
             </Link>
             <Link
+              href="/papiers/padron"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
+              L&apos;empadronamiento — l&apos;étape d&apos;après
+            </Link>
+            <Link
               href="/logement/quartiers"
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >

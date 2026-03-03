@@ -18,6 +18,13 @@ const cards = [
     href: "/papiers/nie",
   },
   {
+    emoji: "🏠",
+    title: "L'empadronamiento",
+    description:
+      "L'inscription au registre municipal de Madrid. Obligatoire pour accéder aux soins, scolariser ses enfants et obtenir son NIE définitif. La démarche que tout le monde oublie.",
+    href: "/papiers/padron",
+  },
+  {
     emoji: "🏥",
     title: "La sécu en Espagne",
     description:
