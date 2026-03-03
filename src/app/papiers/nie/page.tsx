@@ -163,7 +163,7 @@ export default function NiePage() {
                   s&apos;ouvrent le <strong className="text-[#F5ECD7]">lundi à 8h pile</strong>.
                 </p>
                 <a
-                  href="https://sede.administracionespublicas.gob.es/icpplus/"
+                  href="https://icp.administracionelectronica.gob.es/icpplus/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#C8614A] text-white text-sm font-semibold hover:bg-[#A84D3A] transition-colors"
