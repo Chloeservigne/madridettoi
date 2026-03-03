@@ -105,7 +105,10 @@ export default function SalamancaPage() {
             <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
               Salamanca, c&apos;est Madrid — mais une version très policée de Madrid.
               Pas moins bien, juste différent. Si tu viens pour l&apos;aventure
-              et l&apos;immersion, regarde d&apos;abord Malasaña ou La Latina.
+              et l&apos;immersion, regarde d&apos;abord{" "}
+              <Link href="/logement/quartiers/malasana" className="underline underline-offset-2 hover:opacity-80 transition-opacity">Malasaña</Link>{" "}
+              ou{" "}
+              <Link href="/logement/quartiers/la-latina" className="underline underline-offset-2 hover:opacity-80 transition-opacity">La Latina</Link>.
             </p>
           </blockquote>
         </div>

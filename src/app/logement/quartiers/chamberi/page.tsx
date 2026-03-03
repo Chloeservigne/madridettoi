@@ -85,8 +85,8 @@ export default function ChamberiPage() {
           <p className="text-[#5a3e35] leading-relaxed">
             Dans la fourchette haute du centre — reflet de la qualité de vie.
             Mais les appartements sont souvent plus grands et mieux finis
-            qu&apos;à Malasaña pour un budget équivalent. Le marché est moins
-            tendu qu&apos;à Chueca, et les biens restent un peu plus longtemps
+            qu&apos;à <Link href="/logement/quartiers/malasana" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Malasaña</Link> pour un budget équivalent. Le marché est moins
+            tendu qu&apos;à <Link href="/logement/quartiers/chueca" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Chueca</Link>, et les biens restent un peu plus longtemps
             disponibles.
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function ChamberiPage() {
             Chamberí est traversé par plusieurs lignes de métro — Iglesia,
             Bilbao, Quevedo, Alonso Cano. Proche du Paseo de la Castellana,
             tout le nord de Madrid est facilement accessible. Les espaces
-            verts sont plus présents qu&apos;à Malasaña, les rues plus larges,
+            verts sont plus présents qu&apos;à <Link href="/logement/quartiers/malasana" className="text-[#F5ECD7]/80 underline underline-offset-2 hover:text-[#F5ECD7] transition-colors">Malasaña</Link>, les rues plus larges,
             le bruit moins présent.
           </p>
           <blockquote className="border-l-4 border-[#E8A838] pl-6 mt-8">

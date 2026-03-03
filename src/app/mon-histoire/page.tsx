@@ -90,7 +90,7 @@ export default function MonHistoirePage() {
                 className="float-right ml-8 mb-2"
               />
               <p className="font-[family-name:var(--font-playfair)] text-2xl italic text-[#2C1810] leading-relaxed">
-                1er septembre 2020. Deux valises, une coloc de 6 à Malasaña —
+                1er septembre 2020. Deux valises, une coloc de 6 à <Link href="/logement/quartiers/malasana" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Malasaña</Link> —
                 un mélange improbable de nationalités. Et une sensation
                 immédiate, inexplicable, d&apos;être exactement là où je devais être.
               </p>

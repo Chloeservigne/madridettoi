@@ -15,30 +15,43 @@ const loyers = [
     prix: "1 300 – 1 400 €",
     pour: "En plein cœur de la fête, tout à pied",
     contre: "Bruyant, peu de verdure, cher",
+    liens: [
+      { label: "Guide Malasaña", href: "/logement/quartiers/malasana" },
+      { label: "Guide Chueca", href: "/logement/quartiers/chueca" },
+    ],
   },
   {
     quartier: "Chamberí / Salamanca",
     prix: "1 200 – 1 350 €",
     pour: "Bobo chic, calme relatif, bien desservi",
     contre: "Moins animé le soir, prix en hausse",
+    liens: [
+      { label: "Guide Chamberí", href: "/logement/quartiers/chamberi" },
+      { label: "Guide Salamanca", href: "/logement/quartiers/salamanca" },
+    ],
   },
   {
     quartier: "Tetuán / Lavapiés",
     prix: "900 – 1 100 €",
     pour: "Jeune, cosmopolite, bon rapport qualité-prix",
     contre: "Gentrification rapide, peut surprendre au départ",
+    liens: [
+      { label: "Guide Lavapiés", href: "/logement/quartiers/lavapies" },
+    ],
   },
   {
     quartier: "Carabanchel / Vallecas",
     prix: "750 – 950 €",
     pour: "Vrai Madrid populaire, loyers encore abordables",
     contre: "Plus loin du centre, moins de services en français",
+    liens: [],
   },
   {
     quartier: "Hortaleza / Arturo Soria",
     prix: "800 – 1 050 €",
     pour: "Calme, pavillonnaire, parfait en famille",
     contre: "Transports moins fréquents, voiture souvent utile",
+    liens: [],
   },
 ];
 
@@ -209,6 +222,15 @@ export default function BudgetPage() {
                     {item.contre}
                   </span>
                 </div>
+                {item.liens.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-3">
+                    {item.liens.map((lien) => (
+                      <Link key={lien.href} href={lien.href} className="text-xs text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                        {lien.label} →
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>

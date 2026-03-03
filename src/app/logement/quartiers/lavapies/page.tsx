@@ -104,7 +104,8 @@ export default function LavapiesPage() {
           </p>
           <blockquote className="border-l-4 border-[#E8A838] pl-6 mt-8">
             <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
-              Dans cinq ans, Lavapiés ressemblera peut-être à Malasaña.
+              Dans cinq ans, Lavapiés ressemblera peut-être à{" "}
+              <Link href="/logement/quartiers/malasana" className="underline underline-offset-2 hover:opacity-80 transition-opacity">Malasaña</Link>.
               Ce n&apos;est pas une raison pour ne pas y aller — c&apos;est une raison
               pour ne pas attendre.
             </p>
