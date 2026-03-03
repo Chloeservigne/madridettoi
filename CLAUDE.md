@@ -68,6 +68,7 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 ### `/se-decider`
 - `/se-decider/pourquoi-madrid` — éditorial, 6 raisons
 - `/se-decider/budget` — coût de la vie, tableau loyers par quartier
+- `/se-decider/salaire-madrid` — SMI, salaire moyen, par secteur, brut/net, comparaison Paris–Madrid
 
 ### `/logement`
 - `/logement/appartement` — processus (étapes numérotées, garder)
@@ -82,6 +83,8 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 ### `/papiers`
 - `/papiers/nie` — mixte : contexte éditorial + 4 vraies étapes numérotées + liens formulaires officiels
 - `/papiers/secu` — éditorial
+- `/papiers/padron` — mixte : éditorial + 3 étapes numérotées
+- `/papiers/compte-bancaire` — mixte : éditorial + 3 étapes numérotées
 
 ### `/travailler`
 - `/travailler/remote` — éditorial
@@ -115,6 +118,4 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 
 - `/travailler/emploi`, `/travailler/freelance`
 - `/logement/prix`, `/logement/longue-duree`
-- `/papiers/padron`, `/papiers/compte-bancaire`
 - `/vivre/transports`, `/vivre/sante`
-- `/se-decider/salaire-madrid`

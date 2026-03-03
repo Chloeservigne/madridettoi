@@ -36,7 +36,7 @@ const cards = [
     title: "Ouvrir un compte bancaire espagnol",
     description:
       "BBVA, Santander, CaixaBank, Revolut — les options, les délais, ce qu'il faut comme documents, et si tu peux attendre pour l'ouvrir.",
-    href: null,
+    href: "/papiers/compte-bancaire",
   },
   {
     emoji: "💰",
