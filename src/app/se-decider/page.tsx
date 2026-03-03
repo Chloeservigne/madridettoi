@@ -32,6 +32,13 @@ const cards = [
     href: "/se-decider/budget",
   },
   {
+    emoji: "💰",
+    title: "Combien gagne-t-on à Madrid ?",
+    description:
+      "SMI, salaire moyen, salaires par secteur, et la comparaison Paris–Madrid qui change tout. Ce qu'on touche vraiment une fois les charges déduites.",
+    href: "/se-decider/salaire-madrid",
+  },
+  {
     emoji: "🗣️",
     title: "Ils l'ont fait : témoignages d'expats",
     description:
