@@ -9,39 +9,6 @@ export const metadata: Metadata = {
     "Malasaña est le quartier préféré des Français à Madrid. Ambiance, loyers, vie de quartier, pour qui c'est fait — tout ce qu'il faut savoir avant de s'y installer.",
 };
 
-const sections = [
-  {
-    number: "01",
-    title: "L'ambiance",
-    content:
-      "Malasaña, c'est le quartier bohème de Madrid. Cafés indépendants, vintage shops, street art, terrasses animées jusqu'au bout de la nuit. L'atmosphère rappelle un peu le Marais ou Oberkampf — mais en plus détendu, moins cher, et avec du soleil. C'est le quartier où beaucoup de Français atterrissent en premier, et souvent restent.",
-  },
-  {
-    number: "02",
-    title: "Les loyers",
-    content:
-      "C'est l'un des quartiers les plus recherchés du centre, et les prix s'en ressentent. Compte 900 à 1 200 € pour un studio, 1 100 à 1 500 € pour un appartement d'une chambre. Les colocations restent une option populaire, autour de 500 à 700 € par chambre. Les prix ont fortement augmenté depuis 2020 et continuent de monter.",
-  },
-  {
-    number: "03",
-    title: "La vie pratique",
-    content:
-      "Malasaña est traversé par plusieurs lignes de métro (Tribunal, San Bernardo, Noviciado, Bilbao). Tout se fait à pied : supermarchés, pharmacies, marchés. Le Mercado de los Mostenses est proche pour les courses. Le quartier est dense et animé — si tu cherches le calme, c'est peut-être trop central.",
-  },
-  {
-    number: "04",
-    title: "La communauté française",
-    content:
-      "C'est ici que vit la grande majorité des Français fraîchement installés à Madrid. Tu croiseras des compatriotes dans les cafés, les bars, les coworkings. C'est rassurant au début — mais certains expats finissent par partir vers des quartiers moins francophones pour s'immerger davantage dans la vie madrilène.",
-  },
-  {
-    number: "05",
-    title: "Pour qui c'est fait ?",
-    content:
-      "Malasaña convient parfaitement aux jeunes actifs, aux digital nomads, aux créatifs et à ceux qui veulent une vie sociale intense dès leur arrivée. C'est moins adapté aux familles avec enfants (peu d'espaces verts) ou à ceux qui recherchent le calme.",
-  },
-];
-
 const autresQuartiers = [
   { name: "Chueca", href: "/logement/quartiers/chueca", emoji: "🏳️‍🌈" },
   { name: "La Latina", href: "/logement/quartiers/la-latina", emoji: "🍷" },
@@ -68,7 +35,7 @@ export default function MalasanaPage() {
             🎨 Quartier Malasaña
           </p>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
-            Vivre à Malasaña —{" "}
+            Malasaña —{" "}
             <span className="italic text-[#C8614A]">le quartier des Français à Madrid</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
@@ -76,7 +43,7 @@ export default function MalasanaPage() {
             où les expats français posent leurs valises. Voici pourquoi — et dans
             quels cas il vaut mieux regarder ailleurs.
           </p>
-          <div className="flex flex-wrap gap-3 mt-6">
+          <div className="flex flex-wrap gap-3 mt-8">
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Bohème & branché</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">💶 1 100 – 1 500 € / mois</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Jeunes actifs · Digital nomads</span>
@@ -84,40 +51,129 @@ export default function MalasanaPage() {
         </div>
       </section>
 
-      {/* Content */}
-      <section className="py-24 px-6 bg-[#F5ECD7]">
-        <div className="max-w-3xl mx-auto space-y-12">
-          {sections.map((section) => (
-            <div key={section.number} className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">
-                  {section.number}
-                </span>
-              </div>
-              <div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] mb-3">
-                  {section.title}
-                </h2>
-                <p className="text-[#5a3e35] leading-relaxed">{section.content}</p>
-              </div>
-            </div>
-          ))}
+      {/* L'ambiance */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            L&apos;ambiance
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Malasaña, c&apos;est le quartier bohème de Madrid. Cafés indépendants,
+            vintage shops, street art, terrasses animées jusqu&apos;au bout de la nuit.
+            L&apos;atmosphère rappelle un peu le Marais ou Oberkampf — mais en plus
+            détendu, moins cher, et avec du soleil.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            C&apos;est le quartier où beaucoup de Français atterrissent en premier, et
+            souvent restent. La Plaza del Dos de Mayo en est le cœur battant :
+            terrasses ouvertes toute l&apos;année, enfants qui jouent, voisins qui
+            se retrouvent. Un vrai quartier de vie.
+          </p>
         </div>
       </section>
 
-      {/* Tip */}
-      <section className="py-16 px-6 bg-[#2C1810]">
+      {/* Les loyers */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-2xl mb-4">
-            Notre avis honnête
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Les loyers
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">900 – 1 200 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">Studio</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">1 100 – 1 500 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">1 chambre</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">500 – 700 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">Coloc (par chambre)</p>
+            </div>
+          </div>
+          <p className="text-[#5a3e35] leading-relaxed">
+            C&apos;est l&apos;un des quartiers les plus recherchés du centre, et les prix
+            s&apos;en ressentent. Ils ont fortement augmenté depuis 2020 et continuent
+            de monter. La colocation reste une option populaire pour démarrer
+            sans trop s&apos;engager financièrement.
           </p>
-          <p className="text-[#F5ECD7] text-lg leading-relaxed">
-            Malasaña est un excellent point de chute pour démarrer. Mais après 6 mois,
-            beaucoup de gens ont envie d&apos;autre chose — plus de calme, plus d&apos;espagnol
-            autour d&apos;eux, moins de touristes. Ce n&apos;est pas un défaut, c&apos;est juste
-            l&apos;évolution naturelle. Si tu arrives pour la première fois, c&apos;est
-            probablement le bon endroit pour commencer.
+        </div>
+      </section>
+
+      {/* Vie pratique */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            La vie pratique
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Malasaña est traversé par plusieurs lignes de métro — Tribunal,
+            San Bernardo, Noviciado, Bilbao. Tout se fait à pied : supermarchés,
+            pharmacies, marchés. Le Mercado de los Mostenses est proche pour
+            les courses.
           </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Le quartier est dense et animé. Si tu cherches le calme et les espaces
+            verts, c&apos;est peut-être trop central — regarde alors du côté de{" "}
+            <Link href="/logement/quartiers/chamberi" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Chamberí
+            </Link>{" "}
+            ou{" "}
+            <Link href="/logement/quartiers/la-latina" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              La Latina
+            </Link>.
+          </p>
+        </div>
+      </section>
+
+      {/* Communauté française */}
+      <section className="py-20 px-6 bg-[#2C1810]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-6">
+            La communauté française
+          </h2>
+          <p className="text-[#F5ECD7]/80 leading-relaxed text-lg">
+            C&apos;est ici que vit la grande majorité des Français fraîchement installés
+            à Madrid. Tu croiseras des compatriotes dans les cafés, les bars, les
+            coworkings. C&apos;est rassurant au début.
+          </p>
+          <blockquote className="border-l-4 border-[#E8A838] pl-6 mt-8">
+            <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
+              Après 6 mois, beaucoup de gens ont envie d&apos;autre chose — plus de
+              calme, plus d&apos;espagnol autour d&apos;eux, moins de touristes. Ce n&apos;est pas
+              un défaut, c&apos;est l&apos;évolution naturelle.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Pour qui */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-8">
+            Pour qui c&apos;est fait ?
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-[#7A8C5E]/10 rounded-2xl p-5">
+              <p className="text-[#7A8C5E] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
+              <ul className="space-y-2 text-[#5a3e35] text-sm">
+                <li>✓ Jeune actif qui arrive seul(e)</li>
+                <li>✓ Digital nomad ou freelance</li>
+                <li>✓ En recherche d&apos;une vie sociale rapide</li>
+                <li>✓ Créatif, curieux, ouvert</li>
+              </ul>
+            </div>
+            <div className="bg-[#C8614A]/10 rounded-2xl p-5">
+              <p className="text-[#C8614A] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
+              <ul className="space-y-2 text-[#5a3e35] text-sm">
+                <li>✗ Tu as des enfants (peu d&apos;espaces verts)</li>
+                <li>✗ Tu cherches le calme</li>
+                <li>✗ Ton budget est serré</li>
+                <li>✗ Tu veux fuir les Français</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

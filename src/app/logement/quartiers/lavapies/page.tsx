@@ -9,39 +9,6 @@ export const metadata: Metadata = {
     "Lavapiés est le quartier le plus multiculturel de Madrid. Abordable, alternatif, artistique — pour ceux qui veulent Madrid sans les prix du centre.",
 };
 
-const sections = [
-  {
-    number: "01",
-    title: "L'ambiance",
-    content:
-      "Lavapiés est le quartier le plus cosmopolite de Madrid : communautés indienne, africaine, asiatique, latino-américaine et espagnole cohabitent dans un espace dense et vivant. C'est aussi le quartier le plus militant de Madrid — street art partout, collectifs culturels, programmation alternative. Une énergie unique, brute et authentique.",
-  },
-  {
-    number: "02",
-    title: "Les loyers",
-    content:
-      "Lavapiés reste l'un des quartiers les plus abordables du centre de Madrid. Compte 700 à 950 € pour un studio, 800 à 1 100 € pour un appartement d'une chambre. L'accessibilité des prix attire de plus en plus de monde, et les loyers augmentent — mais le quartier reste nettement moins cher que Malasaña pour un emplacement central similaire.",
-  },
-  {
-    number: "03",
-    title: "La vie pratique",
-    content:
-      "La station de métro Lavapiés (ligne 3) est au cœur du quartier. Tout est accessible à pied depuis le centre. Le quartier est dense et les commerces sont nombreux, souvent tenus par des communautés étrangères : épiceries asiatiques, restaurants indiens, boucheries halal. Le Mercado de San Fernando est une bonne option pour les produits frais.",
-  },
-  {
-    number: "04",
-    title: "Culture et vie alternative",
-    content:
-      "Lavapiés abrite une concentration exceptionnelle de lieux culturels alternatifs : salles de concert indépendantes, galeries d'art, cinémas d'auteur, espaces de coworking associatifs. Le Museo Reina Sofía est à deux pas. C'est le quartier où Madrid est le plus créatif et le moins commercial.",
-  },
-  {
-    number: "05",
-    title: "Pour qui c'est fait ?",
-    content:
-      "Lavapiés convient parfaitement aux profils créatifs, aux esprits curieux, et à ceux qui ont un budget limité mais refusent de s'exiler loin du centre. C'est aussi un excellent choix si tu veux apprendre l'espagnol au contact de vrais Madrilènes — ici, personne ne te répondra en anglais.",
-  },
-];
-
 const autresQuartiers = [
   { name: "Malasaña", href: "/logement/quartiers/malasana", emoji: "🎨" },
   { name: "Chueca", href: "/logement/quartiers/chueca", emoji: "🏳️‍🌈" },
@@ -58,25 +25,20 @@ export default function LavapiesPage() {
       {/* Hero */}
       <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
-          <Link
-            href="/logement/quartiers"
-            className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
-          >
+          <Link href="/logement/quartiers" className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all">
             ← Tous les quartiers
           </Link>
-          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
-            🌍 Quartier Lavapiés
-          </p>
+          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">🌍 Quartier Lavapiés</p>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
-            Vivre à Lavapiés —{" "}
+            Lavapiés —{" "}
             <span className="italic text-[#C8614A]">multiculturel, alternatif, abordable</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
             Le quartier le plus cosmopolite de Madrid. Brut, créatif, avec les
-            loyers les plus bas du centre — et une énergie qu&apos;on ne trouve nulle
-            part ailleurs.
+            loyers les plus bas du centre — et une énergie qu&apos;on ne trouve
+            nulle part ailleurs.
           </p>
-          <div className="flex flex-wrap gap-3 mt-6">
+          <div className="flex flex-wrap gap-3 mt-8">
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Multiculturel & alternatif</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">💶 800 – 1 100 € / mois</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Profils créatifs · Budget serré</span>
@@ -84,102 +46,128 @@ export default function LavapiesPage() {
         </div>
       </section>
 
-      {/* Content */}
-      <section className="py-24 px-6 bg-[#F5ECD7]">
-        <div className="max-w-3xl mx-auto space-y-12">
-          {sections.map((section) => (
-            <div key={section.number} className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">
-                  {section.number}
-                </span>
-              </div>
-              <div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] mb-3">
-                  {section.title}
-                </h2>
-                <p className="text-[#5a3e35] leading-relaxed">{section.content}</p>
-              </div>
-            </div>
-          ))}
+      {/* L'ambiance */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">L&apos;ambiance</h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Lavapiés est le quartier le plus cosmopolite de Madrid : communautés
+            indienne, africaine, asiatique, latino-américaine et espagnole
+            cohabitent dans un espace dense et vivant. Street art partout,
+            collectifs culturels, programmation alternative. Une énergie unique,
+            brute et authentique.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Le Museo Reina Sofía est à deux pas — et c&apos;est peut-être ce qui
+            dit le mieux ce qu&apos;est ce quartier : de l&apos;art partout, du bouillonnement
+            permanent, une créativité qui déborde dans la rue.
+          </p>
         </div>
       </section>
 
-      {/* Tip */}
-      <section className="py-16 px-6 bg-[#2C1810]">
+      {/* Les loyers */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-2xl mb-4">
-            Notre avis honnête
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">Les loyers</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">700 – 900 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">Studio</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">800 – 1 100 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">1 chambre</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">400 – 580 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">Coloc (par chambre)</p>
+            </div>
+          </div>
+          <p className="text-[#5a3e35] leading-relaxed">
+            Les loyers les plus bas du centre de Madrid — et ça monte. La
+            gentrification avance lentement mais sûrement. Si tu veux le
+            Lavapiés abordable, c&apos;est maintenant.
           </p>
-          <p className="text-[#F5ECD7] text-lg leading-relaxed">
-            Lavapiés est en train de se gentrifier, lentement mais sûrement. Les
-            prix montent, les bobos arrivent, les anciens habitants partent. Si
-            tu veux le Lavapiés authentique, c&apos;est maintenant. Dans cinq ans,
-            il ressemblera peut-être déjà à Malasaña. Ce n&apos;est pas une raison pour
-            ne pas y aller — c&apos;est une raison pour ne pas attendre.
+        </div>
+      </section>
+
+      {/* Culture */}
+      <section className="py-20 px-6 bg-[#2C1810]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-6">Culture et vie alternative</h2>
+          <p className="text-[#F5ECD7]/80 leading-relaxed text-lg">
+            Lavapiés abrite une concentration exceptionnelle de lieux culturels
+            alternatifs : salles de concert indépendantes, galeries d&apos;art,
+            cinémas d&apos;auteur, espaces de coworking associatifs. Ici, personne
+            ne te répondra en anglais — c&apos;est aussi ce qui en fait le meilleur
+            quartier pour apprendre l&apos;espagnol en immersion totale.
           </p>
+          <blockquote className="border-l-4 border-[#E8A838] pl-6 mt-8">
+            <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
+              Dans cinq ans, Lavapiés ressemblera peut-être à Malasaña.
+              Ce n&apos;est pas une raison pour ne pas y aller — c&apos;est une raison
+              pour ne pas attendre.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Pour qui */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-8">Pour qui c&apos;est fait ?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-[#7A8C5E]/10 rounded-2xl p-5">
+              <p className="text-[#7A8C5E] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
+              <ul className="space-y-2 text-[#5a3e35] text-sm">
+                <li>✓ Profil créatif, artiste, curieux</li>
+                <li>✓ Budget serré mais refus de s&apos;exiler loin du centre</li>
+                <li>✓ Quelqu&apos;un qui veut apprendre l&apos;espagnol vite</li>
+                <li>✓ Esprit ouvert, voire militant</li>
+              </ul>
+            </div>
+            <div className="bg-[#C8614A]/10 rounded-2xl p-5">
+              <p className="text-[#C8614A] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
+              <ul className="space-y-2 text-[#5a3e35] text-sm">
+                <li>✗ Tu cherches le calme et la sécurité absolue</li>
+                <li>✗ Tu as des enfants en bas âge</li>
+                <li>✗ Tu veux une communauté française proche</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Autres quartiers */}
       <section className="py-16 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#5a3e35] font-semibold uppercase tracking-widest text-sm mb-6">
-            Les autres quartiers
-          </p>
+          <p className="text-[#5a3e35] font-semibold uppercase tracking-widest text-sm mb-6">Les autres quartiers</p>
           <div className="flex flex-wrap gap-3">
             {autresQuartiers.map((q) => (
-              <Link
-                key={q.href}
-                href={q.href}
-                className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
-              >
+              <Link key={q.href} href={q.href} className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors">
                 {q.emoji} {q.name}
               </Link>
             ))}
-            <Link
-              href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
-            >
+            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors">
               Trouver un appartement depuis la France
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F5ECD7]/70 text-sm uppercase tracking-widest mb-4">
-            Sois parmi les premiers
-          </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">
-            Reçois nos guides dès qu&apos;ils sortent
-          </h2>
-          <p className="text-[#F5ECD7]/90 text-lg mb-10">
-            Logement, NIE, sécu, travail à Madrid — on prépare des guides
-            complets sur chaque étape de ton installation.
-          </p>
-          <div className="flex justify-center">
-            <EmailForm />
-          </div>
-          <p className="text-[#F5ECD7]/60 text-xs mt-4">
-            Pas de spam. Juste du contenu utile. Désabonnement en un clic.
-          </p>
+          <p className="text-[#F5ECD7]/70 text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">Reçois nos guides dès qu&apos;ils sortent</h2>
+          <p className="text-[#F5ECD7]/90 text-lg mb-10">Logement, NIE, sécu, travail à Madrid — on prépare des guides complets sur chaque étape de ton installation.</p>
+          <div className="flex justify-center"><EmailForm /></div>
+          <p className="text-[#F5ECD7]/60 text-xs mt-4">Pas de spam. Juste du contenu utile. Désabonnement en un clic.</p>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-10 px-6 bg-[#2C1810] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-playfair)] text-xl text-[#F5ECD7] mb-2 block hover:text-[#E8A838] transition-colors"
-        >
-          Madrid & Toi
-        </Link>
-        <p className="text-[#F5ECD7]/40 text-sm">
-          © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
-        </p>
+        <Link href="/" className="font-[family-name:var(--font-playfair)] text-xl text-[#F5ECD7] mb-2 block hover:text-[#E8A838] transition-colors">Madrid & Toi</Link>
+        <p className="text-[#F5ECD7]/40 text-sm">© {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid</p>
       </footer>
     </div>
   );

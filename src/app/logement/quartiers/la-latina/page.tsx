@@ -9,39 +9,6 @@ export const metadata: Metadata = {
     "La Latina est le cœur historique de Madrid. Ruelles pavées, tapas, marché du Rastro — le quartier idéal pour une vraie immersion espagnole.",
 };
 
-const sections = [
-  {
-    number: "01",
-    title: "L'ambiance",
-    content:
-      "La Latina, c'est le Madrid d'avant. Des ruelles pavées, des tavernes centenaires, des patios fleuris et des voisins qui se connaissent depuis toujours. Le dimanche matin au marché du Rastro est un rituel que tu ne rateras pour rien au monde. C'est le quartier le plus authentiquement madrilène du centre — loin de l'agitation touristique de la Gran Vía.",
-  },
-  {
-    number: "02",
-    title: "Les loyers",
-    content:
-      "La Latina est légèrement moins chère que Malasaña ou Chueca, mais les prix augmentent depuis quelques années avec sa popularité croissante. Compte 850 à 1 100 € pour un studio, 950 à 1 300 € pour un appartement d'une chambre. Les appartements anciens avec vue sur les ruelles sont les plus recherchés.",
-  },
-  {
-    number: "03",
-    title: "La vie pratique",
-    content:
-      "La station de métro La Latina (ligne 5) dessert bien le quartier. Les commerces de proximité sont nombreux, même si c'est moins urbain que Malasaña. Le Mercado de la Cebada est tout proche pour les courses quotidiennes. Le quartier est calme en semaine et s'anime considérablement le week-end.",
-  },
-  {
-    number: "04",
-    title: "Les tapas et la gastronomie",
-    content:
-      "C'est ici que tu trouveras les meilleurs bars à tapas de Madrid. La Cava Baja et la Cava Alta sont les deux rues incontournables : jambon ibérique, croquetas, patatas bravas, et une carte des vins qui respecte les traditions. Les Madrilènes viennent exprès de tout Madrid pour y passer le dimanche après le Rastro.",
-  },
-  {
-    number: "05",
-    title: "Pour qui c'est fait ?",
-    content:
-      "La Latina est parfaite pour ceux qui cherchent une vraie immersion dans la culture madrilène, loin de la bulle expatriée. Idéal pour les couples, les amateurs de culture locale, et ceux qui en ont marre de croiser des Français partout. Moins adapté aux personnes qui veulent une vie nocturne intense tous les soirs.",
-  },
-];
-
 const autresQuartiers = [
   { name: "Malasaña", href: "/logement/quartiers/malasana", emoji: "🎨" },
   { name: "Chueca", href: "/logement/quartiers/chueca", emoji: "🏳️‍🌈" },
@@ -58,17 +25,12 @@ export default function LaLatinaPage() {
       {/* Hero */}
       <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
-          <Link
-            href="/logement/quartiers"
-            className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
-          >
+          <Link href="/logement/quartiers" className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all">
             ← Tous les quartiers
           </Link>
-          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
-            🍷 Quartier La Latina
-          </p>
+          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">🍷 Quartier La Latina</p>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
-            Vivre à La Latina —{" "}
+            La Latina —{" "}
             <span className="italic text-[#C8614A]">traditionnel, tapas, village dans la ville</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
@@ -76,7 +38,7 @@ export default function LaLatinaPage() {
             La Latina, c&apos;est le Madrid authentique — celui qu&apos;on imaginait avant
             d&apos;arriver, et qui dépasse encore les attentes.
           </p>
-          <div className="flex flex-wrap gap-3 mt-6">
+          <div className="flex flex-wrap gap-3 mt-8">
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Traditionnel & authentique</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">💶 950 – 1 300 € / mois</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Couples · Amateurs de culture locale</span>
@@ -84,63 +46,109 @@ export default function LaLatinaPage() {
         </div>
       </section>
 
-      {/* Content */}
-      <section className="py-24 px-6 bg-[#F5ECD7]">
-        <div className="max-w-3xl mx-auto space-y-12">
-          {sections.map((section) => (
-            <div key={section.number} className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">
-                  {section.number}
-                </span>
-              </div>
-              <div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] mb-3">
-                  {section.title}
-                </h2>
-                <p className="text-[#5a3e35] leading-relaxed">{section.content}</p>
-              </div>
-            </div>
-          ))}
+      {/* L'ambiance */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">L&apos;ambiance</h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            La Latina, c&apos;est le Madrid d&apos;avant. Des ruelles pavées, des tavernes
+            centenaires, des patios fleuris et des voisins qui se connaissent
+            depuis toujours. C&apos;est le quartier le plus authentiquement madrilène
+            du centre — loin de l&apos;agitation touristique de la Gran Vía.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
+            Le dimanche matin au marché du Rastro est un rituel que tu ne
+            rateras pour rien au monde. Les rues se remplissent de brocanteurs,
+            de curieux et de Madrilènes de toutes générations — puis tout le
+            monde finit en terrasse sur la Cava Baja.
+          </p>
         </div>
       </section>
 
-      {/* Tip */}
-      <section className="py-16 px-6 bg-[#2C1810]">
+      {/* Les tapas */}
+      <section className="py-20 px-6 bg-[#2C1810]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-2xl mb-4">
-            Notre avis honnête
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-6">La Cava Baja et les tapas</h2>
+          <p className="text-[#F5ECD7]/80 leading-relaxed text-lg">
+            C&apos;est ici que tu trouveras les meilleurs bars à tapas de Madrid.
+            Jambon ibérique, croquetas, patatas bravas, et une carte des vins
+            qui respecte les traditions. Les Madrilènes viennent exprès de
+            tout Madrid pour y passer le dimanche.
           </p>
-          <p className="text-[#F5ECD7] text-lg leading-relaxed">
-            Beaucoup de Français commencent à Malasaña puis migrent vers La Latina
-            après quelques mois. C&apos;est souvent le signe qu&apos;ils ont vraiment commencé
-            à s&apos;installer — à chercher la vie de quartier plutôt que la vie de bar.
-            Si tu cherches à apprendre l&apos;espagnol et à t&apos;intégrer, c&apos;est ici que tu
-            y arriveras le plus vite.
+          <blockquote className="border-l-4 border-[#E8A838] pl-6 mt-8">
+            <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
+              Beaucoup de Français commencent à Malasaña puis migrent vers
+              La Latina après quelques mois. C&apos;est souvent le signe qu&apos;ils ont
+              vraiment commencé à s&apos;installer.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Les loyers */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">Les loyers</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">800 – 1 050 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">Studio</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">950 – 1 300 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">1 chambre</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-[#C8614A] font-bold text-xl font-[family-name:var(--font-playfair)]">480 – 650 €</p>
+              <p className="text-[#5a3e35]/70 text-sm mt-1">Coloc (par chambre)</p>
+            </div>
+          </div>
+          <p className="text-[#5a3e35] leading-relaxed">
+            Légèrement moins cher que Malasaña, mais les prix montent depuis
+            quelques années avec la popularité croissante du quartier. Les
+            appartements anciens avec vue sur les ruelles pavées sont les
+            plus recherchés — et partent le plus vite.
           </p>
+        </div>
+      </section>
+
+      {/* Pour qui */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-8">Pour qui c&apos;est fait ?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-[#7A8C5E]/10 rounded-2xl p-5">
+              <p className="text-[#7A8C5E] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
+              <ul className="space-y-2 text-[#5a3e35] text-sm">
+                <li>✓ En couple ou avec des amis</li>
+                <li>✓ Amateur(trice) de culture locale</li>
+                <li>✓ Prêt(e) à parler espagnol au quotidien</li>
+                <li>✓ Fatigué(e) de croiser des Français partout</li>
+              </ul>
+            </div>
+            <div className="bg-[#C8614A]/10 rounded-2xl p-5">
+              <p className="text-[#C8614A] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
+              <ul className="space-y-2 text-[#5a3e35] text-sm">
+                <li>✗ Tu cherches une vie nocturne intense tous les soirs</li>
+                <li>✗ Tu as besoin d&apos;une communauté française proche</li>
+                <li>✗ Tu veux de grands espaces verts autour</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Autres quartiers */}
       <section className="py-16 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#5a3e35] font-semibold uppercase tracking-widest text-sm mb-6">
-            Les autres quartiers
-          </p>
+          <p className="text-[#5a3e35] font-semibold uppercase tracking-widest text-sm mb-6">Les autres quartiers</p>
           <div className="flex flex-wrap gap-3">
             {autresQuartiers.map((q) => (
-              <Link
-                key={q.href}
-                href={q.href}
-                className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
-              >
+              <Link key={q.href} href={q.href} className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors">
                 {q.emoji} {q.name}
               </Link>
             ))}
-            <Link
-              href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
-            >
+            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors">
               Trouver un appartement depuis la France
             </Link>
           </div>
@@ -150,36 +158,17 @@ export default function LaLatinaPage() {
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F5ECD7]/70 text-sm uppercase tracking-widest mb-4">
-            Sois parmi les premiers
-          </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">
-            Reçois nos guides dès qu&apos;ils sortent
-          </h2>
-          <p className="text-[#F5ECD7]/90 text-lg mb-10">
-            Logement, NIE, sécu, travail à Madrid — on prépare des guides
-            complets sur chaque étape de ton installation.
-          </p>
-          <div className="flex justify-center">
-            <EmailForm />
-          </div>
-          <p className="text-[#F5ECD7]/60 text-xs mt-4">
-            Pas de spam. Juste du contenu utile. Désabonnement en un clic.
-          </p>
+          <p className="text-[#F5ECD7]/70 text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">Reçois nos guides dès qu&apos;ils sortent</h2>
+          <p className="text-[#F5ECD7]/90 text-lg mb-10">Logement, NIE, sécu, travail à Madrid — on prépare des guides complets sur chaque étape de ton installation.</p>
+          <div className="flex justify-center"><EmailForm /></div>
+          <p className="text-[#F5ECD7]/60 text-xs mt-4">Pas de spam. Juste du contenu utile. Désabonnement en un clic.</p>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-10 px-6 bg-[#2C1810] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-playfair)] text-xl text-[#F5ECD7] mb-2 block hover:text-[#E8A838] transition-colors"
-        >
-          Madrid & Toi
-        </Link>
-        <p className="text-[#F5ECD7]/40 text-sm">
-          © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
-        </p>
+        <Link href="/" className="font-[family-name:var(--font-playfair)] text-xl text-[#F5ECD7] mb-2 block hover:text-[#E8A838] transition-colors">Madrid & Toi</Link>
+        <p className="text-[#F5ECD7]/40 text-sm">© {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid</p>
       </footer>
     </div>
   );
