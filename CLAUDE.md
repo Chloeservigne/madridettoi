@@ -92,6 +92,9 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 ### `/demenagement`
 - `/demenagement/paris-madrid` — éditorial
 
+### `/vivre`
+- `/vivre/transports` — éditorial : Abono (tarifs 2026), métro, EMT+búhos, Cercanías, aéroport, BiciMAD, taxi, VTC
+
 ### Autres
 - `/mon-histoire` — prose éditorial, pas de structure imposée
 
