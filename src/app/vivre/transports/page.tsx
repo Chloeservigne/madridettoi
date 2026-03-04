@@ -101,11 +101,14 @@ export default function TransportsPage() {
 
           <div className="mt-4 bg-[#E8A838]/10 border border-[#E8A838]/30 rounded-2xl px-5 py-4">
             <p className="text-[#5a3e35] text-sm leading-relaxed">
-              <strong>À noter :</strong> la bonification extraordinaire de 40%
-              sur l&apos;Abono adulte est une mesure temporaire en vigueur
-              depuis 2022, renouvelée jusqu&apos;au 31 décembre 2026. Le tarif
-              plein sans subvention est d&apos;environ 54 €/mois. Au-delà de
-              cette date, le prix pourrait revenir à son niveau normal.
+              <strong>Comment en bénéficier :</strong> c&apos;est automatique
+              — aucune démarche à faire. Le prix affiché à l&apos;achat inclut
+              déjà la réduction. Cette bonification de 40% est une mesure
+              temporaire financée par le Ministère des Transports et la
+              Communauté de Madrid, en vigueur depuis 2022 et renouvelée
+              jusqu&apos;au 31 décembre 2026. Le tarif plein sans subvention
+              est d&apos;environ 54 €/mois — au-delà de cette date, le prix
+              pourrait revenir à son niveau normal.
             </p>
           </div>
 
