@@ -69,7 +69,7 @@ export default function TransportsPage() {
           <div className="mt-8 bg-white rounded-3xl shadow-md overflow-hidden">
             <div className="px-6 py-4 bg-[#C8614A]">
               <p className="text-white font-semibold">
-                Tarifs zone A — en vigueur jusqu&apos;au 31 décembre 2026
+                Tarifs zone A — avec bonification extraordinaire (jusqu&apos;au 31 déc. 2026)
               </p>
             </div>
             <div className="divide-y divide-[#EDE0C8]">
@@ -83,7 +83,9 @@ export default function TransportsPage() {
               <div className="px-6 py-4 flex justify-between items-center">
                 <div>
                   <p className="font-semibold text-[#2C1810] text-sm">Abono General (26–64 ans)</p>
-                  <p className="text-[#5a3e35]/60 text-xs mt-0.5">Tarif avec réduction extraordinaire</p>
+                  <p className="text-[#5a3e35]/60 text-xs mt-0.5">
+                    Prix subventionné (-40%) · tarif plein ~54 €/mois
+                  </p>
                 </div>
                 <span className="font-bold text-[#2C1810] text-lg">32,70 €/mois</span>
               </div>
@@ -97,11 +99,15 @@ export default function TransportsPage() {
             </div>
           </div>
 
-          <p className="text-[#5a3e35] text-sm mt-4 leading-relaxed">
-            Ces tarifs incluent les réductions reconduites par la Communauté de
-            Madrid et le Ministère des Transports espagnol (annonce officielle
-            du 29 décembre 2025).
-          </p>
+          <div className="mt-4 bg-[#E8A838]/10 border border-[#E8A838]/30 rounded-2xl px-5 py-4">
+            <p className="text-[#5a3e35] text-sm leading-relaxed">
+              <strong>À noter :</strong> la bonification extraordinaire de 40%
+              sur l&apos;Abono adulte est une mesure temporaire en vigueur
+              depuis 2022, renouvelée jusqu&apos;au 31 décembre 2026. Le tarif
+              plein sans subvention est d&apos;environ 54 €/mois. Au-delà de
+              cette date, le prix pourrait revenir à son niveau normal.
+            </p>
+          </div>
 
           {/* Comment s'abonner */}
           <div className="mt-8 bg-[#EDE0C8] rounded-2xl p-6">
