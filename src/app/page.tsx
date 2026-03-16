@@ -2,48 +2,55 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
-const guides = [
+const phases = [
   {
-    emoji: "🤔",
-    title: "Se décider",
-    description: "Tu hésites encore ? Budget, style de vie, les vraies questions avant de sauter le pas.",
-    href: "/se-decider",
+    num: "1",
+    titre: "Je rêve encore",
+    desc: "Tu envisages Madrid, tu te demandes si c'est réalisable. Les réponses aux questions que tout le monde se pose avant de décider.",
+    liens: [
+      { label: "Pourquoi Madrid ?", href: "/se-decider/pourquoi-madrid" },
+      { label: "Budget & coût de la vie", href: "/se-decider/budget" },
+      { label: "Salaires à Madrid", href: "/se-decider/salaire-madrid" },
+      { label: "Travailler en remote", href: "/travailler/remote" },
+    ],
   },
   {
-    emoji: "📦",
-    title: "Déménagement",
-    description: "Organiser son départ depuis la France, les étapes dans le bon ordre.",
-    href: "/demenagement",
+    num: "2",
+    titre: "Je me prépare",
+    desc: "La décision est prise. Il faut organiser le départ — boulot, logement, déménagement.",
+    liens: [
+      { label: "Trouver un appartement", href: "/logement/appartement" },
+      { label: "Choisir son quartier", href: "/logement/quartiers" },
+      { label: "Déménager Paris → Madrid", href: "/demenagement/paris-madrid" },
+      { label: "Checklist départ", href: "/demenagement/checklist" },
+      { label: "Trouver un emploi", href: "/travailler/emploi" },
+      { label: "Devenir freelance", href: "/travailler/freelance" },
+    ],
   },
   {
-    emoji: "🏠",
-    title: "Logement",
-    description: "Trouver un appart depuis la France, choisir son quartier, éviter les pièges.",
-    href: "/logement",
+    num: "3",
+    titre: "Je viens d'arriver",
+    desc: "Tu es là. Les premières semaines sont denses — admin, banque, transports. Voilà dans quel ordre faire les choses.",
+    liens: [
+      { label: "Le NIE", href: "/papiers/nie" },
+      { label: "Le padron municipal", href: "/papiers/padron" },
+      { label: "Ouvrir un compte bancaire", href: "/papiers/compte-bancaire" },
+      { label: "La sécu espagnole", href: "/papiers/secu" },
+      { label: "Transports & Abono", href: "/vivre/transports" },
+    ],
   },
   {
-    emoji: "📄",
-    title: "Papiers",
-    description: "NIE, sécurité sociale, les démarches admin incontournables expliquées clairement.",
-    href: "/papiers",
-  },
-  {
-    emoji: "💼",
-    title: "Travailler",
-    description: "Remote, recherche d'emploi, freelance — comment gagner sa vie depuis Madrid.",
-    href: "/travailler",
-  },
-  {
-    emoji: "☀️",
-    title: "Vivre à Madrid",
-    description: "Transports, santé, culture, vie de quartier — se sentir vraiment chez soi.",
-    href: "/vivre",
-  },
-  {
-    emoji: "🤝",
-    title: "Communauté",
-    description: "Rencontrer des gens, s'intégrer, trouver sa tribu à Madrid.",
-    href: "/communaute",
+    num: "4",
+    titre: "Je vis à Madrid",
+    desc: "L'installation est faite. Maintenant il s'agit de vraiment vivre ici — se soigner, sortir, s'intégrer.",
+    liens: [
+      { label: "Santé & mutuelles", href: "/vivre/sante" },
+      { label: "Courses & marchés", href: "/vivre/courses" },
+      { label: "Apprendre l'espagnol", href: "/vivre/espagnol" },
+      { label: "Sortir à Madrid", href: "/vivre/sortir" },
+      { label: "Les impôts en Espagne", href: "/papiers/impots" },
+      { label: "La communauté française", href: "/communaute/francais-madrid" },
+    ],
   },
 ];
 
@@ -79,10 +86,10 @@ export default function Home() {
             </p>
             <div className="animate-fade-in-up delay-4 flex justify-center lg:justify-start">
               <a
-                href="#newsletter"
+                href="#parcours"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#C8614A] text-white font-semibold text-lg hover:bg-[#A84D3A] transition-all hover:scale-105 shadow-lg shadow-[#C8614A]/20"
               >
-                Je veux en savoir plus
+                Où en es-tu ?
                 <span>→</span>
               </a>
             </div>
@@ -123,37 +130,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Guides */}
-      <section className="py-24 px-6 bg-[#F5ECD7]">
-        <div className="max-w-5xl mx-auto">
+      {/* Parcours */}
+      <section id="parcours" className="py-24 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
-              Tous les guides
+              Ton parcours
             </p>
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#2C1810]">
-              Par où commencer ?
+              Où en es-tu ?
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {guides.map((g) => (
-              <Link
-                key={g.href}
-                href={g.href}
-                className="group p-6 rounded-3xl bg-white shadow-sm hover:shadow-md border border-transparent hover:border-[#C8614A]/20 transition-all flex flex-col gap-3"
-              >
-                <span className="text-3xl">{g.emoji}</span>
-                <div className="flex-1">
-                  <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] mb-1 group-hover:text-[#C8614A] transition-colors">
-                    {g.title}
-                  </h3>
-                  <p className="text-[#5a3e35]/70 text-sm leading-relaxed">
-                    {g.description}
-                  </p>
+
+          <div className="space-y-4">
+            {phases.map((phase) => (
+              <div key={phase.num} className="bg-white rounded-3xl p-6 md:p-8 shadow-sm">
+                <div className="flex items-start gap-4 mb-5">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] text-white flex items-center justify-center font-[family-name:var(--font-playfair)] font-bold text-lg">
+                    {phase.num}
+                  </div>
+                  <div>
+                    <p className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] italic">
+                      {phase.titre}
+                    </p>
+                    <p className="text-[#5a3e35]/70 text-sm mt-1 leading-relaxed">
+                      {phase.desc}
+                    </p>
+                  </div>
                 </div>
-                <span className="text-[#C8614A] text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  Lire le guide →
-                </span>
-              </Link>
+                <div className="flex flex-wrap gap-2">
+                  {phase.liens.map((lien) => (
+                    <Link
+                      key={lien.href}
+                      href={lien.href}
+                      className="px-3 py-1.5 rounded-full bg-[#F5ECD7] text-[#2C1810] text-sm font-medium hover:bg-[#EDE0C8] hover:text-[#C8614A] transition-colors"
+                    >
+                      {lien.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
