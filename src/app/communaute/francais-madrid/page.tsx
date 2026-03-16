@@ -4,9 +4,9 @@ import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
 export const metadata: Metadata = {
-  title: "Communauté française à Madrid : associations, groupes, intercambios — Madrid & Toi",
+  title: "La communauté française à Madrid — Madrid & Toi",
   description:
-    "~35 000 Français vivent à Madrid. Madrid Accueil, groupes Facebook, intercambios, Meetup, InterNations — comment rencontrer des gens et s'intégrer sans rester dans la bulle française.",
+    "35 000 Français vivent à Madrid. Associations, groupes, événements — comment trouver ta communauté et ne pas te sentir seul(e).",
 };
 
 export default function FrancaisMadridPage() {
@@ -24,11 +24,11 @@ export default function FrancaisMadridPage() {
             ← Retour à Communauté
           </Link>
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
-            Vie sociale
+            Communauté
           </p>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
-            Les Français à Madrid —{" "}
-            <span className="italic text-[#C8614A]">trouver sa communauté</span>
+            La communauté —{" "}
+            <span className="italic text-[#C8614A]">les Français à Madrid</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
             Environ 35 000 Français vivent à Madrid — l&apos;une des plus grandes
@@ -37,16 +37,29 @@ export default function FrancaisMadridPage() {
             expats : tu n&apos;es pas seul à débarquer. Et les Madrilènes sont
             réputés pour leur accueil.
           </p>
-          <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">
-              ~35 000 Français à Madrid
-            </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">
-              Intercambios gratuits
-            </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">
-              Madrid Accueil chaque jeudi
-            </span>
+          {/* Stat cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
+            <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-1">
+                ~35 000
+              </p>
+              <p className="text-[#5a3e35] text-sm font-semibold">Français</p>
+              <p className="text-[#5a3e35]/60 text-xs mt-1">Inscrits au consulat</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-1">
+                1ère
+              </p>
+              <p className="text-[#5a3e35] text-sm font-semibold">Communauté étrangère</p>
+              <p className="text-[#5a3e35]/60 text-xs mt-1">À Madrid</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-1">
+                1913
+              </p>
+              <p className="text-[#5a3e35] text-sm font-semibold">Institut français</p>
+              <p className="text-[#5a3e35]/60 text-xs mt-1">Fondé cette année-là</p>
+            </div>
           </div>
         </div>
       </section>

@@ -4,9 +4,9 @@ import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
 export const metadata: Metadata = {
-  title: "Checklist déménagement à Madrid : tout faire dans l'ordre — Madrid & Toi",
+  title: "Checklist déménagement Madrid — Madrid & Toi",
   description:
-    "De la décision à l'installation : 6 mois avant, 3 mois avant, semaine 1 à Madrid. NIE, padron, sécu, compte bancaire — la checklist complète pour s'installer sans rien oublier.",
+    "La checklist complète pour déménager à Madrid : de J-6 mois à J+3 mois, toutes les étapes pour ne rien oublier.",
 };
 
 export default function ChecklistPage() {
@@ -21,437 +21,399 @@ export default function ChecklistPage() {
             href="/demenagement"
             className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
-            ← Retour à Déménagement
+            ← Retour au déménagement
           </Link>
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
-            Guide pratique
+            Déménagement
           </p>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
-            Checklist du déménagement —{" "}
-            <span className="italic text-[#C8614A]">tout dans l&apos;ordre</span>
+            Déménager à Madrid —{" "}
+            <span className="italic text-[#C8614A]">la checklist complète</span>
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
-            De la décision jusqu&apos;à la carte d&apos;assurance maladie
-            espagnole dans le portefeuille. Ce guide liste tout ce qu&apos;il
-            faut faire, dans quel ordre, pour éviter les oublis et les faux
-            départs. Chaque étape est surmontable — la clé, c&apos;est d&apos;y
-            aller dans l&apos;ordre.
+            Du premier coup de fil au déménageur à ton premier café en terrasse
+            à Madrid — toutes les étapes, dans l&apos;ordre.
           </p>
-          <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">
-              6 mois de préparation
-            </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">
-              NIE + padron + sécu
-            </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">
-              Rien d&apos;insurmontable
-            </span>
+          <div className="flex flex-wrap gap-3 mt-6">
+            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">J-6 mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">J-1 mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Jour J</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">J+3 mois</span>
           </div>
         </div>
       </section>
 
-      {/* 6 mois avant */}
+      {/* Phase 1 — J-6 mois */}
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-[#2C1810] text-[#E8A838] text-xs font-semibold uppercase tracking-widest mb-6">
-            6 mois avant
-          </div>
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
-            Poser les bases
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+            6 mois avant le départ
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
-            C&apos;est la phase de décision et d&apos;exploration. L&apos;objectif
-            à ce stade : valider que le projet tient la route et commencer les
-            grandes démarches avec suffisamment de marge.
-          </p>
-          <ul className="space-y-4">
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Visiter Madrid une semaine pour valider les quartiers et tester
-                la ville au quotidien — ou faire une recherche approfondie en
-                ligne si ce n&apos;est pas possible.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Définir son budget logement et son{" "}
-                <Link
-                  href="/logement/quartiers"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  quartier cible
-                </Link>
-                . Se référer au guide{" "}
-                <Link
-                  href="/se-decider/budget"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  budget de vie réel à Madrid
-                </Link>
-                .
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Commencer les recherches d&apos;appartement en ligne :
-                Idealista et Fotocasa sont les deux plateformes dominantes.
-                S&apos;inscrire aux alertes pour son budget et son quartier.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Si salarié : négocier le télétravail complet ou commencer les
-                recherches d&apos;emploi côté espagnol. Si{" "}
-                <Link
-                  href="/travailler/freelance"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  autónomo
-                </Link>{" "}
-                (freelance) : anticiper les démarches d&apos;enregistrement
-                à l&apos;arrivée.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Prévenir son propriétaire français du départ. Le préavis est
-                généralement de <strong>3 mois</strong> pour une location vide
-                et 1 mois pour une meublée — vérifier son contrat.
-              </span>
-            </li>
-          </ul>
+          <div className="space-y-8">
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">1</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Décide de la date</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Fixe une deadline ferme. Sans date, le projet reste un rêve.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">2</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Commence à apprendre l&apos;espagnol</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  15 min par jour sur Duolingo ou Babbel. Tu n&apos;as pas besoin d&apos;être
+                  bilingue pour partir, mais les bases changent tout.{" "}
+                  <Link
+                    href="/vivre/espagnol"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Nos ressources pour apprendre l&apos;espagnol
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">3</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Explore le budget de vie à Madrid</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Loyer, courses, transports. Compare avec ton niveau de vie actuel.{" "}
+                  <Link
+                    href="/se-decider/budget"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le coût de la vie à Madrid
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">4</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Pense à ton statut professionnel</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Salarié en remote ? Autónomo ? Tu cherches un emploi local ? Chaque option a
+                  ses contraintes et délais.{" "}
+                  <Link
+                    href="/travailler"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir nos guides sur le travail à Madrid
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* 3 mois avant */}
+      {/* Phase 2 — J-3 mois */}
       <section className="py-20 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-[#2C1810] text-[#E8A838] text-xs font-semibold uppercase tracking-widest mb-6">
-            3 mois avant
-          </div>
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
-            Sécuriser le logement et les démarches côté français
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+            3 mois avant le départ
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
-            Le cap des 3 mois, c&apos;est celui où les décisions abstraites
-            deviennent concrètes. Signer un appartement à Madrid depuis la
-            France reste difficile — mieux vaut prévoir une sous-location
-            temporaire si on ne peut pas visiter sur place.
-          </p>
-          <ul className="space-y-4">
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Signer un{" "}
-                <Link
-                  href="/logement/appartement"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  appartement à Madrid
-                </Link>{" "}
-                — ou, à défaut, une sous-location ou une colocation temporaire
-                pour les premières semaines le temps de trouver quelque chose
-                de permanent.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Organiser le déménagement : déménageurs professionnels,
-                location de camion, ou déménagement en voiture selon le volume.
-                Paris–Madrid = 1 200 km. Prévoir un devis comparatif si gros
-                volume de meubles.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Commencer les démarches pour la cita previa{" "}
-                <Link
-                  href="/papiers/nie"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  NIE
-                </Link>{" "}
-                si possible depuis la France via le consulat espagnol de ta ville.
-                Les délais peuvent être longs — anticiper.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Contacter la CPAM pour demander la{" "}
-                <strong>Carte Européenne d&apos;Assurance Maladie (CEAM)</strong>.
-                Elle couvre les soins d&apos;urgence en Espagne pendant la
-                période de transition, avant l&apos;affiliation à la{" "}
-                <Link
-                  href="/papiers/secu"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  Seguridad Social
-                </Link>
-                .
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Informer les organismes français du départ imminent : CAF,
-                France Travail (Pôle Emploi), centre des impôts. Certaines
-                prestations s&apos;arrêtent à la date de départ, d&apos;autres
-                nécessitent un décompte final.
-              </span>
-            </li>
-          </ul>
+          <div className="space-y-8">
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">5</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Donne congé ou démissionne</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Le préavis est souvent de 1 à 3 mois selon le contrat et l&apos;ancienneté. Ne
+                  tarde pas — c&apos;est souvent l&apos;étape qui fixe le calendrier de tout le reste.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">6</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Résilie ou transfère tes contrats français</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Assurance habitation, abonnements, banque française — garde-la pour la
+                  transition. Tu en auras besoin les premières semaines.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">7</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Commence à chercher ton appartement à Madrid</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Idealista, Fotocasa, groupes Facebook. Prévois de venir visiter si possible —
+                  signer à distance est faisable mais risqué.{" "}
+                  <Link
+                    href="/logement/appartement"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide pour trouver un appartement
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">8</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Prépare tes documents administratifs</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Photocopies passeport / CNI, acte de naissance, diplômes traduits (apostille),
+                  relevés bancaires 3 mois. Prépare aussi un dossier numérique — tout en PDF.{" "}
+                  <Link
+                    href="/papiers/nie"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir ce qu&apos;il faut pour le NIE
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* 1 mois avant */}
+      {/* Phase 3 — J-1 mois */}
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-[#2C1810] text-[#E8A838] text-xs font-semibold uppercase tracking-widest mb-6">
-            1 mois avant
-          </div>
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
-            Clore les chapitres français
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+            1 mois avant le départ
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
-            Le mois avant le départ, c&apos;est l&apos;heure des résiliations
-            et des transmissions. Mieux vaut traiter chaque point séparément
-            plutôt que de tout laisser à la dernière semaine.
-          </p>
-          <ul className="space-y-4">
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Résilier les contrats français : EDF (ou autre fournisseur
-                d&apos;énergie), abonnement internet, téléphone fixe. Certains
-                ont des préavis d&apos;un mois — s&apos;y prendre à temps.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Mettre en place la <strong>redirection de courrier</strong> via
-                La Poste — minimum 12 mois pour ne rien rater. Penser aussi à
-                changer d&apos;adresse auprès de la banque, des impôts, de la
-                sécu et de tout organisme important.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Informer banque française, employeur (si départ définitif),
-                médecin traitant, école des enfants. Récupérer les documents
-                médicaux importants (carnets de santé, résultats d&apos;analyses).
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Vider et rendre le logement français à la date prévue. Faire
-                l&apos;état des lieux de sortie, récupérer le dépôt de
-                garantie (délai légal : 1 à 2 mois après remise des clés).
-              </span>
-            </li>
-          </ul>
+          <div className="space-y-8">
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">9</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Signe ou réserve ton logement</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Si possible avant d&apos;arriver pour éviter l&apos;hôtel. Une option : sous-louer
+                  quelques semaines via Airbnb pour visiter au calme avant de signer.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">10</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Organise le déménagement</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Déménageur Paris–Madrid (Eurodemenagement, AGS), ou location camion pour petits
+                  volumes.{" "}
+                  <Link
+                    href="/demenagement/paris-madrid"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide déménagement Paris–Madrid
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">11</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Ouvre un compte bancaire en Espagne</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Revolut ou N26 pour commencer, puis Sabadell, BBVA ou CaixaBank pour les
+                  domiciliations.{" "}
+                  <Link
+                    href="/papiers/compte-bancaire"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide compte bancaire en Espagne
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">12</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Préviens ta CPAM</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Demande le formulaire S1 si tu restes affilié au système français
+                  temporairement.{" "}
+                  <Link
+                    href="/papiers/secu"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide sécu à Madrid
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Semaine 1 */}
+      {/* Phase 4 — Semaine 1 */}
       <section className="py-20 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-[#C8614A] text-white text-xs font-semibold uppercase tracking-widest mb-6">
-            Semaine 1 à Madrid
-          </div>
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
-            Les priorités dès l&apos;arrivée
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+            Dès ton arrivée
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
-            La première semaine, l&apos;objectif n&apos;est pas de tout régler —
-            c&apos;est de poser les fondations. Quelques démarches urgentes,
-            le reste peut attendre.
-          </p>
-          <ul className="space-y-4">
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Prendre la cita previa pour le{" "}
-                <Link
-                  href="/papiers/nie"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  NIE
-                </Link>{" "}
-                si ce n&apos;est pas encore fait. Les créneaux partent vite —
-                se connecter le lundi à 8h pile sur le site officiel pour
-                trouver des disponibilités.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Ouvrir un{" "}
-                <Link
-                  href="/papiers/compte-bancaire"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  compte bancaire espagnol
-                </Link>
-                . C&apos;est souvent nécessaire avant même d&apos;obtenir le
-                NIE — certaines banques (Revolut, Wise, N26) l&apos;acceptent
-                avec un passeport.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Souscrire une <strong>assurance habitation</strong> — obligatoire
-                contractuellement dans la plupart des baux espagnols. Mapfre,
-                Mutua Madrileña, AXA et les offres bancaires couvrent bien
-                l&apos;essentiel.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Acheter une carte SIM espagnole. Opérateurs classiques :
-                Orange, Vodafone, Movistar. Moins chers et sur les mêmes réseaux :
-                Simyo (Orange), Lebara (Vodafone), Yoigo. Un forfait data
-                illimité tourne entre 15 et 25 €/mois.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Explorer le quartier à pied : repérer la pharmacie (farmacia),
-                le supermarché le plus proche, et le Centre de Santé
-                (PAC — Punto de Atención Continuada) pour les urgences non
-                vitales.
-              </span>
-            </li>
-          </ul>
+          <div className="space-y-8">
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">13</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Inscris-toi au Padrón municipal</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Mairie de ton arrondissement, dans les 3 mois — mais idéalement dès
+                  l&apos;arrivée. Nécessaire pour le NIE et tout le reste.{" "}
+                  <Link
+                    href="/papiers/padron"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide Padrón
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">14</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Prends rendez-vous pour le NIE</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Cita previa sur{" "}
+                  <a
+                    href="https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus/language/es_ES"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    sede.administracionespublicas.gob.es
+                  </a>
+                  . Les créneaux partent vite — réserve dès que tu es inscrit au Padrón.{" "}
+                  <Link
+                    href="/papiers/nie"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide NIE
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">15</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Explore ton quartier</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Marchés, boulangeries, pharmacies. Le plus tôt tu trouves tes repères, le plus
+                  vite tu te sens chez toi.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Mois 1 à 3 */}
+      {/* Phase 5 — Mois 1-3 */}
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-[#2C1810] text-[#E8A838] text-xs font-semibold uppercase tracking-widest mb-6">
-            Mois 1 à 3
-          </div>
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
-            Les démarches administratives espagnoles
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+            Dans les 3 premiers mois
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
-            Une fois installé, il faut intégrer le système espagnol. Ces
-            démarches ne sont pas urgentes à la minute, mais doivent être
-            bouclées dans les trois premiers mois pour avoir accès aux services
-            de base.
-          </p>
-          <ul className="space-y-4">
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Obtenir le{" "}
-                <Link
-                  href="/papiers/nie"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  NIE / Certificado de Registro
-                </Link>{" "}
-                — le numéro d&apos;identité étranger, indispensable pour
-                signer un bail, ouvrir un compte, travailler ou accéder aux
-                services publics.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Faire le{" "}
-                <Link
-                  href="/papiers/padron"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  padron municipal
-                </Link>{" "}
-                — l&apos;inscription en mairie. Obligatoire pour accéder au
-                médecin de quartier et à de nombreux services locaux. Se fait
-                à la mairie d&apos;arrondissement avec un justificatif de
-                domicile.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                S&apos;affilier à la{" "}
-                <Link
-                  href="/papiers/secu"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  Seguridad Social
-                </Link>
-                . Si salarié, l&apos;employeur s&apos;en charge. Si autónomo,
-                les démarches sont à faire soi-même auprès de la Tesorería.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Trouver un médecin de famille (<em>médico de cabecera</em>) via
-                le centre de{" "}
-                <Link
-                  href="/vivre/sante"
-                  className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
-                >
-                  santé
-                </Link>{" "}
-                du quartier. Il faut être enregistré au padron et affilié à
-                la sécu pour en obtenir un dans le secteur public.
-              </span>
-            </li>
-            <li className="flex gap-3 items-start">
-              <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
-              <span className="text-[#5a3e35] text-sm leading-relaxed">
-                Éventuellement : souscrire une <strong>mutuelle privée</strong>
-                (seguro médico privado). Adeslas, Sanitas, DKV — les tarifs
-                sont bien inférieurs à la mutuelle française pour une couverture
-                équivalente. Utile pour éviter les délais d&apos;attente du
-                public.
-              </span>
-            </li>
-          </ul>
+          <div className="space-y-8">
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">16</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Obtiens ton NIE</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Avec le rendez-vous pris à l&apos;étape 14.{" "}
+                  <Link
+                    href="/papiers/nie"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide NIE complet
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">17</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Inscris-toi à la Seguridad Social</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Une fois que tu travailles — que tu sois salarié ou autónomo.{" "}
+                  <Link
+                    href="/papiers/secu"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide sécu
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">18</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Rejoins la communauté française</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Madrid Accueil, groupes Facebook, intercambios. Le réseau se construit dès le
+                  début — ne le laisse pas pour plus tard.{" "}
+                  <Link
+                    href="/communaute/francais-madrid"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir nos adresses pour la communauté française
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">19</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Prends ta carte Abono Transporte</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  L&apos;abonnement mensuel métro + bus — indispensable pour se déplacer au
+                  quotidien.{" "}
+                  <Link
+                    href="/vivre/transports"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide transports à Madrid
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">20</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Commence à t&apos;occuper de ta situation fiscale</h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Si tu passes 183 jours en Espagne, tu deviens résident fiscal espagnol.
+                  Anticipe — c&apos;est mieux de le préparer que de le subir.{" "}
+                  <Link
+                    href="/papiers/impots"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Voir le guide impôts en Espagne
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Section sombre */}
       <section className="py-20 px-6 bg-[#2C1810]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-8">
-            Le déménagement fait peur. C&apos;est normal.
-          </h2>
-          <div className="bg-white/10 rounded-2xl p-5 mb-8">
-            <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-2">
-              Ce qu&apos;on entend souvent
-            </p>
-            <p className="text-[#F5ECD7]/80 text-sm leading-relaxed">
-              &quot;Je sais pas par où commencer.&quot; &quot;Et si j&apos;oublie quelque chose d&apos;important ?&quot;
-              &quot;Comment je vais gérer les démarches en espagnol ?&quot; Ces inquiétudes sont légitimes.
-              Mais elles s&apos;évanouissent dès qu&apos;on commence à découper le projet en petites
-              étapes concrètes — exactement ce que cette page propose de faire.
-            </p>
-          </div>
           <blockquote className="border-l-4 border-[#E8A838] pl-6">
             <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
-              S&apos;installer à Madrid n&apos;est pas plus compliqué que de s&apos;installer dans une autre
-              ville française. C&apos;est juste différent — et chaque étape, prise une par une, est
-              parfaitement surmontable.
+              Le secret d&apos;un déménagement réussi à Madrid, c&apos;est de ne pas essayer de
+              tout régler avant de partir. Certaines choses ne peuvent se faire que sur place.
             </p>
           </blockquote>
         </div>
@@ -461,38 +423,38 @@ export default function ChecklistPage() {
       <section className="py-16 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#5a3e35] font-semibold uppercase tracking-widest text-sm mb-6">
-            Ça pourrait aussi t&apos;aider
+            Les prochaines étapes
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
-              Obtenir son NIE
+              Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/logement/appartement"
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
-              Trouver un appartement
+              Trouver un appartement depuis la France
             </Link>
             <Link
-              href="/papiers/compte-bancaire"
+              href="/demenagement/paris-madrid"
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
-              Ouvrir un compte bancaire
+              Déménagement Paris–Madrid
             </Link>
             <Link
-              href="/papiers/secu"
+              href="/vivre/transports"
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
-              La sécu en Espagne
+              Transports à Madrid
             </Link>
             <Link
-              href="/vivre/sante"
+              href="/papiers/impots"
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
-              Santé et médecin à Madrid
+              Impôts en Espagne
             </Link>
           </div>
         </div>
@@ -505,11 +467,10 @@ export default function ChecklistPage() {
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">
-            Reçois nos guides dès qu&apos;ils sortent
+            La checklist dans ta boîte mail
           </h2>
           <p className="text-[#F5ECD7]/90 text-lg mb-10">
-            Santé, travail, vie pratique — les prochains guides sur l&apos;installation
-            à Madrid arrivent bientôt.
+            La checklist dans ta boîte mail + nos guides à chaque étape de ton installation.
           </p>
           <div className="flex justify-center">
             <EmailForm />
