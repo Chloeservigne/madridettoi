@@ -45,13 +45,6 @@ const cards = [
       "2 400 € nets par mois, 18-28 ans, jusqu'à 24 mois dans un grand groupe français. Comment postuler, à quoi s'attendre, et comment préparer ton installation.",
     href: "/travailler/vie",
   },
-  {
-    emoji: "🏢",
-    title: "Créer une société en Espagne",
-    description:
-      "La SL (Sociedad Limitada), les démarches, les coûts, et si ça vaut vraiment le coup selon ton niveau d'activité.",
-    href: null,
-  },
 ];
 
 export default function TravaillerPage() {
