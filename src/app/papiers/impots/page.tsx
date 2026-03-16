@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "Impôts à Madrid — Fiscalité pour les Français en Espagne — Madrid & Toi",
@@ -401,6 +402,8 @@ export default function ImpotsPage() {
           </div>
         </div>
       </section>
+
+      <EtapeSuivante label="La communauté française à Madrid" href="/communaute/francais-madrid" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">

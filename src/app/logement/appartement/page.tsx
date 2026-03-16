@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "Trouver un appartement à Madrid depuis la France — Madrid & Toi",
@@ -128,6 +129,8 @@ export default function AppartementPage() {
           </div>
         </div>
       </section>
+
+      <EtapeSuivante label="Organiser son déménagement Paris → Madrid" href="/demenagement/paris-madrid" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">

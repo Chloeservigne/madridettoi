@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "La Seguridad Social en Espagne — Madrid & Toi",
@@ -462,6 +463,8 @@ export default function SecuPage() {
           </div>
         </div>
       </section>
+
+      <EtapeSuivante label="Transports & l'Abono à Madrid" href="/vivre/transports" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">

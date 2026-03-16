@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "Santé à Madrid : médecin, urgences, pharmacies, mutuelle privée — Madrid & Toi",
@@ -437,6 +438,8 @@ export default function SantePage() {
           </div>
         </div>
       </section>
+
+      <EtapeSuivante label="Faire ses courses à Madrid" href="/vivre/courses" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">

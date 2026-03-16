@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "Apprendre l'espagnol à Madrid : EOI, académies, intercambios — Madrid & Toi",
@@ -417,6 +418,8 @@ export default function EspagnolPage() {
           </div>
         </div>
       </section>
+
+      <EtapeSuivante label="Sortir à Madrid" href="/vivre/sortir" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">

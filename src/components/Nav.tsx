@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 
 const guideLinks = [
   { label: "Se décider", href: "/se-decider" },
-  { label: "Déménagement", href: "/demenagement" },
-  { label: "Logement", href: "/logement" },
-  { label: "Papiers", href: "/papiers" },
   { label: "Travailler", href: "/travailler" },
+  { label: "Logement", href: "/logement" },
+  { label: "Déménagement", href: "/demenagement" },
+  { label: "Papiers", href: "/papiers" },
   { label: "Vivre à Madrid", href: "/vivre" },
   { label: "Communauté", href: "/communaute" },
 ];

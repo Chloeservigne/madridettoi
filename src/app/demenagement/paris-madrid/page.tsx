@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "Déménagement Paris–Madrid : le guide complet — Madrid & Toi",
@@ -217,6 +218,8 @@ export default function ParisMadridPage() {
           </div>
         </div>
       </section>
+
+      <EtapeSuivante label="La checklist complète du déménagement" href="/demenagement/checklist" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">

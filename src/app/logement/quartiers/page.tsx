@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import BarrioQuiz from "@/components/BarrioQuiz";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "Les quartiers de Madrid pour les expats français — Madrid & Toi",
@@ -274,6 +275,8 @@ export default function QuartiersPage() {
           </div>
         </div>
       </section>
+
+      <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">
