@@ -6,7 +6,7 @@ import EmailForm from "@/components/EmailForm";
 export const metadata: Metadata = {
   title: "Entreprises françaises à Madrid — où travailler en 2026 — Madrid & Toi",
   description:
-    "Airbus, Decathlon, L'Oréal, Thales, Renault... Les grands groupes français implantés à Madrid, la French Tech, et comment cibler ces employeurs depuis la France.",
+    "Airbus Getafe, Decathlon San Sebastián de los Reyes, L'Oréal, Thales, Renault Alcobendas... Les grands groupes français implantés à Madrid, leurs bureaux, leurs liens carrières, et le VIE.",
 };
 
 export default function EntreprisesFrancaisesPage() {
@@ -32,8 +32,8 @@ export default function EntreprisesFrancaisesPage() {
           </h1>
           <p className="text-lg text-[#5a3e35] leading-relaxed">
             Madrid est la première destination des investissements français en Espagne.
-            Des dizaines de grands groupes y sont implantés — et ils recrutent régulièrement
-            des profils français, parfois sans exiger un espagnol parfait.
+            130 000 emplois, des dizaines de grands groupes implantés en banlieue ou en plein centre —
+            avec adresses, liens carrières et le point sur le VIE.
           </p>
         </div>
       </section>
@@ -54,15 +54,16 @@ export default function EntreprisesFrancaisesPage() {
               <p className="text-[#5a3e35] text-sm">Entreprises membres de la Chambre Franco-Espagnole (CCIFE)</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">1894</p>
-              <p className="text-[#5a3e35] text-sm">Année de création de la Chambre Franco-Espagnole — l&apos;une des plus anciennes d&apos;Europe</p>
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">n°1</p>
+              <p className="text-[#5a3e35] text-sm">Communauté autonome qui reçoit le plus d&apos;investissements directs français</p>
             </div>
           </div>
           <p className="text-[#5a3e35] leading-relaxed text-lg">
-            Madrid est la communauté autonome qui reçoit le plus d&apos;investissements
-            directs en provenance de France. La présence française est ancienne, diversifiée,
-            et couvre tous les secteurs — de la grande distribution à l&apos;aéronautique
-            en passant par la tech et l&apos;énergie.
+            La présence française est ancienne, diversifiée, et couvre tous les secteurs —
+            de la grande distribution à l&apos;aéronautique en passant par la tech et l&apos;énergie.
+            La plupart des sièges espagnols se trouvent dans les parques empresariales
+            au nord de Madrid (Alcobendas, San Sebastián de los Reyes, Pozuelo) ou sur des
+            sites industriels comme Getafe au sud.
           </p>
         </div>
       </section>
@@ -71,104 +72,218 @@ export default function EntreprisesFrancaisesPage() {
       <section className="py-20 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-8">
-            Les grands groupes français implantés à Madrid
+            Les grands groupes — où ils sont, comment postuler
           </h2>
           <div className="space-y-5">
 
+            {/* Distribution */}
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#C8614A] font-semibold uppercase tracking-widest text-sm mb-3">Distribution & Retail</p>
-              <div className="space-y-3">
+              <p className="text-[#C8614A] font-semibold uppercase tracking-widest text-sm mb-4">Distribution & Retail</p>
+              <div className="space-y-5">
                 <div>
-                  <p className="font-semibold text-[#2C1810]">Decathlon</p>
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Decathlon España</p>
+                    <a
+                      href="https://www.decathlon.es/es/rrhh"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Siège : San Sebastián de los Reyes (nord Madrid, 28702)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Classé 17e meilleur employeur en Espagne, Decathlon est une des entreprises
-                    françaises les plus appréciées localement. Nombreux postes en magasin,
-                    logistique et fonctions support au siège espagnol.
+                    17e meilleur employeur en Espagne. Le siège espagnol est à San Seba — une ville résidentielle
+                    à 25 min du centre. Postes en magasin, logistique, marketing et fonctions support.
+                    Bonne réputation employeur, culture sport omniprésente.
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C1810]">Carrefour</p>
+                <div className="border-t border-[#EDE0C8] pt-5">
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Carrefour España</p>
+                    <a
+                      href="https://www.carrefour.es/empleo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Siège : Boadilla del Monte (ouest Madrid)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Présence forte en Espagne avec des hypermarchés, supermarchés et le
-                    développement du e-commerce. Recrutements réguliers en gestion, supply
-                    chain et digital.
+                    Présence forte avec hypermarchés, supermarchés et e-commerce en pleine croissance.
+                    Recrutements réguliers en gestion, supply chain et digital.
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C1810]">Leroy Merlin</p>
+                <div className="border-t border-[#EDE0C8] pt-5">
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Leroy Merlin España</p>
+                    <a
+                      href="https://www.leroymerlin.es/trabaja-con-nosotros.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Siège : Alcobendas (nord Madrid)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    L&apos;enseigne bricolage est bien implantée dans toute la région de Madrid.
-                    Profils commerce, logistique et management de rayon régulièrement recherchés.
+                    Bien implantée dans toute la région. Profils commerce, logistique et management régulièrement recherchés.
                   </p>
                 </div>
               </div>
             </div>
 
+            {/* Aéro / Défense */}
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#C8614A] font-semibold uppercase tracking-widest text-sm mb-3">Aéronautique, Défense & Industrie</p>
-              <div className="space-y-3">
+              <p className="text-[#C8614A] font-semibold uppercase tracking-widest text-sm mb-4">Aéronautique, Défense & Industrie</p>
+              <div className="space-y-5">
                 <div>
-                  <p className="font-semibold text-[#2C1810]">Airbus — Getafe</p>
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Airbus España</p>
+                    <a
+                      href="https://www.airbus.com/en/careers/life-at-airbus/working-here/working-at-airbus-in-spain"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Site principal : Paseo John Lennon s/n, Getafe (sud Madrid, 28906)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    L&apos;Espagne est l&apos;un des quatre pays fondateurs d&apos;Airbus.
-                    Le site de Getafe (au sud de Madrid) est l&apos;un des plus importants —
-                    ingénieurs, techniciens et fonctions support y sont régulièrement recrutés.
-                    L&apos;anglais est souvent suffisant en interne.
+                    L&apos;Espagne est l&apos;un des quatre pays fondateurs d&apos;Airbus — le site de Getafe
+                    est l&apos;un des plus importants du groupe. Ingénieurs aéronautiques, structures,
+                    systèmes, techniciens assemblage et fonctions support. ~250 stages/an sur les
+                    sites espagnols (Getafe, Séville, Illescas). L&apos;anglais est souvent suffisant en interne.
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C1810]">Thales</p>
+                <div className="border-t border-[#EDE0C8] pt-5">
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Thales España</p>
+                    <a
+                      href="https://thalesgroup.com/en/europe/spain/jobs-spain"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Bureaux : Parque Norte, Calle Serrano Galvache 56, Madrid 28033 — Centre de production : Tres Cantos (nord Madrid)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Présent à Madrid dans la défense, l&apos;aérospatial et la cybersécurité.
-                    Profils ingénieurs et tech très recherchés.
+                    Présent en Espagne depuis plus de 30 ans. Défense, aérospatial, cybersécurité
+                    (via S21Sec à Tres Cantos). Profils ingénieurs, systèmes embarqués et cybersécurité très recherchés.
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C1810]">Safran</p>
+                <div className="border-t border-[#EDE0C8] pt-5">
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Safran España</p>
+                    <a
+                      href="https://www.safran-group.com/careers"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Implantation dans la région de Madrid (équipements aéronautiques)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Implantation significative dans la région de Madrid, notamment dans
-                    les équipements aéronautiques.
+                    Moteurs, équipements de cabine et nacelles — Safran est un employeur régulier
+                    pour les ingénieurs aéronautiques et mécaniciens de formation.
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C1810]">Schneider Electric & Saint-Gobain</p>
+                <div className="border-t border-[#EDE0C8] pt-5">
+                  <p className="font-semibold text-[#2C1810] mb-1">Schneider Electric & Saint-Gobain</p>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Bureaux et opérations à Madrid</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Deux géants industriels avec des bureaux et opérations à Madrid — gestion
-                    de l&apos;énergie pour Schneider, matériaux de construction pour Saint-Gobain
-                    (Sekurit, Isover).
+                    Schneider Electric (gestion de l&apos;énergie) et Saint-Gobain (matériaux de construction —
+                    Sekurit, Isover) ont tous deux une présence significative à Madrid avec des recrutements
+                    réguliers en ingénierie et commerce.
                   </p>
                 </div>
               </div>
             </div>
 
+            {/* Beauté / Énergie / Télécom / Auto */}
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#C8614A] font-semibold uppercase tracking-widest text-sm mb-3">Beauté, Énergie & Télécom</p>
-              <div className="space-y-3">
+              <p className="text-[#C8614A] font-semibold uppercase tracking-widest text-sm mb-4">Beauté, Télécom, Énergie & Auto</p>
+              <div className="space-y-5">
                 <div>
-                  <p className="font-semibold text-[#2C1810]">L&apos;Oréal</p>
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">L&apos;Oréal España</p>
+                    <a
+                      href="https://careers.loreal.com/global/en/spain"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Siège : Calle Alcalá 546, Madrid (nouveau siège inauguré récemment)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Classé parmi les entreprises les plus attractives en Espagne.
-                    Siège espagnol à Madrid avec des équipes marketing, digital et commercial.
+                    Classé parmi les entreprises les plus attractives en Espagne. Siège moderne
+                    à l&apos;est de Madrid avec des équipes marketing, digital, commercial et R&D.
+                    Le portail carrières espagnol est distinct du portail français.
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C1810]">Air Liquide</p>
+                <div className="border-t border-[#EDE0C8] pt-5">
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Orange España</p>
+                    <a
+                      href="https://www.orange.es/trabaja-con-nosotros"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Siège : Parque Empresarial La Finca, Pozuelo de Alarcón (ouest Madrid, 28223)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Bureaux à Madrid, actif dans les gaz industriels et la santé.
+                    Siège espagnol dans le parc d&apos;affaires La Finca à Pozuelo — l&apos;un des
+                    plus beaux campus d&apos;entreprise de Madrid. Profils tech, data, réseau et commercial.
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C1810]">Orange España</p>
+                <div className="border-t border-[#EDE0C8] pt-5">
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Renault España</p>
+                    <a
+                      href="https://es.renaultgroup.com/empleo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Siège espagnol : Avenida de Europa Business Park, Alcobendas (nord Madrid)</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Le siège espagnol d&apos;Orange est à Madrid. Profils tech, data et
-                    commercial régulièrement recherchés.
+                    Siège espagnol à Alcobendas dans un bâtiment de 12 600 m². Fonctions commerciales,
+                    marketing et support. L&apos;usine principale est à Valladolid (1h30 de Madrid en train).
                   </p>
                 </div>
-                <div>
-                  <p className="font-semibold text-[#2C1810]">Renault</p>
+                <div className="border-t border-[#EDE0C8] pt-5">
+                  <div className="flex items-start justify-between gap-4 mb-1">
+                    <p className="font-semibold text-[#2C1810]">Air Liquide España</p>
+                    <a
+                      href="https://www.airliquide.com/fr/rejoindre-air-liquide"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C8614A] text-xs font-semibold whitespace-nowrap hover:underline"
+                    >
+                      Offres →
+                    </a>
+                  </div>
+                  <p className="text-[#7A8C5E] text-xs mb-2">Bureaux à Madrid</p>
                   <p className="text-[#5a3e35] text-sm leading-relaxed">
-                    Présence commerciale et logistique à Madrid, avec une usine à Valladolid.
-                    Siège pour l&apos;Espagne basé dans la capitale.
+                    Actif dans les gaz industriels, médicaux et l&apos;hydrogène. Profils ingénieurs,
+                    techniciens et commerciaux régulièrement recrutés.
                   </p>
                 </div>
               </div>
@@ -178,67 +293,83 @@ export default function EntreprisesFrancaisesPage() {
         </div>
       </section>
 
-      {/* French Tech */}
+      {/* VIE */}
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
-            La French Tech à Madrid
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
+            Le VIE : 2 400 € nets à 25 ans, chez un groupe français
           </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
+            Le <strong>Volontariat International en Entreprise (VIE)</strong> est l&apos;une
+            des meilleures façons d&apos;atterrir dans un grand groupe français à Madrid — surtout
+            en début de carrière. C&apos;est une mission de 6 à 24 mois, avec un statut
+            protecteur et une indemnité qui peut atteindre <strong>2 400 € nets par mois</strong> en Espagne.
+            Exonéré de charges sociales, donc le net est élevé.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div className="bg-white rounded-2xl p-5 shadow-sm">
+              <p className="text-[#C8614A] font-semibold uppercase tracking-widest text-sm mb-2">Conditions</p>
+              <ul className="text-[#5a3e35] text-sm leading-relaxed space-y-1">
+                <li>— 18 à 28 ans au moment de la mission</li>
+                <li>— Ressortissant d&apos;un pays de l&apos;Espace Économique Européen</li>
+                <li>— Étudiant ou jeune diplômé en recherche d&apos;emploi</li>
+                <li>— Durée : 6 à 24 mois</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl p-5 shadow-sm">
+              <p className="text-[#C8614A] font-semibold uppercase tracking-widest text-sm mb-2">Points d&apos;attention</p>
+              <ul className="text-[#5a3e35] text-sm leading-relaxed space-y-1">
+                <li>— Pas de cotisation chômage pendant la mission</li>
+                <li>— Activité rémunérée secondaire interdite</li>
+                <li>— Absences limitées à 7 jours/an hors Espagne</li>
+                <li>— Ce n&apos;est pas un CDI — prévoie la suite</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Les secteurs couverts sont larges : finance, marketing, commerce international,
+            ingénierie, informatique, RH. Les entreprises françaises citées dans cette page
+            (Airbus, Thales, L&apos;Oréal, Renault...) publient régulièrement des missions VIE en Espagne.
+          </p>
           <p className="text-[#5a3e35] leading-relaxed text-lg">
-            Madrid est devenu un terrain d&apos;expansion naturel pour les startups françaises.
-            L&apos;écosystème de la ville est le 5e d&apos;Europe en nombre de startups
-            financées par des VC, avec une valeur totale estimée à 25 milliards d&apos;euros.
-          </p>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
-            <strong>French Tech Madrid</strong> est une association active qui aide les
-            startups françaises à s&apos;implanter en Espagne et connecte les acteurs
-            des deux écosystèmes. Elle organise régulièrement des workshops, hackathons et
-            soirées pitch. En juin 2025, le <em>Train de la French Tech</em> a conduit
-            une centaine de startups et investisseurs depuis Perpignan jusqu&apos;à Madrid
-            pour une mission d&apos;expansion.
-          </p>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
-            Le <strong>South Summit</strong>, l&apos;un des grands rendez-vous entrepreneuriaux
-            européens, se tient chaque année à Madrid — 40 000 participants en 2025.
-            C&apos;est l&apos;événement à ne pas rater si tu veux te connecter à l&apos;écosystème tech local.
+            La plateforme officielle pour trouver et postuler :{" "}
+            <a
+              href="https://mon-vie-via.businessfrance.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+            >
+              mon-vie-via.businessfrance.fr
+            </a>{" "}
+            (Business France). Filtre par pays &ldquo;Espagne&rdquo; et la ville &ldquo;Madrid&rdquo;.
           </p>
         </div>
       </section>
 
-      {/* Section dark */}
+      {/* Section dark — French Tech + CCIFE */}
       <section className="py-20 px-6 bg-[#2C1810]">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-8">
-            La Chambre Franco-Espagnole et comment l&apos;utiliser
+            Le réseau franco-espagnol à Madrid
           </h2>
-          <p className="text-[#F5ECD7]/80 leading-relaxed mb-6">
-            La <strong className="text-white">Chambre Franco-Espagnole de Commerce et d&apos;Industrie</strong> (CCIFE),
-            fondée en 1894, est l&apos;un des réseaux professionnels les plus actifs de Madrid.
-            Elle regroupe plus de 400 entreprises membres et propose plus de 80 événements
-            de networking par an.
-          </p>
-          <p className="text-[#F5ECD7]/80 leading-relaxed mb-8">
-            Pour un candidat en recherche d&apos;emploi, c&apos;est une porte d&apos;entrée
-            précieuse : salons de l&apos;emploi francophones (deux fois par an à Madrid),
-            mise en relation avec des entreprises membres, et accès à un réseau de
-            professionnels franco-espagnols. L&apos;adhésion existe aussi pour les
-            particuliers — moins connue, mais utile.
-          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-2">Salons emploi francophones</p>
+              <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-2">La Chambre Franco-Espagnole</p>
               <p className="text-[#F5ECD7]/80 text-sm leading-relaxed">
-                Des salons de l&apos;emploi spécifiquement dédiés aux profils francophones
-                sont organisés à Madrid (et Barcelone) — une occasion rare de rencontrer
-                des recruteurs de groupes français en face à face.
+                La CCIFE (fondée en 1894) organise plus de 80 événements par an et
+                accueille 400+ entreprises membres. Des salons de l&apos;emploi francophones
+                se tiennent à Madrid — une occasion rare de rencontrer des recruteurs
+                en face à face.{" "}
+                <a href="https://www.lachambre.es" target="_blank" rel="noopener noreferrer" className="text-[#E8A838] underline underline-offset-2 hover:opacity-80 transition-opacity">lachambre.es</a>
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-2">Postuler depuis la France</p>
+              <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-2">French Tech Madrid</p>
               <p className="text-[#F5ECD7]/80 text-sm leading-relaxed">
-                Pour les grands groupes, postule directement sur leurs sites carrières
-                espagnols — souvent distincts des portails français.
-                Mets ton profil LinkedIn en espagnol et indique Madrid en localisation.
+                Association active qui connecte startups françaises et écosystème madrilène.
+                Workshops, hackathons, pitch nights. En juin 2025, le Train de la French Tech
+                a conduit ~100 startups et investisseurs de Perpignan à Madrid. Le South Summit
+                (40 000 participants en 2025) est le grand rendez-vous tech local.
               </p>
             </div>
           </div>
@@ -249,60 +380,6 @@ export default function EntreprisesFrancaisesPage() {
               équipes locales, et vie madrilène à la sortie du bureau.
             </p>
           </blockquote>
-        </div>
-      </section>
-
-      {/* Conseils pratiques */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
-            Comment cibler ces entreprises efficacement
-          </h2>
-          <div className="space-y-4">
-            <div className="flex gap-4 items-start">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2.5"></div>
-              <p className="text-[#5a3e35] leading-relaxed">
-                <strong>Sites carrières espagnols :</strong> la majorité des grands groupes
-                ont des portails de recrutement distincts pour l&apos;Espagne. Cherche
-                &ldquo;[nom entreprise] empleo España&rdquo; — ne passe pas par le portail France.
-              </p>
-            </div>
-            <div className="flex gap-4 items-start">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2.5"></div>
-              <p className="text-[#5a3e35] leading-relaxed">
-                <strong>LinkedIn en espagnol :</strong> mets ton profil en espagnol (ou
-                bilingue), indique Madrid comme localisation souhaitée. Les recruteurs
-                espagnols filtrent par localisation.
-              </p>
-            </div>
-            <div className="flex gap-4 items-start">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2.5"></div>
-              <p className="text-[#5a3e35] leading-relaxed">
-                <strong>InfoJobs :</strong> même pour les entreprises françaises, de
-                nombreuses offres sont publiées sur InfoJobs — la plateforme de référence
-                en Espagne. Filtre par &ldquo;Madrid&rdquo; et le nom de l&apos;entreprise.
-              </p>
-            </div>
-            <div className="flex gap-4 items-start">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2.5"></div>
-              <p className="text-[#5a3e35] leading-relaxed">
-                <strong>Contact direct :</strong> pour les postes non publiés, contacter
-                directement les RH ou managers via LinkedIn fonctionne bien — plus que
-                dans la culture française. Un message court et ciblé en espagnol a de bonnes chances d&apos;aboutir.
-              </p>
-            </div>
-            <div className="flex gap-4 items-start">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2.5"></div>
-              <p className="text-[#5a3e35] leading-relaxed">
-                <strong>NIE dès que possible :</strong> avoir son{" "}
-                <Link href="/papiers/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
-                  NIE
-                </Link>{" "}
-                avant de signer accélère les formalités d&apos;embauche. Sans NIE,
-                certains groupes ne peuvent pas finaliser ton dossier administratif.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
