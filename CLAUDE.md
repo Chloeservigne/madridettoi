@@ -108,12 +108,62 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 ### Autres
 - `/mon-histoire` — prose éditorial, pas de structure imposée
 
-## Linking interne — règles
+## Créer une nouvelle page — protocole obligatoire
 
-- Toujours linker les noms de quartiers cités dans le corps du texte vers leur page `/logement/quartiers/[slug]`
-- Style lien inline : `className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"`
-- Style lien inline sur fond dark : `className="text-[#E8A838] underline underline-offset-2 hover:opacity-80 transition-opacity"`
-- Les sections "liens connexes" utilisent des pills : `className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"`
+### Avant de coder
+1. Lire `DESIGN.md` — identifier les éléments à utiliser, ne rien inventer
+2. Vérifier qu'aucune page existante ne couvre déjà cette intention (SEO, pas de cannibalisation)
+3. **Cartographier le maillage** : quelles pages existantes doivent pointer vers cette nouvelle page ? Lesquelles doit-elle citer ?
+
+### Pendant le codage
+4. Intégrer les liens internes dans le corps du texte dès la rédaction (pas en ajout après)
+5. Construire la section "Ça pourrait aussi t'aider" avec 4–5 pills vers des pages réellement liées
+6. Metadata `title` et `description` optimisés pour l'intention de recherche cible
+
+### Après avoir codé
+7. **Mettre à jour les pages existantes** qui devraient pointer vers la nouvelle page (maillage bidirectionnel)
+8. Mettre à jour `CLAUDE.md` : ajouter la page dans "Pages existantes"
+9. Commit + push
+
+---
+
+## Maillage interne — règles
+
+### Liens inline dans le corps du texte
+Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. **Ne pas attendre la section "liens connexes".**
+
+- Quartiers cités → `/logement/quartiers/[slug]`
+- NIE mentionné → `/papiers/nie`
+- Padron mentionné → `/papiers/padron`
+- Compte bancaire mentionné → `/papiers/compte-bancaire`
+- Sécu / Seguridad Social mentionné → `/papiers/secu`
+- Appartement / logement / bail mentionné → `/logement/appartement`
+- Budget / coût de la vie mentionné → `/se-decider/budget`
+- Salaire mentionné → `/se-decider/salaire-madrid`
+- Remote / télétravail mentionné → `/travailler/remote`
+- Autónomo / freelance mentionné → `/travailler/freelance`
+- Emploi local mentionné → `/travailler/emploi`
+- Entreprises françaises mentionnées → `/travailler/entreprises-francaises`
+- VIE mentionné → `/travailler/vie`
+- Transports / Abono mentionné → `/vivre/transports`
+- Déménagement Paris–Madrid mentionné → `/demenagement/paris-madrid`
+
+### Styles de liens
+- Fond clair : `className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"`
+- Fond sombre : `className="text-[#E8A838] underline underline-offset-2 hover:opacity-80 transition-opacity"`
+- Pills "liens connexes" : `className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"`
+
+### Section "Ça pourrait aussi t'aider"
+- Toujours présente avant la newsletter
+- 4 à 6 pills maximum
+- Choisir des pages complémentaires (pas juste les voisines dans l'arborescence)
+- Penser au parcours utilisateur : que va-t-il chercher ensuite ?
+
+### Maillage bidirectionnel
+Quand on crée une nouvelle page, identifier les pages existantes qui devraient la mentionner et les mettre à jour. Exemples :
+- Nouvelle page `/travailler/vie` → `/travailler/entreprises-francaises` devrait y faire référence (déjà fait)
+- Nouvelle page `/vivre/sante` → `/papiers/secu` devrait la mentionner
+- Nouvelle page `/logement/prix` → `/se-decider/budget` devrait la mentionner
 
 ## Liens externes importants (vérifiés)
 
