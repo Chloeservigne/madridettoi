@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "Papiers & démarches administratives à Madrid — Madrid & Toi",
@@ -25,18 +26,18 @@ const cards = [
     href: "/papiers/padron",
   },
   {
-    emoji: "🏥",
-    title: "La sécu en Espagne",
-    description:
-      "Comment s'inscrire à la Seguridad Social, les droits selon ton statut, les médecins de ville, les urgences, les mutuelles privées.",
-    href: "/papiers/secu",
-  },
-  {
     emoji: "🏦",
     title: "Ouvrir un compte bancaire espagnol",
     description:
       "BBVA, Santander, CaixaBank, Revolut — les options, les délais, ce qu'il faut comme documents, et si tu peux attendre pour l'ouvrir.",
     href: "/papiers/compte-bancaire",
+  },
+  {
+    emoji: "🏥",
+    title: "La sécu en Espagne",
+    description:
+      "Comment s'inscrire à la Seguridad Social, les droits selon ton statut, les médecins de ville, les urgences, les mutuelles privées.",
+    href: "/papiers/secu",
   },
   {
     emoji: "💰",
@@ -61,6 +62,9 @@ export default function PapiersPage() {
           >
             ← Retour à l&apos;accueil
           </Link>
+          <span className="inline-block px-3 py-1 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-xs font-semibold mb-4">
+            Phase 3 — Je viens d&apos;arriver
+          </span>
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
             Démarches administratives
           </p>
@@ -121,6 +125,8 @@ export default function PapiersPage() {
           )}
         </div>
       </section>
+
+      <EtapeSuivante label="Vivre à Madrid au quotidien" href="/vivre" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">

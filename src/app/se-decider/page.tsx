@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
   title: "Se décider : pourquoi Madrid ? — Madrid & Toi",
@@ -61,6 +62,9 @@ export default function SeDeciderPage() {
           >
             ← Retour à l&apos;accueil
           </Link>
+          <span className="inline-block px-3 py-1 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-xs font-semibold mb-4">
+            Phase 1 — Je rêve encore
+          </span>
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
             Avant de partir
           </p>
@@ -125,6 +129,8 @@ export default function SeDeciderPage() {
           )}
         </div>
       </section>
+
+      <EtapeSuivante label="Maintenant, la question du travail" href="/travailler" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">

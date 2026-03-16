@@ -61,6 +61,9 @@ export default function CommunautePage() {
           >
             ← Retour à l&apos;accueil
           </Link>
+          <span className="inline-block px-3 py-1 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-xs font-semibold mb-4">
+            Phase 4 — Je vis à Madrid
+          </span>
           <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
             Trouver sa communauté
           </p>
