@@ -35,6 +35,12 @@ git push           # déclenche le déploiement Vercel
 - `font-[family-name:var(--font-playfair)]` → titres (Fraunces)
 - `font-[family-name:var(--font-dm-sans)]` → corps (Jost)
 
+## Bibliothèque d'éléments visuels
+
+**Avant de coder une nouvelle page**, consulter `DESIGN.md` à la racine du projet.
+Il contient le code exact de chaque élément réutilisable : hero, stat cards, blockquote, étapes, checklist, tableau, pills, liens, newsletter, footer.
+Page de prévisualisation (non indexée) : `/ui`
+
 ## Format des pages — règle fondamentale
 
 **Numéros uniquement pour les vraies étapes séquentielles** (processus admin où l'ordre compte).
