@@ -32,6 +32,13 @@ const cards = [
     href: "/travailler/freelance",
   },
   {
+    emoji: "🇫🇷",
+    title: "Les entreprises françaises à Madrid",
+    description:
+      "Airbus, Decathlon, L'Oréal, Thales, Renault... Les grands groupes implantés à Madrid, la French Tech, et comment les cibler depuis la France.",
+    href: "/travailler/entreprises-francaises",
+  },
+  {
     emoji: "🏢",
     title: "Créer une société en Espagne",
     description:

@@ -90,6 +90,7 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 - `/travailler/remote` — éditorial
 - `/travailler/emploi` — éditorial : secteurs qui recrutent, salaires 2026, plateformes (Infojobs, LinkedIn), conseils pratiques
 - `/travailler/freelance` — mixte : éditorial + 3 étapes numérotées (NIE, Hacienda, RETA), tableau cotisations RETA 2026, Tarifa Plana, IVA/IRPF
+- `/travailler/entreprises-francaises` — éditorial : grands groupes (Airbus Getafe, Decathlon, L'Oréal, Thales, Renault…), French Tech Madrid, CCIFE, conseils pour cibler ces employeurs
 
 ### `/demenagement`
 - `/demenagement/paris-madrid` — éditorial
