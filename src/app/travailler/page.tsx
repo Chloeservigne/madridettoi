@@ -22,14 +22,14 @@ const cards = [
     title: "Chercher un emploi local à Madrid",
     description:
       "Infojobs, LinkedIn, les secteurs qui recrutent, les salaires, et comment se présenter dans un marché hispanophone.",
-    href: null,
+    href: "/travailler/emploi",
   },
   {
     emoji: "🧾",
     title: "Devenir autónomo (indépendant)",
     description:
-      "Le statut d'autónomo, les cotisations (~230 €/mois), l'IRPF, comment facturer depuis l'Espagne — la solution la plus propre pour les freelances.",
-    href: null,
+      "Le statut d'autónomo, la Tarifa Plana à 80 €/mois, l'IRPF, comment facturer depuis l'Espagne — la solution la plus propre pour les freelances.",
+    href: "/travailler/freelance",
   },
   {
     emoji: "🏢",

@@ -88,6 +88,8 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 
 ### `/travailler`
 - `/travailler/remote` — éditorial
+- `/travailler/emploi` — éditorial : secteurs qui recrutent, salaires 2026, plateformes (Infojobs, LinkedIn), conseils pratiques
+- `/travailler/freelance` — mixte : éditorial + 3 étapes numérotées (NIE, Hacienda, RETA), tableau cotisations RETA 2026, Tarifa Plana, IVA/IRPF
 
 ### `/demenagement`
 - `/demenagement/paris-madrid` — éditorial
@@ -119,6 +121,5 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 
 ## Pages futures identifiées (mots-clés Ahrefs)
 
-- `/travailler/emploi`, `/travailler/freelance`
 - `/logement/prix`, `/logement/longue-duree`
-- `/vivre/transports`, `/vivre/sante`
+- `/vivre/sante`
