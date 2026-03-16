@@ -90,7 +90,8 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 - `/travailler/remote` — éditorial
 - `/travailler/emploi` — éditorial : secteurs qui recrutent, salaires 2026, plateformes (Infojobs, LinkedIn), conseils pratiques
 - `/travailler/freelance` — mixte : éditorial + 3 étapes numérotées (NIE, Hacienda, RETA), tableau cotisations RETA 2026, Tarifa Plana, IVA/IRPF
-- `/travailler/entreprises-francaises` — éditorial : grands groupes (Airbus Getafe, Decathlon, L'Oréal, Thales, Renault…), French Tech Madrid, CCIFE, conseils pour cibler ces employeurs
+- `/travailler/entreprises-francaises` — éditorial : grands groupes (Airbus Getafe, Decathlon, L'Oréal, Thales, Renault…), adresses bureaux, liens carrières ES, French Tech Madrid, CCIFE, section VIE
+- `/travailler/vie` — mixte : éditorial + 4 étapes (Business France, cibler les groupes, dossier, installation), conditions, avantages/limites, lien mon-vie-via.businessfrance.fr
 
 ### `/demenagement`
 - `/demenagement/paris-madrid` — éditorial

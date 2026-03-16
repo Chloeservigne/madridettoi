@@ -39,6 +39,13 @@ const cards = [
     href: "/travailler/entreprises-francaises",
   },
   {
+    emoji: "✈️",
+    title: "Faire un VIE à Madrid",
+    description:
+      "2 400 € nets par mois, 18-28 ans, jusqu'à 24 mois dans un grand groupe français. Comment postuler, à quoi s'attendre, et comment préparer ton installation.",
+    href: "/travailler/vie",
+  },
+  {
     emoji: "🏢",
     title: "Créer une société en Espagne",
     description:
