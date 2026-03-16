@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 
 const cards = [
   {
+    emoji: "🇫🇷",
+    title: "La communauté française à Madrid",
+    description:
+      "35 000 Français vivent à Madrid. Associations, intercambios, groupes Facebook, Institut français — comment trouver ta communauté dès ton arrivée.",
+    href: "/communaute/francais-madrid",
+  },
+  {
     emoji: "💬",
     title: "Groupes Facebook et Discord de Français",
     description:

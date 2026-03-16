@@ -32,11 +32,11 @@ const cards = [
     href: null,
   },
   {
-    emoji: "🗺️",
-    title: "Les 30 premiers jours à Madrid",
+    emoji: "✅",
+    title: "La checklist complète : de J-6 mois à J+3 mois",
     description:
-      "Le NIE, la banque, trouver un appart si ce n'est pas fait, l'empadronamiento — ce que tu dois faire en priority dès ton arrivée.",
-    href: null,
+      "Toutes les étapes dans l'ordre — résiliation des contrats français, appartement, NIE, Padrón, compte bancaire, sécu — pour ne rien oublier.",
+    href: "/demenagement/checklist",
   },
 ];
 

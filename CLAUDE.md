@@ -91,6 +91,7 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 - `/papiers/secu` — éditorial
 - `/papiers/padron` — mixte : éditorial + 3 étapes numérotées
 - `/papiers/compte-bancaire` — mixte : éditorial + 3 étapes numérotées
+- `/papiers/impots` — éditorial : règle des 183 jours, tranches IRPF 2026, Renta, convention France-Espagne, Modelo 720
 
 ### `/travailler`
 - `/travailler/remote` — éditorial
@@ -101,9 +102,17 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 
 ### `/demenagement`
 - `/demenagement/paris-madrid` — éditorial
+- `/demenagement/checklist` — étapes numérotées : timeline complète J-6 mois → J+3 mois, toutes les actions dans l'ordre
 
 ### `/vivre`
 - `/vivre/transports` — éditorial : Abono (tarifs 2026), métro, EMT+búhos, Cercanías, aéroport, BiciMAD, taxi, VTC
+- `/vivre/sante` — éditorial : médico de cabecera, PAC vs Urgencias, mutuelles privées (Sanitas, Adeslas, Asisa), CEAM
+- `/vivre/courses` — éditorial : supermarchés, marchés municipaux, El Rastro, menu del día
+- `/vivre/espagnol` — éditorial : EOI, académies, intercambios, apps, DELE
+- `/vivre/sortir` — éditorial : musées gratuits (horaires), parcs, El Rastro, vie nocturne par quartier
+
+### `/communaute`
+- `/communaute/francais-madrid` — éditorial : 35 000 Français, Madrid Accueil, Institut français, groupes Facebook, intercambios, CCIFE
 
 ### Autres
 - `/mon-histoire` — prose éditorial, pas de structure imposée
@@ -147,6 +156,13 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - VIE mentionné → `/travailler/vie`
 - Transports / Abono mentionné → `/vivre/transports`
 - Déménagement Paris–Madrid mentionné → `/demenagement/paris-madrid`
+- Checklist déménagement mentionnée → `/demenagement/checklist`
+- Santé / médecin / mutuelle mentionné → `/vivre/sante`
+- Courses / supermarché mentionné → `/vivre/courses`
+- Espagnol / intercambio mentionné → `/vivre/espagnol`
+- Sortir / musées / vie nocturne mentionné → `/vivre/sortir`
+- Impôts / fiscalité / IRPF mentionné → `/papiers/impots`
+- Communauté française mentionnée → `/communaute/francais-madrid`
 
 ### Styles de liens
 - Fond clair : `className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"`
@@ -180,4 +196,3 @@ Quand on crée une nouvelle page, identifier les pages existantes qui devraient 
 ## Pages futures identifiées (mots-clés Ahrefs)
 
 - `/logement/prix`, `/logement/longue-duree`
-- `/vivre/sante`

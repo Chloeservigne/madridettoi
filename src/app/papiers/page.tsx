@@ -43,7 +43,7 @@ const cards = [
     title: "Impôts et résidence fiscale",
     description:
       "La règle des 183 jours, comment se désinscrire des impôts français, s'inscrire en Espagne, et éviter les mauvaises surprises.",
-    href: null,
+    href: "/papiers/impots",
   },
 ];
 
@@ -132,9 +132,8 @@ export default function PapiersPage() {
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
           <p className="text-[#F5ECD7]/90 text-lg mb-10 leading-relaxed">
-            Banque, impôts, résidence fiscale — les prochains guides
-            administratifs arrivent. Inscris-toi pour les recevoir dès leur
-            publication.
+            NIE, sécu, banque, impôts — tous nos guides pour démêler
+            l&apos;administration espagnole sans te perdre.
           </p>
           <div className="flex justify-center">
             <EmailForm />

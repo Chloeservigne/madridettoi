@@ -22,28 +22,28 @@ const cards = [
     title: "Santé : médecins, urgences, pharmacies",
     description:
       "Trouver un médecin de ville (médico de cabecera), les urgences (Urgencias), les pharmacies ouvertes la nuit, et si une mutuelle privée vaut le coup.",
-    href: null,
+    href: "/vivre/sante",
   },
   {
     emoji: "🛒",
     title: "Faire ses courses à Madrid",
     description:
       "Mercadona, Carrefour, Lidl, marchés de quartier — les supermarchés, les marchés, et comment manger bien sans se ruiner.",
-    href: null,
+    href: "/vivre/courses",
   },
   {
     emoji: "🗣️",
     title: "Apprendre l'espagnol sur place",
     description:
       "Intercambios, cours en ligne, applications, immersion par quartier — les meilleures façons de progresser rapidement une fois à Madrid.",
-    href: null,
+    href: "/vivre/espagnol",
   },
   {
     emoji: "🎉",
     title: "Sortir à Madrid",
     description:
       "Musées (souvent gratuits le soir), parcs, tapas, vie nocturne, cinéma en VO — la vie culturelle de Madrid pour les nouveaux arrivants.",
-    href: null,
+    href: "/vivre/sortir",
   },
 ];
 
@@ -132,8 +132,8 @@ export default function VivrePage() {
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
           <p className="text-[#F5ECD7]/90 text-lg mb-10 leading-relaxed">
-            Transports, santé, sortir à Madrid — tous ces guides arrivent
-            bientôt. Inscris-toi pour les recevoir dès leur publication.
+            Transports, santé, courses, espagnol, sorties — tous nos guides
+            pratiques pour vivre au mieux à Madrid.
           </p>
           <div className="flex justify-center">
             <EmailForm />
