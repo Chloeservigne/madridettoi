@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Pourquoi Madrid ? Les vraies raisons de s'installer là-bas — Madrid & Toi",
@@ -11,8 +12,35 @@ export const metadata: Metadata = {
 };
 
 export default function PourquoiMadridPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Pourquoi Madrid ? Les vraies raisons de s'installer là-bas",
+      description:
+        "Rythme de vie, gastronomie, climat (avec les nuances qu'il faut), proximité avec la France, les Espagnols — ce qui fait vraiment la différence quand on vit à Madrid.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/se-decider/pourquoi-madrid",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/se-decider/pourquoi-madrid" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Se décider", item: "https://madrid-et-toi.com/se-decider" },
+        { "@type": "ListItem", position: 3, name: "Pourquoi Madrid", item: "https://madrid-et-toi.com/se-decider/pourquoi-madrid" },
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -36,6 +64,7 @@ export default function PourquoiMadridPage() {
             qui font qu&apos;après six ans, on est toujours là et on ne regrette
             rien.
           </p>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

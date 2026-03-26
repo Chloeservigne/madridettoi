@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "NIE en Espagne : le guide complet pour les Français — Madrid & Toi",
@@ -42,8 +43,35 @@ const tips = [
 ];
 
 export default function NiePage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "NIE en Espagne : le guide complet pour les Français",
+      description:
+        "C'est quoi le NIE, faut-il l'avoir avant d'arriver, comment prendre la cita previa, quels formulaires — tout ce qu'il faut savoir avant de déménager à Madrid.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/papiers/nie",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/papiers/nie" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Papiers", item: "https://madrid-et-toi.com/papiers" },
+        { "@type": "ListItem", position: 3, name: "NIE", item: "https://madrid-et-toi.com/papiers/nie" },
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -69,6 +97,7 @@ export default function NiePage() {
               Certificado de Registro, comment prendre un rendez-vous sans
               devenir fou — on démêle tout.
             </p>
+            <AuthorBadge date="mars 2026" />
           </div>
           <div className="flex-shrink-0 w-full max-w-xs lg:max-w-none lg:w-[360px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}

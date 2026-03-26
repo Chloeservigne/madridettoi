@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Checklist déménagement Madrid — Madrid & Toi",
@@ -11,8 +12,35 @@ export const metadata: Metadata = {
 };
 
 export default function ChecklistPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Checklist déménagement Madrid — de J-6 mois à J+3 mois",
+      description:
+        "La checklist complète pour déménager à Madrid : de J-6 mois à J+3 mois, toutes les étapes pour ne rien oublier.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/demenagement/checklist",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/demenagement/checklist" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Déménagement", item: "https://madrid-et-toi.com/demenagement" },
+        { "@type": "ListItem", position: 3, name: "Checklist", item: "https://madrid-et-toi.com/demenagement/checklist" },
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -41,6 +69,7 @@ export default function ChecklistPage() {
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Jour J</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">J+3 mois</span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Coût de la vie à Madrid : le vrai budget d'un expat français — Madrid & Toi",
@@ -153,8 +154,35 @@ const budgetMensuel = [
 ];
 
 export default function BudgetPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Coût de la vie à Madrid : le vrai budget d'un expat français",
+      description:
+        "Quel est le coût de la vie à Madrid en 2025 ? Loyer par quartier, courses, menu del día, transports, abono — le budget mensuel réel chiffré d'un expat français.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/se-decider/budget",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/se-decider/budget" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Se décider", item: "https://madrid-et-toi.com/se-decider" },
+        { "@type": "ListItem", position: 3, name: "Budget", item: "https://madrid-et-toi.com/se-decider/budget" },
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -179,6 +207,7 @@ export default function BudgetPage() {
             la vie à Madrid en 2025 — loyer par quartier, courses, restos,
             transports et le reste.
           </p>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

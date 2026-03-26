@@ -43,6 +43,23 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Madrid & Toi",
+  url: "https://madrid-et-toi.com",
+  description:
+    "Guides pratiques pour les Français qui s'installent à Madrid — logement, NIE, travail, déménagement.",
+  inLanguage: "fr-FR",
+  author: {
+    "@type": "Person",
+    name: "Chloé",
+    url: "https://madrid-et-toi.com/mon-histoire",
+    description:
+      "Française installée à Madrid, auteure de Madrid & Toi",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,6 +68,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${jost.variable} ${fraunces.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         {children}
       </body>
     </html>

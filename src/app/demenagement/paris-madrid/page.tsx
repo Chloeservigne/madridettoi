@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Déménagement Paris–Madrid : le guide complet — Madrid & Toi",
@@ -11,8 +12,35 @@ export const metadata: Metadata = {
 };
 
 export default function ParisMadridPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Déménagement Paris–Madrid : le guide complet",
+      description:
+        "Comment organiser son déménagement de Paris à Madrid ? Camion, affaires, résiliations, timing — le guide pratique étape par étape d'une Française qui l'a fait.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/demenagement/paris-madrid",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/demenagement/paris-madrid" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Déménagement", item: "https://madrid-et-toi.com/demenagement" },
+        { "@type": "ListItem", position: 3, name: "Paris–Madrid", item: "https://madrid-et-toi.com/demenagement/paris-madrid" },
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -41,6 +69,7 @@ export default function ParisMadridPage() {
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">12–13h de route</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Guide pratique</span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

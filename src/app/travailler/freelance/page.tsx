@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Devenir autónomo en Espagne — guide complet 2026 — Madrid & Toi",
@@ -11,8 +12,35 @@ export const metadata: Metadata = {
 };
 
 export default function FreelancePage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Devenir autónomo en Espagne — guide complet 2026",
+      description:
+        "Tarifa plana, cotisations RETA, IRPF, IVA — tout ce qu'il faut savoir pour s'inscrire comme travailleur indépendant en Espagne et facturer légalement depuis Madrid.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/travailler/freelance",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/travailler/freelance" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Travailler", item: "https://madrid-et-toi.com/travailler" },
+        { "@type": "ListItem", position: 3, name: "Freelance / autónomo", item: "https://madrid-et-toi.com/travailler/freelance" },
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -36,6 +64,7 @@ export default function FreelancePage() {
             s&apos;installent à Madrid. Tu factures tes clients depuis l&apos;Espagne,
             tu cotises localement — et tu as une situation fiscale claire dès le départ.
           </p>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

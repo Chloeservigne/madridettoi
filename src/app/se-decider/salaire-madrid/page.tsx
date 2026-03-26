@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Salaire à Madrid : ce qu'on gagne vraiment en 2025 — Madrid & Toi",
@@ -46,8 +47,35 @@ const comparaison = [
 ];
 
 export default function SalaireMadridPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Salaire à Madrid : ce qu'on gagne vraiment en 2025",
+      description:
+        "Salaire minimum, salaire moyen, salaires par secteur — et la vraie question : est-ce qu'on vit mieux à Madrid qu'à Paris avec un salaire plus bas ? La réponse chiffrée.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/se-decider/salaire-madrid",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/se-decider/salaire-madrid" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Se décider", item: "https://madrid-et-toi.com/se-decider" },
+        { "@type": "ListItem", position: 3, name: "Salaires à Madrid", item: "https://madrid-et-toi.com/se-decider/salaire-madrid" },
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -77,6 +105,7 @@ export default function SalaireMadridPage() {
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Salaires bruts annuels</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">14 mois en Espagne</span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Transports à Madrid : métro, bus, Cercanías, taxi — Madrid & Toi",
@@ -11,8 +12,35 @@ export const metadata: Metadata = {
 };
 
 export default function TransportsPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Transports à Madrid : métro, bus, Cercanías, taxi",
+      description:
+        "L'Abono Transportes à 32,70€/mois, le métro (303 stations, 6h–1h30), les búhos nocturnes, BiciMAD, le taxi et rejoindre l'aéroport. Tout pour se déplacer à Madrid sans voiture.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/vivre/transports",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/vivre/transports" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Vivre à Madrid", item: "https://madrid-et-toi.com/vivre" },
+        { "@type": "ListItem", position: 3, name: "Transports", item: "https://madrid-et-toi.com/vivre/transports" },
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -48,6 +76,7 @@ export default function TransportsPage() {
               303 stations
             </span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 
