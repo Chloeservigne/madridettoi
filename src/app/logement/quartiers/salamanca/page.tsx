@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Vivre à Salamanca, Madrid — Le guide pour les expats français",
@@ -19,8 +20,34 @@ const autresQuartiers = [
 ];
 
 export default function SalamancaPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Salamanca : bourgeois, calme, haut de gamme",
+      description: "Le quartier Salamanca est le plus huppé de Madrid. Rues larges, commerces de luxe, calme et qualité de vie — idéal pour les familles et les expatriés en mission.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/logement/quartiers/salamanca",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/logement/quartiers/salamanca" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Logement", item: "https://madrid-et-toi.com/logement" },
+        { "@type": "ListItem", position: 3, name: "Quartiers", item: "https://madrid-et-toi.com/logement/quartiers" },
+        { "@type": "ListItem", position: 4, name: "Salamanca", item: "https://madrid-et-toi.com/logement/quartiers/salamanca" },
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -44,6 +71,7 @@ export default function SalamancaPage() {
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">💶 1 500 – 2 500 € / mois</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Familles · Expatriés en mission</span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

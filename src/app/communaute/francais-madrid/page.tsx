@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "La communauté française à Madrid — Madrid & Toi",
@@ -10,8 +11,33 @@ export const metadata: Metadata = {
 };
 
 export default function FrancaisMadridPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "La communauté française à Madrid",
+      description: "35 000 Français vivent à Madrid. Associations, groupes, événements — comment trouver ta communauté et ne pas te sentir seul(e).",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/communaute/francais-madrid",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/communaute/francais-madrid" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Communauté", item: "https://madrid-et-toi.com/communaute" },
+        { "@type": "ListItem", position: 3, name: "Français à Madrid", item: "https://madrid-et-toi.com/communaute/francais-madrid" },
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -36,6 +62,7 @@ export default function FrancaisMadridPage() {
             aux groupes informels, en passant par les intercambios et les
             événements culturels : tu n&apos;es pas seul à débarquer.
           </p>
+          <AuthorBadge date="mars 2026" />
 
           {/* Stat cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">

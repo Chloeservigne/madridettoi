@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Vivre à Chueca, Madrid — Le guide pour les expats français",
@@ -19,8 +20,34 @@ const autresQuartiers = [
 ];
 
 export default function ChuecaPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Chueca : cosmopolite, animé, inclusif",
+      description: "Chueca est le quartier cosmopolite et LGBTQ+ de Madrid. Ambiance, loyers, vie de quartier — tout ce qu'il faut savoir pour s'installer à Chueca.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/logement/quartiers/chueca",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/logement/quartiers/chueca" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Logement", item: "https://madrid-et-toi.com/logement" },
+        { "@type": "ListItem", position: 3, name: "Quartiers", item: "https://madrid-et-toi.com/logement/quartiers" },
+        { "@type": "ListItem", position: 4, name: "Chueca", item: "https://madrid-et-toi.com/logement/quartiers/chueca" },
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -49,6 +76,7 @@ export default function ChuecaPage() {
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">💶 1 100 – 1 600 € / mois</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Tous profils · Vie sociale active</span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

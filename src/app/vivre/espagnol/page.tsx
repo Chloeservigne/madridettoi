@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Apprendre l'espagnol à Madrid : EOI, académies, intercambios — Madrid & Toi",
@@ -11,8 +12,33 @@ export const metadata: Metadata = {
 };
 
 export default function EspagnolPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Apprendre l'espagnol à Madrid : les vraies options",
+      description: "EOI à ~250€ le quadrimestre, académies privées, intercambios gratuits. Tout pour progresser vite en espagnol à Madrid.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/vivre/espagnol",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/vivre/espagnol" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Vivre à Madrid", item: "https://madrid-et-toi.com/vivre" },
+        { "@type": "ListItem", position: 3, name: "Apprendre l'espagnol", item: "https://madrid-et-toi.com/vivre/espagnol" },
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -48,6 +74,7 @@ export default function EspagnolPage() {
               Diplôme DELE officiel
             </span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

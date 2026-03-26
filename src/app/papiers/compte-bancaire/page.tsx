@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Ouvrir un compte bancaire en Espagne — Madrid & Toi",
@@ -60,8 +61,33 @@ const tips = [
 ];
 
 export default function CompteBancairePage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Ouvrir un compte bancaire en Espagne",
+      description: "BBVA, ING España, CaixaBank, Revolut — les meilleures options pour ouvrir un compte en Espagne, les documents requis, et ce qu'il faut savoir si tu n'as pas encore ton NIE.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/papiers/compte-bancaire",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/papiers/compte-bancaire" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Papiers", item: "https://madrid-et-toi.com/papiers" },
+        { "@type": "ListItem", position: 3, name: "Compte bancaire", item: "https://madrid-et-toi.com/papiers/compte-bancaire" },
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -96,6 +122,7 @@ export default function CompteBancairePage() {
               NIE recommandé mais pas toujours obligatoire
             </span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

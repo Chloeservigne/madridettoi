@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "Trouver un appartement à Madrid depuis la France — Madrid & Toi",
@@ -44,8 +45,33 @@ const steps = [
 ];
 
 export default function AppartementPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Comment trouver un appartement à Madrid depuis la France ?",
+      description: "Comment trouver un appartement à Madrid avant d'arriver ? Plateformes, budget, documents, pièges à éviter — le guide complet.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/logement/appartement",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/logement/appartement" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Logement", item: "https://madrid-et-toi.com/logement" },
+        { "@type": "ListItem", position: 3, name: "Trouver un appartement", item: "https://madrid-et-toi.com/logement/appartement" },
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -69,6 +95,7 @@ export default function AppartementPage() {
             honnête : c&apos;est faisable, mais ça demande de l&apos;organisation. Voici
             tout ce qu&apos;on aurait voulu savoir avant de chercher.
           </p>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 

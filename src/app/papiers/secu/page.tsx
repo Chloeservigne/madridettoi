@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
+import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
   title: "La Seguridad Social en Espagne — Madrid & Toi",
@@ -55,8 +56,33 @@ const mutuelles = [
 ];
 
 export default function SecuPage() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "La sécu en Espagne : comment ça marche vraiment",
+      description: "Tarjeta sanitaria, NUSS, copago, mutuelles — comment accéder aux soins en Espagne selon ta situation. Guide précis pour les Français à Madrid.",
+      author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
+      publisher: { "@type": "Organization", name: "Madrid & Toi", url: "https://madrid-et-toi.com" },
+      datePublished: "2025-01-01",
+      dateModified: "2026-03-26",
+      url: "https://madrid-et-toi.com/papiers/secu",
+      mainEntityOfPage: { "@type": "WebPage", "@id": "https://madrid-et-toi.com/papiers/secu" },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://madrid-et-toi.com" },
+        { "@type": "ListItem", position: 2, name: "Papiers", item: "https://madrid-et-toi.com/papiers" },
+        { "@type": "ListItem", position: 3, name: "Seguridad Social", item: "https://madrid-et-toi.com/papiers/secu" },
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
@@ -91,6 +117,7 @@ export default function SecuPage() {
               Médicaments avec participation
             </span>
           </div>
+          <AuthorBadge date="mars 2026" />
         </div>
       </section>
 
