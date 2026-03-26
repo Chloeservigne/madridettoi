@@ -9,9 +9,39 @@ export const metadata: Metadata = {
     "En 2020, je voulais Barcelone. J'ai atterri à Madrid, seule, sans jamais y avoir mis les pieds. Six ans plus tard, je ne suis toujours pas repartie.",
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  mainEntity: {
+    "@type": "Person",
+    name: "Chloé",
+    url: "https://madrid-et-toi.com/mon-histoire",
+    description:
+      "Française installée à Madrid depuis septembre 2020, auteure de Madrid & Toi — guides pratiques pour s'installer à Madrid.",
+    knowsAbout: [
+      "S'installer à Madrid",
+      "NIE et démarches administratives en Espagne",
+      "Logement à Madrid",
+      "Travailler à Madrid",
+      "Fiscalité franco-espagnole",
+      "Seguridad Social",
+      "Déménagement Paris–Madrid",
+      "VIE à Madrid",
+    ],
+    homeLocation: {
+      "@type": "City",
+      name: "Madrid",
+      addressCountry: "ES",
+    },
+    nationality: "French",
+    sameAs: ["https://madrid-et-toi.com"],
+  },
+};
+
 export default function MonHistoirePage() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
       <Nav />
 
       {/* Hero */}
@@ -117,6 +147,112 @@ export default function MonHistoirePage() {
             Parce que bien préparer ce genre de déménagement, ça ne gâche
             rien. Ça libère.
           </p>
+        </div>
+      </section>
+
+      {/* Ce que j'ai traversé */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
+            Ce que j&apos;ai traversé — et ce qui nourrit les guides
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-10">
+            Madrid & Toi n&apos;est pas un site fait depuis un bureau parisien.
+            Ce que j&apos;écris, je l&apos;ai vécu, souvent dans la confusion,
+            parfois dans la galère — et c&apos;est précisément pour ça que
+            je l&apos;écris.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                label: "Arrivée via un VIE",
+                detail: "Le Volontariat International en Entreprise, c'est comme ça que j'ai atterri à Madrid. Statut public, indemnité exonérée, couverture Business France — j'ai fait tout le parcours de A à Z.",
+                href: "/travailler/vie",
+                linkLabel: "Le guide VIE →",
+              },
+              {
+                label: "NIE, padron, Seguridad Social",
+                detail: "Les trois premières démarches en arrivant. La cita previa à trouver, les formulaires à imprimer, les files d'attente. Je sais ce qui coince et pourquoi.",
+                href: "/papiers/nie",
+                linkLabel: "Le guide NIE →",
+              },
+              {
+                label: "Plusieurs appartements à Madrid",
+                detail: "Colocation à Malasaña au départ, puis appartement en solo. J'ai cherché depuis la France, j'ai visité sur place, j'ai signé des baux en espagnol. Le marché a changé depuis, mais les galères sont les mêmes.",
+                href: "/logement/appartement",
+                linkLabel: "Le guide logement →",
+              },
+              {
+                label: "Compte bancaire, impôts, résidence fiscale",
+                detail: "Ouvrir un compte espagnol quand on n'a pas encore son NIE. Devenir résident fiscal en Espagne. Déclarer l'IRPF. Comprendre la convention France–Espagne. Tout ça, j'y ai été confrontée.",
+                href: "/papiers/impots",
+                linkLabel: "Le guide impôts →",
+              },
+              {
+                label: "Emploi local après le VIE",
+                detail: "Passer d'un statut VIE à un contrat de travail espagnol classique. Naviguer le marché du travail madrilène en tant qu'étrangère. Les spécificités du droit du travail espagnol.",
+                href: "/travailler/emploi",
+                linkLabel: "Le guide emploi →",
+              },
+            ].map((item) => (
+              <div key={item.label} className="bg-white rounded-2xl p-6 shadow-sm">
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-[#C8614A] flex-shrink-0 mt-2.5" />
+                  <div>
+                    <p className="font-[family-name:var(--font-playfair)] font-bold text-[#2C1810] text-lg mb-1">
+                      {item.label}
+                    </p>
+                    <p className="text-[#5a3e35]/80 text-sm leading-relaxed mb-2">
+                      {item.detail}
+                    </p>
+                    <Link
+                      href={item.href}
+                      className="text-[#C8614A] text-sm font-semibold underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    >
+                      {item.linkLabel}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comment je travaille */}
+      <section className="py-20 px-6 bg-[#2C1810]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-6">
+            Comment les guides sont écrits
+          </h2>
+          <div className="space-y-5">
+            <div className="border-l-4 border-[#E8A838] pl-6">
+              <p className="text-[#F5ECD7] leading-relaxed text-lg">
+                <strong className="text-[#E8A838]">Sources officielles uniquement</strong>{" "}
+                pour tout ce qui touche à l&apos;administration, la fiscalité et la santé.
+                Seg-social.es, aeat.es, comunidad.madrid, inclusion.gob.es — pas de
+                comparateurs, pas de blogs anonymes, pas de forums non vérifiés.
+                Si une info ne peut pas être sourcée officiellement, je ne l&apos;écris pas.
+              </p>
+            </div>
+            <div className="border-l-4 border-[#E8A838] pl-6">
+              <p className="text-[#F5ECD7] leading-relaxed text-lg">
+                <strong className="text-[#E8A838]">Mises à jour régulières.</strong>{" "}
+                Les tranches IRPF, les cotisations RETA, les tarifs de l&apos;Abono — ça change.
+                Les guides reflètent les données en vigueur pour 2026. Une date de mise à jour
+                figure sur chaque page.
+              </p>
+            </div>
+            <div className="border-l-4 border-[#E8A838] pl-6">
+              <p className="text-[#F5ECD7] leading-relaxed text-lg">
+                <strong className="text-[#E8A838]">Ce que je ne suis pas :</strong>{" "}
+                avocate, fiscaliste, notaire. Les guides sont là pour t&apos;informer et t&apos;aider
+                à comprendre le système — pas pour remplacer un conseil juridique ou fiscal
+                personnalisé. Pour les situations complexes (divorce, succession, création
+                de société), consulte un professionnel.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
