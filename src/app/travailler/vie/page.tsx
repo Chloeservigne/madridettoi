@@ -35,7 +35,8 @@ export default function ViePage() {
             Le Volontariat International en Entreprise, c&apos;est jusqu&apos;à 2 ans dans
             un grand groupe français à Madrid — avec une indemnité qui peut dépasser
             2 400 € nets par mois. Pour les moins de 28 ans, c&apos;est l&apos;une des
-            meilleures portes d&apos;entrée vers la vie madrilène.
+            meilleures portes d&apos;entrée vers la vie madrilène. C&apos;est d&apos;ailleurs
+            grâce à un VIE que je suis moi-même arrivée à Madrid.
           </p>
         </div>
       </section>
