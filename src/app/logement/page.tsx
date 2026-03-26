@@ -73,6 +73,59 @@ export default function LogementPage() {
         </div>
       </section>
 
+      {/* Éditorial */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Ce qu&apos;il faut savoir avant de chercher
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Le marché locatif madrilène est sous tension depuis 2022. Les loyers
+            dans les quartiers centraux ont augmenté de 20 à 30 % en trois ans,
+            et la demande dépasse l&apos;offre dans les zones prisées des expats.
+            Un studio à{" "}
+            <Link href="/logement/quartiers/malasana" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Malasaña
+            </Link>{" "}
+            ou{" "}
+            <Link href="/logement/quartiers/chueca" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Chueca
+            </Link>{" "}
+            se loue aujourd&apos;hui entre 1 000 et 1 400 €/mois. Des quartiers
+            comme{" "}
+            <Link href="/logement/quartiers/lavapies" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Lavapiés
+            </Link>{" "}
+            ou{" "}
+            <Link href="/logement/quartiers/chamberi" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Chamberí
+            </Link>{" "}
+            offrent de meilleures opportunités pour un budget maîtrisé.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Chercher depuis la France est possible mais difficile : les
+            propriétaires préfèrent rencontrer les candidats en personne. La
+            stratégie qui marche : prévoir 1 à 2 semaines sur place pour les
+            visites, avec un logement temporaire (Airbnb, colocation courte
+            durée). Les plateformes Idealista et Fotocasa concentrent la majorité
+            des annonces sérieuses.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Pour les documents, les propriétaires demandent généralement un
+            contrat de travail espagnol ou une preuve de revenus, et souvent le{" "}
+            <Link href="/papiers/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              NIE
+            </Link>{" "}
+            pour signer. La caution représente 1 à 2 mois de loyer.
+            Notre{" "}
+            <Link href="/se-decider/budget" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              guide budget
+            </Link>{" "}
+            détaille les fourchettes de loyers par quartier pour 2026.
+          </p>
+        </div>
+      </section>
+
       {/* Cards */}
       <section className="py-28 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">

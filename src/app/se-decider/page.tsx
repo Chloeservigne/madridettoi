@@ -80,6 +80,48 @@ export default function SeDeciderPage() {
         </div>
       </section>
 
+      {/* Éditorial */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Quelques chiffres pour construire ta décision
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Madrid, c&apos;est 300 jours de soleil par an, une ville de 3,4 millions
+            d&apos;habitants, et environ{" "}
+            <Link href="/communaute/francais-madrid" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              35 000 Français installés
+            </Link>{" "}
+            — l&apos;une des plus grandes communautés françaises d&apos;Europe. Concrètement :
+            tu ne seras pas seul(e).
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Côté finances, le{" "}
+            <Link href="/se-decider/budget" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              coût de la vie
+            </Link>{" "}
+            est 15 à 25 % inférieur à Paris selon les postes de dépense — surtout
+            la restauration, les transports et certains services. En revanche,
+            les loyers dans les quartiers centraux ont fortement augmenté ces
+            dernières années. Le{" "}
+            <Link href="/se-decider/salaire-madrid" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              salaire moyen à Madrid
+            </Link>{" "}
+            tourne autour de 2 200 € brut — inférieur à Paris, mais le pouvoir
+            d&apos;achat réel est souvent comparable voire meilleur pour un cadre de vie supérieur.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Le point souvent sous-estimé : l&apos;administration espagnole. NIE,
+            padron, sécu, impôts — ça prend du temps et de l&apos;organisation.
+            Mais ça se fait. Nos guides{" "}
+            <Link href="/papiers" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Papiers & démarches
+            </Link>{" "}
+            sont là pour que tu ne sois jamais pris(e) au dépourvu.
+          </p>
+        </div>
+      </section>
+
       {/* Cards */}
       <section className="py-28 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">

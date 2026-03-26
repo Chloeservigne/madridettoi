@@ -80,6 +80,57 @@ export default function VivrePage() {
         </div>
       </section>
 
+      {/* Éditorial */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Les premiers réflexes une fois installé(e)
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            La première chose à faire après avoir posé tes valises : prendre
+            l&apos;
+            <Link href="/vivre/transports" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Abono Transporte
+            </Link>{" "}
+            mensuel. À partir de 20,40 €/mois pour les moins de 26 ans (zone A),
+            c&apos;est l&apos;une des meilleures affaires de Madrid — métro, bus, cercanías
+            illimités dans la zone choisie. Pas besoin de voiture en centre-ville.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Côté santé, il faut s&apos;inscrire au centro de salud de ton quartier
+            pour avoir un médecin de famille (médico de cabecera) — gratuit une
+            fois affilié à la{" "}
+            <Link href="/papiers/secu" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Seguridad Social
+            </Link>
+            . En attendant, les pharmacies espagnoles (reconnaissables à la croix
+            verte clignotante) dispensent de nombreux médicaments sans ordonnance
+            et constituent le premier recours pour les petits bobos. Notre{" "}
+            <Link href="/vivre/sante" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              guide santé
+            </Link>{" "}
+            détaille tout le système.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Pour le reste : Mercadona pour les{" "}
+            <Link href="/vivre/courses" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              courses du quotidien
+            </Link>
+            , les intercambios de Malasaña et Chueca pour{" "}
+            <Link href="/vivre/espagnol" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              progresser en espagnol
+            </Link>{" "}
+            gratuitement, et les musées — le Prado est gratuit dès 18h, le Reina
+            Sofía aussi. Madrid est une ville incroyablement généreuse pour qui
+            sait{" "}
+            <Link href="/vivre/sortir" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              où regarder
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
       {/* Cards */}
       <section className="py-28 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

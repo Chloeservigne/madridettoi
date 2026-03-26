@@ -80,6 +80,56 @@ export default function TravaillerPage() {
         </div>
       </section>
 
+      {/* Éditorial */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Quel statut choisir pour travailler à Madrid ?
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            La question du statut est la première à trancher avant de partir.
+            Elle conditionne ta fiscalité, ta couverture sociale, et ta légitimité
+            aux yeux de l&apos;administration espagnole.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Si tu gardes ton emploi français et travailles depuis Madrid, tu es
+            techniquement en{" "}
+            <Link href="/travailler/remote" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              situation de remote international
+            </Link>{" "}
+            — ce qui a des implications fiscales dès 183 jours sur place. Si tu cherches
+            un poste local, le marché madrilène recrute activement dans la tech,
+            le tourisme, l&apos;éducation et la finance : le{" "}
+            <Link href="/se-decider/salaire-madrid" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              salaire moyen tourne autour de 2 200 € brut
+            </Link>
+            , inférieur à Paris mais compensé par un coût de la vie plus bas.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Pour les freelances, le statut d&apos;
+            <Link href="/travailler/freelance" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              autónomo
+            </Link>{" "}
+            est l&apos;équivalent espagnol de l&apos;auto-entrepreneur : cotisations RETA,
+            Tarifa Plana à 80 €/mois la première année, IVA à 21 %. Simple à ouvrir,
+            reconnu partout.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Pour les moins de 28 ans, le{" "}
+            <Link href="/travailler/vie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              VIE
+            </Link>{" "}
+            reste l&apos;une des meilleures portes d&apos;entrée : jusqu&apos;à 2 400 € nets
+            par mois dans un grand groupe français, couverture sociale incluse.
+            Les{" "}
+            <Link href="/travailler/entreprises-francaises" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              entreprises françaises à Madrid
+            </Link>{" "}
+            — Airbus, Decathlon, L&apos;Oréal, Thales — publient régulièrement des offres VIE.
+          </p>
+        </div>
+      </section>
+
       {/* Cards */}
       <section className="py-28 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">

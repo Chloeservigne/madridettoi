@@ -79,6 +79,46 @@ export default function CommunautePage() {
         </div>
       </section>
 
+      {/* Éditorial */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            35 000 Français à Madrid — et ça se voit
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Avec environ 35 000 ressortissants inscrits au consulat,{" "}
+            <Link href="/communaute/francais-madrid" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              la communauté française de Madrid
+            </Link>{" "}
+            est l&apos;une des plus importantes d&apos;Europe. Elle est active,
+            organisée, et bien souvent la première porte d&apos;entrée dans la vie
+            madrilène pour les nouveaux arrivants.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Les structures officielles existent : l&apos;Institut français de Madrid
+            (fondé en 1913), la Chambre franco-espagnole (CCIFE), l&apos;association
+            Madrid Accueil. Mais la majorité de la vie communautaire se passe
+            dans des groupes Facebook actifs, des intercambios de langue dans
+            les bars de{" "}
+            <Link href="/logement/quartiers/malasana" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Malasaña
+            </Link>{" "}
+            et{" "}
+            <Link href="/logement/quartiers/chueca" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Chueca
+            </Link>
+            , et des afterworks informels.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            L&apos;enjeu n&apos;est pas de rester dans une bulle française — c&apos;est
+            précisément ce que la plupart veulent éviter en partant. Mais avoir
+            un réseau de soutien au démarrage — pour une question administrative,
+            une recommandation de médecin, ou juste un dîner familier dans les
+            premiers jours — ça change tout.
+          </p>
+        </div>
+      </section>
+
       {/* Cards */}
       <section className="py-28 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">

@@ -80,6 +80,51 @@ export default function PapiersPage() {
         </div>
       </section>
 
+      {/* Éditorial */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Dans quel ordre faire les démarches ?
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            L&apos;erreur classique : vouloir tout faire en même temps. L&apos;administration
+            espagnole a une logique. Certaines démarches en débloquent d&apos;autres —
+            si tu les fais dans le désordre, tu perds des semaines.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Le bon ordre : commencer par le{" "}
+            <Link href="/papiers/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              NIE
+            </Link>{" "}
+            (numéro d&apos;identité étranger) dès ton arrivée — c&apos;est lui qui débloque
+            tout le reste. Ensuite, l&apos;
+            <Link href="/papiers/padron" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              empadronamiento
+            </Link>{" "}
+            (inscription au registre municipal), qui te donne accès aux services
+            de santé et à certaines démarches administratives. Puis l&apos;
+            <Link href="/papiers/compte-bancaire" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              ouverture d&apos;un compte bancaire espagnol
+            </Link>{" "}
+            — indispensable pour payer ton loyer et tes charges. Enfin l&apos;affiliation
+            à la{" "}
+            <Link href="/papiers/secu" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Seguridad Social
+            </Link>{" "}
+            pour avoir accès aux soins.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            La question fiscale — résidence en France ou en Espagne, règle des 183 jours —
+            se pose dès que tu restes plus de 6 mois. Notre guide sur les{" "}
+            <Link href="/papiers/impots" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              impôts et la résidence fiscale
+            </Link>{" "}
+            t&apos;explique comment éviter la double imposition et ce que tu dois déclarer
+            en Espagne.
+          </p>
+        </div>
+      </section>
+
       {/* Cards */}
       <section className="py-28 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
