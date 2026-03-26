@@ -10,66 +10,121 @@ export default function Image() {
     (
       <div
         style={{
-          background: "#F5ECD7",
-          width: "100%",
-          height: "100%",
+          width: 1200,
+          height: 630,
+          backgroundColor: "#2C1810",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
           justifyContent: "center",
-          padding: "80px",
+          alignItems: "flex-start",
+          padding: "80px 100px",
+          position: "relative",
         }}
       >
-        {/* Decorative top bar */}
+        {/* Bande terracotta en haut */}
         <div
           style={{
             position: "absolute",
             top: 0,
             left: 0,
             right: 0,
-            height: "8px",
-            background: "#C8614A",
+            height: 8,
+            backgroundColor: "#C8614A",
           }}
         />
 
-        <div style={{ fontSize: 72, marginBottom: 32 }}>☀️</div>
-
+        {/* Badge URL */}
         <div
           style={{
-            fontSize: 80,
+            display: "flex",
+            alignItems: "center",
+            gap: 10,
+            marginBottom: 40,
+          }}
+        >
+          <div
+            style={{
+              width: 10,
+              height: 10,
+              borderRadius: "50%",
+              backgroundColor: "#C8614A",
+            }}
+          />
+          <span
+            style={{
+              color: "#C8614A",
+              fontSize: 18,
+              fontWeight: 600,
+              letterSpacing: "0.15em",
+              textTransform: "uppercase",
+            }}
+          >
+            madrid-et-toi.com
+          </span>
+        </div>
+
+        {/* Titre principal */}
+        <div
+          style={{
+            fontSize: 96,
             fontWeight: 700,
-            color: "#2C1810",
-            marginBottom: 24,
-            textAlign: "center",
-            letterSpacing: "-1px",
+            color: "#F5ECD7",
+            lineHeight: 1.0,
+            marginBottom: 28,
           }}
         >
           Madrid & Toi
         </div>
 
+        {/* Sous-titre */}
         <div
           style={{
-            fontSize: 36,
-            color: "#C8614A",
-            textAlign: "center",
-            maxWidth: 760,
+            fontSize: 32,
+            color: "#EDE0C8",
             lineHeight: 1.4,
+            maxWidth: 750,
+            marginBottom: 52,
           }}
         >
           S&apos;installer à Madrid, on t&apos;accompagne
         </div>
 
+        {/* Tags thématiques */}
+        <div style={{ display: "flex", gap: 14 }}>
+          {["NIE & Papiers", "Logement", "Travailler", "Vivre à Madrid"].map(
+            (tag) => (
+              <div
+                key={tag}
+                style={{
+                  paddingTop: 10,
+                  paddingBottom: 10,
+                  paddingLeft: 20,
+                  paddingRight: 20,
+                  borderRadius: 9999,
+                  backgroundColor: "rgba(200, 97, 74, 0.2)",
+                  border: "1px solid rgba(200, 97, 74, 0.45)",
+                  color: "#F5ECD7",
+                  fontSize: 18,
+                }}
+              >
+                {tag}
+              </div>
+            )
+          )}
+        </div>
+
+        {/* Bande basse */}
         <div
           style={{
             position: "absolute",
-            bottom: 48,
-            fontSize: 22,
-            color: "#5a3e35",
-            opacity: 0.5,
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: 4,
+            backgroundColor: "#C8614A",
+            opacity: 0.35,
           }}
-        >
-          madrid-et-toi.com
-        </div>
+        />
       </div>
     ),
     { ...size }
