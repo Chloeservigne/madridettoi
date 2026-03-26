@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
@@ -95,8 +96,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-shrink-0 w-full max-w-sm lg:max-w-none lg:w-[440px]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/images/madrid.svg"
               alt="Illustration d'une personne prête à partir s'installer à Madrid"
               width={440}

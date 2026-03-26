@@ -73,6 +73,55 @@ export default function DemenagementPage() {
         </div>
       </section>
 
+      {/* Éditorial */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Organiser le déménagement : par où commencer ?
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Un déménagement Paris–Madrid ne s&apos;improvise pas — surtout quand
+            on gère en parallèle la recherche d&apos;appartement, les résiliations
+            en France, et les premières démarches administratives en Espagne.
+            La clé : anticiper tôt et traiter les choses dans le bon ordre.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Côté logistique, la question du camion se pose rapidement. Pour un
+            volume réduit (studio ou chambre), une voiture avec remorque ou un
+            service de livraison de colis suffit souvent. Pour un appartement
+            entier, les sociétés de déménagement international pratiquent des
+            tarifs entre 800 et 2 500 € selon le volume et la formule. Notre{" "}
+            <Link href="/demenagement/paris-madrid" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              guide Paris–Madrid
+            </Link>{" "}
+            détaille les options et les pièges à éviter.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+            Côté administratif français, certaines démarches prennent du temps :
+            résilier son bail (préavis d&apos;1 mois en zone tendue), se désinscrire
+            de la Sécurité sociale française, informer sa caisse de retraite,
+            clôturer ou transférer ses contrats d&apos;assurance. Ne pas les oublier
+            coûte parfois plusieurs mois de cotisations inutiles.
+          </p>
+          <p className="text-[#5a3e35] leading-relaxed text-lg">
+            Notre{" "}
+            <Link href="/demenagement/checklist" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              checklist complète de J-6 mois à J+3 mois
+            </Link>{" "}
+            liste toutes les actions dans l&apos;ordre chronologique — des résiliations
+            françaises jusqu&apos;à l&apos;
+            <Link href="/papiers/padron" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              empadronamiento
+            </Link>{" "}
+            et l&apos;affiliation à la{" "}
+            <Link href="/papiers/secu" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              Seguridad Social
+            </Link>{" "}
+            une fois sur place.
+          </p>
+        </div>
+      </section>
+
       {/* Cards */}
       <section className="py-28 px-6 bg-[#F5ECD7]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">

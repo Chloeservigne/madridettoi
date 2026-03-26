@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
@@ -111,8 +112,7 @@ export default function MonHistoirePage() {
           <div>
             <span className="block font-[family-name:var(--font-playfair)] text-8xl text-[#C8614A] leading-none mb-2 select-none">&ldquo;</span>
             <div className="overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/images/valise-depart.svg"
                 alt="Illustration valise de départ"
                 width={180}

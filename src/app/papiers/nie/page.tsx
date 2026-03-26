@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
@@ -100,8 +101,7 @@ export default function NiePage() {
             <AuthorBadge date="mars 2026" />
           </div>
           <div className="flex-shrink-0 w-full max-w-xs lg:max-w-none lg:w-[360px]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/images/documents.svg"
               alt="Illustration documents administratifs"
               width={360}
