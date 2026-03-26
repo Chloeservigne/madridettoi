@@ -47,7 +47,11 @@ export default function EmploiPage() {
           </h2>
           <p className="text-[#5a3e35] leading-relaxed text-lg">
             La capitale espagnole concentre les sièges sociaux des plus grandes entreprises
-            du pays, des multinationales, et un écosystème tech en plein essor. Le marché
+            du pays, des{" "}
+            <Link href="/travailler/entreprises-francaises" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              multinationales
+            </Link>
+            , et un écosystème tech en plein essor. Le marché
             est compétitif — mais il est aussi en forte croissance. En 2025, le taux de
             chômage en Espagne est tombé à son niveau le plus bas depuis 17 ans.
           </p>

@@ -98,8 +98,11 @@ export default function NiePage() {
             >
               signer un bail
             </Link>
-            , ouvrir un compte bancaire, acheter une voiture, travailler
-            légalement, ou s&apos;inscrire à la sécu.
+            ,{" "}
+            <Link href="/papiers/compte-bancaire" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+              ouvrir un compte bancaire
+            </Link>
+            , acheter une voiture, travailler légalement, ou s&apos;inscrire à la sécu.
           </p>
           <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
             Bonne nouvelle : tu n&apos;en as pas besoin avant d&apos;arriver en

@@ -124,7 +124,11 @@ export default function TransportsPage() {
               carte à puce nominative à 4 €. Elle s&apos;obtient en ligne sur
               le portail de la Communauté de Madrid (envoi postal sous une
               semaine) ou immédiatement aux automates dans les stations de
-              métro. Documents : une photo d&apos;identité + NIE ou passeport.
+              métro. Documents : une photo d&apos;identité +{" "}
+              <Link href="/papiers/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                NIE
+              </Link>{" "}
+              ou passeport.
               Tu recharges ensuite l&apos;Abono mensuel aux automates, en
               estanco ou via l&apos;appli <strong>Mi Tarjeta Transporte</strong>.
             </p>

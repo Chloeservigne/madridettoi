@@ -232,6 +232,12 @@ export default function PourquoiMadridPage() {
             >
               Mon histoire
             </Link>
+            <Link
+              href="/communaute/francais-madrid"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
+              La communauté française à Madrid
+            </Link>
           </div>
         </div>
       </section>

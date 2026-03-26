@@ -105,10 +105,14 @@ export default function RemotePage() {
                 Freelance
               </p>
               <p className="text-[#F5ECD7]/80 text-sm leading-relaxed">
-                Le statut d&apos;autónomo est la solution la plus propre. Tu
-                factures tes clients (y compris français) depuis l&apos;Espagne
-                et tu cotises localement. Cotisation minimale ~230 €/mois,
-                impôt sur le revenu (IRPF) en Espagne.
+                Le statut d&apos;
+                <Link href="/travailler/freelance" className="text-[#E8A838] underline underline-offset-2 hover:opacity-80 transition-opacity">
+                  autónomo
+                </Link>{" "}
+                est la solution la plus propre. Tu factures tes clients (y
+                compris français) depuis l&apos;Espagne et tu cotises
+                localement. Cotisation minimale ~230 €/mois, impôt sur le
+                revenu (IRPF) en Espagne.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
@@ -206,6 +210,18 @@ export default function RemotePage() {
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
               Comment fonctionne la sécu en Espagne ?
+            </Link>
+            <Link
+              href="/travailler/freelance"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
+              Devenir autónomo à Madrid
+            </Link>
+            <Link
+              href="/papiers/impots"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
+              Fiscalité & impôts en Espagne
             </Link>
           </div>
         </div>

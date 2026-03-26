@@ -178,8 +178,14 @@ export default function ParisMadridPage() {
             >
               NIE
             </Link>
-            , et fais ton <em>empadronamiento</em> dès que tu as une adresse
-            fixe — c&apos;est la base de tout le reste.
+            , et fais ton{" "}
+            <Link
+              href="/papiers/padron"
+              className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+            >
+              empadronamiento
+            </Link>{" "}
+            dès que tu as une adresse fixe — c&apos;est la base de tout le reste.
           </p>
         </div>
       </section>

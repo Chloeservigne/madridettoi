@@ -302,6 +302,24 @@ export default function SalaireMadridPage() {
             >
               Choisir son quartier
             </Link>
+            <Link
+              href="/travailler/emploi"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
+              Trouver un emploi à Madrid
+            </Link>
+            <Link
+              href="/travailler/freelance"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
+              Devenir autónomo
+            </Link>
+            <Link
+              href="/papiers/impots"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
+              Impôts & IRPF en Espagne
+            </Link>
           </div>
         </div>
       </section>

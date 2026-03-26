@@ -256,7 +256,9 @@ export default function BudgetPage() {
             Faire ses courses
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
-            Mercadona, Carrefour, Alcampo
+            <Link href="/vivre/courses" className="hover:text-[#C8614A] transition-colors">
+              Mercadona, Carrefour, Alcampo
+            </Link>
           </h2>
           <p className="text-[#5a3e35] leading-relaxed mb-10">
             En moyenne, les courses coûtent environ 13% moins cher qu&apos;en
@@ -366,7 +368,9 @@ export default function BudgetPage() {
             Se déplacer
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
-            L&apos;Abono Transporte
+            <Link href="/vivre/transports" className="hover:text-[#C8614A] transition-colors">
+              L&apos;Abono Transporte
+            </Link>
           </h2>
           <div className="bg-white rounded-3xl shadow-md p-8 flex flex-col sm:flex-row items-center gap-8">
             <div className="text-center flex-shrink-0">
@@ -522,6 +526,18 @@ export default function BudgetPage() {
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
             >
               Le guide du NIE
+            </Link>
+            <Link
+              href="/vivre/transports"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+            >
+              Transports & Abono à Madrid
+            </Link>
+            <Link
+              href="/vivre/courses"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors"
+            >
+              Faire ses courses à Madrid
             </Link>
           </div>
         </div>
