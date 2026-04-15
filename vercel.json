@@ -1,3 +1,11 @@
 {
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.madrid-et-toi.com" }],
+      "destination": "https://madrid-et-toi.com/:path*",
+      "permanent": true
+    }
+  ]
 }
