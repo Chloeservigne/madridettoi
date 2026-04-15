@@ -388,7 +388,7 @@ export default function FrancaisMadridPage() {
             <p className="font-semibold text-[#2C1810] text-sm mb-1">
               Les lycées français à Madrid
             </p>
-            <ul className="space-y-1 mt-2">
+            <ul className="space-y-1 mt-2 mb-3">
               {[
                 "Lycée français de Madrid — secteur Velázquez / Salamanca",
                 "Section française au Collège Alfonso X el Sabio",
@@ -402,6 +402,12 @@ export default function FrancaisMadridPage() {
                 </li>
               ))}
             </ul>
+            <Link
+              href="/vivre/ecoles"
+              className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors text-sm"
+            >
+              Guide complet : scolariser ses enfants à Madrid →
+            </Link>
           </div>
         </div>
       </section>
