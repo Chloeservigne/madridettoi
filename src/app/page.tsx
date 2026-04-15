@@ -171,8 +171,8 @@ export default function Home() {
               <p className="text-[#5a3e35] text-sm">Loyer moyen pour un T1</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">1 184 €</p>
-              <p className="text-[#5a3e35] text-sm">SMI espagnol en 2025</p>
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">1 221 €</p>
+              <p className="text-[#5a3e35] text-sm">SMI espagnol en 2026</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
               <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">300 j</p>

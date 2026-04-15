@@ -6,7 +6,7 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
-  title: "Salaire à Madrid : ce qu'on gagne vraiment en 2025 — Madrid & Toi",
+  title: "Salaire à Madrid : ce qu'on gagne vraiment en 2026 — Madrid & Toi",
   description:
     "Salaire minimum, salaire moyen, salaires par secteur — et la vraie question : est-ce qu'on vit mieux à Madrid qu'à Paris avec un salaire plus bas ? La réponse chiffrée.",
 };
@@ -51,7 +51,7 @@ export default function SalaireMadridPage() {
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: "Salaire à Madrid : ce qu'on gagne vraiment en 2025",
+      headline: "Salaire à Madrid : ce qu'on gagne vraiment en 2026",
       description:
         "Salaire minimum, salaire moyen, salaires par secteur — et la vraie question : est-ce qu'on vit mieux à Madrid qu'à Paris avec un salaire plus bas ? La réponse chiffrée.",
       author: { "@type": "Person", name: "Chloé", url: "https://madrid-et-toi.com/mon-histoire" },
@@ -101,7 +101,7 @@ export default function SalaireMadridPage() {
             comparaison Paris–Madrid qui change tout.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Données 2025</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Données 2026</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Salaires bruts annuels</span>
             <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">14 mois en Espagne</span>
           </div>
@@ -113,12 +113,12 @@ export default function SalaireMadridPage() {
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
-            Le salaire minimum (SMI) en 2025
+            Le salaire minimum (SMI) en 2026
           </h2>
           <p className="text-[#5a3e35] leading-relaxed text-lg">
             Le <em>Salario Mínimo Interprofesional</em> (SMI) est fixé à{" "}
-            <strong>1 134 € brut par mois</strong> en 2025, soit
-            15 876 € annuels. Mais attention : en Espagne, les salaires sont
+            <strong>1 221 € brut par mois</strong> en 2026, soit
+            17 094 € annuels. Mais attention : en Espagne, les salaires sont
             versés sur <strong>14 mois</strong> — 12 mensualités standard +
             deux <em>pagas extras</em> (juillet et Noël). Ce détail change le
             calcul mensuel quand on compare avec la France.
@@ -126,19 +126,19 @@ export default function SalaireMadridPage() {
           <p className="text-[#5a3e35] leading-relaxed text-lg mt-4">
             En pratique, peu de postes qualifiés sont au niveau du SMI à
             Madrid. Mais c&apos;est le plancher légal — et il a fortement
-            progressé ces dernières années (+54 % depuis 2018).
+            progressé ces dernières années (+66 % depuis 2018).
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#C8614A] font-bold text-2xl font-[family-name:var(--font-playfair)]">1 134 €</p>
+              <p className="text-[#C8614A] font-bold text-2xl font-[family-name:var(--font-playfair)]">1 221 €</p>
               <p className="text-[#5a3e35]/70 text-sm mt-1">SMI mensuel brut</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#C8614A] font-bold text-2xl font-[family-name:var(--font-playfair)]">15 876 €</p>
+              <p className="text-[#C8614A] font-bold text-2xl font-[family-name:var(--font-playfair)]">17 094 €</p>
               <p className="text-[#5a3e35]/70 text-sm mt-1">SMI annuel (14 mois)</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#C8614A] font-bold text-2xl font-[family-name:var(--font-playfair)]">~900 €</p>
+              <p className="text-[#C8614A] font-bold text-2xl font-[family-name:var(--font-playfair)]">~1 050 €</p>
               <p className="text-[#5a3e35]/70 text-sm mt-1">SMI net estimé / mois</p>
             </div>
           </div>
