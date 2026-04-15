@@ -85,6 +85,10 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 - `/logement/quartiers/chamberi` — éditorial
 - `/logement/quartiers/lavapies` — éditorial
 - `/logement/quartiers/salamanca` — éditorial
+- `/logement/quartiers/tetuan` — éditorial, quartier abordable et multiculturel au nord
+- `/logement/quartiers/moncloa-arguelles` — éditorial, quartier estudiantin et vert
+- `/logement/colocation` — éditorial + tableau prix par quartier, plateformes, documents
+- `/logement/prix` — éditorial + tableau prix au m² et fourchettes T1/T2/T3 par quartier, comparaison Paris–Madrid
 
 ### `/papiers`
 - `/papiers/nie` — mixte : contexte éditorial + 4 vraies étapes numérotées + liens formulaires officiels
@@ -92,6 +96,7 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 - `/papiers/padron` — mixte : éditorial + 3 étapes numérotées
 - `/papiers/compte-bancaire` — mixte : éditorial + 3 étapes numérotées
 - `/papiers/impots` — éditorial : règle des 183 jours, tranches IRPF 2026, Renta, convention France-Espagne, Modelo 720
+- `/papiers/permis-de-conduire` — éditorial : échange volontaire vs obligatoire (4 cas), procédure DGT, documents, coût (28,87 €), délai
 
 ### `/travailler`
 - `/travailler/remote` — éditorial
@@ -110,6 +115,7 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 - `/vivre/courses` — éditorial : supermarchés, marchés municipaux, El Rastro, menu del día
 - `/vivre/espagnol` — éditorial : EOI, académies, intercambios, apps, DELE
 - `/vivre/sortir` — éditorial : musées gratuits (horaires), parcs, El Rastro, vie nocturne par quartier
+- `/vivre/ecoles` — éditorial : LFM, école publique espagnole, sections bilingues, bourses AEFE, procédure inscription
 
 ### `/communaute`
 - `/communaute/francais-madrid` — éditorial : 35 000 Français, Madrid Accueil, Institut français, groupes Facebook, intercambios, CCIFE
@@ -147,6 +153,7 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - Compte bancaire mentionné → `/papiers/compte-bancaire`
 - Sécu / Seguridad Social mentionné → `/papiers/secu`
 - Appartement / logement / bail mentionné → `/logement/appartement`
+- Colocation / chambre en coloc mentionnée → `/logement/colocation`
 - Budget / coût de la vie mentionné → `/se-decider/budget`
 - Salaire mentionné → `/se-decider/salaire-madrid`
 - Remote / télétravail mentionné → `/travailler/remote`
@@ -162,6 +169,9 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - Espagnol / intercambio mentionné → `/vivre/espagnol`
 - Sortir / musées / vie nocturne mentionné → `/vivre/sortir`
 - Impôts / fiscalité / IRPF mentionné → `/papiers/impots`
+- Permis de conduire / DGT / échange mentionné → `/papiers/permis-de-conduire`
+- École / lycée français / scolarité / enfants à Madrid mentionné → `/vivre/ecoles`
+- Prix au m² / loyers par quartier / tableau loyers mentionné → `/logement/prix`
 - Communauté française mentionnée → `/communaute/francais-madrid`
 
 ### Styles de liens
@@ -195,4 +205,4 @@ Quand on crée une nouvelle page, identifier les pages existantes qui devraient 
 
 ## Pages futures identifiées (mots-clés Ahrefs)
 
-- `/logement/prix`, `/logement/longue-duree`
+- `/logement/longue-duree`

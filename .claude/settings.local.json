@@ -7,7 +7,26 @@
       "Bash(sed:*)",
       "WebSearch",
       "WebFetch(domain:www.idealista.com)",
-      "WebFetch(domain:www.pretto.fr)"
+      "WebFetch(domain:www.pretto.fr)",
+      "Bash(grep:*)",
+      "WebFetch(domain:www.comunidad.madrid)",
+      "WebFetch(domain:www.seg-social.es)",
+      "WebFetch(domain:www.escura.com)",
+      "WebFetch(domain:www.eleconomista.es)",
+      "WebFetch(domain:ayuda-social.es)",
+      "WebFetch(domain:portal.seg-social.gob.es)",
+      "WebFetch(domain:administracion.gob.es)",
+      "WebFetch(domain:sede.comunidad.madrid)",
+      "WebFetch(domain:www.april-international.com)",
+      "WebFetch(domain:www.metromadrid.es)",
+      "WebFetch(domain:www.crtm.es)",
+      "WebFetch(domain:www.emtmadrid.es)",
+      "WebFetch(domain:www.renfe.com)",
+      "WebFetch(domain:www.madrid.es)",
+      "WebFetch(domain:www.bicimad.com)",
+      "WebFetch(domain:cabify.com)",
+      "Bash(wc -l /c/Users/chloe.servigne_selec/Documents/madridettoi/src/app/*/page.tsx /c/Users/chloe.servigne_selec/Documents/madridettoi/src/app/*/*/page.tsx)",
+      "Bash(npm run:*)"
     ]
   }
 }

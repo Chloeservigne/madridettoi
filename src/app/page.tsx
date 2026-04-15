@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+
+export const metadata: Metadata = {
+  title: "S'installer à Madrid : le guide complet pour les Français",
+  description:
+    "Tout ce qu'il faut savoir pour s'installer à Madrid : logement, NIE, travail, déménagement, vie quotidienne. Le guide pratique des Français expatriés à Madrid.",
+  openGraph: {
+    title: "S'installer à Madrid : le guide complet pour les Français",
+    description:
+      "Tout ce qu'il faut savoir pour s'installer à Madrid : logement, NIE, travail, déménagement, vie quotidienne.",
+  },
+};
 
 const phases = [
   {
@@ -63,6 +75,45 @@ const questions = [
   { label: "Peut-on travailler en remote depuis Madrid ?", href: "/travailler/remote" },
 ];
 
+const sections = [
+  {
+    label: "Se décider",
+    titre: "Pourquoi partir à Madrid ?",
+    desc: "Budget, salaires, qualité de vie. Tout pour évaluer si le projet tient la route.",
+    href: "/se-decider/pourquoi-madrid",
+  },
+  {
+    label: "Logement",
+    titre: "Trouver où vivre",
+    desc: "Appartements, quartiers, prix au m² — le marché immobilier madrilène expliqué.",
+    href: "/logement/appartement",
+  },
+  {
+    label: "Papiers",
+    titre: "Les démarches admin",
+    desc: "NIE, padron, compte bancaire, sécu, impôts. Dans l'ordre, sans se perdre.",
+    href: "/papiers/nie",
+  },
+  {
+    label: "Travailler",
+    titre: "Emploi & freelance",
+    desc: "Trouver un job local, travailler en remote ou devenir autónomo à Madrid.",
+    href: "/travailler/emploi",
+  },
+  {
+    label: "Déménagement",
+    titre: "Organiser le départ",
+    desc: "Tout planifier de J-6 mois à J+3 mois, transport des affaires inclus.",
+    href: "/demenagement/checklist",
+  },
+  {
+    label: "Vivre",
+    titre: "La vie du quotidien",
+    desc: "Transports, santé, courses, sorties, espagnol. Madrid au quotidien.",
+    href: "/vivre/transports",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
@@ -102,6 +153,87 @@ export default function Home() {
               width={440}
               height={440}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="py-16 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">35 000</p>
+              <p className="text-[#5a3e35] text-sm">Français vivent à Madrid</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">900 €</p>
+              <p className="text-[#5a3e35] text-sm">Loyer moyen pour un T1</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">1 184 €</p>
+              <p className="text-[#5a3e35] text-sm">SMI espagnol en 2025</p>
+            </div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
+              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#C8614A] mb-2">300 j</p>
+              <p className="text-[#5a3e35] text-sm">De soleil par an</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pourquoi Madrid */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">Le contexte</p>
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Pourquoi autant de Français s&apos;installent à Madrid
+          </h2>
+          <div className="space-y-4 text-[#5a3e35] leading-relaxed text-lg">
+            <p>
+              Madrid n&apos;est plus seulement une destination touristique. Pour les Français, elle est devenue une vraie alternative à Paris — avec un{" "}
+              <Link href="/se-decider/budget" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                coût de la vie encore accessible
+              </Link>
+              , une énergie différente, et la possibilité de se construire une vie à l&apos;étranger sans traverser un océan.
+            </p>
+            <p>
+              Ils sont plus de 35 000 à y avoir posé leurs valises — jeunes actifs, freelances, familles, retraités. Certains arrivent avec un contrat dans une{" "}
+              <Link href="/travailler/entreprises-francaises" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                entreprise française présente en Espagne
+              </Link>
+              , d&apos;autres tentent leur chance sur le marché local ou deviennent{" "}
+              <Link href="/travailler/freelance" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                autónomos
+              </Link>
+              . D&apos;autres encore{" "}
+              <Link href="/travailler/remote" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                télétravaillent depuis Madrid
+              </Link>{" "}
+              pour un employeur français.
+            </p>
+            <p>
+              Mais s&apos;installer à Madrid, ça ne s&apos;improvise pas. Entre le{" "}
+              <Link href="/papiers/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                NIE à obtenir
+              </Link>
+              , l&apos;
+              <Link href="/logement/appartement" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                appartement à trouver depuis la France
+              </Link>
+              , le{" "}
+              <Link href="/papiers/padron" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                padron municipal
+              </Link>
+              , la{" "}
+              <Link href="/papiers/secu" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                sécurité sociale espagnole
+              </Link>{" "}
+              et les{" "}
+              <Link href="/papiers/impots" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                impôts à comprendre
+              </Link>
+              , les démarches peuvent vite sembler un labyrinthe. Ce guide est là pour t&apos;éviter ça.
+            </p>
           </div>
         </div>
       </section>
@@ -175,20 +307,172 @@ export default function Home() {
         </div>
       </section>
 
+      {/* À l'arrivée */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">Dès ton arrivée</p>
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-4">
+            Les cinq démarches indispensables
+          </h2>
+          <p className="text-[#5a3e35] text-lg leading-relaxed mb-10">
+            Pas besoin de tout faire en même temps. Mais il y a un ordre logique — et certaines démarches débloquent les suivantes. Commence par là.
+          </p>
+          <div className="space-y-6">
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">1</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-1">
+                  <Link href="/papiers/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                    Le NIE
+                  </Link>
+                </h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Le Número de Identificación de Extranjero est le sésame de tout. Sans lui, tu ne peux ni signer un bail, ni ouvrir un compte, ni travailler légalement. C&apos;est la première démarche à lancer.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">2</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-1">
+                  <Link href="/papiers/padron" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                    Le padron municipal
+                  </Link>
+                </h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  L&apos;inscription en mairie (empadronamiento) est obligatoire dès que tu as une adresse fixe. C&apos;est ce document qui prouve ta résidence à Madrid — et il t&apos;ouvre les droits à la sécu et à l&apos;Abono jeune.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">3</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-1">
+                  <Link href="/papiers/compte-bancaire" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                    Un compte bancaire espagnol
+                  </Link>
+                </h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  La plupart des employeurs espagnols virent sur un compte ES. Et sans RIB local, impossible de domicilier tes factures. Ouvre un compte dès les premiers jours.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">4</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-1">
+                  <Link href="/papiers/secu" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                    La sécurité sociale espagnole
+                  </Link>
+                </h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Une fois employé ou inscrit comme autónomo, tu es affilié à la Seguridad Social. Tu obtiens un número de afiliación et l&apos;accès au médecin de famille (médico de cabecera).
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">5</div>
+              <div>
+                <h3 className="font-semibold text-[#2C1810] text-lg mb-1">
+                  <Link href="/vivre/transports" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+                    L&apos;Abono Transporte
+                  </Link>
+                </h3>
+                <p className="text-[#5a3e35] leading-relaxed">
+                  Le pass illimité pour le métro, le bus et le Cercanías. Indispensable pour se déplacer au quotidien — et très abordable avec le tarif jeune (- 26 ans).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dark section + blockquote */}
+      <section className="py-20 px-6 bg-[#2C1810]">
+        <div className="max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
+            <div className="bg-white/10 rounded-2xl p-5">
+              <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-2">Ce que tu vas trouver ici</p>
+              <ul className="space-y-2">
+                {[
+                  "Des guides pratiques écrits par quelqu'un qui l'a vécu",
+                  "Des infos à jour — loyers, salaires, cotisations 2025/2026",
+                  "Les démarches dans le bon ordre, sans jargon",
+                  "Des liens directs vers les formulaires officiels",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2 items-start">
+                    <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">—</span>
+                    <span className="text-[#F5ECD7]/80 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white/10 rounded-2xl p-5">
+              <p className="text-[#E8A838] font-semibold text-sm uppercase tracking-widest mb-2">Ce que tu ne trouveras pas</p>
+              <ul className="space-y-2">
+                {[
+                  "Des articles génériques copiés d'autres blogs",
+                  "Des conseils d'agences immobilières rémunérées",
+                  "Des infos périmées sur les démarches admin",
+                  "Des promesses de vie facile — Madrid ça se mérite",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2 items-start">
+                    <span className="text-[#C8614A] font-bold flex-shrink-0 mt-0.5">✕</span>
+                    <span className="text-[#F5ECD7]/80 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <blockquote className="border-l-4 border-[#E8A838] pl-6">
+            <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
+              Madrid ne te demande pas d&apos;être parfait·e en espagnol ni d&apos;avoir tout planifié. Elle demande juste de sauter — et de te débrouiller une fois là-bas.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Explorer le guide */}
+      <section className="py-24 px-6 bg-[#F5ECD7]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">Le guide complet</p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-[#2C1810]">
+              Explorer par thème
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {sections.map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="group p-6 rounded-2xl bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <p className="text-[#C8614A] text-xs font-semibold uppercase tracking-widest mb-2">{s.label}</p>
+                <h3 className="font-[family-name:var(--font-playfair)] text-lg font-bold text-[#2C1810] mb-2 group-hover:text-[#C8614A] transition-colors">
+                  {s.titre}
+                </h3>
+                <p className="text-[#5a3e35]/70 text-sm leading-relaxed">{s.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About */}
       <section className="py-24 px-6 bg-[#EDE0C8]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#2C1810] mb-6">
-            C'est quoi,{" "}
+            C&apos;est quoi,{" "}
             <span className="italic text-[#C8614A]">Madrid & Toi&nbsp;?</span>
           </h2>
           <p className="text-[#5a3e35] text-lg leading-relaxed mb-6">
-            Un projet né d'un déménagement — le mien. En 2020, j'ai quitté
+            Un projet né d&apos;un déménagement — le mien. En 2020, j&apos;ai quitté
             Paris pour Madrid, seule, avec une valise et beaucoup de questions
-            sans réponses claires. J'ai tout appris en faisant.
+            sans réponses claires. J&apos;ai tout appris en faisant.
           </p>
           <p className="text-[#5a3e35] text-lg leading-relaxed mb-6">
-            Aujourd'hui je construis la ressource que j'aurais aimé avoir :
+            Aujourd&apos;hui je construis la ressource que j&apos;aurais aimé avoir :
             des guides pratiques, des infos honnêtes, des contacts utiles.
             Pour que ton installation soit une aventure, pas un parcours du
             combattant.
@@ -200,7 +484,7 @@ export default function Home() {
             Lire mon histoire →
           </Link>
           <p className="font-[family-name:var(--font-playfair)] text-2xl italic text-[#2C1810]">
-            C'est en train de se construire — et tu peux en faire partie.
+            C&apos;est en train de se construire — et tu peux en faire partie.
           </p>
         </div>
       </section>
@@ -212,7 +496,7 @@ export default function Home() {
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-white mb-6">
-            Reçois nos guides dès qu'ils sortent
+            Reçois nos guides dès qu&apos;ils sortent
           </h2>
           <p className="text-[#F5ECD7]/90 text-lg mb-10 leading-relaxed">
             On prépare des guides pratiques sur le logement, les démarches
