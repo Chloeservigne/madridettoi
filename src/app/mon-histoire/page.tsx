@@ -117,6 +117,7 @@ export default function MonHistoirePage() {
                 alt="Illustration valise de départ"
                 width={180}
                 height={180}
+                unoptimized
                 className="float-right ml-8 mb-2"
               />
               <p className="font-[family-name:var(--font-playfair)] text-2xl italic text-[#2C1810] leading-relaxed">

@@ -152,6 +152,7 @@ export default function Home() {
               alt="Illustration d'une personne prête à partir s'installer à Madrid"
               width={440}
               height={440}
+              unoptimized
             />
           </div>
         </div>

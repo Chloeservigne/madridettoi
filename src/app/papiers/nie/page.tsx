@@ -106,6 +106,7 @@ export default function NiePage() {
               alt="Illustration documents administratifs"
               width={360}
               height={360}
+              unoptimized
             />
           </div>
         </div>
