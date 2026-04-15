@@ -224,7 +224,14 @@ export default function BudgetPage() {
             Madrid a beaucoup augmenté — +9,7% en 2025 selon les dernières
             données Idealista. Ça reste moins cher que Paris pour la plupart des
             quartiers, mais l&apos;écart se réduit. Voici les fourchettes
-            réelles pour un T1 (studio ou une chambre).
+            réelles pour un T1 (studio ou une chambre). Pour les{" "}
+            <Link
+              href="/logement/prix"
+              className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+            >
+              prix détaillés au m² par quartier
+            </Link>
+            , consulte notre guide dédié.
           </p>
 
           <div className="space-y-4">
