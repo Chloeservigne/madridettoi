@@ -89,12 +89,23 @@ const quartiersHorsM30 = [
   },
   {
     name: "Tetuán",
+    href: "/logement/quartiers/tetuan",
     emoji: "🏙️",
     vibe: "Multiculturel, nord de Madrid, bien connecté",
     budget: "850 – 1 200 € / mois (1 chambre)",
     description:
       "Au nord de la M30, Tetuán est un quartier dense et cosmopolite, avec une forte communauté latino-américaine et africaine. Il est souvent négligé par les expats, à tort : bien desservi par le métro, proche du centre, et avec des loyers plus raisonnables qu'intramuros. Un quartier de vraie vie madrilène.",
     forWho: "Ceux qui veulent l'immersion sans les prix du centre",
+  },
+  {
+    name: "Moncloa-Argüelles",
+    href: "/logement/quartiers/moncloa-arguelles",
+    emoji: "🎓",
+    vibe: "Estudiantin, vert, bien connecté",
+    budget: "1 000 – 1 400 € / mois (1 chambre)",
+    description:
+      "Entre la Cité universitaire, le Parque del Oeste et la Casa de Campo, Moncloa-Argüelles offre quelque chose de rare dans une grande capitale : de l'espace, du calme et de la verdure, à deux stations de métro du centre. Très prisé des étudiants et des jeunes actifs qui veulent décrocher du bruit de Malasaña.",
+    forWho: "Étudiants, familles, amateurs d'espaces verts",
   },
 ];
 
@@ -212,27 +223,44 @@ export default function QuartiersPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {quartiersHorsM30.map((q) => (
-              <div
-                key={q.name}
-                className="p-6 rounded-3xl bg-white shadow-md hover:border-[#C8614A]/30 hover:shadow-lg transition-all"
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <div>
-                    <span className="text-2xl mr-2">{q.emoji}</span>
-                    <span className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810]">
-                      {q.name}
-                    </span>
+            {quartiersHorsM30.map((q) => {
+              const inner = (
+                <>
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <span className="text-2xl mr-2">{q.emoji}</span>
+                      <span className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] group-hover:text-[#C8614A] transition-colors">
+                        {q.name}
+                      </span>
+                    </div>
                   </div>
+                  <p className="text-[#C8614A] text-sm font-semibold mb-1">{q.vibe}</p>
+                  <p className="text-[#7A8C5E] text-xs mb-3">💶 {q.budget}</p>
+                  <p className="text-[#5a3e35] text-sm leading-relaxed mb-3">{q.description}</p>
+                  <p className="text-xs text-[#2C1810]/50 border-t border-[#EDE0C8] pt-3">
+                    <span className="font-semibold">Idéal pour :</span> {q.forWho}
+                  </p>
+                  {"href" in q && (
+                    <p className="text-[#C8614A] text-sm font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      Lire le guide →
+                    </p>
+                  )}
+                </>
+              );
+              return "href" in q ? (
+                <Link
+                  key={q.name}
+                  href={q.href as string}
+                  className="group p-6 rounded-3xl bg-white shadow-md hover:shadow-lg transition-all block"
+                >
+                  {inner}
+                </Link>
+              ) : (
+                <div key={q.name} className="group p-6 rounded-3xl bg-white shadow-md hover:shadow-lg transition-all">
+                  {inner}
                 </div>
-                <p className="text-[#C8614A] text-sm font-semibold mb-1">{q.vibe}</p>
-                <p className="text-[#7A8C5E] text-xs mb-3">💶 {q.budget}</p>
-                <p className="text-[#5a3e35] text-sm leading-relaxed mb-3">{q.description}</p>
-                <p className="text-xs text-[#2C1810]/50 border-t border-[#EDE0C8] pt-3">
-                  <span className="font-semibold">Idéal pour :</span> {q.forWho}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -271,6 +299,9 @@ export default function QuartiersPage() {
             </Link>
             <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
               Le guide du NIE
+            </Link>
+            <Link href="/logement/colocation" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+              La colocation à Madrid
             </Link>
           </div>
         </div>
