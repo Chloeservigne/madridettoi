@@ -200,6 +200,13 @@ export default function ChecklistPage() {
                   >
                     Voir ce qu&apos;il faut pour le NIE
                   </Link>
+                  . Si ton passeport ou ta CNI expire bientôt,{" "}
+                  <Link
+                    href="/papiers/documents-francais"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    renouvelle-les depuis Madrid
+                  </Link>
                   .
                 </p>
               </div>

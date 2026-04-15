@@ -97,6 +97,7 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 - `/papiers/compte-bancaire` — mixte : éditorial + 3 étapes numérotées
 - `/papiers/impots` — éditorial : règle des 183 jours, tranches IRPF 2026, Renta, convention France-Espagne, Modelo 720
 - `/papiers/permis-de-conduire` — éditorial : échange volontaire vs obligatoire (4 cas), procédure DGT, documents, coût (28,87 €), délai
+- `/papiers/documents-francais` — mixte : registre consulaire + étapes CNI (4 étapes) + étapes passeport (4 étapes), autres démarches consulaires
 
 ### `/travailler`
 - `/travailler/remote` — éditorial
@@ -170,6 +171,7 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - Sortir / musées / vie nocturne mentionné → `/vivre/sortir`
 - Impôts / fiscalité / IRPF mentionné → `/papiers/impots`
 - Permis de conduire / DGT / échange mentionné → `/papiers/permis-de-conduire`
+- CNI / passeport / consulat français / documents français mentionné → `/papiers/documents-francais`
 - École / lycée français / scolarité / enfants à Madrid mentionné → `/vivre/ecoles`
 - Prix au m² / loyers par quartier / tableau loyers mentionné → `/logement/prix`
 - Communauté française mentionnée → `/communaute/francais-madrid`

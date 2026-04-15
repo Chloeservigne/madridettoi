@@ -46,6 +46,20 @@ const cards = [
       "La règle des 183 jours, comment se désinscrire des impôts français, s'inscrire en Espagne, et éviter les mauvaises surprises.",
     href: "/papiers/impots",
   },
+  {
+    emoji: "🚗",
+    title: "Le permis de conduire en Espagne",
+    description:
+      "L'échange est-il obligatoire ? Les 4 cas où ça le devient, la procédure DGT, les documents, le coût (28,87 €) et le délai (~6 semaines).",
+    href: "/papiers/permis-de-conduire",
+  },
+  {
+    emoji: "🇫🇷",
+    title: "Renouveler ses papiers français depuis Madrid",
+    description:
+      "CNI, passeport, registre consulaire — tout se fait au Consulat général de France à Madrid. Procédure ANTS, documents, délais et coûts.",
+    href: "/papiers/documents-francais",
+  },
 ];
 
 export default function PapiersPage() {

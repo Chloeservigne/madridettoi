@@ -313,11 +313,17 @@ export default function FrancaisMadridPage() {
               Consulat de France à Madrid
             </p>
             <p className="text-[#5a3e35] text-sm leading-relaxed">
-              Pour les démarches officielles (renouvellement passeport,
-              procurations, état civil) :{" "}
+              Pour les démarches officielles :{" "}
               <em>Calle Salustiano Olózaga 9</em>, Madrid. Sur rendez-vous
               via le portail du Ministère de l&apos;Europe et des Affaires
-              étrangères.
+              étrangères.{" "}
+              <Link
+                href="/papiers/documents-francais"
+                className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+              >
+                CNI, passeport, registre consulaire : notre guide complet
+              </Link>
+              .
             </p>
           </div>
         </div>
