@@ -5,6 +5,9 @@ import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
   title: "S'installer à Madrid : le guide complet pour les Français",
   description:
     "Tout ce qu'il faut savoir pour s'installer à Madrid : logement, NIE, travail, déménagement, vie quotidienne. Le guide pratique des Français expatriés à Madrid.",

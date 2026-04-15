@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/papiers',
+  },
   title: "Papiers & démarches administratives à Madrid — Madrid & Toi",
   description:
     "NIE, sécu, banque, impôts, résidence fiscale — toutes les démarches administratives pour t'installer légalement en Espagne.",

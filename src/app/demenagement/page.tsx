@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/demenagement',
+  },
   title: "Préparer son déménagement à Madrid — Madrid & Toi",
   description:
     "Quand partir, comment organiser la logistique, ce qu'on emporte ou non, et comment survivre aux 30 premiers jours à Madrid.",

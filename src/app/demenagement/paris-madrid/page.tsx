@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/demenagement/paris-madrid',
+  },
   title: "Déménagement Paris–Madrid : le guide complet — Madrid & Toi",
   description:
     "Comment organiser son déménagement de Paris à Madrid ? Camion, affaires, résiliations, timing — le guide pratique étape par étape d'une Française qui l'a fait.",

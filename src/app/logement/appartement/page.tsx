@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/appartement',
+  },
   title: "Trouver un appartement à Madrid depuis la France — Madrid & Toi",
   description:
     "Comment trouver un appartement à Madrid avant d'arriver ? Plateformes, budget, documents, pièges à éviter — le guide complet.",

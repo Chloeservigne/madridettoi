@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/papiers/documents-francais',
+  },
   title: "Renouveler ses papiers français depuis Madrid : CNI, passeport — Madrid & Toi",
   description:
     "Carte d'identité, passeport, registre consulaire — comment refaire ses papiers français depuis Madrid. Procédure ANTS, RDV au consulat, délais, coûts.",

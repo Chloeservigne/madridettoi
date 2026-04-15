@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/vivre/sante',
+  },
   title: "Santé à Madrid : médecin, urgences, pharmacies, mutuelle privée — Madrid & Toi",
   description:
     "Comment voir un médecin à Madrid, utiliser les urgences (Urgencias vs PAC), les pharmacies de nuit, et si une mutuelle privée vaut le coup. Guide complet pour les Français expatriés.",

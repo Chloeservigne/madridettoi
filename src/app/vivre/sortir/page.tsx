@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/vivre/sortir',
+  },
   title: "Sortir à Madrid : musées gratuits, parcs, vie nocturne — Madrid & Toi",
   description:
     "Musées gratuits (Prado, Reina Sofía, Thyssen), parcs emblématiques, El Rastro, terrasses et vie nocturne. Sortir à Madrid sans se ruiner, c'est possible.",

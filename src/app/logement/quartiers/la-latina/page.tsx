@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers/la-latina',
+  },
   title: "Vivre à La Latina, Madrid — Le guide pour les expats français",
   description:
     "La Latina est le cœur historique de Madrid. Ruelles pavées, tapas, marché du Rastro — le quartier idéal pour une vraie immersion espagnole.",

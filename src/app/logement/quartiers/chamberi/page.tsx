@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers/chamberi',
+  },
   title: "Vivre à Chamberí, Madrid — Le guide pour les expats français",
   description:
     "Chamberí est la pépite méconnue des expats à Madrid. Résidentiel chic, authentique, sans touristes — le quartier idéal pour vraiment s'installer.",

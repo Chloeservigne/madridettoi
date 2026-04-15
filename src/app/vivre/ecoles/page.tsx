@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/vivre/ecoles',
+  },
   title: "Scolariser ses enfants à Madrid : lycée français, école publique — Madrid & Toi",
   description:
     "Lycée Français de Madrid, école publique espagnole, sections bilingues, bourses AEFE — tout ce qu'il faut savoir pour scolariser ses enfants à Madrid selon sa situation.",

@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/travailler',
+  },
   title: "Travailler à Madrid — Madrid & Toi",
   description:
     "Remote, emploi local, autónomo, créer une société — toutes les options pour travailler légalement depuis ou à Madrid.",

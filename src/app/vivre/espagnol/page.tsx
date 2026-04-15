@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/vivre/espagnol',
+  },
   title: "Apprendre l'espagnol à Madrid : EOI, académies, intercambios — Madrid & Toi",
   description:
     "EOI à ~250€ le quadrimestre, académies privées (150–400€/mois), intercambios gratuits dans les bars de Malasaña et Chueca. Tout pour progresser vite en espagnol à Madrid.",

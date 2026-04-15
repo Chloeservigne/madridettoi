@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/papiers/impots',
+  },
   title: "Impôts à Madrid — Fiscalité pour les Français en Espagne — Madrid & Toi",
   description:
     "Règle des 183 jours, IRPF, déclaration de revenus, convention fiscale France-Espagne — tout ce qu'il faut savoir sur votre fiscalité à Madrid.",

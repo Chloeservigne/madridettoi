@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers/lavapies',
+  },
   title: "Vivre à Lavapiés, Madrid — Le guide pour les expats français",
   description:
     "Lavapiés est le quartier le plus multiculturel de Madrid. Abordable, alternatif, artistique — pour ceux qui veulent Madrid sans les prix du centre.",

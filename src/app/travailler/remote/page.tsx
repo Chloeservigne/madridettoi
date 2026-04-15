@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/travailler/remote',
+  },
   title: "Travailler en remote depuis Madrid — Madrid & Toi",
   description:
     "C'est légal ? Quel visa ? Quelles implications fiscales ? Tout ce qu'il faut savoir pour travailler à distance depuis Madrid.",

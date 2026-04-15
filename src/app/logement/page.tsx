@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement',
+  },
   title: "Trouver un logement à Madrid — Madrid & Toi",
   description:
     "Trouver un appartement depuis la France, choisir son quartier, travailler avec une agence, comprendre le contrat de bail espagnol.",

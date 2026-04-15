@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/se-decider/salaire-madrid',
+  },
   title: "Salaire à Madrid : ce qu'on gagne vraiment en 2026 — Madrid & Toi",
   description:
     "Salaire minimum, salaire moyen, salaires par secteur — et la vraie question : est-ce qu'on vit mieux à Madrid qu'à Paris avec un salaire plus bas ? La réponse chiffrée.",

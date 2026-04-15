@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/papiers/secu',
+  },
   title: "La Seguridad Social en Espagne — Madrid & Toi",
   description:
     "Tarjeta sanitaria, NUSS, RETA, copago médicaments, mutuelles privées — comment accéder aux soins en Espagne selon ta situation. Guide précis pour les Français à Madrid.",

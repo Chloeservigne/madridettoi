@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/vivre/courses',
+  },
   title: "Faire ses courses à Madrid — Madrid & Toi",
   description:
     "Supermarchés, marchés municipaux, El Rastro — tout ce qu'il faut savoir pour faire ses courses à Madrid sans se ruiner.",

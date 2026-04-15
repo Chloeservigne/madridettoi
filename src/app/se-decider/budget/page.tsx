@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/se-decider/budget',
+  },
   title: "Coût de la vie à Madrid : le vrai budget d'un expat français — Madrid & Toi",
   description:
     "Quel est le coût de la vie à Madrid en 2025 ? Loyer par quartier, courses, menu del día, transports, abono — le budget mensuel réel chiffré d'un expat français.",

@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers/salamanca',
+  },
   title: "Vivre à Salamanca, Madrid — Le guide pour les expats français",
   description:
     "Le quartier Salamanca est le plus huppé de Madrid. Rues larges, commerces de luxe, calme et qualité de vie — idéal pour les familles et les expatriés en mission.",

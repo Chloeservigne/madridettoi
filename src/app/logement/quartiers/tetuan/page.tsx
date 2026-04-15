@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers/tetuan',
+  },
   title: "Vivre à Tetuán, Madrid — Le guide pour les expats français",
   description:
     "Tetuán est le quartier abordable et multiculturel du nord de Madrid. Loyers, ambiance, transports, pour qui c'est fait — tout ce qu'il faut savoir avant de s'y installer.",

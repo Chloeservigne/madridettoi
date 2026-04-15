@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers/chueca',
+  },
   title: "Vivre à Chueca, Madrid — Le guide pour les expats français",
   description:
     "Chueca est le quartier cosmopolite et LGBTQ+ de Madrid. Ambiance, loyers, vie de quartier — tout ce qu'il faut savoir pour s'installer à Chueca.",

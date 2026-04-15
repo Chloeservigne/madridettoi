@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/travailler/freelance',
+  },
   title: "Devenir autónomo en Espagne — guide complet 2026 — Madrid & Toi",
   description:
     "Tarifa plana, cotisations RETA, IRPF, IVA — tout ce qu'il faut savoir pour s'inscrire comme travailleur indépendant en Espagne et facturer légalement depuis Madrid.",

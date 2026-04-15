@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/demenagement/checklist',
+  },
   title: "Checklist déménagement Madrid — Madrid & Toi",
   description:
     "La checklist complète pour déménager à Madrid : de J-6 mois à J+3 mois, toutes les étapes pour ne rien oublier.",

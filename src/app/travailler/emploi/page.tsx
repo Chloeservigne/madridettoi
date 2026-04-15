@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/travailler/emploi',
+  },
   title: "Trouver un emploi à Madrid — guide pour les Français — Madrid & Toi",
   description:
     "Secteurs qui recrutent, salaires 2026, plateformes de recherche, conseils pour se démarquer à Madrid. Le guide complet pour décrocher un poste local.",

@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/vivre/transports',
+  },
   title: "Transports à Madrid : métro, bus, Cercanías, taxi — Madrid & Toi",
   description:
     "L'Abono Transportes à 32,70€/mois, le métro (303 stations, 6h–1h30), les búhos nocturnes, BiciMAD, le taxi et rejoindre l'aéroport. Tout pour se déplacer à Madrid sans voiture.",

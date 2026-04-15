@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/travailler/entreprises-francaises',
+  },
   title: "Entreprises françaises à Madrid — où travailler en 2026 — Madrid & Toi",
   description:
     "Airbus Getafe, Decathlon San Sebastián de los Reyes, L'Oréal, Thales, Renault Alcobendas... Les grands groupes français implantés à Madrid, leurs bureaux, leurs liens carrières, et le VIE.",

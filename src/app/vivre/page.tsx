@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/vivre',
+  },
   title: "Vivre à Madrid au quotidien — Madrid & Toi",
   description:
     "Transports, santé, courses, langue, sorties — tout ce qu'il faut savoir pour vivre à Madrid une fois installé(e).",

@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/communaute/francais-madrid',
+  },
   title: "La communauté française à Madrid — Madrid & Toi",
   description:
     "35 000 Français vivent à Madrid. Associations, groupes, événements — comment trouver ta communauté et ne pas te sentir seul(e).",

@@ -7,6 +7,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/papiers/nie',
+  },
   title: "NIE en Espagne : le guide complet pour les Français — Madrid & Toi",
   description:
     "C'est quoi le NIE, faut-il l'avoir avant d'arriver, comment prendre la cita previa, quels formulaires, NIE ou TIE — tout ce qu'il faut savoir avant de déménager à Madrid.",

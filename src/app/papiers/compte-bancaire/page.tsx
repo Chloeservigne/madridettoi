@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/papiers/compte-bancaire',
+  },
   title: "Ouvrir un compte bancaire en Espagne — Madrid & Toi",
   description:
     "BBVA, ING España, CaixaBank, Revolut — les meilleures options pour ouvrir un compte en Espagne, les documents requis, et ce qu'il faut savoir si tu n'as pas encore ton NIE.",

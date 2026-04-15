@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/se-decider/pourquoi-madrid',
+  },
   title: "Pourquoi Madrid ? Les vraies raisons de s'installer là-bas — Madrid & Toi",
   description:
     "Rythme de vie, gastronomie, climat (avec les nuances qu'il faut), proximité avec la France, les Espagnols — ce qui fait vraiment la différence quand on vit à Madrid.",

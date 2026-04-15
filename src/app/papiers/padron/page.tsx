@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/papiers/padron',
+  },
   title: "Empadronamiento à Madrid : comment s'inscrire au padron — Madrid & Toi",
   description:
     "L'empadronamiento, c'est l'inscription au registre municipal de Madrid. Obligatoire pour accéder aux soins, scolariser ses enfants, obtenir son NIE définitif. Guide complet pour les Français.",

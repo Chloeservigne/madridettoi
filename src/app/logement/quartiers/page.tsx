@@ -6,6 +6,9 @@ import BarrioQuiz from "@/components/BarrioQuiz";
 import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers',
+  },
   title: "Les quartiers de Madrid pour les expats français — Madrid & Toi",
   description:
     "Malasaña, Chueca, Lavapiés, La Latina... Quel quartier choisir pour s'installer à Madrid ? On décrit l'ambiance, les prix et le profil de chaque quartier.",

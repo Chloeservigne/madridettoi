@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/travailler/vie',
+  },
   title: "VIE à Madrid — tout savoir sur le Volontariat International en Entreprise — Madrid & Toi",
   description:
     "2 400 € nets par mois, 18-28 ans, 6 à 24 mois dans un grand groupe français à Madrid. Comment fonctionne le VIE, comment postuler sur Business France, et à quoi s'attendre.",

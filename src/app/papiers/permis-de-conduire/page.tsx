@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/papiers/permis-de-conduire',
+  },
   title: "Permis de conduire en Espagne : faut-il l'échanger ? — Madrid & Toi",
   description:
     "L'échange du permis français en Espagne est-il obligatoire ? Les 4 cas où ça le devient, la procédure DGT, les documents, le coût et le piège du vieux permis rose.",

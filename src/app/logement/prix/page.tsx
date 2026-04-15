@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/prix',
+  },
   title: "Prix des loyers à Madrid par quartier en 2026 — Madrid & Toi",
   description:
     "Loyers à Madrid en 2026 : prix au m² et fourchettes par type (T1, T2, T3) dans chaque quartier. Comparaison Paris–Madrid et conseils pour trouver au bon prix.",

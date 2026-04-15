@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/se-decider',
+  },
   title: "Se décider : pourquoi Madrid ? — Madrid & Toi",
   description:
     "Pourquoi Madrid plutôt qu'ailleurs ? Le pour/contre honnête, le budget de vie réel, des témoignages d'expats pour t'aider à franchir le cap.",

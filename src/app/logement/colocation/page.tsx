@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/colocation',
+  },
   title: "Colocation à Madrid — Trouver une chambre en coloc pour les Français",
   description:
     "Tout savoir sur la colocation à Madrid : prix par quartier, plateformes (Idealista, Badi, SpainHouses), documents requis et pièges à éviter pour les expatriés français.",

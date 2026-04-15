@@ -6,6 +6,9 @@ import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers/malasana',
+  },
   title: "Vivre à Malasaña, Madrid — Le guide pour les expats français",
   description:
     "Malasaña est le quartier préféré des Français à Madrid. Ambiance, loyers, vie de quartier, pour qui c'est fait — tout ce qu'il faut savoir avant de s'y installer.",

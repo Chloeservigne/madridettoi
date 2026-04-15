@@ -4,6 +4,9 @@ import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/communaute',
+  },
   title: "Communauté française à Madrid — Madrid & Toi",
   description:
     "Groupes Facebook et Discord de Français à Madrid, events réguliers, comment rencontrer des gens, associations franco-espagnoles.",

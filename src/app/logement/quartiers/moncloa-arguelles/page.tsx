@@ -5,6 +5,9 @@ import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/logement/quartiers/moncloa-arguelles',
+  },
   title: "Vivre à Moncloa-Argüelles, Madrid — Le guide pour les expats",
   description:
     "Moncloa-Argüelles est le quartier estudiantin et familial de Madrid, entre grands espaces verts et bonne connexion au centre. Loyers, ambiance, pour qui c'est fait.",
