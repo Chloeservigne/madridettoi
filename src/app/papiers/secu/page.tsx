@@ -257,6 +257,53 @@ export default function SecuPage() {
         </div>
       </section>
 
+      {/* CEAM */}
+      <section className="py-20 px-6 bg-[#EDE0C8]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            La carte européenne d&apos;assurance maladie (CEAM)
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-6">
+            Ta CEAM française — délivrée par Ameli — te couvre pour les soins
+            médicalement nécessaires pendant les premiers mois à Madrid, le
+            temps de régulariser ton affiliation à la Seguridad Social. Elle
+            permet d&apos;être soigné(e) dans le système public espagnol sans
+            avance de frais pour les soins urgents.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-white rounded-2xl p-5 shadow-sm">
+              <p className="font-semibold text-[#2C1810] text-sm mb-2">Ce qu&apos;elle couvre</p>
+              <p className="text-[#5a3e35]/80 text-sm leading-relaxed">
+                Soins urgents ou médicalement nécessaires lors d&apos;un séjour
+                temporaire en Espagne — consultations, urgences hospitalières,
+                médicaments sur ordonnance (avec copago espagnol).
+              </p>
+            </div>
+            <div className="bg-[#C8614A]/10 rounded-2xl p-5">
+              <p className="font-semibold text-[#C8614A] text-sm mb-2">Sa limite</p>
+              <p className="text-[#5a3e35]/80 text-sm leading-relaxed">
+                Elle n&apos;est valable que pour les séjours temporaires. Dès que
+                tu es considéré(e) comme résident(e) en Espagne, elle perd sa
+                légitimité comme couverture principale. Elle est transitoire —
+                pas un substitut à la tarjeta sanitaria.
+              </p>
+            </div>
+          </div>
+          <p className="text-[#5a3e35] text-sm mt-5 leading-relaxed">
+            Pour la renouveler ou en vérifier la validité, tout se gère directement
+            sur{" "}
+            <a
+              href="https://www.ameli.fr/assure/droits-demarches/europe-international/partir-etranger/carte-europeenne-assurance-maladie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+            >
+              ameli.fr
+            </a>.
+          </p>
+        </div>
+      </section>
+
       {/* Couvert / pas couvert */}
       <section className="py-20 px-6 bg-[#F5ECD7]">
         <div className="max-w-4xl mx-auto">
@@ -453,6 +500,81 @@ export default function SecuPage() {
               pour ne pas rester bloqué 6 semaines avant un dermato.
             </p>
           </blockquote>
+        </div>
+      </section>
+
+      {/* Médecins francophones */}
+      <section className="py-20 px-6 bg-[#F5ECD7]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+            Trouver un médecin francophone à Madrid
+          </h2>
+          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
+            Madrid compte environ{" "}
+            <Link
+              href="/communaute/francais-madrid"
+              className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+            >
+              35 000 Français
+            </Link>{" "}
+            — il existe donc un vrai réseau de professionnels de santé
+            francophones, même si c&apos;est moins formalisé qu&apos;en France.
+          </p>
+          <div className="space-y-4">
+            <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2" />
+              <div>
+                <p className="font-semibold text-[#2C1810] text-sm mb-1">Les groupes de la communauté française</p>
+                <p className="text-[#5a3e35]/80 text-sm leading-relaxed">
+                  Le groupe Facebook &ldquo;Français à Madrid&rdquo; et les forums de{" "}
+                  <Link
+                    href="/communaute/francais-madrid"
+                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                  >
+                    Madrid Accueil
+                  </Link>{" "}
+                  sont les meilleures ressources pour des recommandations
+                  récentes — les retours d&apos;expérience y circulent activement.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2" />
+              <div>
+                <p className="font-semibold text-[#2C1810] text-sm mb-1">Via ta mutuelle privée</p>
+                <p className="text-[#5a3e35]/80 text-sm leading-relaxed">
+                  Sanitas et Adeslas permettent de filtrer les médecins par
+                  langue parlée dans leur annuaire en ligne. C&apos;est souvent
+                  le moyen le plus fiable pour trouver un généraliste ou un
+                  spécialiste francophone.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2" />
+              <div>
+                <p className="font-semibold text-[#2C1810] text-sm mb-1">L&apos;Institut français de Madrid</p>
+                <p className="text-[#5a3e35]/80 text-sm leading-relaxed">
+                  L&apos;IFM dispose d&apos;une liste de contacts utiles pour
+                  les Français installés à Madrid, dont des professionnels de
+                  santé francophones. À consulter directement auprès de leur
+                  service d&apos;accueil.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C8614A] mt-2" />
+              <div>
+                <p className="font-semibold text-[#2C1810] text-sm mb-1">En dernier recours : Google Translate au cabinet</p>
+                <p className="text-[#5a3e35]/80 text-sm leading-relaxed">
+                  Le vocabulaire médical en espagnol s&apos;apprend vite — et
+                  la plupart des médecins ont l&apos;habitude des patients
+                  étrangers. Pour les consultations courantes, une
+                  préparation de 10 minutes avant le RDV suffit souvent.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
