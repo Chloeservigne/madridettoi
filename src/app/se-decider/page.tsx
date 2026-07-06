@@ -23,10 +23,10 @@ const cards = [
   },
   {
     emoji: "⚖️",
-    title: "Le pour/contre honnête",
+    title: "Madrid est fait pour toi ?",
     description:
-      "Madrid n'est pas parfaite. On te dit ce qui est bien, ce qui est difficile, et ce qu'on n'aurait pas voulu ignorer avant de partir.",
-    href: null,
+      "Remote worker, famille, célibataire — qui s'épanouit vraiment à Madrid, et qui risque de déchanter. Une lecture honnête des profils qui s'adaptent le mieux.",
+    href: "/se-decider/pour-qui",
   },
   {
     emoji: "💶",

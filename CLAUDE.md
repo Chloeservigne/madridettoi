@@ -75,6 +75,7 @@ Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
 - `/se-decider/pourquoi-madrid` — éditorial, 6 raisons
 - `/se-decider/budget` — coût de la vie, tableau loyers par quartier
 - `/se-decider/salaire-madrid` — SMI, salaire moyen, par secteur, brut/net, comparaison Paris–Madrid
+- `/se-decider/pour-qui` — éditorial : profils qui s'épanouissent vs ce qui peut coincer, grille 2 colonnes, cas spécifiques (remote, famille, seul), questions à se poser
 
 ### `/logement`
 - `/logement/appartement` — processus (étapes numérotées, garder)
@@ -157,6 +158,7 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - Colocation / chambre en coloc mentionnée → `/logement/colocation`
 - Budget / coût de la vie mentionné → `/se-decider/budget`
 - Salaire mentionné → `/se-decider/salaire-madrid`
+- Profil / pour qui Madrid convient / s'épanouir à Madrid mentionné → `/se-decider/pour-qui`
 - Remote / télétravail mentionné → `/travailler/remote`
 - Autónomo / freelance mentionné → `/travailler/freelance`
 - Emploi local mentionné → `/travailler/emploi`

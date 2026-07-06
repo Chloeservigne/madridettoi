@@ -259,6 +259,12 @@ export default function PourquoiMadridPage() {
               Trouver un appartement
             </Link>
             <Link
+              href="/se-decider/pour-qui"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+            >
+              Madrid est fait pour toi ?
+            </Link>
+            <Link
               href="/mon-histoire"
               className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
             >
