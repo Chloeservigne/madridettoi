@@ -20,25 +20,25 @@ git push           # déclenche le déploiement Vercel
 
 ## Couleurs (palette fixe, ne pas inventer)
 
-Charte graphique : **6a « Sol de Madrid »** (refonte 2026).
+Charte graphique : **vert & crème** (refonte 2026).
 
 | Nom | Hex | Usage |
 |-----|-----|-------|
-| Bg | `#FFFBF5` | Fond clair |
-| Alt | `#FBEBDD` | Fond alternatif |
-| Ink | `#33251E` | Titres, corps de texte |
-| Accent | `#F0552F` | Accent principal, CTA, liens, mot accentué du titre |
-| Accent hover | `#CC4828` | Hover sur accent |
-| Secondaire | `#F2A65A` | Labels, badges secondaires (ex-vert) |
-| Or | `#FFC24B` | Accents sur fond dark, footer |
-| Dark | `#241813` | Fond dark, footer |
-| Dark hover | `#1D130F` | Hover bouton fond dark |
-| Dark text | `#F6E7D9` | Texte crème sur fond sombre/accent |
+| Bg | `#fbfaf6` | Fond clair |
+| Alt / Beige | `#f2f0e9` | Fond alternatif, cartes/surfaces |
+| Ink | `#171712` | Titres, corps de texte, ET fond sombre (rôle unique) |
+| Accent (vert) | `#1fa971` | CTA, liens, mot accentué du titre — **jamais en aplat massif** sur une section entière |
+| Accent hover / profond | `#178a5d` | Hover sur accent, labels secondaires |
+| Accent pâle | `#e6f4ec` | Badges, fond newsletter, teintes de fond |
+| Dark hover | `#0f0f0c` | Hover bouton fond sombre |
+
+Ratio cible : ~70% neutres, 20% encre, 10% vert. Le vert guide l'œil vers l'action (CTA, liens) — ne jamais l'utiliser en fond de section pleine largeur (voir newsletter dans DESIGN.md §13).
 
 ## Typographie
 
-- `font-[family-name:var(--font-heading)]` → titres (Schibsted Grotesk, 700/800)
-- `font-[family-name:var(--font-body)]` → corps (Figtree, 400)
+- `font-[family-name:var(--font-display)]` → **uniquement** H1 et gros chiffres (Darker Grotesque 800, très chunky)
+- `font-[family-name:var(--font-body)]` → tout le reste : H2/H3, corps, boutons, nav, labels (Hanken Grotesk, 400/600/700/800)
+- Pas de police mono — détails techniques en Hanken Grotesk majuscules espacées
 
 ## Bibliothèque d'éléments visuels
 
@@ -52,13 +52,13 @@ Page de prévisualisation (non indexée) : `/ui`
 **Format éditorial pour tout le reste** (contenu descriptif, raisons, thématiques).
 
 ### Format éditorial (quartiers, pourquoi Madrid, sécu, remote, déménagement…)
-- Sections avec H2 thématiques, fonds alternés `bg-[#FFFBF5]` / `bg-[#FBEBDD]`
-- Une section sombre `bg-[#241813]` avec blockquote `border-[#F0552F]`
+- Sections avec H2 thématiques, fonds alternés `bg-[#fbfaf6]` / `bg-[#f2f0e9]`
+- Une section sombre `bg-[#171712]` avec blockquote `border-[#1fa971]`
 - Grille 2 colonnes pour "pour/contre" ou "selon ta situation"
 - Pas de tableau `steps[]`, pas de cercles numérotés
 
 ### Format étapes numérotées (NIE, appartement…)
-- Cercles `bg-[#F0552F]` avec chiffre blanc
+- Cercles `bg-[#1fa971]` avec chiffre blanc
 - H3 (pas H2) pour les titres d'étape
 - Seulement quand l'ordre est obligatoire
 
@@ -66,12 +66,12 @@ Page de prévisualisation (non indexée) : `/ui`
 
 Toutes les pages suivent ce schéma :
 ```
-Hero (gradient from-[#FFFBF5] to-[#FBEBDD])
+Hero (gradient from-[#fbfaf6] to-[#f2f0e9])
 → Sections de contenu alternées
 → Section dark optionnelle avec blockquote
 → Section liens connexes (pills arrondies)
-→ Newsletter (bg-[#F0552F])
-→ Footer (bg-[#241813])
+→ Newsletter (bg-[#e6f4ec], jamais le vert plein — voir DESIGN.md §13)
+→ Footer (bg-[#171712])
 ```
 
 ## Pages existantes
@@ -184,9 +184,9 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - Communauté française mentionnée → `/communaute/francais-madrid`
 
 ### Styles de liens
-- Fond clair : `className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"`
-- Fond sombre : `className="text-[#FFC24B] underline underline-offset-2 hover:opacity-80 transition-opacity"`
-- Pills "liens connexes" : `className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"`
+- Fond clair : `className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"`
+- Fond sombre : `className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity"`
+- Pills "liens connexes" : `className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"`
 
 ### Section "Ça pourrait aussi t'aider"
 - Toujours présente avant la newsletter

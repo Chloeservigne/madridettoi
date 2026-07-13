@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
-import { Schibsted_Grotesk } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
+import { Darker_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const figtree = Figtree({
+const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700", "800"],
 });
 
-const schibstedGrotesk = Schibsted_Grotesk({
-  variable: "--font-heading",
+const darkerGrotesque = Darker_Grotesque({
+  variable: "--font-display",
   subsets: ["latin"],
-  weight: ["500", "700", "800"],
+  weight: ["800"],
 });
 
 export const metadata: Metadata = {
@@ -67,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${figtree.variable} ${schibstedGrotesk.variable} antialiased`}>
+      <body className={`${hankenGrotesk.variable} ${darkerGrotesque.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}

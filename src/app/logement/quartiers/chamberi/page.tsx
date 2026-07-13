@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
@@ -54,40 +55,40 @@ export default function ChamberiPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <Link href="/logement/quartiers" className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all">
+          <Link href="/logement/quartiers" className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all">
             ← Tous les quartiers
           </Link>
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">☕ Quartier Chamberí</p>
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">☕ Quartier Chamberí</p>
+          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Chamberí —{" "}
-            <span className="not-italic font-bold text-[#F0552F]">la pépite méconnue de Madrid</span>
+            <span className="not-italic font-bold text-[#1fa971]">la pépite méconnue de Madrid</span>
           </h1>
-          <p className="text-lg text-[#33251E] leading-relaxed">
+          <p className="text-lg text-[#171712] leading-relaxed">
             Résidentiel chic, authentique, sans touristes. Chamberí est le quartier
             que les expats découvrent souvent trop tard — et qu&apos;ils ne quittent plus.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">Résidentiel & authentique</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">💶 1 200 – 1 700 € / mois</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">Installation durable · Tous profils</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Résidentiel & authentique</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">💶 1 200 – 1 700 € / mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Installation durable · Tous profils</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
       </section>
 
       {/* L'ambiance */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">L&apos;ambiance</h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">L&apos;ambiance</h2>
+          <p className="text-[#171712] leading-relaxed text-lg">
             Chamberí, c&apos;est le quartier que les Madrilènes aiment en secret et que
             les touristes ne trouvent pas. Pas de grands axes commerciaux, pas de
             foules — juste des boulangeries artisanales, des marchés de quartier,
             des cafés tranquilles où les voisins se retrouvent.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             C&apos;est un Madrid résidentiel, bourgeois sans être ostentatoire,
             authentique sans être populaire. Le Mercado de Vallehermoso est
             l&apos;un des meilleurs marchés couverts de Madrid — frais, local,
@@ -97,46 +98,46 @@ export default function ChamberiPage() {
       </section>
 
       {/* Les loyers */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">Les loyers</h2>
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">Les loyers</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#F0552F] font-bold text-xl font-[family-name:var(--font-heading)]">1 000 – 1 300 €</p>
-              <p className="text-[#33251E]/70 text-sm mt-1">Studio</p>
+              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">1 000 – 1 300 €</p>
+              <p className="text-[#171712]/70 text-sm mt-1">Studio</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#F0552F] font-bold text-xl font-[family-name:var(--font-heading)]">1 200 – 1 700 €</p>
-              <p className="text-[#33251E]/70 text-sm mt-1">1 chambre</p>
+              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">1 200 – 1 700 €</p>
+              <p className="text-[#171712]/70 text-sm mt-1">1 chambre</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#F0552F] font-bold text-xl font-[family-name:var(--font-heading)]">600 – 800 €</p>
-              <p className="text-[#33251E]/70 text-sm mt-1">Coloc (par chambre)</p>
+              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">600 – 800 €</p>
+              <p className="text-[#171712]/70 text-sm mt-1">Coloc (par chambre)</p>
             </div>
           </div>
-          <p className="text-[#33251E] leading-relaxed">
+          <p className="text-[#171712] leading-relaxed">
             Dans la fourchette haute du centre — reflet de la qualité de vie.
             Mais les appartements sont souvent plus grands et mieux finis
-            qu&apos;à <Link href="/logement/quartiers/malasana" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">Malasaña</Link> pour un budget équivalent. Le marché est moins
-            tendu qu&apos;à <Link href="/logement/quartiers/chueca" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">Chueca</Link>, et les biens restent un peu plus longtemps
+            qu&apos;à <Link href="/logement/quartiers/malasana" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">Malasaña</Link> pour un budget équivalent. Le marché est moins
+            tendu qu&apos;à <Link href="/logement/quartiers/chueca" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">Chueca</Link>, et les biens restent un peu plus longtemps
             disponibles.
           </p>
         </div>
       </section>
 
       {/* Qualité de vie */}
-      <section className="py-20 px-6 bg-[#241813]">
+      <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-6">Qualité de vie</h2>
-          <p className="text-[#F6E7D9]/80 leading-relaxed text-lg">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">Qualité de vie</h2>
+          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg">
             Chamberí est traversé par plusieurs lignes de métro — Iglesia,
             Bilbao, Quevedo, Alonso Cano. Proche du Paseo de la Castellana,
             tout le nord de Madrid est facilement accessible. Les espaces
-            verts sont plus présents qu&apos;à <Link href="/logement/quartiers/malasana" className="text-[#F6E7D9]/80 underline underline-offset-2 hover:text-[#F6E7D9] transition-colors">Malasaña</Link>, les rues plus larges,
+            verts sont plus présents qu&apos;à <Link href="/logement/quartiers/malasana" className="text-[#e6f4ec]/80 underline underline-offset-2 hover:text-[#e6f4ec] transition-colors">Malasaña</Link>, les rues plus larges,
             le bruit moins présent.
           </p>
-          <blockquote className="border-l-4 border-[#F0552F] pl-6 mt-8">
-            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
+            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Si on devait recommander un seul quartier pour une installation
               longue durée à Madrid, ce serait probablement Chamberí. Le fait
               que peu d&apos;expats en parlent est précisément ce qui en fait
@@ -147,22 +148,22 @@ export default function ChamberiPage() {
       </section>
 
       {/* Pour qui */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-8">Pour qui c&apos;est fait ?</h2>
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-8">Pour qui c&apos;est fait ?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-[#F2A65A]/10 rounded-2xl p-5">
-              <p className="text-[#F2A65A] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
-              <ul className="space-y-2 text-[#33251E] text-sm">
+            <div className="bg-[#178a5d]/10 rounded-2xl p-5">
+              <p className="text-[#178a5d] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
+              <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✓ En projet d&apos;installation moyen ou long terme</li>
                 <li>✓ Quelqu&apos;un qui veut vivre à Madrid, pas y faire du tourisme</li>
                 <li>✓ Fan de marchés, de cafés locaux, de vie de quartier</li>
                 <li>✓ Tous profils, famille comprise</li>
               </ul>
             </div>
-            <div className="bg-[#F0552F]/10 rounded-2xl p-5">
-              <p className="text-[#F0552F] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
-              <ul className="space-y-2 text-[#33251E] text-sm">
+            <div className="bg-[#1fa971]/10 rounded-2xl p-5">
+              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
+              <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✗ Tu veux une vie nocturne intense à portée de main</li>
                 <li>✗ Ton budget est très serré</li>
                 <li>✗ Tu cherches la bulle expatriée française</li>
@@ -173,16 +174,16 @@ export default function ChamberiPage() {
       </section>
 
       {/* Autres quartiers */}
-      <section className="py-16 px-6 bg-[#FBEBDD]">
+      <section className="py-16 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">Les autres quartiers</p>
+          <p className="text-[#171712] font-semibold uppercase tracking-widest text-sm mb-6">Les autres quartiers</p>
           <div className="flex flex-wrap gap-3">
             {autresQuartiers.map((q) => (
-              <Link key={q.href} href={q.href} className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors">
+              <Link key={q.href} href={q.href} className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
                 {q.emoji} {q.name}
               </Link>
             ))}
-            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors">
+            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
               Trouver un appartement depuis la France
             </Link>
           </div>
@@ -191,19 +192,21 @@ export default function ChamberiPage() {
 
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
+      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">Reçois nos guides dès qu&apos;ils sortent</h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10">Logement, NIE, sécu, travail à Madrid — on prépare des guides complets sur chaque étape de ton installation.</p>
+          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
+          <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">Reçois nos guides dès qu&apos;ils sortent</h2>
+          <p className="text-[#171712]/80 text-lg mb-10">Logement, NIE, sécu, travail à Madrid — on prépare des guides complets sur chaque étape de ton installation.</p>
           <div className="flex justify-center"><EmailForm /></div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">Pas de spam. Juste du contenu utile. Désabonnement en un clic.</p>
+          <p className="text-[#171712]/60 text-xs mt-4">Pas de spam. Juste du contenu utile. Désabonnement en un clic.</p>
         </div>
       </section>
 
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <Link href="/" className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors">Madrid & Toi</Link>
-        <p className="text-[#F6E7D9]/40 text-sm">© {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid</p>
+      <footer className="py-10 px-6 bg-[#171712] text-center">
+        <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
+          <Logo variant="cream" height={24} className="mx-auto" />
+        </Link>
+        <p className="text-[#e6f4ec]/40 text-sm">© {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid</p>
       </footer>
     </div>
   );

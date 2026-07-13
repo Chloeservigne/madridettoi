@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
 import AuthorBadge from "@/components/AuthorBadge";
 
@@ -55,58 +56,58 @@ export default function TetUanPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/logement/quartiers"
-            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Tous les quartiers
           </Link>
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
             🏙️ Quartier Tetuán
           </p>
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Tetuán —{" "}
-            <span className="not-italic font-bold text-[#F0552F]">l&apos;alternative abordable au centre</span>
+            <span className="not-italic font-bold text-[#1fa971]">l&apos;alternative abordable au centre</span>
           </h1>
-          <p className="text-lg text-[#33251E] leading-relaxed">
+          <p className="text-lg text-[#171712] leading-relaxed">
             Tetuán est souvent le quartier qu&apos;on découvre après avoir regardé les
             prix à Malasaña. Multiculturel, bien connecté, authentiquement madrilène
             — et nettement moins cher que ses voisins du centre.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">Multiculturel & authentique</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">💶 900 – 1 200 € / mois</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">Budget maîtrisé · Immersion</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Multiculturel & authentique</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">💶 900 – 1 200 € / mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Budget maîtrisé · Immersion</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
       </section>
 
       {/* L'ambiance */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             L&apos;ambiance
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             Tetuán n&apos;est pas un quartier de carte postale. Ce n&apos;est pas là que tu
             trouveras des cafés instagrammables à 4 € le flat white. C&apos;est un
             quartier de vraie vie madrilène : épiceries du monde entier, boucheries
             halal côtoyant des bars centenaires, marchés animés, mamies qui
             discutent sur leur balcon.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Le quartier est à dominante latino-américaine et nord-africaine, mais
             accueille aussi de plus en plus de jeunes Européens attirés par des
             loyers bien plus raisonnables que dans le centre historique. Cette
             gentrification douce en fait un endroit en mouvement — sans être encore
             défiguré.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Tetuán est juste au nord de{" "}
-            <Link href="/logement/quartiers/chamberi" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
+            <Link href="/logement/quartiers/chamberi" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
               Chamberí
             </Link>
             , séparé par la Calle Bravo Murillo — l&apos;une des artères les plus
@@ -117,32 +118,32 @@ export default function TetUanPage() {
       </section>
 
       {/* Les loyers */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Les loyers
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#F0552F] font-bold text-xl font-[family-name:var(--font-heading)]">700 – 950 €</p>
-              <p className="text-[#33251E]/70 text-sm mt-1">Studio</p>
+              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">700 – 950 €</p>
+              <p className="text-[#171712]/70 text-sm mt-1">Studio</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#F0552F] font-bold text-xl font-[family-name:var(--font-heading)]">900 – 1 200 €</p>
-              <p className="text-[#33251E]/70 text-sm mt-1">1 chambre</p>
+              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">900 – 1 200 €</p>
+              <p className="text-[#171712]/70 text-sm mt-1">1 chambre</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#F0552F] font-bold text-xl font-[family-name:var(--font-heading)]">400 – 550 €</p>
-              <p className="text-[#33251E]/70 text-sm mt-1">Coloc (par chambre)</p>
+              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">400 – 550 €</p>
+              <p className="text-[#171712]/70 text-sm mt-1">Coloc (par chambre)</p>
             </div>
           </div>
-          <p className="text-[#33251E] leading-relaxed">
+          <p className="text-[#171712] leading-relaxed">
             C&apos;est l&apos;un des quartiers les plus accessibles de Madrid sans être
             excentré. Comptez 200 à 300 € de moins par mois qu&apos;à Malasaña pour
             une surface équivalente. Les appartements sont souvent plus grands,
             avec des immeubles des années 60-70 — moins de cachet, mais plus
             d&apos;espace. Voir aussi les possibilités de{" "}
-            <Link href="/logement/colocation" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
+            <Link href="/logement/colocation" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
               colocation à Madrid
             </Link>{" "}
             pour diviser les frais.
@@ -151,21 +152,21 @@ export default function TetUanPage() {
       </section>
 
       {/* Transports */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Transports
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             Tetuán est traversé par la ligne 1 du métro (la plus longue de Madrid),
             avec plusieurs stations : Tetuán, Valdeacederas, Estrecho, Alvarado.
             Cuatro Caminos, à la limite avec Chamberí, donne accès aux lignes 2 et 6
             pour rejoindre le reste de la ville en quelques minutes.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Le bus est aussi bien développé sur Bravo Murillo. En pratique, rejoindre
             Sol ou Gran Vía prend moins de 15 minutes en métro. L&apos;
-            <Link href="/vivre/transports" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
+            <Link href="/vivre/transports" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
               Abono Transporte
             </Link>{" "}
             couvre bien l&apos;ensemble du quartier.
@@ -174,24 +175,24 @@ export default function TetUanPage() {
       </section>
 
       {/* Dark section */}
-      <section className="py-20 px-6 bg-[#241813]">
+      <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             Ce que les guides ne te disent pas
           </h2>
-          <p className="text-[#F6E7D9]/80 leading-relaxed text-lg">
+          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg">
             Tetuán n&apos;est pas parfait. Certaines rues de la partie sud, proches de
             Cuatro Caminos, sont très animées et bruyantes la nuit. Les immeubles
             sont rarement rénovés — vérifier l&apos;isolation et l&apos;état des fenêtres
             avant de signer. Et la vie nocturne est inexistante comparée à Malasaña.
           </p>
-          <p className="text-[#F6E7D9]/80 leading-relaxed text-lg mt-4">
+          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mt-4">
             Mais si tu cherches à t&apos;immerger dans la vraie vie madrilène, à parler
             espagnol par nécessité et non par choix, et à économiser 200 € par mois
             sur ton loyer — Tetuán est une vraie option.
           </p>
-          <blockquote className="border-l-4 border-[#F0552F] pl-6 mt-8">
-            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
+            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Le quartier qu&apos;on choisit souvent par défaut de budget, et qu&apos;on
               finit par ne plus vouloir quitter.
             </p>
@@ -200,24 +201,24 @@ export default function TetUanPage() {
       </section>
 
       {/* Pour qui */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-8">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-8">
             Pour qui c&apos;est fait ?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-[#F2A65A]/10 rounded-2xl p-5">
-              <p className="text-[#F2A65A] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
-              <ul className="space-y-2 text-[#33251E] text-sm">
+            <div className="bg-[#178a5d]/10 rounded-2xl p-5">
+              <p className="text-[#178a5d] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
+              <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✓ À budget serré (ou tu économises)</li>
                 <li>✓ En recherche d&apos;immersion espagnole</li>
                 <li>✓ Peu sensible au manque de cachet</li>
                 <li>✓ Curieux des cultures du monde</li>
               </ul>
             </div>
-            <div className="bg-[#F0552F]/10 rounded-2xl p-5">
-              <p className="text-[#F0552F] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
-              <ul className="space-y-2 text-[#33251E] text-sm">
+            <div className="bg-[#1fa971]/10 rounded-2xl p-5">
+              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
+              <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✗ Tu cherches une vie de quartier animée</li>
                 <li>✗ Tu veux être entouré(e) d&apos;expats français</li>
                 <li>✗ Tu as des exigences sur la qualité du bâti</li>
@@ -229,9 +230,9 @@ export default function TetUanPage() {
       </section>
 
       {/* Liens connexes */}
-      <section className="py-16 px-6 bg-[#FBEBDD]">
+      <section className="py-16 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">
+          <p className="text-[#171712] font-semibold uppercase tracking-widest text-sm mb-6">
             Les autres quartiers
           </p>
           <div className="flex flex-wrap gap-3">
@@ -239,20 +240,20 @@ export default function TetUanPage() {
               <Link
                 key={q.href}
                 href={q.href}
-                className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+                className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
               >
                 {q.emoji} {q.name}
               </Link>
             ))}
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/logement/colocation"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               La colocation à Madrid
             </Link>
@@ -261,34 +262,31 @@ export default function TetUanPage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
+      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
+          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
+          <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10">
+          <p className="text-[#171712]/80 text-lg mb-10">
             Logement, NIE, sécu, travail à Madrid — on prépare des guides
             complets sur chaque étape de ton installation.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">
+          <p className="text-[#171712]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
-        >
-          Madrid & Toi
+      <footer className="py-10 px-6 bg-[#171712] text-center">
+        <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
+          <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#F6E7D9]/40 text-sm">
+        <p className="text-[#e6f4ec]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

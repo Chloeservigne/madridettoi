@@ -12,7 +12,7 @@ export default function Image() {
         style={{
           width: 1200,
           height: 630,
-          backgroundColor: "#241813",
+          backgroundColor: "#171712",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -29,7 +29,7 @@ export default function Image() {
             left: 0,
             right: 0,
             height: 8,
-            backgroundColor: "#F0552F",
+            backgroundColor: "#1fa971",
           }}
         />
 
@@ -47,12 +47,12 @@ export default function Image() {
               width: 10,
               height: 10,
               borderRadius: "50%",
-              backgroundColor: "#F0552F",
+              backgroundColor: "#1fa971",
             }}
           />
           <span
             style={{
-              color: "#F0552F",
+              color: "#1fa971",
               fontSize: 18,
               fontWeight: 600,
               letterSpacing: "0.15em",
@@ -68,7 +68,7 @@ export default function Image() {
           style={{
             fontSize: 96,
             fontWeight: 700,
-            color: "#F6E7D9",
+            color: "#e6f4ec",
             lineHeight: 1.0,
             marginBottom: 28,
           }}
@@ -80,7 +80,7 @@ export default function Image() {
         <div
           style={{
             fontSize: 32,
-            color: "#FBEBDD",
+            color: "#f2f0e9",
             lineHeight: 1.4,
             maxWidth: 750,
             marginBottom: 52,
@@ -101,9 +101,9 @@ export default function Image() {
                   paddingLeft: 20,
                   paddingRight: 20,
                   borderRadius: 9999,
-                  backgroundColor: "rgba(240, 85, 47, 0.2)",
-                  border: "1px solid rgba(240, 85, 47, 0.45)",
-                  color: "#F6E7D9",
+                  backgroundColor: "rgba(31, 169, 113, 0.2)",
+                  border: "1px solid rgba(31, 169, 113, 0.45)",
+                  color: "#e6f4ec",
                   fontSize: 18,
                 }}
               >
@@ -121,7 +121,7 @@ export default function Image() {
             left: 0,
             right: 0,
             height: 4,
-            backgroundColor: "#F0552F",
+            backgroundColor: "#1fa971",
             opacity: 0.35,
           }}
         />

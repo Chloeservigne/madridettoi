@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
@@ -47,22 +48,22 @@ export default function RemotePage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/travailler"
-            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Travailler
           </Link>
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide travail
           </p>
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Peut-on travailler{" "}
-            <span className="not-italic font-bold text-[#F0552F]">en remote depuis Madrid&nbsp;?</span>
+            <span className="not-italic font-bold text-[#1fa971]">en remote depuis Madrid&nbsp;?</span>
           </h1>
-          <p className="text-lg text-[#33251E] leading-relaxed">
+          <p className="text-lg text-[#171712] leading-relaxed">
             La question que tout le monde se pose — et dont la réponse
             n&apos;est pas aussi simple qu&apos;on le voudrait. On te dit ce
             qui est légal, ce qui est courant, et comment le faire proprement.
@@ -72,12 +73,12 @@ export default function RemotePage() {
       </section>
 
       {/* Légalité */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             C&apos;est légal de travailler en remote depuis Madrid ?
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             Oui — mais c&apos;est plus complexe qu&apos;il n&apos;y paraît. En
             tant que citoyen européen, tu as le droit de t&apos;installer
             librement en Espagne. Mais travailler pour une entreprise française
@@ -85,7 +86,7 @@ export default function RemotePage() {
             partir de combien de jours tu deviens résident fiscal espagnol ?
             Ton contrat français est-il toujours valide ?
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             La réponse courte : chaque situation est différente, et
             l&apos;improvisation coûte cher. La bonne nouvelle, c&apos;est
             qu&apos;il existe des solutions propres pour chaque profil.
@@ -94,12 +95,12 @@ export default function RemotePage() {
       </section>
 
       {/* Règle des 183 jours */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             La règle des 183 jours
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             Si tu passes plus de 183 jours par an en Espagne, tu deviens
             officiellement résident fiscal espagnol. Tu dois alors déclarer tes
             revenus en Espagne — et non en France. Les deux pays ont une
@@ -107,7 +108,7 @@ export default function RemotePage() {
             quand même faire les démarches : te désinscrire des impôts français,
             t&apos;inscrire au <em>censo</em> en Espagne.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Ne pas le faire, c&apos;est risquer des problèmes avec les deux
             administrations. Ce n&apos;est pas une zone grise qu&apos;on
             conseille d&apos;habiter trop longtemps.
@@ -116,29 +117,29 @@ export default function RemotePage() {
       </section>
 
       {/* Options selon le profil */}
-      <section className="py-20 px-6 bg-[#241813]">
+      <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-8">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-8">
             Les options selon ton profil
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
                 Salarié en remote
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Idéalement, ton entreprise doit être enregistrée en Espagne ou
                 tu passes en portage salarial / autónomo. Beaucoup restent en
                 situation grise quelques mois — c&apos;est un risque.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
                 Freelance
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Le statut d&apos;
-                <Link href="/travailler/freelance" className="text-[#FFC24B] underline underline-offset-2 hover:opacity-80 transition-opacity">
+                <Link href="/travailler/freelance" className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity">
                   autónomo
                 </Link>{" "}
                 est la solution la plus propre. Tu factures tes clients (y
@@ -148,18 +149,18 @@ export default function RemotePage() {
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
                 Entrepreneur
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Créer une SL (SARL espagnole) est une option si ton activité
                 est importante. Plus de structure, plus de contraintes — mais
                 une situation claire et pérenne.
               </p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#F0552F] pl-6 mt-10">
-            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-10">
+            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Consulte une <em>gestoría</em> (comptable espagnol) dès ton
               arrivée — un rendez-vous de 50 à 100 € peut t&apos;éviter des
               années de complications fiscales.
@@ -169,12 +170,12 @@ export default function RemotePage() {
       </section>
 
       {/* Visa digital nomad */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Le visa digital nomad espagnol
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             Depuis 2023, l&apos;Espagne propose un visa spécifique pour les
             digital nomads. Il s&apos;adresse principalement aux non-européens,
             mais il a contribué à clarifier le cadre pour tous. Pour les
@@ -182,7 +183,7 @@ export default function RemotePage() {
             d&apos;autónomo — tu t&apos;installes, tu te régularises, tu
             factures.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Ce qui compte, c&apos;est d&apos;avoir un statut clair dès le
             départ. Les zones grises prolongées finissent toujours par coûter
             plus cher que les démarches évitées.
@@ -191,18 +192,18 @@ export default function RemotePage() {
       </section>
 
       {/* Infra et qualité de vie */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Coworking, infra et qualité de vie
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             Madrid est une excellente ville pour le remote : fibre très
             développée, nombreux espaces de coworking (Aticco, Utopicus,
             WeWork, Impact Hub), cafés avec bon wifi dans tous les quartiers.
             La connexion 4G/5G est fiable partout.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Et le décalage horaire avec Paris est nul — tu travailles
             exactement aux mêmes heures. Mais tu déjeunes dehors toute
             l&apos;année, tu pars à la montagne le week-end, et tu finis le
@@ -213,45 +214,45 @@ export default function RemotePage() {
       </section>
 
       {/* Other guides */}
-      <section className="py-16 px-6 bg-[#FFFBF5]">
+      <section className="py-16 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">
+          <p className="text-[#171712] font-semibold uppercase tracking-widest text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Faut-il un NIE avant d&apos;arriver ?
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Les quartiers les plus sympa pour les expats
             </Link>
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Comment fonctionne la sécu en Espagne ?
             </Link>
             <Link
               href="/travailler/freelance"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Devenir autónomo à Madrid
             </Link>
             <Link
               href="/papiers/impots"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Fiscalité & impôts en Espagne
             </Link>
@@ -262,36 +263,33 @@ export default function RemotePage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
+      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10">
+          <p className="text-[#171712]/80 text-lg mb-10">
             Logement, NIE, sécu, travail à Madrid — on prépare des guides
             complets sur chaque étape de ton installation.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">
+          <p className="text-[#171712]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
-        >
-          Madrid & Toi
+      <footer className="py-10 px-6 bg-[#171712] text-center">
+        <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
+          <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#F6E7D9]/40 text-sm">
+        <p className="text-[#e6f4ec]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

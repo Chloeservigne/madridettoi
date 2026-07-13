@@ -39,12 +39,12 @@ export default function EmailForm() {
         placeholder="ton@email.fr"
         required
         disabled={status === "loading" || status === "success"}
-        className="flex-1 px-4 py-3 rounded-full border border-[#FBEBDD] bg-white text-[#33251E] placeholder:text-[#33251E]/40 focus:outline-none focus:ring-2 focus:ring-[#F0552F] focus:border-transparent disabled:opacity-50 font-[family-name:var(--font-body)]"
+        className="flex-1 px-4 py-3 rounded-full border border-[#f2f0e9] bg-white text-[#171712] placeholder:text-[#171712]/40 focus:outline-none focus:ring-2 focus:ring-[#1fa971] focus:border-transparent disabled:opacity-50 font-[family-name:var(--font-body)]"
       />
       <button
         type="submit"
         disabled={status === "loading" || status === "success"}
-        className="px-6 py-3 rounded-full bg-[#241813] text-[#F6E7D9] font-semibold hover:bg-[#1D130F] transition-colors disabled:opacity-60 whitespace-nowrap font-[family-name:var(--font-body)] cursor-pointer"
+        className="px-6 py-3 rounded-full bg-[#1fa971] text-white font-semibold hover:bg-[#178a5d] transition-colors disabled:opacity-60 whitespace-nowrap font-[family-name:var(--font-body)] cursor-pointer"
       >
         {status === "loading"
           ? "..."

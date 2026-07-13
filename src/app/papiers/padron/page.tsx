@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
@@ -69,42 +70,42 @@ export default function PadronPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"
-            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Papiers
           </Link>
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide administratif
           </p>
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             L&apos;empadronamiento —{" "}
-            <span className="not-italic font-bold text-[#F0552F]">la démarche que tout le monde oublie</span>
+            <span className="not-italic font-bold text-[#1fa971]">la démarche que tout le monde oublie</span>
           </h1>
-          <p className="text-lg text-[#33251E] leading-relaxed">
+          <p className="text-lg text-[#171712] leading-relaxed">
             Le padron municipal, c&apos;est l&apos;inscription au registre des
             habitants de Madrid. Peu connue des Français à l&apos;arrivée — et
             pourtant, elle débloque presque tout le reste.
           </p>
           <AuthorBadge date="mars 2026" />
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">Gratuit</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">15 – 30 min sur place</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">Dès que tu as une adresse fixe</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Gratuit</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">15 – 30 min sur place</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Dès que tu as une adresse fixe</span>
           </div>
         </div>
       </section>
 
       {/* C'est quoi */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             C&apos;est quoi l&apos;empadronamiento ?
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             C&apos;est l&apos;inscription sur le registre municipal des habitants
             (<em>padrón municipal</em>). En t&apos;inscrivant, tu déclares
             officiellement que tu résides à cette adresse à Madrid. La Mairie te
@@ -112,7 +113,7 @@ export default function PadronPage() {
             une attestation de résidence qui sert de justificatif dans de très
             nombreuses démarches.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Ce n&apos;est pas un titre de séjour, ce n&apos;est pas un visa.
             C&apos;est simplement la preuve que tu vis à cette adresse, reconnue
             par les administrations espagnoles. Et c&apos;est souvent le premier
@@ -122,9 +123,9 @@ export default function PadronPage() {
       </section>
 
       {/* Ce que ça débloque */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-8">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-8">
             Ce que ça débloque
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -132,8 +133,8 @@ export default function PadronPage() {
               <div key={item.label} className="bg-white rounded-2xl p-5 shadow-sm flex items-start gap-4">
                 <span className="text-2xl flex-shrink-0">{item.emoji}</span>
                 <div>
-                  <p className="font-semibold text-[#33251E] text-sm">{item.label}</p>
-                  <p className="text-[#33251E]/70 text-xs mt-1 leading-relaxed">{item.detail}</p>
+                  <p className="font-semibold text-[#171712] text-sm">{item.label}</p>
+                  <p className="text-[#171712]/70 text-xs mt-1 leading-relaxed">{item.detail}</p>
                 </div>
               </div>
             ))}
@@ -142,27 +143,27 @@ export default function PadronPage() {
       </section>
 
       {/* Quand le faire */}
-      <section className="py-20 px-6 bg-[#241813]">
+      <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             Quand le faire ?
           </h2>
-          <p className="text-[#F6E7D9]/80 leading-relaxed text-lg">
+          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg">
             Dès que tu as une adresse fixe à Madrid. Pas besoin d&apos;attendre
             un certain délai — au contraire, plus tôt tu t&apos;empadrones,
             plus vite tu débloque le reste (tarjeta sanitaria,{" "}
-            <Link href="/papiers/nie" className="text-[#FFC24B] underline underline-offset-2 hover:opacity-80 transition-opacity">
+            <Link href="/papiers/nie" className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity">
               Certificado de Registro
             </Link>
             , école...).
           </p>
-          <p className="text-[#F6E7D9]/80 leading-relaxed text-lg mt-4">
+          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mt-4">
             Si tu arrives en logement temporaire (Airbnb, coloc de transition),
             attends d&apos;avoir ton adresse définitive. Le padron est lié à
             l&apos;adresse — et si tu déménages, il faudra le mettre à jour.
           </p>
-          <blockquote className="border-l-4 border-[#F0552F] pl-6 mt-8">
-            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
+            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Le jour où tu signes ton bail, note dans ton agenda : dans 48h,
               je vais m&apos;empadronar. C&apos;est la démarche la plus simple
               de toute ton installation — et la plus rentable.
@@ -172,22 +173,22 @@ export default function PadronPage() {
       </section>
 
       {/* Les étapes */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-10">
             Comment s&apos;empadronar : les 3 étapes
           </h2>
           <div className="space-y-8">
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center">
-                <span className="font-[family-name:var(--font-heading)] text-white font-bold text-sm">1</span>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+                <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">1</span>
               </div>
               <div>
-                <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] mb-2">
+                <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-2">
                   Prends un rendez-vous en ligne
                 </h3>
-                <p className="text-[#33251E] leading-relaxed">
+                <p className="text-[#171712] leading-relaxed">
                   Le plus simple est de passer par le portail de la Mairie de
                   Madrid. Tu peux aussi te présenter directement dans l&apos;une
                   des <em>Oficinas de Atención al Ciudadano</em> (OAC) sans
@@ -197,7 +198,7 @@ export default function PadronPage() {
                   href="https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a5e5a60f6310a8a409a0/?vgnextoid=9e0199d5bd5ef410VgnVCM2000000c205a0aRCRD"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#F0552F] text-white text-sm font-semibold hover:bg-[#CC4828] transition-colors"
+                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#1fa971] text-white text-sm font-semibold hover:bg-[#178a5d] transition-colors"
                 >
                   Prendre rendez-vous en ligne ↗
                 </a>
@@ -205,14 +206,14 @@ export default function PadronPage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center">
-                <span className="font-[family-name:var(--font-heading)] text-white font-bold text-sm">2</span>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+                <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">2</span>
               </div>
               <div>
-                <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] mb-2">
+                <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-2">
                   Prépare tes documents
                 </h3>
-                <p className="text-[#33251E] leading-relaxed">
+                <p className="text-[#171712] leading-relaxed">
                   Il faut ton passeport ou carte d&apos;identité, et un
                   justificatif de domicile — le contrat de bail suffit. Voir la
                   checklist complète ci-dessous.
@@ -221,14 +222,14 @@ export default function PadronPage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center">
-                <span className="font-[family-name:var(--font-heading)] text-white font-bold text-sm">3</span>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+                <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">3</span>
               </div>
               <div>
-                <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] mb-2">
+                <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-2">
                   Présente-toi au guichet
                 </h3>
-                <p className="text-[#33251E] leading-relaxed">
+                <p className="text-[#171712] leading-relaxed">
                   La démarche prend 15 à 30 minutes. Le guichetier enregistre
                   ton inscription et te remet — ou t&apos;envoie par
                   courrier — le <strong>certificado de empadronamiento</strong>.
@@ -243,26 +244,26 @@ export default function PadronPage() {
       </section>
 
       {/* Checklist */}
-      <section className="py-24 px-6 bg-[#FBEBDD]">
+      <section className="py-24 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
             Checklist
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-10">
             Ce qu&apos;il faut apporter
           </h2>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-8">
-            <div className="px-6 py-4 bg-[#F0552F]">
+            <div className="px-6 py-4 bg-[#1fa971]">
               <p className="text-white font-semibold">📋 Documents à préparer</p>
             </div>
-            <div className="divide-y divide-[#FBEBDD]">
+            <div className="divide-y divide-[#f2f0e9]">
               {checklist.map((item) => (
                 <div key={item.doc} className="px-6 py-4 flex items-start gap-4">
-                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#F0552F] mt-0.5" />
+                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
                   <div>
-                    <p className="font-semibold text-[#33251E] text-sm">{item.doc}</p>
-                    <p className="text-[#33251E]/70 text-xs mt-0.5">{item.detail}</p>
+                    <p className="font-semibold text-[#171712] text-sm">{item.doc}</p>
+                    <p className="text-[#171712]/70 text-xs mt-0.5">{item.detail}</p>
                   </div>
                 </div>
               ))}
@@ -270,14 +271,14 @@ export default function PadronPage() {
           </div>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
-            <div className="px-6 py-4 bg-[#241813]">
-              <p className="text-[#FFC24B] font-semibold">💡 À savoir</p>
+            <div className="px-6 py-4 bg-[#171712]">
+              <p className="text-[#1fa971] font-semibold">💡 À savoir</p>
             </div>
-            <div className="divide-y divide-[#FBEBDD]">
+            <div className="divide-y divide-[#f2f0e9]">
               {tips.map((item) => (
                 <div key={item.tip} className="px-6 py-4 flex items-start gap-4">
                   <span className="text-xl flex-shrink-0">{item.emoji}</span>
-                  <p className="text-[#33251E] text-sm leading-relaxed">{item.tip}</p>
+                  <p className="text-[#171712] text-sm leading-relaxed">{item.tip}</p>
                 </div>
               ))}
             </div>
@@ -286,19 +287,19 @@ export default function PadronPage() {
       </section>
 
       {/* Si tu es en coloc */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Et si je suis en coloc ?
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             C&apos;est le cas le plus courant pour les Français qui arrivent.
             Si le bail n&apos;est pas à ton nom, tu as deux options : soit le
             propriétaire signe une autorisation (<em>autorización del
             propietario</em>) attestant que tu résides bien à cette adresse,
             soit le locataire principal fait de même.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             En pratique, la plupart des propriétaires acceptent sans problème —
             l&apos;empadronamiento ne crée aucun droit supplémentaire sur le
             logement. Si le tien hésite, rassure-le : ça n&apos;affecte en rien
@@ -308,33 +309,33 @@ export default function PadronPage() {
       </section>
 
       {/* Other guides */}
-      <section className="py-16 px-6 bg-[#FBEBDD]">
+      <section className="py-16 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">
+          <p className="text-[#171712] font-semibold uppercase tracking-widest text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Comment fonctionne la sécu en Espagne ?
             </Link>
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/demenagement/paris-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Déménagement Paris–Madrid
             </Link>
@@ -345,36 +346,33 @@ export default function PadronPage() {
       <EtapeSuivante label="Ouvrir un compte bancaire en Espagne" href="/papiers/compte-bancaire" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
+      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10">
+          <p className="text-[#171712]/80 text-lg mb-10">
             Banque, impôts, sécu, résidence fiscale — les prochains guides
             administratifs arrivent bientôt.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">
+          <p className="text-[#171712]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
-        >
-          Madrid & Toi
+      <footer className="py-10 px-6 bg-[#171712] text-center">
+        <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
+          <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#F6E7D9]/40 text-sm">
+        <p className="text-[#e6f4ec]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

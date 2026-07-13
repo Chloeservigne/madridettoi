@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
@@ -189,22 +190,22 @@ export default function BudgetPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/se-decider"
-            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Se décider
           </Link>
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
             Avant de partir
           </p>
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Le coût de la vie à Madrid —{" "}
-            <span className="not-italic font-bold text-[#F0552F]">chiffres réels&nbsp;2025</span>
+            <span className="not-italic font-bold text-[#1fa971]">chiffres réels&nbsp;2025</span>
           </h1>
-          <p className="text-lg text-[#33251E] leading-relaxed">
+          <p className="text-lg text-[#171712] leading-relaxed">
             Avant de prendre une décision, il faut des chiffres réels. Pas les
             moyennes nationales, pas les estimations optimistes. Le vrai coût de
             la vie à Madrid en 2025 — loyer par quartier, courses, restos,
@@ -215,22 +216,22 @@ export default function BudgetPage() {
       </section>
 
       {/* Loyers */}
-      <section className="py-24 px-6 bg-[#FFFBF5]">
+      <section className="py-24 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
             Le poste principal
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-4">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
             Le loyer
           </h2>
-          <p className="text-[#33251E] leading-relaxed mb-10">
+          <p className="text-[#171712] leading-relaxed mb-10">
             Madrid a beaucoup augmenté — +9,7% en 2025 selon les dernières
             données Idealista. Ça reste moins cher que Paris pour la plupart des
             quartiers, mais l&apos;écart se réduit. Voici les fourchettes
             réelles pour un T1 (studio ou une chambre). Pour les{" "}
             <Link
               href="/logement/prix"
-              className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
+              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
             >
               prix détaillés au m² par quartier
             </Link>
@@ -244,20 +245,20 @@ export default function BudgetPage() {
                 className="bg-white rounded-3xl shadow-md p-6"
               >
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-                  <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-[#33251E]">
+                  <h3 className="font-[family-name:var(--font-body)] text-lg font-bold text-[#171712]">
                     {item.quartier}
                   </h3>
-                  <span className="font-bold text-[#F0552F] text-lg whitespace-nowrap">
+                  <span className="font-bold text-[#1fa971] text-lg whitespace-nowrap">
                     {item.prix}
                   </span>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 text-sm">
-                  <span className="flex items-start gap-2 text-[#F2A65A]">
+                  <span className="flex items-start gap-2 text-[#178a5d]">
                     <span>✓</span>
                     {item.pour}
                   </span>
-                  <span className="hidden sm:block text-[#FBEBDD]">·</span>
-                  <span className="flex items-start gap-2 text-[#33251E]/60">
+                  <span className="hidden sm:block text-[#f2f0e9]">·</span>
+                  <span className="flex items-start gap-2 text-[#171712]/60">
                     <span>✗</span>
                     {item.contre}
                   </span>
@@ -265,7 +266,7 @@ export default function BudgetPage() {
                 {item.liens.length > 0 && (
                   <div className="mt-3 flex flex-wrap gap-3">
                     {item.liens.map((lien) => (
-                      <Link key={lien.href} href={lien.href} className="text-xs text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
+                      <Link key={lien.href} href={lien.href} className="text-xs text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
                         {lien.label} →
                       </Link>
                     ))}
@@ -275,12 +276,12 @@ export default function BudgetPage() {
             ))}
           </div>
 
-          <div className="mt-8 p-5 bg-[#241813] rounded-2xl">
-            <p className="text-[#FFC24B] font-semibold text-sm mb-1">
+          <div className="mt-8 p-5 bg-[#171712] rounded-2xl">
+            <p className="text-[#1fa971] font-semibold text-sm mb-1">
               💡 Le bon deal
             </p>
-            <p className="text-[#F6E7D9]/90 text-sm leading-relaxed">
-              <Link href="/logement/quartiers" className="text-[#FFC24B] underline underline-offset-2 hover:text-white transition-colors">Tetuán et Hortaleza</Link> offrent le meilleur rapport qualité-prix en ce
+            <p className="text-[#e6f4ec]/90 text-sm leading-relaxed">
+              <Link href="/logement/quartiers" className="text-[#1fa971] underline underline-offset-2 hover:text-white transition-colors">Tetuán et Hortaleza</Link> offrent le meilleur rapport qualité-prix en ce
               moment. Bien desservis, appartements plus grands, et encore
               quelques offres sous les 1 000 €. Pas pour longtemps, probablement.
             </p>
@@ -289,17 +290,17 @@ export default function BudgetPage() {
       </section>
 
       {/* Courses */}
-      <section className="py-24 px-6 bg-[#FBEBDD]">
+      <section className="py-24 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
             Faire ses courses
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-4">
-            <Link href="/vivre/courses" className="hover:text-[#F0552F] transition-colors">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
+            <Link href="/vivre/courses" className="hover:text-[#1fa971] transition-colors">
               Mercadona, Carrefour, Alcampo
             </Link>
           </h2>
-          <p className="text-[#33251E] leading-relaxed mb-10">
+          <p className="text-[#171712] leading-relaxed mb-10">
             En moyenne, les courses coûtent environ 13% moins cher qu&apos;en
             France à Madrid. Le panier type pour une personne tourne autour de
             180 à 250 €/mois. Voici les trois enseignes que tu feras forcément.
@@ -311,31 +312,31 @@ export default function BudgetPage() {
                 key={s.nom}
                 className="bg-white rounded-3xl shadow-md overflow-hidden"
               >
-                <div className="px-6 py-4 flex items-center justify-between bg-[#FFFBF5]">
+                <div className="px-6 py-4 flex items-center justify-between bg-[#fbfaf6]">
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">{s.emoji}</span>
-                    <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E]">
+                    <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712]">
                       {s.nom}
                     </h3>
                   </div>
-                  <span className="text-[#F0552F] text-sm font-semibold hidden sm:block">
+                  <span className="text-[#1fa971] text-sm font-semibold hidden sm:block">
                     {s.verdict}
                   </span>
                 </div>
                 <div className="p-6">
-                  <p className="text-[#33251E] text-sm leading-relaxed mb-5">
+                  <p className="text-[#171712] text-sm leading-relaxed mb-5">
                     {s.detail}
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                     {s.exemples.map((ex) => (
                       <div
                         key={ex.produit}
-                        className="bg-[#FFFBF5] rounded-xl p-3 text-center"
+                        className="bg-[#fbfaf6] rounded-xl p-3 text-center"
                       >
-                        <p className="text-[#33251E] font-bold text-sm">
+                        <p className="text-[#171712] font-bold text-sm">
                           {ex.prix}
                         </p>
-                        <p className="text-[#33251E]/60 text-xs mt-0.5">
+                        <p className="text-[#171712]/60 text-xs mt-0.5">
                           {ex.produit}
                         </p>
                       </div>
@@ -349,15 +350,15 @@ export default function BudgetPage() {
       </section>
 
       {/* Restos */}
-      <section className="py-24 px-6 bg-[#FFFBF5]">
+      <section className="py-24 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
             Manger dehors
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-4">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
             Le menu del día et le reste
           </h2>
-          <p className="text-[#33251E] leading-relaxed mb-10">
+          <p className="text-[#171712] leading-relaxed mb-10">
             C&apos;est probablement là que tu seras le plus agréablement
             surpris(e). La culture du bar-restaurant espagnol pousse les prix
             vers le bas — et la qualité vers le haut.
@@ -370,18 +371,18 @@ export default function BudgetPage() {
                 className="bg-white rounded-3xl shadow-md p-6 flex gap-5"
               >
                 <div className="flex-shrink-0">
-                  <span className="font-[family-name:var(--font-heading)] text-2xl font-bold text-[#F0552F]">
+                  <span className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#1fa971]">
                     {r.prix}
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#33251E] mb-1">
+                  <h3 className="font-semibold text-[#171712] mb-1">
                     {r.type}
                   </h3>
-                  <p className="text-[#F2A65A] text-xs font-semibold mb-2">
+                  <p className="text-[#178a5d] text-xs font-semibold mb-2">
                     {r.inclus}
                   </p>
-                  <p className="text-[#33251E]/80 text-sm leading-relaxed">
+                  <p className="text-[#171712]/80 text-sm leading-relaxed">
                     {r.note}
                   </p>
                 </div>
@@ -389,8 +390,8 @@ export default function BudgetPage() {
             ))}
           </div>
 
-          <div className="mt-8 py-8 px-8 bg-[#FBEBDD] rounded-2xl border-l-4 border-[#F0552F]">
-            <p className="text-[#33251E] text-lg leading-relaxed">
+          <div className="mt-8 py-8 px-8 bg-[#f2f0e9] rounded-2xl border-l-4 border-[#1fa971]">
+            <p className="text-[#171712] text-lg leading-relaxed">
               Le menu del día est probablement la meilleure chose qui soit
               arrivée à mon budget depuis que je vis en Espagne. Entrée, plat,
               dessert, boisson et pain pour 12€ — au bureau, à midi, tous les
@@ -401,28 +402,28 @@ export default function BudgetPage() {
       </section>
 
       {/* Transports */}
-      <section className="py-16 px-6 bg-[#FBEBDD]">
+      <section className="py-16 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
             Se déplacer
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
-            <Link href="/vivre/transports" className="hover:text-[#F0552F] transition-colors">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
+            <Link href="/vivre/transports" className="hover:text-[#1fa971] transition-colors">
               L&apos;Abono Transporte
             </Link>
           </h2>
           <div className="bg-white rounded-3xl shadow-md p-8 flex flex-col sm:flex-row items-center gap-8">
             <div className="text-center flex-shrink-0">
-              <p className="font-[family-name:var(--font-heading)] text-5xl font-bold text-[#F0552F]">
+              <p className="font-[family-name:var(--font-display)] text-5xl font-extrabold text-[#1fa971]">
                 54,60€
               </p>
-              <p className="text-[#33251E]/60 text-sm mt-1">par mois</p>
+              <p className="text-[#171712]/60 text-sm mt-1">par mois</p>
             </div>
             <div>
-              <h3 className="font-semibold text-[#33251E] mb-2">
+              <h3 className="font-semibold text-[#171712] mb-2">
                 Métro + bus illimités sur toutes les zones
               </h3>
-              <p className="text-[#33251E] text-sm leading-relaxed">
+              <p className="text-[#171712] text-sm leading-relaxed">
                 L&apos;Abono mensuel couvre l&apos;intégralité du réseau de
                 transport en commun de Madrid — métro, bus urbain, cercanías
                 (RER madrilène). Pour 54,60€/mois, tu ne penses plus aux
@@ -435,15 +436,15 @@ export default function BudgetPage() {
       </section>
 
       {/* Vices */}
-      <section className="py-24 px-6 bg-[#241813]">
+      <section className="py-24 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#FFC24B] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#1fa971] font-semibold tracking-widest uppercase text-sm mb-2">
             La section honnête
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-4">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-4">
             Les vices
           </h2>
-          <p className="text-[#F6E7D9]/70 leading-relaxed mb-10">
+          <p className="text-[#e6f4ec]/70 leading-relaxed mb-10">
             On n&apos;allait pas faire un guide budget sans parler de
             l&apos;essentiel.
           </p>
@@ -456,25 +457,25 @@ export default function BudgetPage() {
               >
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl">{v.emoji}</span>
-                  <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-white">
+                  <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-white">
                     {v.nom}
                   </h3>
                 </div>
                 <div className="flex gap-6 mb-4">
                   <div>
-                    <p className="text-[#F6E7D9]/50 text-xs mb-1">À Madrid</p>
-                    <p className="text-[#FFC24B] font-bold text-xl">
+                    <p className="text-[#e6f4ec]/50 text-xs mb-1">À Madrid</p>
+                    <p className="text-[#1fa971] font-bold text-xl">
                       {v.prixMadrid}
                     </p>
                   </div>
                   <div>
-                    <p className="text-[#F6E7D9]/50 text-xs mb-1">En France</p>
-                    <p className="text-[#F6E7D9]/40 font-bold text-xl line-through">
+                    <p className="text-[#e6f4ec]/50 text-xs mb-1">En France</p>
+                    <p className="text-[#e6f4ec]/40 font-bold text-xl line-through">
                       {v.prixFrance}
                     </p>
                   </div>
                 </div>
-                <p className="text-[#F6E7D9]/70 text-sm leading-relaxed">
+                <p className="text-[#e6f4ec]/70 text-sm leading-relaxed">
                   {v.detail}
                 </p>
               </div>
@@ -484,56 +485,56 @@ export default function BudgetPage() {
       </section>
 
       {/* Budget récap */}
-      <section className="py-24 px-6 bg-[#FFFBF5]">
+      <section className="py-24 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
             Récapitulatif
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-4">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
             Budget mensuel d&apos;un expat à Madrid
           </h2>
-          <p className="text-[#33251E] leading-relaxed mb-10">
+          <p className="text-[#171712] leading-relaxed mb-10">
             Pour une personne seule, avec un appartement dans un quartier bien
             situé mais pas au cœur touristique.
           </p>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
-            <div className="px-6 py-4 bg-[#F0552F]">
+            <div className="px-6 py-4 bg-[#1fa971]">
               <p className="text-white font-semibold">
                 💶 Estimation mensuelle — 1 personne
               </p>
             </div>
-            <div className="divide-y divide-[#FBEBDD]">
+            <div className="divide-y divide-[#f2f0e9]">
               {budgetMensuel.map((ligne) => (
                 <div
                   key={ligne.poste}
                   className="px-6 py-4 flex items-center justify-between gap-4"
                 >
                   <div>
-                    <p className="font-semibold text-[#33251E] text-sm">
+                    <p className="font-semibold text-[#171712] text-sm">
                       {ligne.poste}
                     </p>
                     {ligne.note && (
-                      <p className="text-[#33251E]/60 text-xs mt-0.5">
+                      <p className="text-[#171712]/60 text-xs mt-0.5">
                         {ligne.note}
                       </p>
                     )}
                   </div>
-                  <span className="font-bold text-[#F0552F] whitespace-nowrap text-sm">
+                  <span className="font-bold text-[#1fa971] whitespace-nowrap text-sm">
                     {ligne.montant}
                   </span>
                 </div>
               ))}
-              <div className="px-6 py-4 bg-[#FBEBDD] flex items-center justify-between">
-                <p className="font-bold text-[#33251E]">Total estimé</p>
-                <p className="font-[family-name:var(--font-heading)] text-2xl font-bold text-[#F0552F]">
+              <div className="px-6 py-4 bg-[#f2f0e9] flex items-center justify-between">
+                <p className="font-bold text-[#171712]">Total estimé</p>
+                <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#1fa971]">
                   1 400 – 1 900 €
                 </p>
               </div>
             </div>
           </div>
 
-          <p className="text-[#33251E]/60 text-xs mt-4">
+          <p className="text-[#171712]/60 text-xs mt-4">
             Ces chiffres correspondent à un mode de vie normal — pas à la
             ceinture, pas dans l&apos;excès. Ils évoluent selon tes quartiers
             et tes habitudes.
@@ -542,39 +543,39 @@ export default function BudgetPage() {
       </section>
 
       {/* Liens */}
-      <section className="py-16 px-6 bg-[#FBEBDD]">
+      <section className="py-16 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">
+          <p className="text-[#171712] font-semibold uppercase tracking-widest text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
             >
               Quel quartier choisir ?
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
             >
               Le guide du NIE
             </Link>
             <Link
               href="/vivre/transports"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
             >
               Transports & Abono à Madrid
             </Link>
             <Link
               href="/vivre/courses"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
             >
               Faire ses courses à Madrid
             </Link>
@@ -585,36 +586,33 @@ export default function BudgetPage() {
       <EtapeSuivante label="Les salaires à Madrid" href="/se-decider/salaire-madrid" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
+      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10">
+          <p className="text-[#171712]/80 text-lg mb-10">
             Banque, impôts, autónomo, déménagement — les prochains guides
             arrivent bientôt.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">
+          <p className="text-[#171712]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
-        >
-          Madrid & Toi
+      <footer className="py-10 px-6 bg-[#171712] text-center">
+        <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
+          <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#F6E7D9]/40 text-sm">
+        <p className="text-[#e6f4ec]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

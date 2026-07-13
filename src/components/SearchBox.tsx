@@ -69,8 +69,8 @@ export default function SearchBox({ variant = "nav", placeholder }: SearchBoxPro
         onSubmit={handleSubmit}
         className={
           isHero
-            ? "flex items-center gap-3 bg-white border border-[#F2A65A]/50 rounded-full p-1.5 pl-5 shadow-[0_16px_40px_-26px_rgba(36,24,19,0.4)]"
-            : "flex items-center gap-2.5 bg-white border border-[#F2A65A]/45 rounded-full h-[46px] px-4"
+            ? "flex items-center gap-3 bg-white border border-[#178a5d]/50 rounded-full p-1.5 pl-5 shadow-[0_16px_40px_-26px_rgba(36,24,19,0.4)]"
+            : "flex items-center gap-2.5 bg-white border border-[#178a5d]/45 rounded-full h-[46px] px-4"
         }
       >
         <svg
@@ -78,7 +78,7 @@ export default function SearchBox({ variant = "nav", placeholder }: SearchBoxPro
           height={isHero ? "20" : "18"}
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#7C6A5C"
+          stroke="#171712"
           strokeWidth="2.3"
           strokeLinecap="round"
           className="flex-shrink-0"
@@ -98,14 +98,14 @@ export default function SearchBox({ variant = "nav", placeholder }: SearchBoxPro
           aria-label="Rechercher sur le site"
           className={
             isHero
-              ? "flex-1 min-w-0 outline-none text-base text-[#33251E] placeholder:text-[#7C6A5C]/70 bg-transparent"
-              : "flex-1 min-w-0 bg-transparent outline-none text-sm text-[#33251E] placeholder:text-[#7C6A5C]/70"
+              ? "flex-1 min-w-0 outline-none text-base text-[#171712] placeholder:text-[#171712]/70 bg-transparent"
+              : "flex-1 min-w-0 bg-transparent outline-none text-sm text-[#171712] placeholder:text-[#171712]/70"
           }
         />
         {isHero && (
           <button
             type="submit"
-            className="flex-shrink-0 font-[family-name:var(--font-heading)] font-bold text-white bg-[#F0552F] rounded-full px-6 py-3 hover:bg-[#CC4828] transition-colors"
+            className="flex-shrink-0 font-[family-name:var(--font-body)] font-bold text-white bg-[#1fa971] rounded-full px-6 py-3 hover:bg-[#178a5d] transition-colors"
           >
             Chercher
           </button>
@@ -113,31 +113,31 @@ export default function SearchBox({ variant = "nav", placeholder }: SearchBoxPro
       </form>
 
       {open && q.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl border border-[#FBEBDD] shadow-[0_20px_46px_-24px_rgba(36,24,19,0.35)] overflow-hidden z-40 text-left">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl border border-[#f2f0e9] shadow-[0_20px_46px_-24px_rgba(36,24,19,0.35)] overflow-hidden z-40 text-left">
           {results.length > 0 ? (
             results.map((r) => (
               <button
                 key={r.href}
                 type="button"
                 onClick={() => handleSelect(r.href)}
-                className="w-full text-left px-4 py-3 hover:bg-[#FFFBF5] transition-colors flex items-center justify-between gap-3 border-b border-[#FBEBDD] last:border-0 cursor-pointer"
+                className="w-full text-left px-4 py-3 hover:bg-[#fbfaf6] transition-colors flex items-center justify-between gap-3 border-b border-[#f2f0e9] last:border-0 cursor-pointer"
               >
                 <span>
-                  <span className="block font-[family-name:var(--font-heading)] font-semibold text-sm text-[#33251E]">
+                  <span className="block font-[family-name:var(--font-body)] font-semibold text-sm text-[#171712]">
                     {r.title}
                   </span>
-                  <span className="block font-[family-name:var(--font-heading)] font-medium text-[11px] uppercase tracking-wide text-[#F0552F] mt-0.5">
+                  <span className="block font-[family-name:var(--font-body)] font-medium text-[11px] uppercase tracking-wide text-[#1fa971] mt-0.5">
                     {r.category}
                   </span>
                 </span>
-                <span className="text-[#F0552F] flex-shrink-0">→</span>
+                <span className="text-[#1fa971] flex-shrink-0">→</span>
               </button>
             ))
           ) : (
             <button
               type="button"
               onClick={goToGoogleSearch}
-              className="w-full text-left px-4 py-3 hover:bg-[#FFFBF5] transition-colors text-sm text-[#7C6A5C] cursor-pointer"
+              className="w-full text-left px-4 py-3 hover:bg-[#fbfaf6] transition-colors text-sm text-[#171712] cursor-pointer"
             >
               Aucun guide trouvé pour «&nbsp;{query}&nbsp;» — chercher sur tout le site →
             </button>

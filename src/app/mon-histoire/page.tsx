@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
 
 export const metadata: Metadata = {
@@ -49,35 +50,35 @@ export default function MonHistoirePage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à l&apos;accueil
           </Link>
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
             Mon histoire
           </p>
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Barcelone était{" "}
-            <span className="not-italic font-bold text-[#F0552F]">le plan A</span>
+            <span className="not-italic font-bold text-[#1fa971]">le plan A</span>
           </h1>
-          <p className="text-lg text-[#33251E] leading-relaxed">
+          <p className="text-lg text-[#171712] leading-relaxed">
             Six ans que je vis à Madrid. Je ne l&apos;avais jamais visitée avant
             d&apos;y déménager. Le plan initial, c&apos;était Barcelone — la plage, le
             fantasme de finir le boulot et plonger dans la mer. Des proches
             m&apos;ont convaincue de regarder ailleurs. Madrid n&apos;a pas la mer. Mais
             il y a tout le reste. Et la plage est à moins de 2h.{" "}
-            <span className="text-[#F0552F]">(Pas si mal, non&nbsp;?)</span>
+            <span className="text-[#1fa971]">(Pas si mal, non&nbsp;?)</span>
           </p>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-24 px-6 bg-[#FFFBF5]">
-        <div className="max-w-2xl mx-auto space-y-10 text-[#33251E] text-lg leading-relaxed">
+      <section className="py-24 px-6 bg-[#fbfaf6]">
+        <div className="max-w-2xl mx-auto space-y-10 text-[#171712] text-lg leading-relaxed">
           <p>
             À la fin de mon master, j&apos;avais une certitude : Paris, c&apos;était
             terminé pour moi. La vie à 100 à l&apos;heure, le métro bondé, cette
@@ -113,7 +114,7 @@ export default function MonHistoirePage() {
           </p>
 
           <div>
-            <span className="block font-[family-name:var(--font-heading)] text-8xl text-[#F0552F] leading-none mb-2 select-none">&ldquo;</span>
+            <span className="block font-[family-name:var(--font-body)] text-8xl text-[#1fa971] leading-none mb-2 select-none">&ldquo;</span>
             <div className="overflow-hidden">
               <Image
                 src="/images/valise-depart.svg"
@@ -123,8 +124,8 @@ export default function MonHistoirePage() {
                 unoptimized
                 className="float-right ml-8 mb-2"
               />
-              <p className="font-[family-name:var(--font-heading)] text-2xl italic text-[#33251E] leading-relaxed">
-                1er septembre 2020. Deux valises, une coloc de 6 à <Link href="/logement/quartiers/malasana" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">Malasaña</Link> —
+              <p className="font-[family-name:var(--font-body)] text-2xl italic text-[#171712] leading-relaxed">
+                1er septembre 2020. Deux valises, une coloc de 6 à <Link href="/logement/quartiers/malasana" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">Malasaña</Link> —
                 un mélange improbable de nationalités. Et une sensation
                 immédiate, inexplicable, d&apos;être exactement là où je devais être.
               </p>
@@ -155,12 +156,12 @@ export default function MonHistoirePage() {
       </section>
 
       {/* Ce que j'ai traversé */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-4">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
             Ce que j&apos;ai traversé — et ce qui nourrit les guides
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg mb-10">
+          <p className="text-[#171712] leading-relaxed text-lg mb-10">
             Madrid & Toi n&apos;est pas un site fait depuis un bureau parisien.
             Ce que j&apos;écris, je l&apos;ai vécu, souvent dans la confusion,
             parfois dans la galère — et c&apos;est précisément pour ça que
@@ -201,17 +202,17 @@ export default function MonHistoirePage() {
             ].map((item) => (
               <div key={item.label} className="bg-white rounded-2xl p-6 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-[#F0552F] flex-shrink-0 mt-2.5" />
+                  <div className="w-2 h-2 rounded-full bg-[#1fa971] flex-shrink-0 mt-2.5" />
                   <div>
-                    <p className="font-[family-name:var(--font-heading)] font-bold text-[#33251E] text-lg mb-1">
+                    <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg mb-1">
                       {item.label}
                     </p>
-                    <p className="text-[#33251E]/80 text-sm leading-relaxed mb-2">
+                    <p className="text-[#171712]/80 text-sm leading-relaxed mb-2">
                       {item.detail}
                     </p>
                     <Link
                       href={item.href}
-                      className="text-[#F0552F] text-sm font-semibold underline underline-offset-2 hover:text-[#CC4828] transition-colors"
+                      className="text-[#1fa971] text-sm font-semibold underline underline-offset-2 hover:text-[#178a5d] transition-colors"
                     >
                       {item.linkLabel}
                     </Link>
@@ -224,32 +225,32 @@ export default function MonHistoirePage() {
       </section>
 
       {/* Comment je travaille */}
-      <section className="py-20 px-6 bg-[#241813]">
+      <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             Comment les guides sont écrits
           </h2>
           <div className="space-y-5">
-            <div className="border-l-4 border-[#F0552F] pl-6">
-              <p className="text-[#F6E7D9] leading-relaxed text-lg">
-                <strong className="text-[#FFC24B]">Sources officielles uniquement</strong>{" "}
+            <div className="border-l-4 border-[#1fa971] pl-6">
+              <p className="text-[#e6f4ec] leading-relaxed text-lg">
+                <strong className="text-[#1fa971]">Sources officielles uniquement</strong>{" "}
                 pour tout ce qui touche à l&apos;administration, la fiscalité et la santé.
                 Seg-social.es, aeat.es, comunidad.madrid, inclusion.gob.es — pas de
                 comparateurs, pas de blogs anonymes, pas de forums non vérifiés.
                 Si une info ne peut pas être sourcée officiellement, je ne l&apos;écris pas.
               </p>
             </div>
-            <div className="border-l-4 border-[#F0552F] pl-6">
-              <p className="text-[#F6E7D9] leading-relaxed text-lg">
-                <strong className="text-[#FFC24B]">Mises à jour régulières.</strong>{" "}
+            <div className="border-l-4 border-[#1fa971] pl-6">
+              <p className="text-[#e6f4ec] leading-relaxed text-lg">
+                <strong className="text-[#1fa971]">Mises à jour régulières.</strong>{" "}
                 Les tranches IRPF, les cotisations RETA, les tarifs de l&apos;Abono — ça change.
                 Les guides reflètent les données en vigueur pour 2026. Une date de mise à jour
                 figure sur chaque page.
               </p>
             </div>
-            <div className="border-l-4 border-[#F0552F] pl-6">
-              <p className="text-[#F6E7D9] leading-relaxed text-lg">
-                <strong className="text-[#FFC24B]">Ce que je ne suis pas :</strong>{" "}
+            <div className="border-l-4 border-[#1fa971] pl-6">
+              <p className="text-[#e6f4ec] leading-relaxed text-lg">
+                <strong className="text-[#1fa971]">Ce que je ne suis pas :</strong>{" "}
                 avocate, fiscaliste, notaire. Les guides sont là pour t&apos;informer et t&apos;aider
                 à comprendre le système — pas pour remplacer un conseil juridique ou fiscal
                 personnalisé. Pour les situations complexes (divorce, succession, création
@@ -261,37 +262,37 @@ export default function MonHistoirePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 bg-[#241813]">
+      <section className="py-16 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-[family-name:var(--font-heading)] not-italic text-[#F6E7D9] text-2xl mb-4">
+          <p className="font-[family-name:var(--font-body)] not-italic text-[#e6f4ec] text-2xl mb-4">
             Et toi, tu en es où ?
           </p>
-          <p className="text-[#F6E7D9]/80 text-lg mb-8">
+          <p className="text-[#e6f4ec]/80 text-lg mb-8">
             Que tu sois encore en train de rêver ou que tu aies déjà réservé
             ton camion, les guides sont là pour t&apos;aider.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/se-decider/pourquoi-madrid"
-              className="px-5 py-2.5 rounded-full bg-[#F0552F] text-white text-sm font-semibold hover:bg-[#CC4828] transition-colors"
+              className="px-5 py-2.5 rounded-full bg-[#1fa971] text-white text-sm font-semibold hover:bg-[#178a5d] transition-colors"
             >
               Pourquoi Madrid ?
             </Link>
             <Link
               href="/se-decider"
-              className="px-5 py-2.5 rounded-full bg-transparent border border-[#F6E7D9]/30 text-[#F6E7D9] text-sm font-semibold hover:border-[#F6E7D9] transition-colors"
+              className="px-5 py-2.5 rounded-full bg-transparent border border-[#e6f4ec]/30 text-[#e6f4ec] text-sm font-semibold hover:border-[#e6f4ec] transition-colors"
             >
               Je me pose encore des questions
             </Link>
             <Link
               href="/logement"
-              className="px-5 py-2.5 rounded-full bg-transparent border border-[#F6E7D9]/30 text-[#F6E7D9] text-sm font-semibold hover:border-[#F6E7D9] transition-colors"
+              className="px-5 py-2.5 rounded-full bg-transparent border border-[#e6f4ec]/30 text-[#e6f4ec] text-sm font-semibold hover:border-[#e6f4ec] transition-colors"
             >
               Je cherche un logement
             </Link>
             <Link
               href="/papiers"
-              className="px-5 py-2.5 rounded-full bg-transparent border border-[#F6E7D9]/30 text-[#F6E7D9] text-sm font-semibold hover:border-[#F6E7D9] transition-colors"
+              className="px-5 py-2.5 rounded-full bg-transparent border border-[#e6f4ec]/30 text-[#e6f4ec] text-sm font-semibold hover:border-[#e6f4ec] transition-colors"
             >
               Je veux comprendre les démarches
             </Link>
@@ -300,40 +301,37 @@ export default function MonHistoirePage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
+      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10 leading-relaxed">
+          <p className="text-[#171712]/80 text-lg mb-10 leading-relaxed">
             Logement, NIE, sécu, travail à Madrid — des guides pratiques écrits
             depuis l&apos;expérience. Laisse ton email pour ne rien rater.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">
+          <p className="text-[#171712]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
-        >
-          Madrid & Toi
+      <footer className="py-10 px-6 bg-[#171712] text-center">
+        <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
+          <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#F6E7D9]/40 text-sm">
+        <p className="text-[#e6f4ec]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
-        <p className="text-[#F6E7D9]/20 text-xs mt-2">
-          <a href="https://storyset.com/transport" className="hover:text-[#F6E7D9]/40 transition-colors">Transport illustrations by Storyset</a>
+        <p className="text-[#e6f4ec]/20 text-xs mt-2">
+          <a href="https://storyset.com/transport" className="hover:text-[#e6f4ec]/40 transition-colors">Transport illustrations by Storyset</a>
         </p>
       </footer>
     </div>

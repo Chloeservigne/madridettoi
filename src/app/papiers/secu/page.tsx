@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
@@ -89,34 +90,34 @@ export default function SecuPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"
-            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Papiers
           </Link>
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide santé
           </p>
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             La sécu en Espagne —{" "}
-            <span className="not-italic font-bold text-[#F0552F]">comment ça marche vraiment</span>
+            <span className="not-italic font-bold text-[#1fa971]">comment ça marche vraiment</span>
           </h1>
-          <p className="text-lg text-[#33251E] leading-relaxed">
+          <p className="text-lg text-[#171712] leading-relaxed">
             Tarjeta sanitaria, NUSS, copago, mutuelles — on t&apos;explique le
             système espagnol dans le détail, pour que tu saches exactement ce à
             quoi tu as droit selon ta situation.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
               Consultations gratuites
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
               Tarjeta sous 3–4 semaines
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
               Médicaments avec participation
             </span>
           </div>
@@ -125,12 +126,12 @@ export default function SecuPage() {
       </section>
 
       {/* Le système */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Le système de santé espagnol en bref
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             L&apos;Espagne dispose d&apos;un système de santé public universel,
             le <strong>Sistema Nacional de Salud (SNS)</strong>, financé par
             les cotisations sociales et l&apos;impôt. Il est géré par deux
@@ -140,7 +141,7 @@ export default function SecuPage() {
             l&apos;<strong>INSS</strong> (Instituto Nacional de la Seguridad
             Social), qui reconnaît et verse les droits.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             La qualité des soins est réelle — l&apos;Espagne figure régulièrement
             parmi les meilleurs systèmes de santé en Europe. Le point
             d&apos;entrée du système, c&apos;est d&apos;abord ton{" "}
@@ -151,12 +152,12 @@ export default function SecuPage() {
       </section>
 
       {/* La tarjeta */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             La tarjeta sanitaria (TSI) : ton sésame pour les soins
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             La <em>Tarjeta Sanitaria Individual</em> (TSI) est
             l&apos;équivalent de ta carte Vitale — elle t&apos;identifie comme
             usager du système public de santé madrilène (SERMAS). Elle est
@@ -166,22 +167,22 @@ export default function SecuPage() {
 
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="font-semibold text-[#33251E] text-sm mb-1">Où faire la demande</p>
-              <p className="text-[#33251E]/70 text-sm leading-relaxed">
+              <p className="font-semibold text-[#171712] text-sm mb-1">Où faire la demande</p>
+              <p className="text-[#171712]/70 text-sm leading-relaxed">
                 Au <em>centro de salud</em> de ton quartier, ou en ligne sur
                 le portail de la Comunidad de Madrid avec Cl@ve.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="font-semibold text-[#33251E] text-sm mb-1">Documents requis</p>
-              <p className="text-[#33251E]/70 text-sm leading-relaxed">
+              <p className="font-semibold text-[#171712] text-sm mb-1">Documents requis</p>
+              <p className="text-[#171712]/70 text-sm leading-relaxed">
                 NIE (ou passeport UE) + <em>volante de empadronamiento</em> de
                 moins de 90 jours + justificatif d&apos;affiliation SS.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="font-semibold text-[#33251E] text-sm mb-1">Délais</p>
-              <p className="text-[#33251E]/70 text-sm leading-relaxed">
+              <p className="font-semibold text-[#171712] text-sm mb-1">Délais</p>
+              <p className="text-[#171712]/70 text-sm leading-relaxed">
                 Environ 3 à 4 semaines après dépôt du dossier complet. La
                 carte est à récupérer au centro de salud.
               </p>
@@ -192,7 +193,7 @@ export default function SecuPage() {
             href="https://www.comunidad.madrid/servicios/salud/tarjeta-sanitaria"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-8 px-4 py-2 rounded-full bg-[#F0552F] text-white text-sm font-semibold hover:bg-[#CC4828] transition-colors"
+            className="inline-flex items-center gap-2 mt-8 px-4 py-2 rounded-full bg-[#1fa971] text-white text-sm font-semibold hover:bg-[#178a5d] transition-colors"
           >
             Demander sa tarjeta sanitaria ↗
           </a>
@@ -200,18 +201,18 @@ export default function SecuPage() {
       </section>
 
       {/* Selon ta situation */}
-      <section className="py-20 px-6 bg-[#241813]">
+      <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-8">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-8">
             Selon ta situation
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm mb-3">
+              <p className="text-[#1fa971] font-semibold text-sm mb-3">
                 Tu arrives en CDI ou CDD
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Ton employeur te déclare à la TGSS via le formulaire TA2/S
                 avant ton premier jour de travail. Tu obtiens ton{" "}
                 <strong className="text-white">NUSS</strong> (numéro
@@ -221,10 +222,10 @@ export default function SecuPage() {
             </div>
 
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm mb-3">
+              <p className="text-[#1fa971] font-semibold text-sm mb-3">
                 Tu es autónomo
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Tu cotises toi-même au <strong className="text-white">RETA</strong>{" "}
                 (Régimen Especial de Trabajadores Autónomos). Bonne nouvelle :
                 les nouveaux autónomos bénéficient de la{" "}
@@ -236,10 +237,10 @@ export default function SecuPage() {
             </div>
 
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm mb-3">
+              <p className="text-[#1fa971] font-semibold text-sm mb-3">
                 Tu arrives sans statut clair
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Si tu arrives de France, ta{" "}
                 <strong className="text-white">CEAM</strong> (Carte Européenne
                 d&apos;Assurance Maladie) est valable pour les soins urgents
@@ -250,8 +251,8 @@ export default function SecuPage() {
             </div>
 
           </div>
-          <blockquote className="border-l-4 border-[#F0552F] pl-6 mt-8">
-            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
+            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Le NUSS s&apos;obtient en ligne en 10 minutes sur le portail
               Importass de la TGSS — avec ton passeport français, aucun NIE
               n&apos;est obligatoire pour cette première étape.
@@ -261,12 +262,12 @@ export default function SecuPage() {
       </section>
 
       {/* CEAM */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             La carte européenne d&apos;assurance maladie (CEAM)
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg mb-6">
+          <p className="text-[#171712] leading-relaxed text-lg mb-6">
             Ta CEAM française — délivrée par Ameli — te couvre pour les soins
             médicalement nécessaires pendant les premiers mois à Madrid, le
             temps de régulariser ton affiliation à la Seguridad Social. Elle
@@ -275,16 +276,16 @@ export default function SecuPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="font-semibold text-[#33251E] text-sm mb-2">Ce qu&apos;elle couvre</p>
-              <p className="text-[#33251E]/80 text-sm leading-relaxed">
+              <p className="font-semibold text-[#171712] text-sm mb-2">Ce qu&apos;elle couvre</p>
+              <p className="text-[#171712]/80 text-sm leading-relaxed">
                 Soins urgents ou médicalement nécessaires lors d&apos;un séjour
                 temporaire en Espagne — consultations, urgences hospitalières,
                 médicaments sur ordonnance (avec copago espagnol).
               </p>
             </div>
-            <div className="bg-[#F0552F]/10 rounded-2xl p-5">
-              <p className="font-semibold text-[#F0552F] text-sm mb-2">Sa limite</p>
-              <p className="text-[#33251E]/80 text-sm leading-relaxed">
+            <div className="bg-[#1fa971]/10 rounded-2xl p-5">
+              <p className="font-semibold text-[#1fa971] text-sm mb-2">Sa limite</p>
+              <p className="text-[#171712]/80 text-sm leading-relaxed">
                 Elle n&apos;est valable que pour les séjours temporaires. Dès que
                 tu es considéré(e) comme résident(e) en Espagne, elle perd sa
                 légitimité comme couverture principale. Elle est transitoire —
@@ -292,14 +293,14 @@ export default function SecuPage() {
               </p>
             </div>
           </div>
-          <p className="text-[#33251E] text-sm mt-5 leading-relaxed">
+          <p className="text-[#171712] text-sm mt-5 leading-relaxed">
             Pour la renouveler ou en vérifier la validité, tout se gère directement
             sur{" "}
             <a
               href="https://www.ameli.fr/assure/droits-demarches/europe-international/partir-etranger/carte-europeenne-assurance-maladie"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
+              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
             >
               ameli.fr
             </a>.
@@ -308,21 +309,21 @@ export default function SecuPage() {
       </section>
 
       {/* Couvert / pas couvert */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-10">
             Ce qui est couvert — et ce qui ne l&apos;est pas
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-lg">✅</span>
-                <p className="font-semibold text-[#33251E]">Pris en charge gratuitement</p>
+                <p className="font-semibold text-[#171712]">Pris en charge gratuitement</p>
               </div>
               <ul className="space-y-2">
                 {couvert.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[#33251E] text-sm leading-relaxed">
-                    <span className="text-[#F2A65A] mt-0.5 flex-shrink-0">—</span>
+                  <li key={item} className="flex items-start gap-2 text-[#171712] text-sm leading-relaxed">
+                    <span className="text-[#178a5d] mt-0.5 flex-shrink-0">—</span>
                     {item}
                   </li>
                 ))}
@@ -331,18 +332,18 @@ export default function SecuPage() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-lg">❌</span>
-                <p className="font-semibold text-[#33251E]">Non couvert par le public</p>
+                <p className="font-semibold text-[#171712]">Non couvert par le public</p>
               </div>
               <ul className="space-y-2">
                 {nonCouvert.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[#33251E] text-sm leading-relaxed">
-                    <span className="text-[#F0552F] mt-0.5 flex-shrink-0">—</span>
+                  <li key={item} className="flex items-start gap-2 text-[#171712] text-sm leading-relaxed">
+                    <span className="text-[#1fa971] mt-0.5 flex-shrink-0">—</span>
                     {item}
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 bg-[#FBEBDD] rounded-2xl p-4">
-                <p className="text-[#33251E] text-sm leading-relaxed">
+              <div className="mt-6 bg-[#f2f0e9] rounded-2xl p-4">
+                <p className="text-[#171712] text-sm leading-relaxed">
                   <strong>À noter :</strong> les spécialistes sont accessibles
                   gratuitement, mais uniquement sur orientation de ton médecin
                   de famille. Les délais peuvent être longs — c&apos;est la
@@ -356,58 +357,58 @@ export default function SecuPage() {
       </section>
 
       {/* Copago médicaments */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-4">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
             Les médicaments : le copago
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg mb-8">
+          <p className="text-[#171712] leading-relaxed text-lg mb-8">
             Les médicaments sur ordonnance ne sont pas gratuits — tu payes une
             partie du prix (<em>copago farmacéutico</em>) selon tes revenus.
           </p>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-6">
-            <div className="px-6 py-4 bg-[#F0552F]">
+            <div className="px-6 py-4 bg-[#1fa971]">
               <p className="text-white font-semibold">Travailleurs actifs (salariés, autónomos)</p>
             </div>
-            <div className="divide-y divide-[#FBEBDD]">
+            <div className="divide-y divide-[#f2f0e9]">
               <div className="px-6 py-4 flex justify-between items-center">
-                <span className="text-[#33251E] text-sm">Revenus annuels &lt; 18 000 €</span>
-                <span className="font-bold text-[#33251E]">40 % du prix</span>
+                <span className="text-[#171712] text-sm">Revenus annuels &lt; 18 000 €</span>
+                <span className="font-bold text-[#171712]">40 % du prix</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
-                <span className="text-[#33251E] text-sm">18 000 € – 99 999 €</span>
-                <span className="font-bold text-[#33251E]">50 % du prix</span>
+                <span className="text-[#171712] text-sm">18 000 € – 99 999 €</span>
+                <span className="font-bold text-[#171712]">50 % du prix</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
-                <span className="text-[#33251E] text-sm">100 000 € et plus</span>
-                <span className="font-bold text-[#33251E]">60 % du prix</span>
+                <span className="text-[#171712] text-sm">100 000 € et plus</span>
+                <span className="font-bold text-[#171712]">60 % du prix</span>
               </div>
             </div>
           </div>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-6">
-            <div className="px-6 py-4 bg-[#241813]">
-              <p className="text-[#FFC24B] font-semibold">Retraités et pensionnés</p>
+            <div className="px-6 py-4 bg-[#171712]">
+              <p className="text-[#1fa971] font-semibold">Retraités et pensionnés</p>
             </div>
-            <div className="divide-y divide-[#FBEBDD]">
+            <div className="divide-y divide-[#f2f0e9]">
               <div className="px-6 py-4 flex justify-between items-center">
-                <span className="text-[#33251E] text-sm">Moins de 5 635 € / an</span>
-                <span className="font-bold text-[#F2A65A]">Gratuit</span>
+                <span className="text-[#171712] text-sm">Moins de 5 635 € / an</span>
+                <span className="font-bold text-[#178a5d]">Gratuit</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
-                <span className="text-[#33251E] text-sm">Jusqu'à 18 000 €</span>
-                <span className="font-bold text-[#33251E]">10 % (plafond 8,23 €/mois)</span>
+                <span className="text-[#171712] text-sm">Jusqu'à 18 000 €</span>
+                <span className="font-bold text-[#171712]">10 % (plafond 8,23 €/mois)</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
-                <span className="text-[#33251E] text-sm">18 000 € – 99 999 €</span>
-                <span className="font-bold text-[#33251E]">10 % (plafond 18,52 €/mois)</span>
+                <span className="text-[#171712] text-sm">18 000 € – 99 999 €</span>
+                <span className="font-bold text-[#171712]">10 % (plafond 18,52 €/mois)</span>
               </div>
             </div>
           </div>
 
-          <div className="bg-[#F2A65A]/10 border border-[#F2A65A]/30 rounded-2xl p-5">
-            <p className="text-[#33251E] text-sm leading-relaxed">
+          <div className="bg-[#178a5d]/10 border border-[#178a5d]/30 rounded-2xl p-5">
+            <p className="text-[#171712] text-sm leading-relaxed">
               <strong>Exonérés totalement (0 %) :</strong> chômeurs ayant
               épuisé leurs droits, bénéficiaires du Revenu Minimum Vital (IMV),
               pensionnés non contributifs, accidents du travail et maladies
@@ -418,43 +419,43 @@ export default function SecuPage() {
       </section>
 
       {/* Urgences */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Urgences : SUH ou PAC ?
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg mb-8">
+          <p className="text-[#171712] leading-relaxed text-lg mb-8">
             Il y a deux types de structures d&apos;urgence à Madrid — et
             choisir la bonne fait gagner du temps.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#F0552F]">
-              <p className="font-[family-name:var(--font-heading)] font-bold text-[#33251E] text-lg mb-3">
+            <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#1fa971]">
+              <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg mb-3">
                 Urgences hospitalières (SUH)
               </p>
-              <p className="text-[#33251E] text-sm leading-relaxed mb-3">
+              <p className="text-[#171712] text-sm leading-relaxed mb-3">
                 Pour les cas graves : douleur thoracique, fracture, AVC,
                 traumatisme, difficulté respiratoire. Ouvert 24h/24. En cas
                 de détresse vitale, <strong>appelle le 112</strong>.
               </p>
-              <p className="text-[#33251E]/70 text-xs">
+              <p className="text-[#171712]/70 text-xs">
                 Soins garantis même sans tarjeta sanitaria. Personne ne peut
                 être refusé en urgence.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#F2A65A]">
-              <p className="font-[family-name:var(--font-heading)] font-bold text-[#33251E] text-lg mb-3">
+            <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#178a5d]">
+              <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg mb-3">
                 PAC (Point de permanence)
               </p>
-              <p className="text-[#33251E] text-sm leading-relaxed mb-3">
+              <p className="text-[#171712] text-sm leading-relaxed mb-3">
                 Pour les cas non critiques hors horaires du médecin de
                 famille : fièvre, infection, douleur modérée. Ouverts 15h–8h
                 en semaine, 24h les week-ends et jours fériés. Réseau de ~80
                 PAC sur la Communauté de Madrid.
               </p>
-              <p className="text-[#33251E]/70 text-xs">
+              <p className="text-[#171712]/70 text-xs">
                 Tarjeta sanitaria recommandée mais soins assurés en urgence.
               </p>
             </div>
@@ -463,12 +464,12 @@ export default function SecuPage() {
       </section>
 
       {/* Mutuelles */}
-      <section className="py-20 px-6 bg-[#241813]">
+      <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-4">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-4">
             Les mutuelles privées
           </h2>
-          <p className="text-[#F6E7D9]/80 leading-relaxed text-lg mb-8">
+          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mb-8">
             Le système public est solide mais les listes d&apos;attente pour
             les spécialistes peuvent être longues. Une mutuelle donne accès
             directement aux spécialistes (souvent sous 48–72h), aux cliniques
@@ -479,15 +480,15 @@ export default function SecuPage() {
             {mutuelles.map((m) => (
               <div key={m.nom} className="bg-white/10 rounded-2xl p-5">
                 <p className="font-semibold text-white mb-1">{m.nom}</p>
-                <p className="text-[#F6E7D9]/70 text-sm leading-relaxed mb-3">{m.detail}</p>
-                <p className="text-[#FFC24B] text-xs font-semibold">{m.prix}</p>
+                <p className="text-[#e6f4ec]/70 text-sm leading-relaxed mb-3">{m.detail}</p>
+                <p className="text-[#1fa971] text-xs font-semibold">{m.prix}</p>
               </div>
             ))}
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-8">
-            <p className="text-[#F6E7D9]/70 text-sm leading-relaxed">
-              <strong className="text-[#F6E7D9]">Attention aux carences :</strong> la
+            <p className="text-[#e6f4ec]/70 text-sm leading-relaxed">
+              <strong className="text-[#e6f4ec]">Attention aux carences :</strong> la
               plupart des mutuelles imposent un délai avant que certains droits
               s&apos;activent — 6 mois à 2 ans pour la maternité, quelques mois
               pour certaines spécialités. L&apos;optique est rarement couverte
@@ -495,8 +496,8 @@ export default function SecuPage() {
             </p>
           </div>
 
-          <blockquote className="border-l-4 border-[#F0552F] pl-6">
-            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#1fa971] pl-6">
+            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Le bon équilibre pour la plupart des Français à Madrid : santé
               publique pour le quotidien et les urgences, mutuelle privée pour
               les spécialistes sans attente. Environ 30–50 €/mois bien investis
@@ -507,16 +508,16 @@ export default function SecuPage() {
       </section>
 
       {/* Médecins francophones */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Trouver un médecin francophone à Madrid
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg mb-8">
+          <p className="text-[#171712] leading-relaxed text-lg mb-8">
             Madrid compte environ{" "}
             <Link
               href="/communaute/francais-madrid"
-              className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
+              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
             >
               35 000 Français
             </Link>{" "}
@@ -525,14 +526,14 @@ export default function SecuPage() {
           </p>
           <div className="space-y-4">
             <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#F0552F] mt-2" />
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#1fa971] mt-2" />
               <div>
-                <p className="font-semibold text-[#33251E] text-sm mb-1">Les groupes de la communauté française</p>
-                <p className="text-[#33251E]/80 text-sm leading-relaxed">
+                <p className="font-semibold text-[#171712] text-sm mb-1">Les groupes de la communauté française</p>
+                <p className="text-[#171712]/80 text-sm leading-relaxed">
                   Le groupe Facebook &ldquo;Français à Madrid&rdquo; et les forums de{" "}
                   <Link
                     href="/communaute/francais-madrid"
-                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
+                    className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
                   >
                     Madrid Accueil
                   </Link>{" "}
@@ -542,10 +543,10 @@ export default function SecuPage() {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#F0552F] mt-2" />
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#1fa971] mt-2" />
               <div>
-                <p className="font-semibold text-[#33251E] text-sm mb-1">Via ta mutuelle privée</p>
-                <p className="text-[#33251E]/80 text-sm leading-relaxed">
+                <p className="font-semibold text-[#171712] text-sm mb-1">Via ta mutuelle privée</p>
+                <p className="text-[#171712]/80 text-sm leading-relaxed">
                   Sanitas et Adeslas permettent de filtrer les médecins par
                   langue parlée dans leur annuaire en ligne. C&apos;est souvent
                   le moyen le plus fiable pour trouver un généraliste ou un
@@ -554,10 +555,10 @@ export default function SecuPage() {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#F0552F] mt-2" />
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#1fa971] mt-2" />
               <div>
-                <p className="font-semibold text-[#33251E] text-sm mb-1">L&apos;Institut français de Madrid</p>
-                <p className="text-[#33251E]/80 text-sm leading-relaxed">
+                <p className="font-semibold text-[#171712] text-sm mb-1">L&apos;Institut français de Madrid</p>
+                <p className="text-[#171712]/80 text-sm leading-relaxed">
                   L&apos;IFM dispose d&apos;une liste de contacts utiles pour
                   les Français installés à Madrid, dont des professionnels de
                   santé francophones. À consulter directement auprès de leur
@@ -566,10 +567,10 @@ export default function SecuPage() {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#F0552F] mt-2" />
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#1fa971] mt-2" />
               <div>
-                <p className="font-semibold text-[#33251E] text-sm mb-1">En dernier recours : Google Translate au cabinet</p>
-                <p className="text-[#33251E]/80 text-sm leading-relaxed">
+                <p className="font-semibold text-[#171712] text-sm mb-1">En dernier recours : Google Translate au cabinet</p>
+                <p className="text-[#171712]/80 text-sm leading-relaxed">
                   Le vocabulaire médical en espagnol s&apos;apprend vite — et
                   la plupart des médecins ont l&apos;habitude des patients
                   étrangers. Pour les consultations courantes, une
@@ -582,33 +583,33 @@ export default function SecuPage() {
       </section>
 
       {/* Liens connexes */}
-      <section className="py-16 px-6 bg-[#FBEBDD]">
+      <section className="py-16 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">
+          <p className="text-[#171712] font-semibold uppercase tracking-widest text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/papiers/padron"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               L&apos;empadronamiento
             </Link>
             <Link
               href="/papiers/compte-bancaire"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Ouvrir un compte bancaire
             </Link>
             <Link
               href="/travailler/remote"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Travailler en remote depuis Madrid
             </Link>
@@ -619,36 +620,33 @@ export default function SecuPage() {
       <EtapeSuivante label="Transports & l'Abono à Madrid" href="/vivre/transports" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
+      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10">
+          <p className="text-[#171712]/80 text-lg mb-10">
             Impôts, résidence fiscale, autónomo — les prochains guides
             administratifs arrivent bientôt.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">
+          <p className="text-[#171712]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
-        >
-          Madrid & Toi
+      <footer className="py-10 px-6 bg-[#171712] text-center">
+        <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
+          <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#F6E7D9]/40 text-sm">
+        <p className="text-[#e6f4ec]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

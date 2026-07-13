@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
 import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
@@ -94,34 +95,34 @@ export default function CompteBancairePage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"
-            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Papiers
           </Link>
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide administratif
           </p>
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Ouvrir un compte{" "}
-            <span className="not-italic font-bold text-[#F0552F]">bancaire en Espagne</span>
+            <span className="not-italic font-bold text-[#1fa971]">bancaire en Espagne</span>
           </h1>
-          <p className="text-lg text-[#33251E] leading-relaxed">
+          <p className="text-lg text-[#171712] leading-relaxed">
             BBVA, ING, Revolut — on t&apos;explique quelle banque choisir selon
             ton profil, ce qu&apos;il faut comme documents, et comment s&apos;en
             sortir quand on n&apos;a pas encore son NIE.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
               Souvent gratuit
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
               2 – 5 jours pour une banque physique
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
               NIE recommandé mais pas toujours obligatoire
             </span>
           </div>
@@ -130,12 +131,12 @@ export default function CompteBancairePage() {
       </section>
 
       {/* Pourquoi */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Pourquoi ouvrir un compte espagnol ?
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             Ta banque française continue de fonctionner en Espagne — mais elle
             ne suffit pas longtemps. Le loyer se paie par virement depuis un
             compte local, les prélèvements automatiques (électricité, internet,
@@ -143,7 +144,7 @@ export default function CompteBancairePage() {
             d&apos;employeurs exigent un compte domicilié en Espagne pour
             verser le salaire.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             En pratique, la plupart des Français qui s&apos;installent gardent
             leurs deux comptes en parallèle pendant quelques mois —
             l&apos;espagnol pour le quotidien madrilène, le français pour les
@@ -153,9 +154,9 @@ export default function CompteBancairePage() {
       </section>
 
       {/* Les banques */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
+      <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-10">
             Tour d&apos;horizon des options
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -164,22 +165,22 @@ export default function CompteBancairePage() {
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-2xl">{b.emoji}</span>
                   <div>
-                    <p className="font-[family-name:var(--font-heading)] font-bold text-[#33251E] text-lg">
+                    <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg">
                       {b.nom}
                     </p>
-                    <p className="text-xs text-[#F2A65A] font-semibold uppercase tracking-wide">
+                    <p className="text-xs text-[#178a5d] font-semibold uppercase tracking-wide">
                       {b.type}
                     </p>
                   </div>
                 </div>
-                <p className="text-[#33251E] text-sm leading-relaxed mb-3">
+                <p className="text-[#171712] text-sm leading-relaxed mb-3">
                   {b.avantages}
                 </p>
-                <p className="text-[#33251E]/60 text-xs leading-relaxed mb-4">
+                <p className="text-[#171712]/60 text-xs leading-relaxed mb-4">
                   ⚠️ {b.inconvenients}
                 </p>
-                <div className="border-t border-[#FBEBDD] pt-3">
-                  <p className="text-[#F0552F] text-xs font-semibold">
+                <div className="border-t border-[#f2f0e9] pt-3">
+                  <p className="text-[#1fa971] text-xs font-semibold">
                     → {b.pour}
                   </p>
                 </div>
@@ -190,44 +191,44 @@ export default function CompteBancairePage() {
       </section>
 
       {/* Selon ton profil */}
-      <section className="py-20 px-6 bg-[#241813]">
+      <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-white mb-8">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-8">
             Selon ton profil
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm mb-2">
+              <p className="text-[#1fa971] font-semibold text-sm mb-2">
                 Tu arrives en CDI
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Ouvre un compte ING España ou BBVA dès que tu as ton NIE et ton
                 empadronamiento. Domicilie ton salaire pour éviter les frais
                 chez BBVA.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm mb-2">
+              <p className="text-[#1fa971] font-semibold text-sm mb-2">
                 Tu es freelance / autónomo
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Wise est très adapté pour recevoir des virements internationaux
                 et gérer plusieurs devises. Complète avec un compte ING pour
                 les dépenses quotidiennes.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm mb-2">
+              <p className="text-[#1fa971] font-semibold text-sm mb-2">
                 Tu arrives sans NIE
               </p>
-              <p className="text-[#F6E7D9]/80 text-sm leading-relaxed">
+              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
                 Ouvre Revolut avant le départ. Dès que tu as ton NIE, ouvre
                 ton compte espagnol et transfère tes abonnements progressivement.
               </p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#F0552F] pl-6">
-            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#1fa971] pl-6">
+            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Le combo gagnant : Revolut avant le départ pour les premiers
               jours, puis ING España dès que tu as une adresse et un NIE.
               Simple, gratuit, et ça couvre 95 % des situations.
@@ -237,22 +238,22 @@ export default function CompteBancairePage() {
       </section>
 
       {/* Les étapes */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-10">
             Ouvrir son compte : les 3 étapes
           </h2>
           <div className="space-y-8">
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center">
-                <span className="font-[family-name:var(--font-heading)] text-white font-bold text-sm">1</span>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+                <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">1</span>
               </div>
               <div>
-                <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] mb-2">
+                <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-2">
                   Choisis ta banque et prépare ton dossier
                 </h3>
-                <p className="text-[#33251E] leading-relaxed">
+                <p className="text-[#171712] leading-relaxed">
                   Pour les banques en ligne (ING, imaginBank), tout se fait
                   depuis l&apos;appli en moins de 15 minutes. Pour une banque
                   physique (BBVA, Santander), prends rendez-vous en agence
@@ -262,14 +263,14 @@ export default function CompteBancairePage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center">
-                <span className="font-[family-name:var(--font-heading)] text-white font-bold text-sm">2</span>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+                <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">2</span>
               </div>
               <div>
-                <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] mb-2">
+                <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-2">
                   Transmets tes documents
                 </h3>
-                <p className="text-[#33251E] leading-relaxed">
+                <p className="text-[#171712] leading-relaxed">
                   NIE ou passeport, empadronamiento, et parfois un justificatif
                   de revenus. Pour les banques en ligne, tout se fait par photo
                   depuis l&apos;appli. La checklist complète est juste en
@@ -279,14 +280,14 @@ export default function CompteBancairePage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center">
-                <span className="font-[family-name:var(--font-heading)] text-white font-bold text-sm">3</span>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+                <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">3</span>
               </div>
               <div>
-                <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] mb-2">
+                <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-2">
                   Active ton compte et reçois ta carte
                 </h3>
-                <p className="text-[#33251E] leading-relaxed">
+                <p className="text-[#171712] leading-relaxed">
                   Pour ING et imaginBank, le compte est actif quasi
                   immédiatement, la carte arrive sous 5 à 7 jours ouvrés.
                   Pour les banques physiques, l&apos;activation est faite lors
@@ -300,26 +301,26 @@ export default function CompteBancairePage() {
       </section>
 
       {/* Checklist */}
-      <section className="py-24 px-6 bg-[#FBEBDD]">
+      <section className="py-24 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
             Checklist
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-10">
             Les documents à préparer
           </h2>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-8">
-            <div className="px-6 py-4 bg-[#F0552F]">
+            <div className="px-6 py-4 bg-[#1fa971]">
               <p className="text-white font-semibold">📋 Documents nécessaires</p>
             </div>
-            <div className="divide-y divide-[#FBEBDD]">
+            <div className="divide-y divide-[#f2f0e9]">
               {checklist.map((item) => (
                 <div key={item.doc} className="px-6 py-4 flex items-start gap-4">
-                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#F0552F] mt-0.5" />
+                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
                   <div>
-                    <p className="font-semibold text-[#33251E] text-sm">{item.doc}</p>
-                    <p className="text-[#33251E]/70 text-xs mt-0.5">{item.detail}</p>
+                    <p className="font-semibold text-[#171712] text-sm">{item.doc}</p>
+                    <p className="text-[#171712]/70 text-xs mt-0.5">{item.detail}</p>
                   </div>
                 </div>
               ))}
@@ -327,14 +328,14 @@ export default function CompteBancairePage() {
           </div>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
-            <div className="px-6 py-4 bg-[#241813]">
-              <p className="text-[#FFC24B] font-semibold">💡 À savoir</p>
+            <div className="px-6 py-4 bg-[#171712]">
+              <p className="text-[#1fa971] font-semibold">💡 À savoir</p>
             </div>
-            <div className="divide-y divide-[#FBEBDD]">
+            <div className="divide-y divide-[#f2f0e9]">
               {tips.map((item) => (
                 <div key={item.tip} className="px-6 py-4 flex items-start gap-4">
                   <span className="text-xl flex-shrink-0">{item.emoji}</span>
-                  <p className="text-[#33251E] text-sm leading-relaxed">{item.tip}</p>
+                  <p className="text-[#171712] text-sm leading-relaxed">{item.tip}</p>
                 </div>
               ))}
             </div>
@@ -343,30 +344,30 @@ export default function CompteBancairePage() {
       </section>
 
       {/* Sans NIE */}
-      <section className="py-20 px-6 bg-[#FFFBF5]">
+      <section className="py-20 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
             Et si je n&apos;ai pas encore mon NIE ?
           </h2>
-          <p className="text-[#33251E] leading-relaxed text-lg">
+          <p className="text-[#171712] leading-relaxed text-lg">
             Les banques traditionnelles espagnoles exigent presque toutes le
             NIE pour ouvrir un compte en agence. La solution : commence par
             Revolut ou Wise, qui n&apos;ont besoin que d&apos;un passeport et
             d&apos;une adresse email. Tu auras une carte fonctionnelle dès le
             lendemain.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Dès que tu obtiens ton NIE — en général dans les premières semaines
             après l&apos;arrivée — tu peux ouvrir ton vrai compte espagnol.
             Certaines banques (Santander notamment) acceptent parfois le
             passeport seul pour une ouverture en agence, mais c&apos;est à
             la discrétion du conseiller.
           </p>
-          <p className="text-[#33251E] leading-relaxed text-lg mt-4">
+          <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Tu n&apos;as pas encore ton NIE ?{" "}
             <Link
               href="/papiers/nie"
-              className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
+              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
             >
               Notre guide NIE complet
             </Link>{" "}
@@ -376,33 +377,33 @@ export default function CompteBancairePage() {
       </section>
 
       {/* Liens connexes */}
-      <section className="py-16 px-6 bg-[#FBEBDD]">
+      <section className="py-16 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">
+          <p className="text-[#171712] font-semibold uppercase tracking-widest text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/papiers/padron"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               L&apos;empadronamiento
             </Link>
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               La sécu en Espagne
             </Link>
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
@@ -413,36 +414,33 @@ export default function CompteBancairePage() {
       <EtapeSuivante label="S'inscrire à la sécu espagnole" href="/papiers/secu" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
+      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10">
+          <p className="text-[#171712]/80 text-lg mb-10">
             Impôts, résidence fiscale, autónomo — les prochains guides
             administratifs arrivent bientôt.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">
+          <p className="text-[#171712]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
-        >
-          Madrid & Toi
+      <footer className="py-10 px-6 bg-[#171712] text-center">
+        <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
+          <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#F6E7D9]/40 text-sm">
+        <p className="text-[#e6f4ec]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>
