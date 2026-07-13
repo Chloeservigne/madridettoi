@@ -25,13 +25,13 @@ const steps = [
     number: "02",
     title: "Le budget à prévoir",
     content:
-      <>Le marché a évolué : un studio dans un quartier central comme <Link href="/logement/quartiers" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Malasaña ou Chueca</Link> se loue aujourd&apos;hui entre 900 et 1 200 €/mois. Un appartement d&apos;une chambre entre 1 000 et 1 500 €. Lavapiés et Vallecas restent plus abordables. La caution représente généralement 1 à 2 mois de loyer. Pour les fourchettes détaillées par quartier, voir le <Link href="/se-decider/budget" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">guide budget</Link>.</>,
+      <>Le marché a évolué : un studio dans un quartier central comme <Link href="/logement/quartiers" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">Malasaña ou Chueca</Link> se loue aujourd&apos;hui entre 900 et 1 200 €/mois. Un appartement d&apos;une chambre entre 1 000 et 1 500 €. Lavapiés et Vallecas restent plus abordables. La caution représente généralement 1 à 2 mois de loyer. Pour les fourchettes détaillées par quartier, voir le <Link href="/se-decider/budget" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">guide budget</Link>.</>,
   },
   {
     number: "03",
     title: "Les documents demandés",
     content:
-      <>Les propriétaires demandent souvent : un contrat de travail espagnol ou une preuve de revenus, les 3 dernières fiches de paie, et parfois un garant. Si tu arrives sans emploi local, certains acceptent une garantie bancaire ou plusieurs mois de loyer d&apos;avance. <Link href="/papiers/nie" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">Le NIE</Link> est souvent demandé pour signer.</>,
+      <>Les propriétaires demandent souvent : un contrat de travail espagnol ou une preuve de revenus, les 3 dernières fiches de paie, et parfois un garant. Si tu arrives sans emploi local, certains acceptent une garantie bancaire ou plusieurs mois de loyer d&apos;avance. <Link href="/papiers/nie" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">Le NIE</Link> est souvent demandé pour signer.</>,
   },
   {
     number: "04",
@@ -73,27 +73,27 @@ export default function AppartementPage() {
     },
   ];
   return (
-    <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+    <div className="min-h-screen font-[family-name:var(--font-body)]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
+      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/logement"
-            className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Logement
           </Link>
-          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide logement
           </p>
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
             Comment trouver un appartement à Madrid{" "}
-            <span className="italic text-[#C8614A]">depuis la France&nbsp;?</span>
+            <span className="not-italic font-bold text-[#F0552F]">depuis la France&nbsp;?</span>
           </h1>
-          <p className="text-lg text-[#5a3e35] leading-relaxed">
+          <p className="text-lg text-[#33251E] leading-relaxed">
             C&apos;est la première question que tout le monde se pose. La réponse
             honnête : c&apos;est faisable, mais ça demande de l&apos;organisation. Voici
             tout ce qu&apos;on aurait voulu savoir avant de chercher.
@@ -103,20 +103,20 @@ export default function AppartementPage() {
       </section>
 
       {/* Content */}
-      <section className="py-24 px-6 bg-[#F5ECD7]">
+      <section className="py-24 px-6 bg-[#FFFBF5]">
         <div className="max-w-3xl mx-auto space-y-12">
           {steps.map((step) => (
             <div key={step.number} className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#C8614A]/10 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-playfair)] text-[#C8614A] font-bold text-sm">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#F0552F]/10 flex items-center justify-center">
+                <span className="font-[family-name:var(--font-heading)] text-[#F0552F] font-bold text-sm">
                   {step.number}
                 </span>
               </div>
               <div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#2C1810] mb-3">
+                <h2 className="font-[family-name:var(--font-heading)] text-2xl font-bold text-[#33251E] mb-3">
                   {step.title}
                 </h2>
-                <p className="text-[#5a3e35] leading-relaxed">{step.content}</p>
+                <p className="text-[#33251E] leading-relaxed">{step.content}</p>
               </div>
             </div>
           ))}
@@ -124,12 +124,12 @@ export default function AppartementPage() {
       </section>
 
       {/* Tip block */}
-      <section className="py-16 px-6 bg-[#2C1810]">
+      <section className="py-16 px-6 bg-[#241813]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-2xl mb-4">
+          <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-2xl mb-4">
             Notre conseil en une phrase
           </p>
-          <p className="text-[#F5ECD7] text-lg leading-relaxed">
+          <p className="text-[#F6E7D9] text-lg leading-relaxed">
             Prévois un séjour de reconnaissance de 10 à 14 jours avant ton
             déménagement définitif. Loge en Airbnb, visite des appartements en
             vrai, et signe sur place. C&apos;est la méthode qui marche le mieux.
@@ -138,22 +138,22 @@ export default function AppartementPage() {
       </section>
 
       {/* Other guides */}
-      <section className="py-16 px-6 bg-[#EDE0C8]">
+      <section className="py-16 px-6 bg-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#5a3e35] font-semibold uppercase tracking-widest text-sm mb-6">
+          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors">
               Faut-il un NIE avant d&apos;arriver ?
             </Link>
-            <Link href="/logement/quartiers" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/logement/quartiers" className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors">
               Les quartiers les plus sympa pour les expats
             </Link>
-            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors">
               Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
-            <Link href="/papiers/secu" className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:border-[#C8614A] hover:text-[#C8614A] transition-colors">
+            <Link href="/papiers/secu" className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:border-[#F0552F] hover:text-[#F0552F] transition-colors">
               Comment fonctionne la sécu en Espagne ?
             </Link>
           </div>
@@ -163,36 +163,36 @@ export default function AppartementPage() {
       <EtapeSuivante label="Organiser son déménagement Paris → Madrid" href="/demenagement/paris-madrid" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">
+      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F5ECD7]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F5ECD7]/90 text-lg mb-10">
+          <p className="text-[#F6E7D9]/90 text-lg mb-10">
             Logement, NIE, sécu, travail à Madrid — on prépare des guides
             complets sur chaque étape de ton installation.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F5ECD7]/60 text-xs mt-4">
+          <p className="text-[#F6E7D9]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#2C1810] text-center">
+      <footer className="py-10 px-6 bg-[#241813] text-center">
         <Link
           href="/"
-          className="font-[family-name:var(--font-playfair)] text-xl text-[#F5ECD7] mb-2 block hover:text-[#E8A838] transition-colors"
+          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
         >
           Madrid & Toi
         </Link>
-        <p className="text-[#F5ECD7]/40 text-sm">
+        <p className="text-[#F6E7D9]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

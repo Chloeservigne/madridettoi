@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
-import { Fraunces } from "next/font/google";
+import { Figtree } from "next/font/google";
+import { Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const jost = Jost({
-  variable: "--font-dm-sans",
+const figtree = Figtree({
+  variable: "--font-body",
   subsets: ["latin"],
-  weight: "300",
+  weight: ["400", "500", "600", "700"],
 });
 
-const fraunces = Fraunces({
-  variable: "--font-playfair",
+const schibstedGrotesk = Schibsted_Grotesk({
+  variable: "--font-heading",
   subsets: ["latin"],
-  style: ["normal", "italic"],
+  weight: ["500", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -67,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${jost.variable} ${fraunces.variable} antialiased`}>
+      <body className={`${figtree.variable} ${schibstedGrotesk.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}

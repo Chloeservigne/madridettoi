@@ -146,7 +146,7 @@ export default function DocumentsFrancaisPage() {
   ];
 
   return (
-    <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+    <div className="min-h-screen font-[family-name:var(--font-body)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -154,22 +154,22 @@ export default function DocumentsFrancaisPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
+      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"
-            className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Papiers & démarches
           </Link>
-          <span className="inline-block px-3 py-1 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-xs font-semibold mb-4">
+          <span className="inline-block px-3 py-1 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-xs font-semibold mb-4">
             Côté français
           </span>
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
             Refaire ses papiers français{" "}
-            <span className="italic text-[#C8614A]">depuis Madrid</span>
+            <span className="not-italic font-bold text-[#F0552F]">depuis Madrid</span>
           </h1>
-          <p className="text-lg text-[#5a3e35] leading-relaxed mb-4">
+          <p className="text-lg text-[#33251E] leading-relaxed mb-4">
             Ton passeport expire dans 3 mois. Ta carte d&apos;identité date de
             l&apos;époque lycée. Depuis Madrid, c&apos;est le Consulat général de France
             qui gère — pas la mairie de ton ancienne ville. Voici comment ça
@@ -180,35 +180,35 @@ export default function DocumentsFrancaisPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 px-6 bg-[#F5ECD7]">
+      <section className="py-16 px-6 bg-[#FFFBF5]">
         <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4">
           {stats.map((s) => (
             <div
               key={s.label}
               className="bg-white rounded-2xl p-5 text-center shadow-sm"
             >
-              <p className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-[#C8614A] mb-2">
+              <p className="font-[family-name:var(--font-heading)] text-2xl font-bold text-[#F0552F] mb-2">
                 {s.value}
               </p>
-              <p className="text-[#5a3e35]/70 text-xs leading-snug">{s.label}</p>
+              <p className="text-[#33251E]/70 text-xs leading-snug">{s.label}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Registre consulaire */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-20 px-6 bg-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
             Première chose : t&apos;inscrire au registre consulaire
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+          <p className="text-[#33251E] leading-relaxed text-lg mb-4">
             Avant de renouveler quoi que ce soit, inscris-toi au{" "}
             <strong>registre des Français établis hors de France</strong> (dit
             &quot;registre consulaire&quot;). Ce n&apos;est pas obligatoire, mais c&apos;est
             vivement recommandé.
           </p>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-6">
+          <p className="text-[#33251E] leading-relaxed text-lg mb-6">
             L&apos;inscription te rattache officiellement au Consulat de Madrid. En
             pratique : tu figures sur les listes électorales consulaires (pour
             voter aux élections françaises depuis Madrid), tes démarches sont
@@ -216,7 +216,7 @@ export default function DocumentsFrancaisPage() {
             C&apos;est gratuit et ça prend 10 minutes.
           </p>
           <div className="bg-white rounded-2xl p-6 shadow-sm space-y-2">
-            <p className="font-semibold text-[#2C1810] text-sm mb-1">Comment s&apos;inscrire</p>
+            <p className="font-semibold text-[#33251E] text-sm mb-1">Comment s&apos;inscrire</p>
             <ul className="space-y-2">
               {[
                 "Connecte-toi sur service-public.fr ou directement sur le portail Français à l'étranger",
@@ -224,8 +224,8 @@ export default function DocumentsFrancaisPage() {
                 "Le consulat valide l'inscription dans les jours suivants",
                 "Tu reçois une confirmation par e-mail — conserve-la, elle facilite toutes les démarches suivantes",
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-sm text-[#5a3e35]">
-                  <span className="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-[#7A8C5E] text-white text-xs flex items-center justify-center font-bold">
+                <li key={i} className="flex items-start gap-3 text-sm text-[#33251E]">
+                  <span className="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-[#F2A65A] text-white text-xs flex items-center justify-center font-bold">
                     {i + 1}
                   </span>
                   {item}
@@ -237,12 +237,12 @@ export default function DocumentsFrancaisPage() {
       </section>
 
       {/* CNI */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-20 px-6 bg-[#FFFBF5]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-2">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-2">
             Renouveler sa carte d&apos;identité (CNI)
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
+          <p className="text-[#33251E] leading-relaxed text-lg mb-8">
             La CNI est valable{" "}
             <strong>10 ans pour les majeurs</strong>. Le renouvellement est
             gratuit en cas d&apos;expiration normale (25 € de timbre fiscal si perte
@@ -253,14 +253,14 @@ export default function DocumentsFrancaisPage() {
           <div className="space-y-6 mb-10">
             {etapesCNI.map((etape) => (
               <div key={etape.num} className="flex gap-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] text-white font-bold text-sm flex items-center justify-center">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] text-white font-bold text-sm flex items-center justify-center">
                   {etape.num}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#2C1810] mb-1">
+                  <h3 className="font-semibold text-[#33251E] mb-1">
                     {etape.titre}
                   </h3>
-                  <p className="text-[#5a3e35] text-sm leading-relaxed">
+                  <p className="text-[#33251E] text-sm leading-relaxed">
                     {etape.detail}
                   </p>
                 </div>
@@ -270,20 +270,20 @@ export default function DocumentsFrancaisPage() {
 
           {/* Checklist CNI */}
           <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <p className="font-semibold text-[#2C1810] text-sm mb-4">
+            <p className="font-semibold text-[#33251E] text-sm mb-4">
               Documents à apporter au RDV
             </p>
             <ul className="space-y-3">
               {checklistCNI.map((item) => (
                 <li key={item.doc} className="flex items-start gap-3">
-                  <span className="mt-1 w-4 h-4 flex-shrink-0 rounded bg-[#C8614A]/10 text-[#C8614A] text-xs flex items-center justify-center font-bold">
+                  <span className="mt-1 w-4 h-4 flex-shrink-0 rounded bg-[#F0552F]/10 text-[#F0552F] text-xs flex items-center justify-center font-bold">
                     ✓
                   </span>
                   <div>
-                    <p className="text-sm font-semibold text-[#2C1810]">
+                    <p className="text-sm font-semibold text-[#33251E]">
                       {item.doc}
                     </p>
-                    <p className="text-xs text-[#5a3e35]/70">{item.detail}</p>
+                    <p className="text-xs text-[#33251E]/70">{item.detail}</p>
                   </div>
                 </li>
               ))}
@@ -293,12 +293,12 @@ export default function DocumentsFrancaisPage() {
       </section>
 
       {/* Passeport */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-20 px-6 bg-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-2">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-2">
             Renouveler son passeport
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-8">
+          <p className="text-[#33251E] leading-relaxed text-lg mb-8">
             Le passeport est valable{" "}
             <strong>10 ans pour les adultes</strong>, 5 ans pour les mineurs. La
             procédure est très similaire à la CNI — la principale différence est
@@ -310,14 +310,14 @@ export default function DocumentsFrancaisPage() {
           <div className="space-y-6 mb-10">
             {etapesPasseport.map((etape) => (
               <div key={etape.num} className="flex gap-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] text-white font-bold text-sm flex items-center justify-center">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] text-white font-bold text-sm flex items-center justify-center">
                   {etape.num}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#2C1810] mb-1">
+                  <h3 className="font-semibold text-[#33251E] mb-1">
                     {etape.titre}
                   </h3>
-                  <p className="text-[#5a3e35] text-sm leading-relaxed">
+                  <p className="text-[#33251E] text-sm leading-relaxed">
                     {etape.detail}
                   </p>
                 </div>
@@ -327,20 +327,20 @@ export default function DocumentsFrancaisPage() {
 
           {/* Checklist passeport */}
           <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <p className="font-semibold text-[#2C1810] text-sm mb-4">
+            <p className="font-semibold text-[#33251E] text-sm mb-4">
               Documents à apporter au RDV
             </p>
             <ul className="space-y-3">
               {checklistPasseport.map((item) => (
                 <li key={item.doc} className="flex items-start gap-3">
-                  <span className="mt-1 w-4 h-4 flex-shrink-0 rounded bg-[#C8614A]/10 text-[#C8614A] text-xs flex items-center justify-center font-bold">
+                  <span className="mt-1 w-4 h-4 flex-shrink-0 rounded bg-[#F0552F]/10 text-[#F0552F] text-xs flex items-center justify-center font-bold">
                     ✓
                   </span>
                   <div>
-                    <p className="text-sm font-semibold text-[#2C1810]">
+                    <p className="text-sm font-semibold text-[#33251E]">
                       {item.doc}
                     </p>
-                    <p className="text-xs text-[#5a3e35]/70">{item.detail}</p>
+                    <p className="text-xs text-[#33251E]/70">{item.detail}</p>
                   </div>
                 </li>
               ))}
@@ -350,16 +350,16 @@ export default function DocumentsFrancaisPage() {
       </section>
 
       {/* Dark blockquote */}
-      <section className="py-20 px-6 bg-[#2C1810]">
+      <section className="py-20 px-6 bg-[#241813]">
         <div className="max-w-2xl mx-auto">
-          <blockquote className="border-l-4 border-[#E8A838] pl-8">
-            <p className="font-[family-name:var(--font-playfair)] text-2xl text-[#F5ECD7] leading-relaxed italic mb-6">
+          <blockquote className="border-l-4 border-[#FFC24B] pl-8">
+            <p className="font-[family-name:var(--font-heading)] text-2xl text-[#F6E7D9] leading-relaxed italic mb-6">
               &ldquo;Les RDV consulaires pour la CNI et le passeport partent en
               quelques heures. Ouvre une alerte sur le portail ou reviens vérifier
               tôt le matin — les annulations libèrent parfois des créneaux de
               dernière minute.&rdquo;
             </p>
-            <footer className="text-[#E8A838] text-sm font-semibold">
+            <footer className="text-[#FFC24B] text-sm font-semibold">
               Consulat général de France à Madrid — Calle Marqués de la Ensenada, 10, 28004 Madrid
             </footer>
           </blockquote>
@@ -367,17 +367,17 @@ export default function DocumentsFrancaisPage() {
       </section>
 
       {/* Autres démarches */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-20 px-6 bg-[#FFFBF5]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
             Les autres démarches depuis le consulat
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="font-semibold text-[#2C1810] mb-2">
+              <p className="font-semibold text-[#33251E] mb-2">
                 Acte de naissance
               </p>
-              <p className="text-[#5a3e35] text-sm leading-relaxed">
+              <p className="text-[#33251E] text-sm leading-relaxed">
                 Tu peux demander un extrait d&apos;acte de naissance directement en
                 ligne sur service-public.fr — sans passer par le consulat. Le
                 document arrive par courrier ou en version dématérialisée selon
@@ -385,10 +385,10 @@ export default function DocumentsFrancaisPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="font-semibold text-[#2C1810] mb-2">
+              <p className="font-semibold text-[#33251E] mb-2">
                 Vote aux élections françaises
               </p>
-              <p className="text-[#5a3e35] text-sm leading-relaxed">
+              <p className="text-[#33251E] text-sm leading-relaxed">
                 Une fois inscrit au registre consulaire, tu es automatiquement
                 intégré(e) aux listes électorales de la{" "}
                 <strong>1re circonscription des Français d&apos;Espagne</strong>.
@@ -396,10 +396,10 @@ export default function DocumentsFrancaisPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="font-semibold text-[#2C1810] mb-2">
+              <p className="font-semibold text-[#33251E] mb-2">
                 Légalisation et apostille
               </p>
-              <p className="text-[#5a3e35] text-sm leading-relaxed">
+              <p className="text-[#33251E] text-sm leading-relaxed">
                 Pour faire reconnaître un document français en Espagne (diplôme,
                 acte d&apos;état civil), l&apos;apostille se demande en France auprès du
                 Tribunal judiciaire compétent. Le consulat ne délivre pas
@@ -407,23 +407,23 @@ export default function DocumentsFrancaisPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="font-semibold text-[#2C1810] mb-2">
+              <p className="font-semibold text-[#33251E] mb-2">
                 Mariage et PACS consulaire
               </p>
-              <p className="text-[#5a3e35] text-sm leading-relaxed">
+              <p className="text-[#33251E] text-sm leading-relaxed">
                 Un mariage franco-espagnol ou un PACS entre résidents de Madrid
                 peut être célébré ou enregistré au consulat. Délais : 3 à 6 mois
                 selon les cas. Prendre contact tôt.
               </p>
             </div>
           </div>
-          <p className="text-[#5a3e35] leading-relaxed text-sm mt-6">
+          <p className="text-[#33251E] leading-relaxed text-sm mt-6">
             Pour toute démarche non listée ici, la page{" "}
             <a
               href="https://es.ambafrance.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+              className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
             >
               es.ambafrance.org
             </a>{" "}
@@ -433,39 +433,39 @@ export default function DocumentsFrancaisPage() {
       </section>
 
       {/* Liens connexes */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-20 px-6 bg-[#FBEBDD]">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-6">
+          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               Obtenir son NIE
             </Link>
             <Link
               href="/papiers/padron"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               L&apos;empadronamiento
             </Link>
             <Link
               href="/papiers/permis-de-conduire"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               Le permis de conduire en Espagne
             </Link>
             <Link
               href="/communaute/francais-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               La communauté française à Madrid
             </Link>
             <Link
               href="/demenagement/checklist"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               Checklist déménagement
             </Link>
@@ -474,36 +474,36 @@ export default function DocumentsFrancaisPage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">
+      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F5ECD7]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F5ECD7]/90 text-lg mb-10">
+          <p className="text-[#F6E7D9]/90 text-lg mb-10">
             NIE, sécu, compte bancaire, impôts — tous les guides administratifs
             pour t&apos;installer sereinement à Madrid.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F5ECD7]/60 text-xs mt-4">
+          <p className="text-[#F6E7D9]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#2C1810] text-center">
+      <footer className="py-10 px-6 bg-[#241813] text-center">
         <Link
           href="/"
-          className="font-[family-name:var(--font-playfair)] text-xl text-[#F5ECD7] mb-2 block hover:text-[#E8A838] transition-colors"
+          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
         >
           Madrid & Toi
         </Link>
-        <p className="text-[#F5ECD7]/40 text-sm">
+        <p className="text-[#F6E7D9]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

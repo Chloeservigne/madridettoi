@@ -53,29 +53,29 @@ const cards = [
 
 export default function SeDeciderPage() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+    <div className="min-h-screen font-[family-name:var(--font-body)]">
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
+      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à l&apos;accueil
           </Link>
-          <span className="inline-block px-3 py-1 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-xs font-semibold mb-4">
+          <span className="inline-block px-3 py-1 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-xs font-semibold mb-4">
             Phase 1 — Je rêve encore
           </span>
-          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
             Avant de partir
           </p>
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
             Tu veux sauter{" "}
-            <span className="italic text-[#C8614A]">le pas&nbsp;?</span>
+            <span className="not-italic font-bold text-[#F0552F]">le pas&nbsp;?</span>
           </h1>
-          <p className="text-lg text-[#5a3e35] leading-relaxed">
+          <p className="text-lg text-[#33251E] leading-relaxed">
             Avant de réserver le camion, il faut être sûr(e). Pourquoi Madrid
             plutôt qu&apos;ailleurs ? Est-ce vraiment fait pour toi ? On t&apos;aide à
             construire ta décision sur des bases solides.
@@ -84,40 +84,40 @@ export default function SeDeciderPage() {
       </section>
 
       {/* Éditorial */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-20 px-6 bg-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-6">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
             Quelques chiffres pour construire ta décision
           </h2>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+          <p className="text-[#33251E] leading-relaxed text-lg mb-4">
             Madrid, c&apos;est 300 jours de soleil par an, une ville de 3,4 millions
             d&apos;habitants, et environ{" "}
-            <Link href="/communaute/francais-madrid" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+            <Link href="/communaute/francais-madrid" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
               35 000 Français installés
             </Link>{" "}
             — l&apos;une des plus grandes communautés françaises d&apos;Europe. Concrètement :
             tu ne seras pas seul(e).
           </p>
-          <p className="text-[#5a3e35] leading-relaxed text-lg mb-4">
+          <p className="text-[#33251E] leading-relaxed text-lg mb-4">
             Côté finances, le{" "}
-            <Link href="/se-decider/budget" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+            <Link href="/se-decider/budget" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
               coût de la vie
             </Link>{" "}
             est 15 à 25 % inférieur à Paris selon les postes de dépense — surtout
             la restauration, les transports et certains services. En revanche,
             les loyers dans les quartiers centraux ont fortement augmenté ces
             dernières années. Le{" "}
-            <Link href="/se-decider/salaire-madrid" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+            <Link href="/se-decider/salaire-madrid" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
               salaire moyen à Madrid
             </Link>{" "}
             tourne autour de 2 200 € brut — inférieur à Paris, mais le pouvoir
             d&apos;achat réel est souvent comparable voire meilleur pour un cadre de vie supérieur.
           </p>
-          <p className="text-[#5a3e35] leading-relaxed text-lg">
+          <p className="text-[#33251E] leading-relaxed text-lg">
             Le point souvent sous-estimé : l&apos;administration espagnole. NIE,
             padron, sécu, impôts — ça prend du temps et de l&apos;organisation.
             Mais ça se fait. Nos guides{" "}
-            <Link href="/papiers" className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors">
+            <Link href="/papiers" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
               Papiers & démarches
             </Link>{" "}
             sont là pour que tu ne sois jamais pris(e) au dépourvu.
@@ -126,7 +126,7 @@ export default function SeDeciderPage() {
       </section>
 
       {/* Cards */}
-      <section className="py-28 px-6 bg-[#F5ECD7]">
+      <section className="py-28 px-6 bg-[#FFFBF5]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
           {cards.map((card) =>
             card.href ? (
@@ -136,17 +136,17 @@ export default function SeDeciderPage() {
                 className="group p-8 rounded-3xl bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
               >
                 <div className="flex justify-between items-start mb-6">
-                  <div className="w-12 h-12 rounded-2xl bg-[#F5ECD7] flex items-center justify-center text-2xl">
+                  <div className="w-12 h-12 rounded-2xl bg-[#FFFBF5] flex items-center justify-center text-2xl">
                     {card.emoji}
                   </div>
-                  <span className="text-[#C8614A] text-xs font-semibold">
+                  <span className="text-[#F0552F] text-xs font-semibold">
                     Lire le guide →
                   </span>
                 </div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] mb-3 group-hover:text-[#C8614A] transition-colors duration-200">
+                <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] mb-3 group-hover:text-[#F0552F] transition-colors duration-200">
                   {card.title}
                 </h2>
-                <p className="text-[#5a3e35]/70 text-sm leading-relaxed">
+                <p className="text-[#33251E]/70 text-sm leading-relaxed">
                   {card.description}
                 </p>
               </Link>
@@ -156,17 +156,17 @@ export default function SeDeciderPage() {
                 className="p-8 rounded-3xl bg-white shadow-sm opacity-50"
               >
                 <div className="flex justify-between items-start mb-6">
-                  <div className="w-12 h-12 rounded-2xl bg-[#F5ECD7] flex items-center justify-center text-2xl">
+                  <div className="w-12 h-12 rounded-2xl bg-[#FFFBF5] flex items-center justify-center text-2xl">
                     {card.emoji}
                   </div>
-                  <span className="text-xs bg-[#E8A838]/20 text-[#E8A838] px-3 py-1 rounded-full font-semibold">
+                  <span className="text-xs bg-[#FFC24B]/20 text-[#FFC24B] px-3 py-1 rounded-full font-semibold">
                     Bientôt
                   </span>
                 </div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[#2C1810] mb-3">
+                <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] mb-3">
                   {card.title}
                 </h2>
-                <p className="text-[#5a3e35]/70 text-sm leading-relaxed">
+                <p className="text-[#33251E]/70 text-sm leading-relaxed">
                   {card.description}
                 </p>
               </div>
@@ -178,15 +178,15 @@ export default function SeDeciderPage() {
       <EtapeSuivante label="Maintenant, la question du travail" href="/travailler" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">
+      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F5ECD7]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
-          <p className="text-[#F5ECD7]/90 text-lg mb-10 leading-relaxed">
+          <p className="text-[#F6E7D9]/90 text-lg mb-10 leading-relaxed">
             On prépare un guide complet pour t&apos;aider à prendre ta décision —
             budget réel, pour/contre, témoignages. Laisse ton email pour ne
             rien rater.
@@ -194,21 +194,21 @@ export default function SeDeciderPage() {
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F5ECD7]/60 text-xs mt-4">
+          <p className="text-[#F6E7D9]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#2C1810] text-center">
+      <footer className="py-10 px-6 bg-[#241813] text-center">
         <Link
           href="/"
-          className="font-[family-name:var(--font-playfair)] text-xl text-[#F5ECD7] mb-2 block hover:text-[#E8A838] transition-colors"
+          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
         >
           Madrid & Toi
         </Link>
-        <p className="text-[#F5ECD7]/40 text-sm">
+        <p className="text-[#F6E7D9]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

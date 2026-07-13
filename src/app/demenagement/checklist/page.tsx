@@ -42,66 +42,66 @@ export default function ChecklistPage() {
   ];
 
   return (
-    <div className="min-h-screen font-[family-name:var(--font-dm-sans)]">
+    <div className="min-h-screen font-[family-name:var(--font-body)]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#F5ECD7] to-[#EDE0C8]">
+      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/demenagement"
-            className="inline-flex items-center gap-2 text-[#C8614A] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour au déménagement
           </Link>
-          <p className="text-[#7A8C5E] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
             Déménagement
           </p>
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight mb-6">
+          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#33251E] leading-tight mb-6">
             Déménager à Madrid —{" "}
-            <span className="italic text-[#C8614A]">la checklist complète</span>
+            <span className="not-italic font-bold text-[#F0552F]">la checklist complète</span>
           </h1>
-          <p className="text-lg text-[#5a3e35] leading-relaxed">
+          <p className="text-lg text-[#33251E] leading-relaxed">
             Du premier coup de fil au déménageur à ton premier café en terrasse
             à Madrid — toutes les étapes, dans l&apos;ordre.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">J-6 mois</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">J-1 mois</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">Jour J</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#C8614A]/10 text-[#C8614A] text-sm font-semibold">J+3 mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">J-6 mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">J-1 mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">Jour J</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#F0552F]/10 text-[#F0552F] text-sm font-semibold">J+3 mois</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
       </section>
 
       {/* Phase 1 — J-6 mois */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-20 px-6 bg-[#FFFBF5]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
             6 mois avant le départ
           </h2>
           <div className="space-y-8">
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">1</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">1</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Décide de la date</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Décide de la date</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Fixe une deadline ferme. Sans date, le projet reste un rêve.
                 </p>
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">2</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">2</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Commence à apprendre l&apos;espagnol</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Commence à apprendre l&apos;espagnol</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   15 min par jour sur Duolingo ou Babbel. Tu n&apos;as pas besoin d&apos;être
                   bilingue pour partir, mais les bases changent tout.{" "}
                   <Link
                     href="/vivre/espagnol"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Nos ressources pour apprendre l&apos;espagnol
                   </Link>
@@ -110,14 +110,14 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">3</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">3</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Explore le budget de vie à Madrid</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Explore le budget de vie à Madrid</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Loyer, courses, transports. Compare avec ton niveau de vie actuel.{" "}
                   <Link
                     href="/se-decider/budget"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le coût de la vie à Madrid
                   </Link>
@@ -126,15 +126,15 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">4</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">4</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Pense à ton statut professionnel</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Pense à ton statut professionnel</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Salarié en remote ? Autónomo ? Tu cherches un emploi local ? Chaque option a
                   ses contraintes et délais.{" "}
                   <Link
                     href="/travailler"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir nos guides sur le travail à Madrid
                   </Link>
@@ -147,42 +147,42 @@ export default function ChecklistPage() {
       </section>
 
       {/* Phase 2 — J-3 mois */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-20 px-6 bg-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
             3 mois avant le départ
           </h2>
           <div className="space-y-8">
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">5</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">5</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Donne congé ou démissionne</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Donne congé ou démissionne</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Le préavis est souvent de 1 à 3 mois selon le contrat et l&apos;ancienneté. Ne
                   tarde pas — c&apos;est souvent l&apos;étape qui fixe le calendrier de tout le reste.
                 </p>
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">6</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">6</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Résilie ou transfère tes contrats français</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Résilie ou transfère tes contrats français</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Assurance habitation, abonnements, banque française — garde-la pour la
                   transition. Tu en auras besoin les premières semaines.
                 </p>
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">7</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">7</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Commence à chercher ton appartement à Madrid</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Commence à chercher ton appartement à Madrid</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Idealista, Fotocasa, groupes Facebook. Prévois de venir visiter si possible —
                   signer à distance est faisable mais risqué.{" "}
                   <Link
                     href="/logement/appartement"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide pour trouver un appartement
                   </Link>
@@ -191,22 +191,22 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">8</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">8</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Prépare tes documents administratifs</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Prépare tes documents administratifs</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Photocopies passeport / CNI, acte de naissance, diplômes traduits (apostille),
                   relevés bancaires 3 mois. Prépare aussi un dossier numérique — tout en PDF.{" "}
                   <Link
                     href="/papiers/nie"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir ce qu&apos;il faut pour le NIE
                   </Link>
                   . Si ton passeport ou ta CNI expire bientôt,{" "}
                   <Link
                     href="/papiers/documents-francais"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     renouvelle-les depuis Madrid
                   </Link>
@@ -219,32 +219,32 @@ export default function ChecklistPage() {
       </section>
 
       {/* Phase 3 — J-1 mois */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-20 px-6 bg-[#FFFBF5]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
             1 mois avant le départ
           </h2>
           <div className="space-y-8">
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">9</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">9</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Signe ou réserve ton logement</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Signe ou réserve ton logement</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Si possible avant d&apos;arriver pour éviter l&apos;hôtel. Une option : sous-louer
                   quelques semaines via Airbnb pour visiter au calme avant de signer.
                 </p>
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">10</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">10</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Organise le déménagement</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Organise le déménagement</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Déménageur Paris–Madrid (Eurodemenagement, AGS), ou location camion pour petits
                   volumes.{" "}
                   <Link
                     href="/demenagement/paris-madrid"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide déménagement Paris–Madrid
                   </Link>
@@ -253,15 +253,15 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">11</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">11</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Ouvre un compte bancaire en Espagne</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Ouvre un compte bancaire en Espagne</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Revolut ou N26 pour commencer, puis Sabadell, BBVA ou CaixaBank pour les
                   domiciliations.{" "}
                   <Link
                     href="/papiers/compte-bancaire"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide compte bancaire en Espagne
                   </Link>
@@ -270,15 +270,15 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">12</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">12</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Préviens ta CPAM</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Préviens ta CPAM</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Demande le formulaire S1 si tu restes affilié au système français
                   temporairement.{" "}
                   <Link
                     href="/papiers/secu"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide sécu à Madrid
                   </Link>
@@ -291,22 +291,22 @@ export default function ChecklistPage() {
       </section>
 
       {/* Phase 4 — Semaine 1 */}
-      <section className="py-20 px-6 bg-[#EDE0C8]">
+      <section className="py-20 px-6 bg-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
             Dès ton arrivée
           </h2>
           <div className="space-y-8">
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">13</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">13</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Inscris-toi au Padrón municipal</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Inscris-toi au Padrón municipal</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Mairie de ton arrondissement, dans les 3 mois — mais idéalement dès
                   l&apos;arrivée. Nécessaire pour le NIE et tout le reste.{" "}
                   <Link
                     href="/papiers/padron"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide Padrón
                   </Link>
@@ -315,23 +315,23 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">14</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">14</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Prends rendez-vous pour le NIE</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Prends rendez-vous pour le NIE</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Cita previa sur{" "}
                   <a
                     href="https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus/language/es_ES"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     sede.administracionespublicas.gob.es
                   </a>
                   . Les créneaux partent vite — réserve dès que tu es inscrit au Padrón.{" "}
                   <Link
                     href="/papiers/nie"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide NIE
                   </Link>
@@ -340,10 +340,10 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">15</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">15</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Explore ton quartier</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Explore ton quartier</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Marchés, boulangeries, pharmacies. Le plus tôt tu trouves tes repères, le plus
                   vite tu te sens chez toi.
                 </p>
@@ -354,21 +354,21 @@ export default function ChecklistPage() {
       </section>
 
       {/* Phase 5 — Mois 1-3 */}
-      <section className="py-20 px-6 bg-[#F5ECD7]">
+      <section className="py-20 px-6 bg-[#FFFBF5]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#2C1810] mb-10">
+          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-10">
             Dans les 3 premiers mois
           </h2>
           <div className="space-y-8">
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">16</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">16</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Obtiens ton NIE</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Obtiens ton NIE</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Avec le rendez-vous pris à l&apos;étape 14.{" "}
                   <Link
                     href="/papiers/nie"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide NIE complet
                   </Link>
@@ -377,14 +377,14 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">17</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">17</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Inscris-toi à la Seguridad Social</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Inscris-toi à la Seguridad Social</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Une fois que tu travailles — que tu sois salarié ou autónomo.{" "}
                   <Link
                     href="/papiers/secu"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide sécu
                   </Link>
@@ -393,15 +393,15 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">18</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">18</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Rejoins la communauté française</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Rejoins la communauté française</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Madrid Accueil, groupes Facebook, intercambios. Le réseau se construit dès le
                   début — ne le laisse pas pour plus tard.{" "}
                   <Link
                     href="/communaute/francais-madrid"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir nos adresses pour la communauté française
                   </Link>
@@ -410,15 +410,15 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">19</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">19</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Prends ta carte Abono Transporte</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Prends ta carte Abono Transporte</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   L&apos;abonnement mensuel métro + bus — indispensable pour se déplacer au
                   quotidien.{" "}
                   <Link
                     href="/vivre/transports"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide transports à Madrid
                   </Link>
@@ -427,15 +427,15 @@ export default function ChecklistPage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C8614A] flex items-center justify-center text-white font-bold text-sm">20</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">20</div>
               <div>
-                <h3 className="font-semibold text-[#2C1810] text-lg mb-2">Commence à t&apos;occuper de ta situation fiscale</h3>
-                <p className="text-[#5a3e35] leading-relaxed">
+                <h3 className="font-semibold text-[#33251E] text-lg mb-2">Commence à t&apos;occuper de ta situation fiscale</h3>
+                <p className="text-[#33251E] leading-relaxed">
                   Si tu passes 183 jours en Espagne, tu deviens résident fiscal espagnol.
                   Anticipe — c&apos;est mieux de le préparer que de le subir.{" "}
                   <Link
                     href="/papiers/impots"
-                    className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"
+                    className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"
                   >
                     Voir le guide impôts en Espagne
                   </Link>
@@ -448,10 +448,10 @@ export default function ChecklistPage() {
       </section>
 
       {/* Section sombre */}
-      <section className="py-20 px-6 bg-[#2C1810]">
+      <section className="py-20 px-6 bg-[#241813]">
         <div className="max-w-3xl mx-auto">
-          <blockquote className="border-l-4 border-[#E8A838] pl-6">
-            <p className="text-[#E8A838] font-[family-name:var(--font-playfair)] italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#F0552F] pl-6">
+            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
               Le secret d&apos;un déménagement réussi à Madrid, c&apos;est de ne pas essayer de
               tout régler avant de partir. Certaines choses ne peuvent se faire que sur place.
             </p>
@@ -460,39 +460,39 @@ export default function ChecklistPage() {
       </section>
 
       {/* Liens connexes */}
-      <section className="py-16 px-6 bg-[#F5ECD7]">
+      <section className="py-16 px-6 bg-[#FFFBF5]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#5a3e35] font-semibold uppercase tracking-widest text-sm mb-6">
+          <p className="text-[#33251E] font-semibold uppercase tracking-widest text-sm mb-6">
             Les prochaines étapes
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/demenagement/paris-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               Déménagement Paris–Madrid
             </Link>
             <Link
               href="/vivre/transports"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               Transports à Madrid
             </Link>
             <Link
               href="/papiers/impots"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"
             >
               Impôts en Espagne
             </Link>
@@ -503,35 +503,35 @@ export default function ChecklistPage() {
       <EtapeSuivante label="Obtenir son NIE à Madrid" href="/papiers/nie" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#C8614A]">
+      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F5ECD7]/70 text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">
             La checklist dans ta boîte mail
           </h2>
-          <p className="text-[#F5ECD7]/90 text-lg mb-10">
+          <p className="text-[#F6E7D9]/90 text-lg mb-10">
             La checklist dans ta boîte mail + nos guides à chaque étape de ton installation.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F5ECD7]/60 text-xs mt-4">
+          <p className="text-[#F6E7D9]/60 text-xs mt-4">
             Pas de spam. Juste du contenu utile. Désabonnement en un clic.
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#2C1810] text-center">
+      <footer className="py-10 px-6 bg-[#241813] text-center">
         <Link
           href="/"
-          className="font-[family-name:var(--font-playfair)] text-xl text-[#F5ECD7] mb-2 block hover:text-[#E8A838] transition-colors"
+          className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2 block hover:text-[#FFC24B] transition-colors"
         >
           Madrid & Toi
         </Link>
-        <p className="text-[#F5ECD7]/40 text-sm">
+        <p className="text-[#F6E7D9]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

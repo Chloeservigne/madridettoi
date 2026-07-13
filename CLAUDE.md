@@ -20,20 +20,25 @@ git push           # déclenche le déploiement Vercel
 
 ## Couleurs (palette fixe, ne pas inventer)
 
+Charte graphique : **6a « Sol de Madrid »** (refonte 2026).
+
 | Nom | Hex | Usage |
 |-----|-----|-------|
-| Terracotta | `#C8614A` | Accent principal, CTA, liens |
-| Crème | `#F5ECD7` | Fond clair |
-| Beige chaud | `#EDE0C8` | Fond alternatif |
-| Brun foncé | `#2C1810` | Fond dark, footer |
-| Brun texte | `#5a3e35` | Corps de texte |
-| Vert | `#7A8C5E` | Labels, badges secondaires |
-| Or | `#E8A838` | Accents sur fond dark, blockquotes |
+| Bg | `#FFFBF5` | Fond clair |
+| Alt | `#FBEBDD` | Fond alternatif |
+| Ink | `#33251E` | Titres, corps de texte |
+| Accent | `#F0552F` | Accent principal, CTA, liens, mot accentué du titre |
+| Accent hover | `#CC4828` | Hover sur accent |
+| Secondaire | `#F2A65A` | Labels, badges secondaires (ex-vert) |
+| Or | `#FFC24B` | Accents sur fond dark, footer |
+| Dark | `#241813` | Fond dark, footer |
+| Dark hover | `#1D130F` | Hover bouton fond dark |
+| Dark text | `#F6E7D9` | Texte crème sur fond sombre/accent |
 
 ## Typographie
 
-- `font-[family-name:var(--font-playfair)]` → titres (Fraunces)
-- `font-[family-name:var(--font-dm-sans)]` → corps (Jost)
+- `font-[family-name:var(--font-heading)]` → titres (Schibsted Grotesk, 700/800)
+- `font-[family-name:var(--font-body)]` → corps (Figtree, 400)
 
 ## Bibliothèque d'éléments visuels
 
@@ -47,13 +52,13 @@ Page de prévisualisation (non indexée) : `/ui`
 **Format éditorial pour tout le reste** (contenu descriptif, raisons, thématiques).
 
 ### Format éditorial (quartiers, pourquoi Madrid, sécu, remote, déménagement…)
-- Sections avec H2 thématiques, fonds alternés `bg-[#F5ECD7]` / `bg-[#EDE0C8]`
-- Une section sombre `bg-[#2C1810]` avec blockquote `border-[#E8A838]`
+- Sections avec H2 thématiques, fonds alternés `bg-[#FFFBF5]` / `bg-[#FBEBDD]`
+- Une section sombre `bg-[#241813]` avec blockquote `border-[#F0552F]`
 - Grille 2 colonnes pour "pour/contre" ou "selon ta situation"
 - Pas de tableau `steps[]`, pas de cercles numérotés
 
 ### Format étapes numérotées (NIE, appartement…)
-- Cercles `bg-[#C8614A]` avec chiffre blanc
+- Cercles `bg-[#F0552F]` avec chiffre blanc
 - H3 (pas H2) pour les titres d'étape
 - Seulement quand l'ordre est obligatoire
 
@@ -61,12 +66,12 @@ Page de prévisualisation (non indexée) : `/ui`
 
 Toutes les pages suivent ce schéma :
 ```
-Hero (gradient from-[#F5ECD7] to-[#EDE0C8])
+Hero (gradient from-[#FFFBF5] to-[#FBEBDD])
 → Sections de contenu alternées
 → Section dark optionnelle avec blockquote
 → Section liens connexes (pills arrondies)
-→ Newsletter (bg-[#C8614A])
-→ Footer (bg-[#2C1810])
+→ Newsletter (bg-[#F0552F])
+→ Footer (bg-[#241813])
 ```
 
 ## Pages existantes
@@ -179,9 +184,9 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - Communauté française mentionnée → `/communaute/francais-madrid`
 
 ### Styles de liens
-- Fond clair : `className="text-[#C8614A] underline underline-offset-2 hover:text-[#A84D3A] transition-colors"`
-- Fond sombre : `className="text-[#E8A838] underline underline-offset-2 hover:opacity-80 transition-opacity"`
-- Pills "liens connexes" : `className="px-4 py-2 rounded-full bg-white shadow-md text-[#2C1810] text-sm hover:text-[#C8614A] transition-colors"`
+- Fond clair : `className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors"`
+- Fond sombre : `className="text-[#FFC24B] underline underline-offset-2 hover:opacity-80 transition-opacity"`
+- Pills "liens connexes" : `className="px-4 py-2 rounded-full bg-white shadow-md text-[#33251E] text-sm hover:text-[#F0552F] transition-colors"`
 
 ### Section "Ça pourrait aussi t'aider"
 - Toujours présente avant la newsletter
