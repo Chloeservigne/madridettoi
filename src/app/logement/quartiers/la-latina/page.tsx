@@ -54,7 +54,7 @@ export default function LaLatinaPage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
           <Link href="/logement/quartiers" className="inline-flex items-center gap-2 text-[#F0552F] text-sm font-semibold mb-8 hover:gap-3 transition-all">
             ← Tous les quartiers

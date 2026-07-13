@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import EmailForm from "@/components/EmailForm";
+import PhotoPlaceholder from "@/components/PhotoPlaceholder";
+import SearchBox from "@/components/SearchBox";
 
 export const metadata: Metadata = {
   alternates: {
@@ -18,9 +19,24 @@ export const metadata: Metadata = {
   },
 };
 
-const phases = [
+const popularTags = [
+  { label: "Obtenir son NIE", href: "/papiers/nie" },
+  { label: "Les quartiers", href: "/logement/quartiers" },
+  { label: "Devenir autónomo", href: "/travailler/freelance" },
+  { label: "Ouvrir un compte", href: "/papiers/compte-bancaire" },
+];
+
+const stats = [
+  { n: "35 000", l: "Français vivent à Madrid" },
+  { n: "900 €", l: "Loyer moyen pour un T1" },
+  { n: "1 221 €", l: "SMI espagnol en 2026" },
+  { n: "300 j", l: "De soleil par an" },
+];
+
+const journey = [
   {
     num: "1",
+    when: "Avant le départ",
     titre: "Je rêve encore",
     desc: "Tu envisages Madrid, tu te demandes si c'est réalisable. Les réponses aux questions que tout le monde se pose avant de décider.",
     liens: [
@@ -32,6 +48,7 @@ const phases = [
   },
   {
     num: "2",
+    when: "Le départ",
     titre: "Je me prépare",
     desc: "La décision est prise. Il faut organiser le départ — boulot, logement, déménagement.",
     liens: [
@@ -45,6 +62,7 @@ const phases = [
   },
   {
     num: "3",
+    when: "Le premier mois",
     titre: "Je viens d'arriver",
     desc: "Tu es là. Les premières semaines sont denses — admin, banque, transports. Voilà dans quel ordre faire les choses.",
     liens: [
@@ -57,6 +75,7 @@ const phases = [
   },
   {
     num: "4",
+    when: "S'installer",
     titre: "Je vis à Madrid",
     desc: "L'installation est faite. Maintenant il s'agit de vraiment vivre ici — se soigner, sortir, s'intégrer.",
     liens: [
@@ -70,50 +89,119 @@ const phases = [
   },
 ];
 
-const questions = [
-  { label: "Comment trouver un appartement depuis la France ?", href: "/logement/appartement" },
-  { label: "Faut-il un NIE avant d'arriver ?", href: "/papiers/nie" },
-  { label: "Quels sont les quartiers les plus sympa pour les expats ?", href: "/logement/quartiers" },
-  { label: "Comment fonctionne la sécu en Espagne ?", href: "/papiers/secu" },
-  { label: "Peut-on travailler en remote depuis Madrid ?", href: "/travailler/remote" },
-];
-
-const sections = [
+const guides = [
   {
-    label: "Se décider",
-    titre: "Pourquoi partir à Madrid ?",
-    desc: "Budget, salaires, qualité de vie. Tout pour évaluer si le projet tient la route.",
-    href: "/se-decider/pourquoi-madrid",
+    name: "Logement",
+    tag: "Le plus consulté",
+    desc: "Trouver, visiter et signer sans se faire avoir.",
+    count: "12 guides",
+    href: "/logement",
   },
   {
-    label: "Logement",
-    titre: "Trouver où vivre",
-    desc: "Appartements, quartiers, prix au m² — le marché immobilier madrilène expliqué.",
+    name: "Paperasses",
+    tag: "Indispensable",
+    desc: "NIE, padrón, sécu : l'ordre malin des démarches.",
+    count: "7 guides",
+    href: "/papiers",
+  },
+  {
+    name: "Travail",
+    tag: "Gagner sa vie",
+    desc: "Salariat, autónomo ou télétravail depuis Madrid.",
+    count: "5 guides",
+    href: "/travailler",
+  },
+  {
+    name: "Vie quotidienne",
+    tag: "S'installer",
+    desc: "Banque, santé, transports, bonnes adresses.",
+    count: "6 guides",
+    href: "/vivre",
+  },
+];
+
+const otherGuides = [
+  { cat: "Paperasses", t: "NIE : la procédure étape par étape", href: "/papiers/nie" },
+  { cat: "Travail", t: "Devenir autónomo : cotisations et tarif réduit", href: "/travailler/freelance" },
+  { cat: "Se décider", t: "Combien coûte vraiment un mois à Madrid ?", href: "/se-decider/budget" },
+  { cat: "Vivre", t: "L'Abono Transporte, ça vaut le coup ?", href: "/vivre/transports" },
+  { cat: "Logement", t: "Les quartiers : lequel choisir selon ton profil", href: "/logement/quartiers" },
+];
+
+const faqs = [
+  {
+    tag: "Logement",
+    q: "Trouver un appart depuis la France ?",
+    a: "Possible mais risqué à distance. Les vrais sites, les arnaques à repérer et la stratégie une fois sur place.",
     href: "/logement/appartement",
   },
   {
-    label: "Papiers",
-    titre: "Les démarches admin",
-    desc: "NIE, padron, compte bancaire, sécu, impôts. Dans l'ordre, sans se perdre.",
+    tag: "Paperasses",
+    q: "Faut-il un NIE avant d'arriver ?",
+    a: "Pas pour venir, mais indispensable pour louer, travailler ou ouvrir un compte. L'ordre malin des démarches.",
     href: "/papiers/nie",
   },
   {
-    label: "Travailler",
-    titre: "Emploi & freelance",
-    desc: "Trouver un job local, travailler en remote ou devenir autónomo à Madrid.",
-    href: "/travailler/emploi",
+    tag: "Quartiers",
+    q: "Où habiter en débarquant ?",
+    a: "Malasaña, Lavapiés, Chamberí… Le comparatif pour choisir selon ton budget et ton style de vie.",
+    href: "/logement/quartiers",
   },
   {
-    label: "Déménagement",
-    titre: "Organiser le départ",
-    desc: "Tout planifier de J-6 mois à J+3 mois, transport des affaires inclus.",
-    href: "/demenagement/checklist",
+    tag: "Santé",
+    q: "Comment marche la sécu espagnole ?",
+    a: "Affiliation via le travail ou l'autónomo, médico de cabecera, urgences : on démêle tes droits et le bon timing.",
+    href: "/papiers/secu",
   },
   {
-    label: "Vivre",
-    titre: "La vie du quotidien",
-    desc: "Transports, santé, courses, sorties, espagnol. Madrid au quotidien.",
-    href: "/vivre/transports",
+    tag: "Travail",
+    q: "Devenir autónomo, compliqué ?",
+    a: "Moins qu'on croit avec le mode d'emploi : inscription, cotisations RETA et tarif réduit la première année.",
+    href: "/travailler/freelance",
+  },
+  {
+    tag: "Budget",
+    q: "Vivre à Madrid coûte combien ?",
+    a: "Un budget mensuel réaliste selon que tu viens seul, en couple ou en famille.",
+    href: "/se-decider/budget",
+  },
+];
+
+const footGroups = [
+  {
+    title: "Logement",
+    links: [
+      { label: "Où chercher", href: "/logement/appartement" },
+      { label: "Les quartiers", href: "/logement/quartiers" },
+      { label: "Prix au m²", href: "/logement/prix" },
+      { label: "Colocation", href: "/logement/colocation" },
+    ],
+  },
+  {
+    title: "Paperasses",
+    links: [
+      { label: "Obtenir son NIE", href: "/papiers/nie" },
+      { label: "Empadronamiento", href: "/papiers/padron" },
+      { label: "Sécurité sociale", href: "/papiers/secu" },
+      { label: "Ouvrir un compte", href: "/papiers/compte-bancaire" },
+    ],
+  },
+  {
+    title: "Travail & vie",
+    links: [
+      { label: "Trouver un emploi", href: "/travailler/emploi" },
+      { label: "Devenir autónomo", href: "/travailler/freelance" },
+      { label: "Se déplacer", href: "/vivre/transports" },
+      { label: "Sortir à Madrid", href: "/vivre/sortir" },
+    ],
+  },
+  {
+    title: "Le site",
+    links: [
+      { label: "Mon histoire", href: "/mon-histoire" },
+      { label: "Newsletter", href: "/#newsletter" },
+      { label: "La communauté française", href: "/communaute/francais-madrid" },
+    ],
   },
 ];
 
@@ -123,183 +211,120 @@ export default function Home() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-24 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
-        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1 text-center lg:text-left">
-            <p className="animate-fade-in-up delay-1 text-[#F0552F] font-semibold tracking-widest uppercase text-sm mb-6">
-              Pour les Français qui rêvent de Madrid
+      <header className="relative overflow-hidden pt-32 md:pt-40 pb-16 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+        <div className="absolute -top-32 -right-24 w-[420px] h-[420px] rounded-full bg-[radial-gradient(circle,#FFC24B55,#F2A65A22_45%,transparent_68%)] pointer-events-none" />
+        <div className="max-w-5xl mx-auto relative grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-heading)] font-bold text-sm tracking-[0.1em] uppercase text-[#F0552F] mb-5">
+              <span className="w-2 h-2 rounded-full bg-[#FFC24B] inline-block" />
+              Le guide des Français à Madrid
             </p>
-            <h1 className="animate-fade-in-up delay-2 font-[family-name:var(--font-heading)] text-5xl sm:text-6xl lg:text-7xl font-bold text-[#33251E] leading-tight mb-8">
-              Et si tu sautais
-              <br />
-              <span className="not-italic font-bold text-[#F0552F]">le pas&nbsp;?</span>
+            <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#33251E] leading-[1.02] mb-6">
+              S&apos;installer à Madrid,{" "}
+              <span className="text-[#F0552F]">sans galérer</span>
             </h1>
-            <p className="animate-fade-in-up delay-3 text-lg sm:text-xl text-[#33251E] mb-12 leading-relaxed">
-              Madrid fait rêver. Mais entre l&apos;envie et le déménagement, il y a
-              mille questions. <strong>Madrid & Toi</strong> est là pour t&apos;aider
-              à franchir le cap, sans te perdre dans les démarches.
+            <p className="text-lg sm:text-xl text-[#7C6A5C] mb-8 leading-relaxed max-w-lg">
+              Logement, NIE, travail, santé, budget… Tous les guides pour préparer
+              ton départ et réussir ton installation — écrits par quelqu&apos;un qui
+              est passé par là.
             </p>
-            <div className="animate-fade-in-up delay-4 flex justify-center lg:justify-start">
-              <a
-                href="#parcours"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#F0552F] text-white font-semibold text-lg hover:bg-[#CC4828] transition-all hover:scale-105 shadow-lg shadow-[#F0552F]/20"
-              >
-                Où en es-tu ?
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-          <div className="flex-shrink-0 w-full max-w-sm lg:max-w-none lg:w-[440px]">
-            <Image
-              src="/images/madrid.svg"
-              alt="Illustration d'une personne prête à partir s'installer à Madrid"
-              width={440}
-              height={440}
-              unoptimized
-            />
-          </div>
-        </div>
-      </section>
 
-      {/* Stats */}
-      <section className="py-16 px-6 bg-[#FFFBF5]">
-        <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#F0552F] mb-2">35 000</p>
-              <p className="text-[#33251E] text-sm">Français vivent à Madrid</p>
+            <div className="max-w-md">
+              <SearchBox variant="hero" placeholder="Que veux-tu savoir ? Ex : obtenir mon NIE" />
             </div>
-            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#F0552F] mb-2">900 €</p>
-              <p className="text-[#33251E] text-sm">Loyer moyen pour un T1</p>
+            <div className="flex flex-wrap items-center gap-2.5 mt-5">
+              <span className="font-[family-name:var(--font-heading)] font-bold text-xs uppercase tracking-wide text-[#7C6A5C]">
+                Populaire :
+              </span>
+              {popularTags.map((tag) => (
+                <Link
+                  key={tag.href}
+                  href={tag.href}
+                  className="text-sm font-medium text-[#33251E] bg-white border border-[#F2A65A]/45 rounded-full px-3.5 py-1.5 hover:bg-[#F0552F] hover:text-white hover:border-[#F0552F] transition-colors"
+                >
+                  {tag.label}
+                </Link>
+              ))}
             </div>
-            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#F0552F] mb-2">1 221 €</p>
-              <p className="text-[#33251E] text-sm">SMI espagnol en 2026</p>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -top-6 -left-6 z-10 w-24 h-24 rounded-full bg-[radial-gradient(circle_at_50%_40%,#FFC24B,#F0552F)] text-white flex flex-col items-center justify-center shadow-[0_16px_30px_-12px_rgba(240,85,47,0.6)]">
+              <span className="font-[family-name:var(--font-heading)] font-extrabold text-3xl leading-none">300</span>
+              <span className="font-[family-name:var(--font-heading)] font-semibold text-[9px] uppercase text-center leading-tight mt-1">
+                jours de<br />soleil / an
+              </span>
             </div>
-            <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#F0552F] mb-2">300 j</p>
-              <p className="text-[#33251E] text-sm">De soleil par an</p>
+            <div className="relative rounded-3xl p-2.5 bg-white border border-[#F2A65A]/30 shadow-[0_40px_80px_-40px_rgba(36,24,19,0.5)]">
+              <PhotoPlaceholder label="Madrid" className="w-full h-[380px] rounded-2xl" />
+            </div>
+            <div className="absolute -bottom-5 right-6 z-10 font-[family-name:var(--font-heading)] font-semibold text-sm text-[#33251E] bg-white rounded-full px-4 py-2.5 shadow-[0_14px_30px_-12px_rgba(36,24,19,0.35)] border border-[#F2A65A]/30">
+              <span className="font-extrabold text-[#F0552F] mr-1">+35 000</span>
+              Français y vivent déjà
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
-      {/* Pourquoi Madrid */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">Le contexte</p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-6">
-            Pourquoi autant de Français s&apos;installent à Madrid
-          </h2>
-          <div className="space-y-4 text-[#33251E] leading-relaxed text-lg">
-            <p>
-              Madrid n&apos;est plus seulement une destination touristique. Pour les Français, elle est devenue une vraie alternative à Paris — avec un{" "}
-              <Link href="/se-decider/budget" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                coût de la vie encore accessible
-              </Link>
-              , une énergie différente, et la possibilité de se construire une vie à l&apos;étranger sans traverser un océan.
-            </p>
-            <p>
-              Ils sont plus de 35 000 à y avoir posé leurs valises — jeunes actifs, freelances, familles, retraités. Certains arrivent avec un contrat dans une{" "}
-              <Link href="/travailler/entreprises-francaises" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                entreprise française présente en Espagne
-              </Link>
-              , d&apos;autres tentent leur chance sur le marché local ou deviennent{" "}
-              <Link href="/travailler/freelance" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                autónomos
-              </Link>
-              . D&apos;autres encore{" "}
-              <Link href="/travailler/remote" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                télétravaillent depuis Madrid
-              </Link>{" "}
-              pour un employeur français.
-            </p>
-            <p>
-              Mais s&apos;installer à Madrid, ça ne s&apos;improvise pas. Entre le{" "}
-              <Link href="/papiers/nie" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                NIE à obtenir
-              </Link>
-              , l&apos;
-              <Link href="/logement/appartement" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                appartement à trouver depuis la France
-              </Link>
-              , le{" "}
-              <Link href="/papiers/padron" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                padron municipal
-              </Link>
-              , la{" "}
-              <Link href="/papiers/secu" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                sécurité sociale espagnole
-              </Link>{" "}
-              et les{" "}
-              <Link href="/papiers/impots" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                impôts à comprendre
-              </Link>
-              , les démarches peuvent vite sembler un labyrinthe. Ce guide est là pour t&apos;éviter ça.
-            </p>
-          </div>
+      {/* Trust bar */}
+      <section className="max-w-5xl mx-auto px-6 -mt-9 relative z-[5] mb-2" aria-label="Chiffres-clés">
+        <div className="bg-[#241813] rounded-[22px] p-8 grid grid-cols-2 sm:grid-cols-4 shadow-[0_30px_70px_-34px_rgba(36,24,19,0.6)]">
+          {stats.map((s, i) => (
+            <div
+              key={s.l}
+              className={`text-center px-4 py-1.5 ${i < stats.length - 1 ? "sm:border-r sm:border-[#F6E7D9]/10" : ""}`}
+            >
+              <p className="font-[family-name:var(--font-heading)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#FFC24B] leading-none">
+                {s.n}
+              </p>
+              <p className="font-[family-name:var(--font-heading)] font-semibold text-xs uppercase tracking-wide text-[#F6E7D9]/75 mt-2.5 leading-snug">
+                {s.l}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Questions section */}
-      <section className="py-16 px-6 bg-[#241813]">
-        <div className="max-w-2xl mx-auto">
-          <p className="text-[#FBEBDD]/60 text-sm uppercase tracking-widest mb-8 text-center">
-            Tu te poses ces questions ?
-          </p>
-          <div className="flex flex-col divide-y divide-[#F6E7D9]/10">
-            {questions.map((q) => (
-              <Link
-                key={q.href}
-                href={q.href}
-                className="group flex items-center justify-between gap-4 py-4 text-[#F6E7D9]/80 hover:text-[#FFC24B] transition-colors"
-              >
-                <span className="text-base">{q.label}</span>
-                <span className="flex-shrink-0 text-[#F0552F] group-hover:translate-x-1 transition-transform">→</span>
-              </Link>
-            ))}
-          </div>
-          <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl mt-10 text-center">
-            On y répond, une par une.
-          </p>
-        </div>
-      </section>
-
-      {/* Parcours */}
-      <section id="parcours" className="py-24 px-6 bg-[#FFFBF5]">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">
-              Ton parcours
+      {/* Ton installation, étape par étape */}
+      <section id="commencer" className="bg-[#FFFBF5] pt-20 pb-10 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-10">
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-heading)] font-bold text-sm tracking-[0.1em] uppercase text-[#F0552F] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#FFC24B] inline-block" />
+              Tu débarques ? Commence ici
             </p>
-            <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl font-bold text-[#33251E]">
-              Où en es-tu ?
+            <h2 className="font-[family-name:var(--font-heading)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#33251E] mb-4">
+              Ton installation, étape par étape
             </h2>
+            <p className="text-lg text-[#7C6A5C] max-w-xl">
+              Pas besoin de tout lire. Suis le parcours dans l&apos;ordre : chaque
+              étape te renvoie vers les guides détaillés.
+            </p>
           </div>
-
-          <div className="space-y-4">
-            {phases.map((phase) => (
-              <div key={phase.num} className="bg-white rounded-3xl p-6 md:p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-5">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] text-white flex items-center justify-center font-[family-name:var(--font-heading)] font-bold text-lg">
-                    {phase.num}
-                  </div>
-                  <div>
-                    <p className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#33251E] italic">
-                      {phase.titre}
-                    </p>
-                    <p className="text-[#33251E]/70 text-sm mt-1 leading-relaxed">
-                      {phase.desc}
-                    </p>
-                  </div>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {journey.map((j) => (
+              <div
+                key={j.num}
+                className="bg-white rounded-[20px] p-7 border border-[#F2A65A]/20 shadow-[0_16px_40px_-30px_rgba(36,24,19,0.4)] hover:-translate-y-1 hover:shadow-[0_26px_50px_-28px_rgba(36,24,19,0.48)] transition-all"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <span className="w-11 h-11 rounded-full bg-[#F0552F] text-white font-[family-name:var(--font-heading)] font-extrabold text-lg flex items-center justify-center">
+                    {j.num}
+                  </span>
+                  <span className="font-[family-name:var(--font-heading)] font-bold text-[11px] uppercase tracking-wide text-[#F0552F] bg-[#FBEBDD] rounded-full px-3 py-1.5">
+                    {j.when}
+                  </span>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {phase.liens.map((lien) => (
+                <p className="font-[family-name:var(--font-heading)] font-bold text-xl tracking-tight text-[#33251E] mb-2">
+                  {j.titre}
+                </p>
+                <p className="text-[#7C6A5C] text-[15px] leading-relaxed mb-4">{j.desc}</p>
+                <div className="flex flex-wrap gap-2 border-t border-[#FBEBDD] pt-4">
+                  {j.liens.map((lien) => (
                     <Link
                       key={lien.href}
                       href={lien.href}
-                      className="px-3 py-1.5 rounded-full bg-[#FFFBF5] text-[#33251E] text-sm font-medium hover:bg-[#FBEBDD] hover:text-[#F0552F] transition-colors"
+                      className="text-sm font-medium text-[#33251E] bg-[#FFFBF5] rounded-full px-3 py-1.5 hover:bg-[#FBEBDD] hover:text-[#F0552F] transition-colors"
                     >
                       {lien.label}
                     </Link>
@@ -311,222 +336,226 @@ export default function Home() {
         </div>
       </section>
 
-      {/* À l'arrivée */}
-      <section className="py-20 px-6 bg-[#FBEBDD]">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">Dès ton arrivée</p>
-          <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[#33251E] mb-4">
-            Les cinq démarches indispensables
-          </h2>
-          <p className="text-[#33251E] text-lg leading-relaxed mb-10">
-            Pas besoin de tout faire en même temps. Mais il y a un ordre logique — et certaines démarches débloquent les suivantes. Commence par là.
-          </p>
-          <div className="space-y-6">
-            <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">1</div>
-              <div>
-                <h3 className="font-semibold text-[#33251E] text-lg mb-1">
-                  <Link href="/papiers/nie" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                    Le NIE
-                  </Link>
-                </h3>
-                <p className="text-[#33251E] leading-relaxed">
-                  Le Número de Identificación de Extranjero est le sésame de tout. Sans lui, tu ne peux ni signer un bail, ni ouvrir un compte, ni travailler légalement. C&apos;est la première démarche à lancer.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">2</div>
-              <div>
-                <h3 className="font-semibold text-[#33251E] text-lg mb-1">
-                  <Link href="/papiers/padron" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                    Le padron municipal
-                  </Link>
-                </h3>
-                <p className="text-[#33251E] leading-relaxed">
-                  L&apos;inscription en mairie (empadronamiento) est obligatoire dès que tu as une adresse fixe. C&apos;est ce document qui prouve ta résidence à Madrid — et il t&apos;ouvre les droits à la sécu et à l&apos;Abono jeune.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">3</div>
-              <div>
-                <h3 className="font-semibold text-[#33251E] text-lg mb-1">
-                  <Link href="/papiers/compte-bancaire" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                    Un compte bancaire espagnol
-                  </Link>
-                </h3>
-                <p className="text-[#33251E] leading-relaxed">
-                  La plupart des employeurs espagnols virent sur un compte ES. Et sans RIB local, impossible de domicilier tes factures. Ouvre un compte dès les premiers jours.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">4</div>
-              <div>
-                <h3 className="font-semibold text-[#33251E] text-lg mb-1">
-                  <Link href="/papiers/secu" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                    La sécurité sociale espagnole
-                  </Link>
-                </h3>
-                <p className="text-[#33251E] leading-relaxed">
-                  Une fois employé ou inscrit comme autónomo, tu es affilié à la Seguridad Social. Tu obtiens un número de afiliación et l&apos;accès au médecin de famille (médico de cabecera).
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#F0552F] flex items-center justify-center text-white font-bold text-sm">5</div>
-              <div>
-                <h3 className="font-semibold text-[#33251E] text-lg mb-1">
-                  <Link href="/vivre/transports" className="text-[#F0552F] underline underline-offset-2 hover:text-[#CC4828] transition-colors">
-                    L&apos;Abono Transporte
-                  </Link>
-                </h3>
-                <p className="text-[#33251E] leading-relaxed">
-                  Le pass illimité pour le métro, le bus et le Cercanías. Indispensable pour se déplacer au quotidien — et très abordable avec le tarif jeune (- 26 ans).
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Dark section + blockquote */}
-      <section className="py-20 px-6 bg-[#241813]">
-        <div className="max-w-3xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6 mb-10">
-            <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm uppercase tracking-widest mb-2">Ce que tu vas trouver ici</p>
-              <ul className="space-y-2">
-                {[
-                  "Des guides pratiques écrits par quelqu'un qui l'a vécu",
-                  "Des infos à jour — loyers, salaires, cotisations 2025/2026",
-                  "Les démarches dans le bon ordre, sans jargon",
-                  "Des liens directs vers les formulaires officiels",
-                ].map((item) => (
-                  <li key={item} className="flex gap-2 items-start">
-                    <span className="text-[#F0552F] font-bold flex-shrink-0 mt-0.5">—</span>
-                    <span className="text-[#F6E7D9]/80 text-sm">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#FFC24B] font-semibold text-sm uppercase tracking-widest mb-2">Ce que tu ne trouveras pas</p>
-              <ul className="space-y-2">
-                {[
-                  "Des articles génériques copiés d'autres blogs",
-                  "Des conseils d'agences immobilières rémunérées",
-                  "Des infos périmées sur les démarches admin",
-                  "Des promesses de vie facile — Madrid ça se mérite",
-                ].map((item) => (
-                  <li key={item} className="flex gap-2 items-start">
-                    <span className="text-[#F0552F] font-bold flex-shrink-0 mt-0.5">✕</span>
-                    <span className="text-[#F6E7D9]/80 text-sm">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <blockquote className="border-l-4 border-[#F0552F] pl-6">
-            <p className="text-[#F6E7D9] font-[family-name:var(--font-heading)] not-italic text-xl leading-relaxed">
-              Madrid ne te demande pas d&apos;être parfait·e en espagnol ni d&apos;avoir tout planifié. Elle demande juste de sauter — et de te débrouiller une fois là-bas.
+      {/* Guides grid */}
+      <section className="bg-[#FFFBF5] pt-10 pb-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-10">
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-heading)] font-bold text-sm tracking-[0.1em] uppercase text-[#F0552F] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#FFC24B] inline-block" />
+              Les grands thèmes
             </p>
-          </blockquote>
-        </div>
-      </section>
-
-      {/* Explorer le guide */}
-      <section className="py-24 px-6 bg-[#FFFBF5]">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#F2A65A] font-semibold tracking-widest uppercase text-sm mb-4">Le guide complet</p>
-            <h2 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-[#33251E]">
-              Explorer par thème
+            <h2 className="font-[family-name:var(--font-heading)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#33251E]">
+              Explore par sujet
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {sections.map((s) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {guides.map((g) => (
               <Link
-                key={s.href}
-                href={s.href}
-                className="group p-6 rounded-2xl bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                key={g.href}
+                href={g.href}
+                className="group block bg-white rounded-[18px] overflow-hidden border border-[#F2A65A]/25 shadow-[0_16px_40px_-28px_rgba(36,24,19,0.4)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(36,24,19,0.5)] transition-all"
               >
-                <p className="text-[#F0552F] text-xs font-semibold uppercase tracking-widest mb-2">{s.label}</p>
-                <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-[#33251E] mb-2 group-hover:text-[#F0552F] transition-colors">
-                  {s.titre}
-                </h3>
-                <p className="text-[#33251E]/70 text-sm leading-relaxed">{s.desc}</p>
+                <div className="relative">
+                  <PhotoPlaceholder label={g.name} className="h-[140px]" />
+                  <span className="absolute top-3 left-3 font-[family-name:var(--font-heading)] font-bold text-[11px] uppercase tracking-wide text-white bg-[#F0552F] rounded-full px-3 py-1">
+                    {g.tag}
+                  </span>
+                </div>
+                <div className="p-5">
+                  <p className="font-[family-name:var(--font-heading)] font-bold text-xl text-[#33251E] mb-1.5 group-hover:text-[#F0552F] transition-colors">
+                    {g.name}
+                  </p>
+                  <p className="text-[#7C6A5C] text-sm leading-relaxed mb-4">{g.desc}</p>
+                  <div className="flex items-center justify-between font-[family-name:var(--font-heading)] font-semibold text-xs uppercase tracking-wide text-[#F0552F]">
+                    {g.count}
+                    <span>→</span>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* About */}
-      <section className="py-24 px-6 bg-[#FBEBDD]">
+      {/* À la une + autres guides */}
+      <section className="bg-[#FBEBDD] py-20 px-6">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.25fr_1fr] gap-11 items-start">
+          <div>
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-heading)] font-bold text-sm tracking-[0.1em] uppercase text-[#F0552F] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#FFC24B] inline-block" />
+              À la une
+            </p>
+            <Link
+              href="/logement/appartement"
+              className="group block bg-white rounded-[20px] overflow-hidden border border-[#F2A65A]/25 shadow-[0_20px_46px_-30px_rgba(36,24,19,0.45)] hover:-translate-y-1 hover:shadow-[0_30px_56px_-28px_rgba(36,24,19,0.5)] transition-all"
+            >
+              <div className="relative">
+                <PhotoPlaceholder label="Article à la une" className="h-[240px]" />
+                <span className="absolute top-3 left-3 font-[family-name:var(--font-heading)] font-bold text-[11px] uppercase tracking-wide text-white bg-[#F0552F] rounded-full px-3 py-1">
+                  Guide complet
+                </span>
+              </div>
+              <div className="p-7">
+                <p className="font-[family-name:var(--font-heading)] font-semibold text-xs uppercase tracking-wide text-[#F0552F] mb-2.5">
+                  Logement · Mis à jour en mars 2026
+                </p>
+                <p className="font-[family-name:var(--font-heading)] font-extrabold text-2xl sm:text-[27px] tracking-tight text-[#33251E] mb-3 leading-snug">
+                  Trouver un logement à Madrid sans se faire avoir
+                </p>
+                <p className="text-[#7C6A5C] text-base leading-relaxed mb-4">
+                  Les vrais sites, les arnaques classiques et comment décrypter un
+                  bail espagnol. Le guide que j&apos;aurais aimé avoir en arrivant.
+                </p>
+                <span className="font-[family-name:var(--font-heading)] font-bold text-sm uppercase tracking-wide text-[#F0552F]">
+                  Lire le guide →
+                </span>
+              </div>
+            </Link>
+          </div>
+          <div>
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-heading)] font-bold text-sm tracking-[0.1em] uppercase text-[#F0552F] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#FFC24B] inline-block" />
+              D&apos;autres guides à explorer
+            </p>
+            <div className="flex flex-col">
+              {otherGuides.map((a) => (
+                <Link
+                  key={a.href}
+                  href={a.href}
+                  className="grid grid-cols-[auto_1fr] items-center gap-3.5 py-4 border-t border-[#F2A65A]/25 hover:pl-2.5 transition-[padding]"
+                >
+                  <span className="font-[family-name:var(--font-heading)] font-bold text-[10px] uppercase tracking-wide text-[#F0552F] bg-[#FFFBF5] rounded-full px-2.5 py-1 whitespace-nowrap">
+                    {a.cat}
+                  </span>
+                  <span className="font-[family-name:var(--font-heading)] font-semibold text-base text-[#33251E] leading-tight">
+                    {a.t}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-[#FFFBF5] py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-10 max-w-xl">
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-heading)] font-bold text-sm tracking-[0.1em] uppercase text-[#F0552F] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#FFC24B] inline-block" />
+              Les vraies questions
+            </p>
+            <h2 className="font-[family-name:var(--font-heading)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#33251E]">
+              Ce que tout le monde se demande avant de partir
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {faqs.map((q) => (
+              <Link
+                key={q.href}
+                href={q.href}
+                className="group flex flex-col bg-white rounded-[18px] p-6 border border-[#F2A65A]/20 shadow-[0_14px_36px_-28px_rgba(36,24,19,0.4)] hover:-translate-y-1 hover:border-[#F0552F]/40 hover:shadow-[0_26px_48px_-26px_rgba(36,24,19,0.42)] transition-all"
+              >
+                <span className="self-start font-[family-name:var(--font-heading)] font-bold text-[11px] uppercase tracking-wide text-[#F0552F] bg-[#FBEBDD] rounded-full px-3 py-1.5 mb-4">
+                  {q.tag}
+                </span>
+                <p className="font-[family-name:var(--font-heading)] font-bold text-xl tracking-tight text-[#33251E] mb-2.5">
+                  {q.q}
+                </p>
+                <p className="text-[#7C6A5C] text-sm leading-relaxed mb-4 flex-1">{q.a}</p>
+                <span className="font-[family-name:var(--font-heading)] font-bold text-xs uppercase tracking-wide text-[#F0552F]">
+                  Lire la réponse →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Témoignage */}
+      <section className="bg-[#241813] py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl font-bold text-[#33251E] mb-6">
-            C&apos;est quoi,{" "}
-            <span className="not-italic font-bold text-[#F0552F]">Madrid & Toi&nbsp;?</span>
-          </h2>
-          <p className="text-[#33251E] text-lg leading-relaxed mb-6">
-            Un projet né d&apos;un déménagement — le mien. En 2020, j&apos;ai quitté
-            Paris pour Madrid, seule, avec une valise et beaucoup de questions
-            sans réponses claires. J&apos;ai tout appris en faisant.
+          <span className="block font-[family-name:var(--font-heading)] font-extrabold text-6xl text-[#F0552F] leading-none mb-2 select-none">
+            &ldquo;
+          </span>
+          <p className="font-[family-name:var(--font-heading)] font-medium not-italic text-2xl sm:text-3xl leading-snug tracking-tight text-[#F6E7D9] mb-8">
+            1er septembre 2020. Deux valises, une coloc de 6 à Malasaña — un
+            mélange improbable de nationalités. Et une sensation immédiate,
+            inexplicable, d&apos;être exactement là où je devais être.
           </p>
-          <p className="text-[#33251E] text-lg leading-relaxed mb-6">
-            Aujourd&apos;hui je construis la ressource que j&apos;aurais aimé avoir :
-            des guides pratiques, des infos honnêtes, des contacts utiles.
-            Pour que ton installation soit une aventure, pas un parcours du
-            combattant.
-          </p>
-          <Link
-            href="/mon-histoire"
-            className="inline-flex items-center gap-2 text-[#F0552F] font-semibold hover:gap-3 transition-all mb-8"
-          >
-            Lire mon histoire →
-          </Link>
-          <p className="font-[family-name:var(--font-heading)] text-2xl italic text-[#33251E]">
-            C&apos;est en train de se construire — et tu peux en faire partie.
-          </p>
+          <div className="inline-flex items-center gap-3.5">
+            <span className="w-[50px] h-[50px] rounded-full bg-[radial-gradient(circle_at_40%_35%,#F2A65A,#F0552F)] text-white font-[family-name:var(--font-heading)] font-extrabold text-xl flex items-center justify-center">
+              C
+            </span>
+            <span className="text-left">
+              <span className="block font-[family-name:var(--font-heading)] font-bold text-base text-[#F6E7D9]">
+                Chloé, depuis Madrid
+              </span>
+              <Link
+                href="/mon-histoire"
+                className="block font-[family-name:var(--font-heading)] font-semibold text-xs uppercase tracking-wide text-[#FFC24B] mt-0.5 hover:opacity-80 transition-opacity"
+              >
+                Lire mon histoire →
+              </Link>
+            </span>
+          </div>
         </div>
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#F0552F]">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#F6E7D9]/70 text-sm uppercase tracking-widest mb-4">
-            Sois parmi les premiers
-          </p>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl font-bold text-white mb-6">
-            Reçois nos guides dès qu&apos;ils sortent
+      <section id="newsletter" className="relative overflow-hidden bg-[#F0552F] py-20 px-6">
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[560px] h-[320px] bg-[radial-gradient(circle,#FFC24B70,transparent_66%)] pointer-events-none" />
+        <div className="max-w-2xl mx-auto text-center relative">
+          <h2 className="font-[family-name:var(--font-heading)] font-extrabold text-3xl sm:text-4xl tracking-tight text-white mb-4">
+            Le guide, chaque dimanche
           </h2>
-          <p className="text-[#F6E7D9]/90 text-lg mb-10 leading-relaxed">
-            On prépare des guides pratiques sur le logement, les démarches
-            administratives, les quartiers, le travail à Madrid et bien plus.
-            Laisse ton email pour ne rien rater.
+          <p className="text-[#F6E7D9]/90 text-lg mb-9 leading-relaxed">
+            Mes trouvailles, mes galères, les démarches à ne pas rater. Un email
+            par semaine, rien d&apos;autre.
           </p>
           <div className="flex justify-center">
             <EmailForm />
           </div>
-          <p className="text-[#F6E7D9]/60 text-xs mt-4">
-            Pas de spam. Juste du contenu utile. Désabonnement en un clic.
+          <p className="text-[#F6E7D9]/85 font-[family-name:var(--font-heading)] font-semibold text-xs uppercase tracking-wide mt-5">
+            Rejoins la communauté · Zéro spam · Désinscription en un clic
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-6 bg-[#241813] text-center">
-        <p className="font-[family-name:var(--font-heading)] text-xl text-[#F6E7D9] mb-2">
-          Madrid & Toi
-        </p>
-        <p className="text-[#F6E7D9]/40 text-sm">
-          © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
-        </p>
-        <p className="text-[#F6E7D9]/20 text-xs mt-2">
-          <a href="https://storyset.com/people" className="hover:text-[#F6E7D9]/40 transition-colors">People illustrations by Storyset</a>
-        </p>
+      <footer className="bg-[#241813] pt-16 pb-8 px-6">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.3fr_2.2fr] gap-10 pb-9 border-b border-[#F6E7D9]/10">
+          <div>
+            <p className="font-[family-name:var(--font-heading)] font-extrabold text-2xl tracking-tight text-[#F6E7D9] mb-2.5">
+              Madrid &amp; Toi
+            </p>
+            <p className="text-[#F6E7D9]/60 text-[15px] leading-relaxed max-w-[300px]">
+              De Madrid al cielo — guides honnêtes pour s&apos;installer à Madrid
+              quand on est français.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            {footGroups.map((fg) => (
+              <div key={fg.title} className="flex flex-col gap-3">
+                <p className="font-[family-name:var(--font-heading)] font-bold text-xs uppercase tracking-wide text-[#FFC24B] mb-1">
+                  {fg.title}
+                </p>
+                {fg.links.map((l) => (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    className="text-[#F6E7D9]/80 text-[15px] hover:opacity-100 hover:text-[#FFC24B] transition-colors"
+                  >
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="max-w-5xl mx-auto pt-6 text-[#F6E7D9]/55 font-[family-name:var(--font-heading)] font-medium text-xs uppercase tracking-wide text-center">
+          © {new Date().getFullYear()} Madrid &amp; Toi · Fait avec ☀️ depuis Madrid
+        </div>
       </footer>
     </div>
   );

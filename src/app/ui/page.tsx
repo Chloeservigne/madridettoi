@@ -14,7 +14,7 @@ export default function UiPage() {
       <Nav />
 
       {/* Index */}
-      <section className="pt-32 pb-10 px-6 bg-[#241813]">
+      <section className="pt-32 md:pt-40 pb-10 px-6 bg-[#241813]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#FFC24B] font-semibold tracking-widest uppercase text-sm mb-4">Madrid & Toi</p>
           <h1 className="font-[family-name:var(--font-heading)] text-4xl font-bold text-white mb-6">

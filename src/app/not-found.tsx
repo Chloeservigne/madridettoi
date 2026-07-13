@@ -6,7 +6,7 @@ export default function NotFound() {
     <div className="min-h-screen font-[family-name:var(--font-body)]">
       <Nav />
 
-      <section className="pt-32 pb-24 px-6 min-h-screen flex items-center bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-24 px-6 min-h-screen flex items-center bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
         <div className="max-w-2xl mx-auto text-center">
           <p className="font-[family-name:var(--font-heading)] text-8xl font-bold text-[#F0552F]/20 mb-2">
             404

@@ -94,7 +94,7 @@ export default function CompteBancairePage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"

@@ -79,7 +79,7 @@ export default function NiePage() {
       <Nav />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
+      <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#FFFBF5] to-[#FBEBDD]">
         <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1">
             <Link
