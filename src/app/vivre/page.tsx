@@ -50,6 +50,20 @@ const cards = [
       "Musées (souvent gratuits le soir), parcs, tapas, vie nocturne, cinéma en VO — la vie culturelle de Madrid pour les nouveaux arrivants.",
     href: "/vivre/sortir",
   },
+  {
+    emoji: "🐾",
+    title: "Déménager avec son chien ou son chat",
+    description:
+      "Passeport européen, puce, vaccin antirabique — les étapes pour emmener ton animal de compagnie sans galère entre la France et l'Espagne.",
+    href: "/vivre/animaux",
+  },
+  {
+    emoji: "📶",
+    title: "Forfait mobile et internet à Madrid",
+    description:
+      "Movistar, MasOrange, Vodafone, Digi — comparatif des opérateurs espagnols et comment porter (ou non) ton numéro français.",
+    href: "/vivre/telephone-internet",
+  },
 ];
 
 export default function VivrePage() {

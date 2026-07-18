@@ -95,6 +95,7 @@ Hero (gradient from-[#fbfaf6] to-[#f2f0e9])
 - `/logement/quartiers/moncloa-arguelles` — éditorial, quartier estudiantin et vert
 - `/logement/colocation` — éditorial + tableau prix par quartier, plateformes, documents
 - `/logement/prix` — éditorial + tableau prix au m² et fourchettes T1/T2/T3 par quartier, comparaison Paris–Madrid
+- `/logement/longue-duree` — éditorial : durée minimale LAU (5/7 ans), prórroga tácita, piège du contrat de temporada, fianza et garanties
 
 ### `/papiers`
 - `/papiers/nie` — mixte : contexte éditorial + 4 vraies étapes numérotées + liens formulaires officiels
@@ -111,10 +112,12 @@ Hero (gradient from-[#fbfaf6] to-[#f2f0e9])
 - `/travailler/freelance` — mixte : éditorial + 3 étapes numérotées (NIE, Hacienda, RETA), tableau cotisations RETA 2026, Tarifa Plana, IVA/IRPF
 - `/travailler/entreprises-francaises` — éditorial : grands groupes (Airbus Getafe, Decathlon, L'Oréal, Thales, Renault…), adresses bureaux, liens carrières ES, French Tech Madrid, CCIFE, section VIE
 - `/travailler/vie` — mixte : éditorial + 4 étapes (Business France, cibler les groupes, dossier, installation), conditions, avantages/limites, lien mon-vie-via.businessfrance.fr
+- `/travailler/portage-salarial` — éditorial : règle des 183 jours, détachement A1 (mission < 24 mois), pourquoi ce n'est pas une solution durable, alternative autónomo
 
 ### `/demenagement`
 - `/demenagement/paris-madrid` — éditorial
 - `/demenagement/checklist` — étapes numérotées : timeline complète J-6 mois → J+3 mois, toutes les actions dans l'ordre
+- `/demenagement/cout-demenagement` — éditorial + tableau budgets (groupage, basique, complet), conseils pour réduire la facture
 
 ### `/vivre`
 - `/vivre/transports` — éditorial : Abono (tarifs 2026), métro, EMT+búhos, Cercanías, aéroport, BiciMAD, taxi, VTC
@@ -123,6 +126,8 @@ Hero (gradient from-[#fbfaf6] to-[#f2f0e9])
 - `/vivre/espagnol` — éditorial : EOI, académies, intercambios, apps, DELE
 - `/vivre/sortir` — éditorial : musées gratuits (horaires), parcs, El Rastro, vie nocturne par quartier
 - `/vivre/ecoles` — éditorial : LFM, école publique espagnole, sections bilingues, bourses AEFE, procédure inscription
+- `/vivre/animaux` — éditorial : passeport européen, puce + vaccin antirabique + délai 21 jours, vétérinaires, races PPP, transports
+- `/vivre/telephone-internet` — éditorial : Movistar/MasOrange/Vodafone/Digi, prix forfaits 2026, portabilité, carte prépayée
 
 ### `/communaute`
 - `/communaute/francais-madrid` — éditorial : 35 000 Français, Madrid Accueil, Institut français, groupes Facebook, intercambios, CCIFE
@@ -182,6 +187,11 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - École / lycée français / scolarité / enfants à Madrid mentionné → `/vivre/ecoles`
 - Prix au m² / loyers par quartier / tableau loyers mentionné → `/logement/prix`
 - Communauté française mentionnée → `/communaute/francais-madrid`
+- Location longue durée / LAU / contrat de temporada mentionné → `/logement/longue-duree`
+- Coût / budget du déménagement mentionné → `/demenagement/cout-demenagement`
+- Animal / chien / chat / passeport européen animaux mentionné → `/vivre/animaux`
+- Forfait mobile / opérateur / internet / fibre mentionné → `/vivre/telephone-internet`
+- Portage salarial mentionné → `/travailler/portage-salarial`
 
 ### Styles de liens
 - Fond clair : `className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"`
@@ -214,4 +224,4 @@ Quand on crée une nouvelle page, identifier les pages existantes qui devraient 
 
 ## Pages futures identifiées (mots-clés Ahrefs)
 
-- `/logement/longue-duree`
+Aucune en attente actuellement.

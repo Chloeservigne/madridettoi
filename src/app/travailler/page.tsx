@@ -50,6 +50,13 @@ const cards = [
       "2 400 € nets par mois, 18-28 ans, jusqu'à 24 mois dans un grand groupe français. Comment postuler, à quoi s'attendre, et comment préparer ton installation.",
     href: "/travailler/vie",
   },
+  {
+    emoji: "🧳",
+    title: "Le portage salarial, une bonne idée ?",
+    description:
+      "Rester salarié d'une société de portage française en vivant à Madrid : ce qui marche pour une mission temporaire, et ce qui ne tient pas pour une installation durable.",
+    href: "/travailler/portage-salarial",
+  },
 ];
 
 export default function TravaillerPage() {

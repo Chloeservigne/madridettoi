@@ -248,6 +248,13 @@ export default function ChecklistPage() {
                     className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                   >
                     Voir le guide déménagement Paris–Madrid
+                  </Link>{" "}
+                  ou{" "}
+                  <Link
+                    href="/demenagement/cout-demenagement"
+                    className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
+                  >
+                    le budget réel selon ton volume
                   </Link>
                   .
                 </p>

@@ -43,6 +43,13 @@ const cards = [
       "Durée minimale, garanties, fianza, ce que tu peux négocier, les clauses à vérifier avant de signer.",
     href: null,
   },
+  {
+    emoji: "🔑",
+    title: "Location longue durée : ce que dit la loi",
+    description:
+      "La LAU garantit 5 à 7 ans de bail — mais le contrat de temporada, très répandu à Madrid, ne t'offre aucune de ces protections.",
+    href: "/logement/longue-duree",
+  },
 ];
 
 export default function LogementPage() {
@@ -120,7 +127,12 @@ export default function LogementPage() {
             <Link href="/papiers/nie" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               NIE
             </Link>{" "}
-            pour signer. La caution représente 1 à 2 mois de loyer.
+            pour signer. La caution représente 1 à 2 mois de loyer — et si tu
+            comptes t&apos;installer durablement, vérifie bien que ton{" "}
+            <Link href="/logement/longue-duree" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
+              contrat t&apos;offre les protections de la LAU
+            </Link>{" "}
+            plutôt qu&apos;un simple contrat de temporada.
             Notre{" "}
             <Link href="/se-decider/budget" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               guide budget

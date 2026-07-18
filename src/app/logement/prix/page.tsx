@@ -456,6 +456,12 @@ export default function PrixLogementPage() {
             >
               Salaires à Madrid
             </Link>
+            <Link
+              href="/logement/longue-duree"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
+            >
+              Location longue durée : ce que dit la loi
+            </Link>
           </div>
         </div>
       </section>
@@ -470,8 +476,8 @@ export default function PrixLogementPage() {
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
           <p className="text-[#171712]/80 text-lg mb-10">
-            Logement longue durée, déménagement Paris–Madrid, quartiers — les
-            prochains guides pratiques arrivent bientôt.
+            Contrats de bail, agences, quartiers par budget — les prochains
+            guides logement arrivent bientôt.
           </p>
           <div className="flex justify-center">
             <EmailForm />

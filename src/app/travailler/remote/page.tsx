@@ -129,8 +129,12 @@ export default function RemotePage() {
               </p>
               <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Idéalement, ton entreprise doit être enregistrée en Espagne ou
-                tu passes en portage salarial / autónomo. Beaucoup restent en
-                situation grise quelques mois — c&apos;est un risque.
+                tu passes en{" "}
+                <Link href="/travailler/portage-salarial" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">
+                  portage salarial
+                </Link>{" "}
+                / autónomo. Beaucoup restent en situation grise quelques mois
+                — c&apos;est un risque.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">

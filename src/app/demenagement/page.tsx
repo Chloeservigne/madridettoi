@@ -43,6 +43,13 @@ const cards = [
       "Toutes les étapes dans l'ordre — résiliation des contrats français, appartement, NIE, Padrón, compte bancaire, sécu — pour ne rien oublier.",
     href: "/demenagement/checklist",
   },
+  {
+    emoji: "💶",
+    title: "Combien coûte vraiment un déménagement",
+    description:
+      "Groupage, camion low-cost, déménageur complet — les budgets réels selon ton volume, et comment réduire la facture.",
+    href: "/demenagement/cout-demenagement",
+  },
 ];
 
 export default function DemenagementPage() {
@@ -94,7 +101,11 @@ export default function DemenagementPage() {
             volume réduit (studio ou chambre), une voiture avec remorque ou un
             service de livraison de colis suffit souvent. Pour un appartement
             entier, les sociétés de déménagement international pratiquent des
-            tarifs entre 800 et 2 500 € selon le volume et la formule. Notre{" "}
+            tarifs entre 800 et 2 500 € selon le volume et la formule — notre{" "}
+            <Link href="/demenagement/cout-demenagement" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
+              guide des budgets réels
+            </Link>{" "}
+            détaille chaque poste. Notre{" "}
             <Link href="/demenagement/paris-madrid" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               guide Paris–Madrid
             </Link>{" "}
