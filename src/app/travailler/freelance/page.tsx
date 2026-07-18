@@ -52,16 +52,16 @@ export default function FreelancePage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/travailler"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Travailler
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide freelance
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Devenir{" "}
-            <span className="not-italic font-bold text-[#1fa971]">autónomo en Espagne</span>
+            <span className="not-italic font-bold text-[#d6442a]">autónomo en Espagne</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             C&apos;est la solution la plus propre pour les freelances et indépendants qui
@@ -102,7 +102,7 @@ export default function FreelancePage() {
           </h2>
           <div className="space-y-8">
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center text-white font-bold text-sm">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center text-white font-bold text-sm">
                 1
               </div>
               <div>
@@ -111,7 +111,7 @@ export default function FreelancePage() {
                 </h3>
                 <p className="text-[#171712] leading-relaxed">
                   Sans{" "}
-                  <Link href="/papiers/nie" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                  <Link href="/papiers/nie" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                     NIE
                   </Link>{" "}
                   (Número de Identificación de Extranjero), rien n&apos;est possible.
@@ -122,7 +122,7 @@ export default function FreelancePage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center text-white font-bold text-sm">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center text-white font-bold text-sm">
                 2
               </div>
               <div>
@@ -139,7 +139,7 @@ export default function FreelancePage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center text-white font-bold text-sm">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center text-white font-bold text-sm">
                 3
               </div>
               <div>
@@ -157,7 +157,7 @@ export default function FreelancePage() {
               </div>
             </div>
           </div>
-          <div className="mt-8 bg-[#1fa971]/10 border border-[#1fa971]/20 rounded-2xl p-5">
+          <div className="mt-8 bg-[#d6442a]/10 border border-[#d6442a]/20 rounded-2xl p-5">
             <p className="text-[#171712] text-sm leading-relaxed">
               <strong>Important :</strong> s&apos;inscrire à la Seguridad Social avant la Hacienda
               est l&apos;erreur la plus courante — et la plus coûteuse. Tu perds le droit à la
@@ -232,19 +232,19 @@ export default function FreelancePage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-8">
             La Tarifa Plana : 80 € la première année
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed mb-6">
+          <p className="text-[#fbe8e4]/80 leading-relaxed mb-6">
             Si tu t&apos;inscris pour la première fois comme autónomo (ou si tu ne l&apos;as
             pas été depuis au moins 2 ans), tu bénéficies de la <em>Tarifa Plana</em> :
             une cotisation réduite à <strong className="text-white">80 € par mois</strong> pendant
             les 12 premiers mois (88,64 € avec le MEI en 2026).
           </p>
-          <p className="text-[#e6f4ec]/80 leading-relaxed mb-8">
+          <p className="text-[#fbe8e4]/80 leading-relaxed mb-8">
             Cette période peut être étendue 12 mois supplémentaires si tes revenus restent
             inférieurs au SMI (1 221 €/mois en 2026). C&apos;est un coup de pouce réel
             pour démarrer — utilise cette période pour te constituer une clientèle stable.
           </p>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               La <em>gestoría</em> espagnole, c&apos;est 50 à 150 € par mois — et ça vaut
               chaque euro. Déclarations trimestrielles, IRPF, IVA, optimisation fiscale :
               tu fais ton métier, ils font le reste.
@@ -261,7 +261,7 @@ export default function FreelancePage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">IVA (TVA)</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">IVA (TVA)</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Tu factures l&apos;IVA à 21 % à tes clients espagnols. Tu le déclares
                 trimestriellement via le <strong>Modelo 303</strong>. Si tes clients
@@ -270,7 +270,7 @@ export default function FreelancePage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">IRPF (impôt sur le revenu)</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">IRPF (impôt sur le revenu)</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Tu déclares tes revenus nets chaque trimestre via le <strong>Modelo 130</strong>
                 et tu fais ta déclaration annuelle au printemps (<em>Renta</em>). Le barème
@@ -280,7 +280,7 @@ export default function FreelancePage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Résumé annuel</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Résumé annuel</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 En janvier, tu soumets le <strong>Modelo 390</strong> (résumé IVA annuel)
                 et le <strong>Modelo 347</strong> si tu as des clients avec plus de
@@ -288,7 +288,7 @@ export default function FreelancePage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Clients français</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Clients français</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Tu peux tout à fait continuer à travailler pour des clients français
                 depuis l&apos;Espagne. Pour les particuliers français, tu factures l&apos;IVA espagnol.
@@ -309,37 +309,37 @@ export default function FreelancePage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/travailler/remote"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Travailler en remote depuis Madrid
             </Link>
             <Link
               href="/travailler/emploi"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un emploi local à Madrid
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE
             </Link>
             <Link
               href="/papiers/compte-bancaire"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Ouvrir un compte bancaire espagnol
             </Link>
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               La sécu pour les autónomos
             </Link>
             <Link
               href="/papiers/impots"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Impôts & IRPF en Espagne
             </Link>
@@ -350,9 +350,9 @@ export default function FreelancePage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -376,7 +376,7 @@ export default function FreelancePage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

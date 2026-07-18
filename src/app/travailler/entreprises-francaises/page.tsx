@@ -50,16 +50,16 @@ export default function EntreprisesFrancaisesPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/travailler"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Travailler
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide emploi
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Les entreprises françaises{" "}
-            <span className="not-italic font-bold text-[#1fa971]">à Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">à Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Madrid est la première destination des investissements français en Espagne.
@@ -78,15 +78,15 @@ export default function EntreprisesFrancaisesPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">130 000</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">130 000</p>
               <p className="text-[#171712] text-sm">Emplois créés par des entreprises françaises dans la région de Madrid</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">400+</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">400+</p>
               <p className="text-[#171712] text-sm">Entreprises membres de la Chambre Franco-Espagnole (CCIFE)</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">n°1</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">n°1</p>
               <p className="text-[#171712] text-sm">Communauté autonome qui reçoit le plus d&apos;investissements directs français</p>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function EntreprisesFrancaisesPage() {
 
             {/* Distribution */}
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-4">Distribution & Retail</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-4">Distribution & Retail</p>
               <div className="space-y-5">
                 <div>
                   <div className="flex items-start justify-between gap-4 mb-1">
@@ -119,12 +119,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://www.decathlon.es/es/rrhh"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Siège : San Sebastián de los Reyes (nord Madrid, 28702)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Siège : San Sebastián de los Reyes (nord Madrid, 28702)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     17e meilleur employeur en Espagne. Le siège espagnol est à San Seba — une ville résidentielle
                     à 25 min du centre. Postes en magasin, logistique, marketing et fonctions support.
@@ -138,12 +138,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://www.carrefour.es/empleo"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Siège : Boadilla del Monte (ouest Madrid)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Siège : Boadilla del Monte (ouest Madrid)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Présence forte avec hypermarchés, supermarchés et e-commerce en pleine croissance.
                     Recrutements réguliers en gestion, supply chain et digital.
@@ -156,12 +156,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://www.leroymerlin.es/trabaja-con-nosotros.html"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Siège : Alcobendas (nord Madrid)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Siège : Alcobendas (nord Madrid)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Bien implantée dans toute la région. Profils commerce, logistique et management régulièrement recherchés.
                   </p>
@@ -171,7 +171,7 @@ export default function EntreprisesFrancaisesPage() {
 
             {/* Aéro / Défense */}
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-4">Aéronautique, Défense & Industrie</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-4">Aéronautique, Défense & Industrie</p>
               <div className="space-y-5">
                 <div>
                   <div className="flex items-start justify-between gap-4 mb-1">
@@ -180,12 +180,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://www.airbus.com/en/careers/life-at-airbus/working-here/working-at-airbus-in-spain"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Site principal : Paseo John Lennon s/n, Getafe (sud Madrid, 28906)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Site principal : Paseo John Lennon s/n, Getafe (sud Madrid, 28906)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     L&apos;Espagne est l&apos;un des quatre pays fondateurs d&apos;Airbus — le site de Getafe
                     est l&apos;un des plus importants du groupe. Ingénieurs aéronautiques, structures,
@@ -200,12 +200,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://thalesgroup.com/en/europe/spain/jobs-spain"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Bureaux : Parque Norte, Calle Serrano Galvache 56, Madrid 28033 — Centre de production : Tres Cantos (nord Madrid)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Bureaux : Parque Norte, Calle Serrano Galvache 56, Madrid 28033 — Centre de production : Tres Cantos (nord Madrid)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Présent en Espagne depuis plus de 30 ans. Défense, aérospatial, cybersécurité
                     (via S21Sec à Tres Cantos). Profils ingénieurs, systèmes embarqués et cybersécurité très recherchés.
@@ -218,12 +218,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://www.safran-group.com/careers"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Implantation dans la région de Madrid (équipements aéronautiques)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Implantation dans la région de Madrid (équipements aéronautiques)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Moteurs, équipements de cabine et nacelles — Safran est un employeur régulier
                     pour les ingénieurs aéronautiques et mécaniciens de formation.
@@ -231,7 +231,7 @@ export default function EntreprisesFrancaisesPage() {
                 </div>
                 <div className="border-t border-[#f2f0e9] pt-5">
                   <p className="font-semibold text-[#171712] mb-1">Schneider Electric & Saint-Gobain</p>
-                  <p className="text-[#178a5d] text-xs mb-2">Bureaux et opérations à Madrid</p>
+                  <p className="text-[#af3722] text-xs mb-2">Bureaux et opérations à Madrid</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Schneider Electric (gestion de l&apos;énergie) et Saint-Gobain (matériaux de construction —
                     Sekurit, Isover) ont tous deux une présence significative à Madrid avec des recrutements
@@ -243,7 +243,7 @@ export default function EntreprisesFrancaisesPage() {
 
             {/* Beauté / Énergie / Télécom / Auto */}
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-4">Beauté, Télécom, Énergie & Auto</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-4">Beauté, Télécom, Énergie & Auto</p>
               <div className="space-y-5">
                 <div>
                   <div className="flex items-start justify-between gap-4 mb-1">
@@ -252,12 +252,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://careers.loreal.com/global/en/spain"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Siège : Calle Alcalá 546, Madrid (nouveau siège inauguré récemment)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Siège : Calle Alcalá 546, Madrid (nouveau siège inauguré récemment)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Classé parmi les entreprises les plus attractives en Espagne. Siège moderne
                     à l&apos;est de Madrid avec des équipes marketing, digital, commercial et R&D.
@@ -271,12 +271,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://www.orange.es/trabaja-con-nosotros"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Siège : Parque Empresarial La Finca, Pozuelo de Alarcón (ouest Madrid, 28223)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Siège : Parque Empresarial La Finca, Pozuelo de Alarcón (ouest Madrid, 28223)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Siège espagnol dans le parc d&apos;affaires La Finca à Pozuelo — l&apos;un des
                     plus beaux campus d&apos;entreprise de Madrid. Profils tech, data, réseau et commercial.
@@ -289,12 +289,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://es.renaultgroup.com/empleo"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Siège espagnol : Avenida de Europa Business Park, Alcobendas (nord Madrid)</p>
+                  <p className="text-[#af3722] text-xs mb-2">Siège espagnol : Avenida de Europa Business Park, Alcobendas (nord Madrid)</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Siège espagnol à Alcobendas dans un bâtiment de 12 600 m². Fonctions commerciales,
                     marketing et support. L&apos;usine principale est à Valladolid (1h30 de Madrid en train).
@@ -307,12 +307,12 @@ export default function EntreprisesFrancaisesPage() {
                       href="https://www.airliquide.com/fr/rejoindre-air-liquide"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#1fa971] text-xs font-semibold whitespace-nowrap hover:underline"
+                      className="text-[#d6442a] text-xs font-semibold whitespace-nowrap hover:underline"
                     >
                       Offres →
                     </a>
                   </div>
-                  <p className="text-[#178a5d] text-xs mb-2">Bureaux à Madrid</p>
+                  <p className="text-[#af3722] text-xs mb-2">Bureaux à Madrid</p>
                   <p className="text-[#171712] text-sm leading-relaxed">
                     Actif dans les gaz industriels, médicaux et l&apos;hydrogène. Profils ingénieurs,
                     techniciens et commerciaux régulièrement recrutés.
@@ -340,7 +340,7 @@ export default function EntreprisesFrancaisesPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Conditions</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Conditions</p>
               <ul className="text-[#171712] text-sm leading-relaxed space-y-1">
                 <li>— 18 à 28 ans au moment de la mission</li>
                 <li>— Ressortissant d&apos;un pays de l&apos;Espace Économique Européen</li>
@@ -349,7 +349,7 @@ export default function EntreprisesFrancaisesPage() {
               </ul>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Points d&apos;attention</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Points d&apos;attention</p>
               <ul className="text-[#171712] text-sm leading-relaxed space-y-1">
                 <li>— Pas de cotisation chômage pendant la mission</li>
                 <li>— Activité rémunérée secondaire interdite</li>
@@ -369,7 +369,7 @@ export default function EntreprisesFrancaisesPage() {
               href="https://mon-vie-via.businessfrance.fr"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               mon-vie-via.businessfrance.fr
             </a>{" "}
@@ -386,18 +386,18 @@ export default function EntreprisesFrancaisesPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">La Chambre Franco-Espagnole</p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">La Chambre Franco-Espagnole</p>
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 La CCIFE (fondée en 1894) organise plus de 80 événements par an et
                 accueille 400+ entreprises membres. Des salons de l&apos;emploi francophones
                 se tiennent à Madrid — une occasion rare de rencontrer des recruteurs
                 en face à face.{" "}
-                <a href="https://www.lachambre.es" target="_blank" rel="noopener noreferrer" className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity">lachambre.es</a>
+                <a href="https://www.lachambre.es" target="_blank" rel="noopener noreferrer" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">lachambre.es</a>
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">French Tech Madrid</p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">French Tech Madrid</p>
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Association active qui connecte startups françaises et écosystème madrilène.
                 Workshops, hackathons, pitch nights. En juin 2025, le Train de la French Tech
                 a conduit ~100 startups et investisseurs de Perpignan à Madrid. Le South Summit
@@ -405,8 +405,8 @@ export default function EntreprisesFrancaisesPage() {
               </p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Travailler dans un grand groupe français à Madrid, c&apos;est souvent
               le meilleur des deux mondes : culture d&apos;entreprise familière,
               équipes locales, et vie madrilène à la sortie du bureau.
@@ -424,31 +424,31 @@ export default function EntreprisesFrancaisesPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/travailler/emploi"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Tous les secteurs qui recrutent à Madrid
             </Link>
             <Link
               href="/travailler/freelance"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Devenir autónomo (indépendant)
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE
             </Link>
             <Link
               href="/se-decider/salaire-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Salaires brut/net à Madrid
             </Link>
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement
             </Link>
@@ -459,9 +459,9 @@ export default function EntreprisesFrancaisesPage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -485,7 +485,7 @@ export default function EntreprisesFrancaisesPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

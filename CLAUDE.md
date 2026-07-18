@@ -20,19 +20,19 @@ git push           # déclenche le déploiement Vercel
 
 ## Couleurs (palette fixe, ne pas inventer)
 
-Charte graphique : **vert & crème** (refonte 2026).
+Charte graphique : **paprika & crème** (refonte 2026).
 
 | Nom | Hex | Usage |
 |-----|-----|-------|
 | Bg | `#fbfaf6` | Fond clair |
 | Alt / Beige | `#f2f0e9` | Fond alternatif, cartes/surfaces |
 | Ink | `#171712` | Titres, corps de texte, ET fond sombre (rôle unique) |
-| Accent (vert) | `#1fa971` | CTA, liens, mot accentué du titre — **jamais en aplat massif** sur une section entière |
-| Accent hover / profond | `#178a5d` | Hover sur accent, labels secondaires |
-| Accent pâle | `#e6f4ec` | Badges, fond newsletter, teintes de fond |
+| Accent (paprika) | `#d6442a` | CTA, liens, mot accentué du titre — **jamais en aplat massif** sur une section entière |
+| Accent hover / profond | `#af3722` | Hover sur accent, labels secondaires |
+| Accent pâle | `#fbe8e4` | Badges, fond newsletter, teintes de fond |
 | Dark hover | `#0f0f0c` | Hover bouton fond sombre |
 
-Ratio cible : ~70% neutres, 20% encre, 10% vert. Le vert guide l'œil vers l'action (CTA, liens) — ne jamais l'utiliser en fond de section pleine largeur (voir newsletter dans DESIGN.md §13).
+Ratio cible : ~70% neutres, 20% encre, 10% paprika. Le paprika guide l'œil vers l'action (CTA, liens) — ne jamais l'utiliser en fond de section pleine largeur (voir newsletter dans DESIGN.md §13).
 
 ## Typographie
 
@@ -53,12 +53,12 @@ Page de prévisualisation (non indexée) : `/ui`
 
 ### Format éditorial (quartiers, pourquoi Madrid, sécu, remote, déménagement…)
 - Sections avec H2 thématiques, fonds alternés `bg-[#fbfaf6]` / `bg-[#f2f0e9]`
-- Une section sombre `bg-[#171712]` avec blockquote `border-[#1fa971]`
+- Une section sombre `bg-[#171712]` avec blockquote `border-[#d6442a]`
 - Grille 2 colonnes pour "pour/contre" ou "selon ta situation"
 - Pas de tableau `steps[]`, pas de cercles numérotés
 
 ### Format étapes numérotées (NIE, appartement…)
-- Cercles `bg-[#1fa971]` avec chiffre blanc
+- Cercles `bg-[#d6442a]` avec chiffre blanc
 - H3 (pas H2) pour les titres d'étape
 - Seulement quand l'ordre est obligatoire
 
@@ -70,7 +70,7 @@ Hero (gradient from-[#fbfaf6] to-[#f2f0e9])
 → Sections de contenu alternées
 → Section dark optionnelle avec blockquote
 → Section liens connexes (pills arrondies)
-→ Newsletter (bg-[#e6f4ec], jamais le vert plein — voir DESIGN.md §13)
+→ Newsletter (bg-[#fbe8e4], jamais le vert plein — voir DESIGN.md §13)
 → Footer (bg-[#171712])
 ```
 
@@ -184,9 +184,9 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - Communauté française mentionnée → `/communaute/francais-madrid`
 
 ### Styles de liens
-- Fond clair : `className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"`
-- Fond sombre : `className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity"`
-- Pills "liens connexes" : `className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"`
+- Fond clair : `className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"`
+- Fond sombre : `className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity"`
+- Pills "liens connexes" : `className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"`
 
 ### Section "Ça pourrait aussi t'aider"
 - Toujours présente avant la newsletter

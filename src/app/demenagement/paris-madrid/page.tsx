@@ -52,16 +52,16 @@ export default function ParisMadridPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/demenagement"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Déménagement
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide déménagement
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Déménagement Paris–Madrid —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">le guide complet</span>
+            <span className="not-italic font-bold text-[#d6442a]">le guide complet</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             1 250 km. Une frontière. Beaucoup de cartons et autant de questions.
@@ -69,9 +69,9 @@ export default function ParisMadridPage() {
             de la logistique aux démarches.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">~1 250 km</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">12–13h de route</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Guide pratique</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">~1 250 km</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">12–13h de route</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Guide pratique</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
@@ -110,15 +110,15 @@ export default function ParisMadridPage() {
           </p>
           <ul className="space-y-3 text-[#171712]">
             <li className="flex items-start gap-3">
-              <span className="text-[#1fa971] mt-0.5 font-bold flex-shrink-0">—</span>
+              <span className="text-[#d6442a] mt-0.5 font-bold flex-shrink-0">—</span>
               <span><strong>Meubles Ikea</strong> : inutile de les transporter, ils coûtent pareil en Espagne.</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-[#1fa971] mt-0.5 font-bold flex-shrink-0">—</span>
+              <span className="text-[#d6442a] mt-0.5 font-bold flex-shrink-0">—</span>
               <span><strong>Gros électroménagers</strong> : les tensions électriques sont identiques mais les déménager ne vaut rarement le coup.</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-[#1fa971] mt-0.5 font-bold flex-shrink-0">—</span>
+              <span className="text-[#d6442a] mt-0.5 font-bold flex-shrink-0">—</span>
               <span><strong>Les livres</strong> : si tu as une bibliothèque, envoyer des cartons par Colissimo international est souvent la solution la plus économique.</span>
             </li>
           </ul>
@@ -133,10 +133,10 @@ export default function ParisMadridPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">
                 Résiliations
               </p>
-              <ul className="space-y-2 text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <ul className="space-y-2 text-[#fbe8e4]/80 text-sm leading-relaxed">
                 <li>— Contrat EDF / Engie</li>
                 <li>— Internet (1 à 3 mois de préavis)</li>
                 <li>— Abonnement téléphonique si tu changes de numéro</li>
@@ -146,10 +146,10 @@ export default function ParisMadridPage() {
               </ul>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">
                 Démarches côté France
               </p>
-              <ul className="space-y-2 text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <ul className="space-y-2 text-[#fbe8e4]/80 text-sm leading-relaxed">
                 <li>— Signaler son départ à la CAF</li>
                 <li>— Prévenir la CPAM et les impôts</li>
                 <li>— Prévenir sa banque (certaines ferment les comptes non-résidents)</li>
@@ -157,8 +157,8 @@ export default function ParisMadridPage() {
               </ul>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-10">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-10">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Commence les résiliations et démarches 2 à 3 mois avant le départ
               — c&apos;est l&apos;administratif qui prend du temps, pas la
               logistique.
@@ -207,14 +207,14 @@ export default function ParisMadridPage() {
             demande ton{" "}
             <Link
               href="/papiers/nie"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               NIE
             </Link>
             , et fais ton{" "}
             <Link
               href="/papiers/padron"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               empadronamiento
             </Link>{" "}
@@ -232,25 +232,25 @@ export default function ParisMadridPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Choisir son quartier à Madrid
             </Link>
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Coût de la vie à Madrid
             </Link>
@@ -261,9 +261,9 @@ export default function ParisMadridPage() {
       <EtapeSuivante label="La checklist complète du déménagement" href="/demenagement/checklist" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -287,7 +287,7 @@ export default function ParisMadridPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

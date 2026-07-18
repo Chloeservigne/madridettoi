@@ -50,16 +50,16 @@ export default function ViePage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/travailler"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Travailler
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide emploi
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Faire un VIE{" "}
-            <span className="not-italic font-bold text-[#1fa971]">à Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">à Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Le Volontariat International en Entreprise, c&apos;est jusqu&apos;à 2 ans dans
@@ -98,15 +98,15 @@ export default function ViePage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">2 400 €</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">2 400 €</p>
               <p className="text-[#171712] text-sm">nets/mois en Espagne<br />(indemnité exonérée de charges)</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">6–24</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">6–24</p>
               <p className="text-[#171712] text-sm">mois de mission,<br />renouvelable une fois</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">18–28</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">18–28</p>
               <p className="text-[#171712] text-sm">ans au démarrage<br />de la mission</p>
             </div>
           </div>
@@ -121,21 +121,21 @@ export default function ViePage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#178a5d] font-semibold uppercase tracking-widest text-sm mb-3">Pour être éligible</p>
+              <p className="text-[#af3722] font-semibold uppercase tracking-widest text-sm mb-3">Pour être éligible</p>
               <ul className="text-[#171712] text-sm leading-relaxed space-y-2">
-                <li className="flex gap-2"><span className="text-[#1fa971] font-bold">—</span> Avoir entre 18 et 28 ans au démarrage</li>
-                <li className="flex gap-2"><span className="text-[#1fa971] font-bold">—</span> Être ressortissant d&apos;un pays de l&apos;Espace Économique Européen (UE + Islande, Norvège, Liechtenstein)</li>
-                <li className="flex gap-2"><span className="text-[#1fa971] font-bold">—</span> Étudiant ou jeune diplômé en recherche d&apos;emploi</li>
-                <li className="flex gap-2"><span className="text-[#1fa971] font-bold">—</span> Ne pas avoir déjà effectué un VIE</li>
+                <li className="flex gap-2"><span className="text-[#d6442a] font-bold">—</span> Avoir entre 18 et 28 ans au démarrage</li>
+                <li className="flex gap-2"><span className="text-[#d6442a] font-bold">—</span> Être ressortissant d&apos;un pays de l&apos;Espace Économique Européen (UE + Islande, Norvège, Liechtenstein)</li>
+                <li className="flex gap-2"><span className="text-[#d6442a] font-bold">—</span> Étudiant ou jeune diplômé en recherche d&apos;emploi</li>
+                <li className="flex gap-2"><span className="text-[#d6442a] font-bold">—</span> Ne pas avoir déjà effectué un VIE</li>
               </ul>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#178a5d] font-semibold uppercase tracking-widest text-sm mb-3">Ce qu&apos;il faut savoir</p>
+              <p className="text-[#af3722] font-semibold uppercase tracking-widest text-sm mb-3">Ce qu&apos;il faut savoir</p>
               <ul className="text-[#171712] text-sm leading-relaxed space-y-2">
-                <li className="flex gap-2"><span className="text-[#1fa971] font-bold">—</span> Pas de cotisation chômage pendant la mission — pense à l&apos;après</li>
-                <li className="flex gap-2"><span className="text-[#1fa971] font-bold">—</span> Activité rémunérée secondaire interdite</li>
-                <li className="flex gap-2"><span className="text-[#1fa971] font-bold">—</span> Absences hors Espagne limitées à 7 jours/an (sinon prélèvement de 20 %)</li>
-                <li className="flex gap-2"><span className="text-[#1fa971] font-bold">—</span> Ce n&apos;est pas un CDI — la mission a une fin, prépare la suite</li>
+                <li className="flex gap-2"><span className="text-[#d6442a] font-bold">—</span> Pas de cotisation chômage pendant la mission — pense à l&apos;après</li>
+                <li className="flex gap-2"><span className="text-[#d6442a] font-bold">—</span> Activité rémunérée secondaire interdite</li>
+                <li className="flex gap-2"><span className="text-[#d6442a] font-bold">—</span> Absences hors Espagne limitées à 7 jours/an (sinon prélèvement de 20 %)</li>
+                <li className="flex gap-2"><span className="text-[#d6442a] font-bold">—</span> Ce n&apos;est pas un CDI — la mission a une fin, prépare la suite</li>
               </ul>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function ViePage() {
 
           <div className="space-y-8">
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center text-white font-bold text-sm">1</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center text-white font-bold text-sm">1</div>
               <div>
                 <h3 className="font-semibold text-[#171712] text-lg mb-2">Chercher sur la plateforme officielle</h3>
                 <p className="text-[#171712] leading-relaxed">
@@ -160,7 +160,7 @@ export default function ViePage() {
                     href="https://mon-vie-via.businessfrance.fr"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                    className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                   >
                     mon-vie-via.businessfrance.fr
                   </a>{" "}
@@ -170,14 +170,14 @@ export default function ViePage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center text-white font-bold text-sm">2</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center text-white font-bold text-sm">2</div>
               <div>
                 <h3 className="font-semibold text-[#171712] text-lg mb-2">Cibler les grands groupes français en direct</h3>
                 <p className="text-[#171712] leading-relaxed">
                   Airbus, Thales, L&apos;Oréal, Renault, Orange, Safran, Schneider Electric —
                   ces entreprises publient régulièrement des missions VIE en Espagne. Consulte
                   aussi leurs portails carrières espagnols directement (cf.{" "}
-                  <Link href="/travailler/entreprises-francaises" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                  <Link href="/travailler/entreprises-francaises" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                     notre guide des entreprises françaises à Madrid
                   </Link>
                   ).
@@ -185,7 +185,7 @@ export default function ViePage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center text-white font-bold text-sm">3</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center text-white font-bold text-sm">3</div>
               <div>
                 <h3 className="font-semibold text-[#171712] text-lg mb-2">Prépare ton dossier</h3>
                 <p className="text-[#171712] leading-relaxed">
@@ -197,20 +197,20 @@ export default function ViePage() {
               </div>
             </div>
             <div className="flex gap-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center text-white font-bold text-sm">4</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center text-white font-bold text-sm">4</div>
               <div>
                 <h3 className="font-semibold text-[#171712] text-lg mb-2">Prépare ton installation à Madrid</h3>
                 <p className="text-[#171712] leading-relaxed">
                   Une fois la mission confirmée, tu auras besoin d&apos;un{" "}
-                  <Link href="/papiers/nie" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                  <Link href="/papiers/nie" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                     NIE
                   </Link>{" "}
                   et d&apos;un{" "}
-                  <Link href="/papiers/padron" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                  <Link href="/papiers/padron" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                     padron municipal
                   </Link>
                   . Un{" "}
-                  <Link href="/papiers/compte-bancaire" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                  <Link href="/papiers/compte-bancaire" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                     compte bancaire espagnol
                   </Link>{" "}
                   est recommandé pour recevoir ton indemnité sans frais.
@@ -229,15 +229,15 @@ export default function ViePage() {
           </h2>
           <div className="space-y-4 mb-10">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">Les vrais avantages</p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">Les vrais avantages</p>
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 2 400 € nets à 23 ans à Madrid, c&apos;est confortable — le loyer d&apos;un bon appart
                 en colocation dans{" "}
-                <Link href="/logement/quartiers/malasana" className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity">
+                <Link href="/logement/quartiers/malasana" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">
                   Malasaña
                 </Link>{" "}
                 ou{" "}
-                <Link href="/logement/quartiers/chueca" className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity">
+                <Link href="/logement/quartiers/chueca" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">
                   Chueca
                 </Link>{" "}
                 tourne autour de 700–900 €. Tu construis une expérience internationale dans un grand groupe,
@@ -246,8 +246,8 @@ export default function ViePage() {
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">Ce qu&apos;il ne faut pas oublier</p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">Ce qu&apos;il ne faut pas oublier</p>
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Tu ne cotises pas au chômage pendant ta mission. Si tu enchaînes VIE puis
                 période sans emploi, tu ne touches pas les allocations. C&apos;est le
                 principal point noir du dispositif — prévoie la transition vers un CDI
@@ -256,8 +256,8 @@ export default function ViePage() {
               </p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Un VIE à Madrid, c&apos;est souvent l&apos;excuse officielle pour
               s&apos;installer — et la vraie raison pour ne jamais repartir.
             </p>
@@ -274,31 +274,31 @@ export default function ViePage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/travailler/entreprises-francaises"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Les entreprises françaises à Madrid
             </Link>
             <Link
               href="/travailler/emploi"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un emploi local à Madrid
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE
             </Link>
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement
             </Link>
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Budget pour vivre à Madrid
             </Link>
@@ -309,9 +309,9 @@ export default function ViePage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -335,7 +335,7 @@ export default function ViePage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

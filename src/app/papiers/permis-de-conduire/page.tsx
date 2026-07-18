@@ -84,16 +84,16 @@ export default function PermisPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Papiers
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide administratif
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Permis de conduire —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">faut-il vraiment l&apos;échanger ?</span>
+            <span className="not-italic font-bold text-[#d6442a]">faut-il vraiment l&apos;échanger ?</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Bonne nouvelle : non, l&apos;échange du permis français n&apos;est pas
@@ -102,13 +102,13 @@ export default function PermisPage() {
             sans qu&apos;ils le sachent.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Échange volontaire
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Sans nouvel examen
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               28,87 €
             </span>
           </div>
@@ -122,7 +122,7 @@ export default function PermisPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {statCards.map((s) => (
               <div key={s.value} className="bg-white rounded-2xl p-5 text-center shadow-sm">
-                <p className="font-[family-name:var(--font-body)] text-xl font-bold text-[#1fa971] mb-2">
+                <p className="font-[family-name:var(--font-body)] text-xl font-bold text-[#d6442a] mb-2">
                   {s.value}
                 </p>
                 <p className="text-[#171712] text-xs leading-snug">{s.label}</p>
@@ -161,7 +161,7 @@ export default function PermisPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {casObligatoires.map((cas, i) => (
               <div key={cas.titre} className="bg-white rounded-2xl p-5 shadow-sm">
-                <p className="text-[#1fa971] font-bold text-xs uppercase tracking-widest mb-2">
+                <p className="text-[#d6442a] font-bold text-xs uppercase tracking-widest mb-2">
                   Cas {i + 1}
                 </p>
                 <p className="font-semibold text-[#171712] mb-2">{cas.titre}</p>
@@ -184,8 +184,8 @@ export default function PermisPage() {
             &ldquo;valable à vie&rdquo;. C&apos;est le cas le plus courant et le
             plus méconnu parmi les Français installés à Madrid.
           </p>
-          <div className="mt-6 bg-[#1fa971]/10 border border-[#1fa971]/20 rounded-2xl p-5">
-            <p className="font-semibold text-[#1fa971] mb-2">La règle qui s&apos;applique</p>
+          <div className="mt-6 bg-[#d6442a]/10 border border-[#d6442a]/20 rounded-2xl p-5">
+            <p className="font-semibold text-[#d6442a] mb-2">La règle qui s&apos;applique</p>
             <p className="text-[#171712] text-sm leading-relaxed">
               Pour les permis à durée indéfinie ou valables plus de 15 ans,
               l&apos;échange est obligatoire dans les{" "}
@@ -210,16 +210,16 @@ export default function PermisPage() {
           </h2>
           <div className="space-y-8">
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center">
                 <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">1</span>
               </div>
               <div>
                 <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-white mb-2">
                   Prends la cita previa à la DGT
                 </h3>
-                <p className="text-[#e6f4ec]/80 leading-relaxed text-sm">
+                <p className="text-[#fbe8e4]/80 leading-relaxed text-sm">
                   Tout se fait en ligne sur le portail de la DGT. Sélectionne{" "}
-                  <strong className="text-[#e6f4ec]">&ldquo;Canje de permisos de conducción&rdquo;</strong>{" "}
+                  <strong className="text-[#fbe8e4]">&ldquo;Canje de permisos de conducción&rdquo;</strong>{" "}
                   et le pays France. Les créneaux dans les Jefaturas de Madrid
                   peuvent être chargés — anticipe quelques semaines.
                 </p>
@@ -227,7 +227,7 @@ export default function PermisPage() {
                   href="https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/canjes-inscripcion-renovacion-y-sustitucion-de-permisos-de-la-ue-y-eee/canje-de-permisos-de-la-ue-y-eee/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#1fa971] text-white text-sm font-semibold hover:bg-[#178a5d] transition-colors"
+                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#d6442a] text-white text-sm font-semibold hover:bg-[#af3722] transition-colors"
                 >
                   Prendre rendez-vous DGT ↗
                 </a>
@@ -235,18 +235,18 @@ export default function PermisPage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center">
                 <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">2</span>
               </div>
               <div>
                 <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-white mb-2">
                   Prépare tes documents
                 </h3>
-                <p className="text-[#e6f4ec]/80 leading-relaxed text-sm">
+                <p className="text-[#fbe8e4]/80 leading-relaxed text-sm">
                   Le document clé est ton{" "}
                   <Link
                     href="/papiers/nie"
-                    className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity"
+                    className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity"
                   >
                     Certificado de Registro (NIE)
                   </Link>{" "}
@@ -258,16 +258,16 @@ export default function PermisPage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center">
                 <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">3</span>
               </div>
               <div>
                 <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-white mb-2">
                   Présente-toi au guichet
                 </h3>
-                <p className="text-[#e6f4ec]/80 leading-relaxed text-sm">
+                <p className="text-[#fbe8e4]/80 leading-relaxed text-sm">
                   Ton permis français est{" "}
-                  <strong className="text-[#e6f4ec]">retiré immédiatement</strong> — tu
+                  <strong className="text-[#fbe8e4]">retiré immédiatement</strong> — tu
                   repars avec un permis provisoire le jour même. Le permis
                   espagnol définitif arrive par courrier sous environ 6 semaines.
                   La tasa de 28,87 € est payable par carte sur place.
@@ -276,8 +276,8 @@ export default function PermisPage() {
             </div>
           </div>
 
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-10">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-10">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Une fois l&apos;échange fait, ton permis espagnol est valable
               10 ans. Aucun code, aucune conduite à repasser — ton historique
               reste reconnu.
@@ -293,13 +293,13 @@ export default function PermisPage() {
             Documents à apporter le jour J
           </h2>
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
-            <div className="px-6 py-4 bg-[#1fa971]">
+            <div className="px-6 py-4 bg-[#d6442a]">
               <p className="text-white font-semibold">📋 Checklist pour le guichet DGT</p>
             </div>
             <div className="divide-y divide-[#f2f0e9]">
               {checklist.map((item) => (
                 <div key={item.doc} className="px-6 py-4 flex items-start gap-4">
-                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
+                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#d6442a] mt-0.5" />
                   <div>
                     <p className="font-semibold text-[#171712] text-sm">{item.doc}</p>
                     <p className="text-[#171712]/70 text-xs mt-0.5">{item.detail}</p>
@@ -320,31 +320,31 @@ export default function PermisPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/papiers/padron"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               L&apos;empadronamiento
             </Link>
             <Link
               href="/demenagement/checklist"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Checklist déménagement complète
             </Link>
             <Link
               href="/papiers/compte-bancaire"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Ouvrir un compte bancaire espagnol
             </Link>
             <Link
               href="/papiers/impots"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Impôts et résidence fiscale
             </Link>
@@ -353,9 +353,9 @@ export default function PermisPage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -379,7 +379,7 @@ export default function PermisPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

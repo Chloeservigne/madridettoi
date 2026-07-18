@@ -52,16 +52,16 @@ export default function TransportsPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/vivre"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Vivre à Madrid
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide transports
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Se déplacer à Madrid —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">sans voiture, sans galère</span>
+            <span className="not-italic font-bold text-[#d6442a]">sans voiture, sans galère</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Madrid a l&apos;un des réseaux de transport les plus denses
@@ -70,13 +70,13 @@ export default function TransportsPage() {
             tarifs officiels 2026 inclus.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Abono adulte : 32,70 €/mois
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Metro 6h – 1h30
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               303 stations
             </span>
           </div>
@@ -101,7 +101,7 @@ export default function TransportsPage() {
 
           {/* Tableau tarifs */}
           <div className="mt-8 bg-white rounded-3xl shadow-md overflow-hidden">
-            <div className="px-6 py-4 bg-[#1fa971]">
+            <div className="px-6 py-4 bg-[#d6442a]">
               <p className="text-white font-semibold">
                 Tarifs zone A — avec bonification extraordinaire (jusqu&apos;au 31 déc. 2026)
               </p>
@@ -112,7 +112,7 @@ export default function TransportsPage() {
                   <p className="font-semibold text-[#171712] text-sm">Abono Joven (15–25 ans)</p>
                   <p className="text-[#171712]/60 text-xs mt-0.5">Avec justificatif d&apos;âge</p>
                 </div>
-                <span className="font-bold text-[#1fa971] text-lg">10,00 €/mois</span>
+                <span className="font-bold text-[#d6442a] text-lg">10,00 €/mois</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
                 <div>
@@ -128,12 +128,12 @@ export default function TransportsPage() {
                   <p className="font-semibold text-[#171712] text-sm">Abono +65 ans</p>
                   <p className="text-[#171712]/60 text-xs mt-0.5">Sur présentation de la tarjeta</p>
                 </div>
-                <span className="font-bold text-[#178a5d] text-lg">Gratuit</span>
+                <span className="font-bold text-[#af3722] text-lg">Gratuit</span>
               </div>
             </div>
           </div>
 
-          <div className="mt-4 bg-[#1fa971]/10 border border-[#1fa971]/30 rounded-2xl px-5 py-4">
+          <div className="mt-4 bg-[#d6442a]/10 border border-[#d6442a]/30 rounded-2xl px-5 py-4">
             <p className="text-[#171712] text-sm leading-relaxed">
               <strong>Comment en bénéficier :</strong> c&apos;est automatique
               — aucune démarche à faire. Le prix affiché à l&apos;achat inclut
@@ -158,7 +158,7 @@ export default function TransportsPage() {
               le portail de la Communauté de Madrid (envoi postal sous une
               semaine) ou immédiatement aux automates dans les stations de
               métro. Documents : une photo d&apos;identité +{" "}
-              <Link href="/papiers/nie" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+              <Link href="/papiers/nie" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                 NIE
               </Link>{" "}
               ou passeport.
@@ -169,7 +169,7 @@ export default function TransportsPage() {
               href="https://www.comunidad.madrid/servicios/transporte/tarjeta-transporte-publico-personal"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#1fa971] text-white text-sm font-semibold hover:bg-[#178a5d] transition-colors"
+              className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#d6442a] text-white text-sm font-semibold hover:bg-[#af3722] transition-colors"
             >
               Demander sa TTP ↗
             </a>
@@ -241,16 +241,16 @@ export default function TransportsPage() {
 
           <div className="space-y-6">
             <div className="bg-white/10 rounded-2xl p-6">
-              <p className="text-[#1fa971] font-semibold mb-3">
+              <p className="text-[#d6442a] font-semibold mb-3">
                 EMT — les bus municipaux
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 L&apos;EMT exploite <strong className="text-white">229 lignes de bus</strong>{" "}
                 qui maillent l&apos;ensemble de la ville. Le ticket à l&apos;unité
                 coûte 1,50 € (payable à bord en espèces ou par carte). Avec
                 l&apos;Abono, les bus sont inclus sans surcoût.
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed mt-3">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed mt-3">
                 La nuit, ce sont les <strong className="text-white">búhos</strong> qui
                 prennent le relais — un réseau de lignes nocturnes (N1 à N32)
                 rayonnant depuis la <em>Plaza de Cibeles</em>, toutes les nuits
@@ -260,17 +260,17 @@ export default function TransportsPage() {
             </div>
 
             <div className="bg-white/10 rounded-2xl p-6">
-              <p className="text-[#1fa971] font-semibold mb-3">
+              <p className="text-[#d6442a] font-semibold mb-3">
                 Cercanías RENFE — les trains de banlieue
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Le réseau Cercanías compte <strong className="text-white">9 lignes</strong>{" "}
                 et 92 stations sur 391 km. Indispensables pour rejoindre
                 l&apos;aéroport T4 (lignes C-1 et C-10) ou traverser Madrid
                 rapidement entre les grandes gares (Atocha, Chamartín, Sol,
                 Príncipe Pío).
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed mt-3">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed mt-3">
                 Bonne nouvelle : les Cercanías en zone A sont{" "}
                 <strong className="text-white">intégralement inclus dans l&apos;Abono
                 Transportes zone A</strong>. Un seul abonnement pour le métro,
@@ -279,8 +279,8 @@ export default function TransportsPage() {
             </div>
           </div>
 
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-8">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               La voiture à Madrid ? Vraiment inutile en ville. L&apos;Abono
               à 32,70 €/mois couvre métro, bus et Cercanías sans limite.
               Ajoute BiciMAD pour les courtes distances et tu couvres 99 %
@@ -304,7 +304,7 @@ export default function TransportsPage() {
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
             <div className="px-6 py-4 bg-[#171712]">
-              <p className="text-[#1fa971] font-semibold">Comparatif centre-ville ↔ aéroport</p>
+              <p className="text-[#d6442a] font-semibold">Comparatif centre-ville ↔ aéroport</p>
             </div>
             <div className="divide-y divide-[#f2f0e9]">
               <div className="px-6 py-5 grid grid-cols-3 gap-4">
@@ -313,7 +313,7 @@ export default function TransportsPage() {
                   <p className="text-[#171712]/70 text-xs mt-1">T4 uniquement (gare en sous-sol)</p>
                 </div>
                 <div className="text-center">
-                  <p className="font-bold text-[#178a5d]">Inclus Abono</p>
+                  <p className="font-bold text-[#af3722]">Inclus Abono</p>
                   <p className="text-[#171712]/60 text-xs">ou ~2,60 € sans</p>
                 </div>
                 <div className="text-right">
@@ -413,7 +413,7 @@ export default function TransportsPage() {
                 href="https://www.bicimad.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#1fa971] text-xs font-semibold mt-4 block hover:underline"
+                className="text-[#d6442a] text-xs font-semibold mt-4 block hover:underline"
               >
                 bicimad.com ↗
               </a>
@@ -460,25 +460,25 @@ export default function TransportsPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Les quartiers de Madrid
             </Link>
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               La sécu en Espagne
             </Link>
             <Link
               href="/demenagement/paris-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Déménagement Paris–Madrid
             </Link>
@@ -489,9 +489,9 @@ export default function TransportsPage() {
       <EtapeSuivante label="Santé & mutuelles à Madrid" href="/vivre/sante" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -515,7 +515,7 @@ export default function TransportsPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

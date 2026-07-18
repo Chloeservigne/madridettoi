@@ -61,19 +61,19 @@ export default function CommunautePage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à l&apos;accueil
           </Link>
-          <span className="inline-block px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold mb-4">
+          <span className="inline-block px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold mb-4">
             Phase 4 — Je vis à Madrid
           </span>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Trouver sa communauté
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Ne pas arriver{" "}
-            <span className="not-italic font-bold text-[#1fa971]">seul(e)</span>
+            <span className="not-italic font-bold text-[#d6442a]">seul(e)</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Des milliers de Français vivent déjà à Madrid. La communauté est
@@ -91,7 +91,7 @@ export default function CommunautePage() {
           </h2>
           <p className="text-[#171712] leading-relaxed text-lg mb-4">
             Avec environ 35 000 ressortissants inscrits au consulat,{" "}
-            <Link href="/communaute/francais-madrid" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/communaute/francais-madrid" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               la communauté française de Madrid
             </Link>{" "}
             est l&apos;une des plus importantes d&apos;Europe. Elle est active,
@@ -104,11 +104,11 @@ export default function CommunautePage() {
             Madrid Accueil. Mais la majorité de la vie communautaire se passe
             dans des groupes Facebook actifs, des intercambios de langue dans
             les bars de{" "}
-            <Link href="/logement/quartiers/malasana" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/logement/quartiers/malasana" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               Malasaña
             </Link>{" "}
             et{" "}
-            <Link href="/logement/quartiers/chueca" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/logement/quartiers/chueca" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               Chueca
             </Link>
             , et des afterworks informels.
@@ -135,11 +135,11 @@ export default function CommunautePage() {
               >
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-12 h-12 rounded-2xl bg-[#fbfaf6] flex items-center justify-center text-2xl">{card.emoji}</div>
-                  <span className="text-[#1fa971] text-xs font-semibold">
+                  <span className="text-[#d6442a] text-xs font-semibold">
                     Lire le guide →
                   </span>
                 </div>
-                <h2 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-3 group-hover:text-[#1fa971] transition-colors duration-200">
+                <h2 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-3 group-hover:text-[#d6442a] transition-colors duration-200">
                   {card.title}
                 </h2>
                 <p className="text-[#171712]/70 text-sm leading-relaxed">
@@ -153,7 +153,7 @@ export default function CommunautePage() {
               >
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-12 h-12 rounded-2xl bg-[#fbfaf6] flex items-center justify-center text-2xl">{card.emoji}</div>
-                  <span className="text-xs bg-[#1fa971]/20 text-[#1fa971] px-3 py-1 rounded-full font-semibold">
+                  <span className="text-xs bg-[#d6442a]/20 text-[#d6442a] px-3 py-1 rounded-full font-semibold">
                     Bientôt
                   </span>
                 </div>
@@ -170,9 +170,9 @@ export default function CommunautePage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Rejoins la communauté
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -197,7 +197,7 @@ export default function CommunautePage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

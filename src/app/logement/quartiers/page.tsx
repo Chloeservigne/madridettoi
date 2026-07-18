@@ -123,16 +123,16 @@ export default function QuartiersPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/logement"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Logement
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide quartiers
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Quels sont les quartiers{" "}
-            <span className="not-italic font-bold text-[#1fa971]">les plus sympa pour les expats&nbsp;?</span>
+            <span className="not-italic font-bold text-[#d6442a]">les plus sympa pour les expats&nbsp;?</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Madrid est une ville de quartiers. Chaque barrio a sa personnalité,
@@ -147,7 +147,7 @@ export default function QuartiersPage() {
       <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-3">
+            <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-3">
               5 questions
             </p>
             <h2 className="font-[family-name:var(--font-body)] text-3xl sm:text-4xl font-bold text-[#171712] mb-3">
@@ -165,7 +165,7 @@ export default function QuartiersPage() {
       <section className="py-24 px-6 bg-[#fbfaf6]">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
-            <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
+            <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-2">
               Dans et autour du centre
             </p>
             <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712]">
@@ -183,23 +183,23 @@ export default function QuartiersPage() {
                 <Link
                   key={q.name}
                   href={`/logement/quartiers/${slug}`}
-                  className="group p-6 rounded-3xl bg-white shadow-md hover:border-[#1fa971]/30 hover:shadow-lg transition-all block"
+                  className="group p-6 rounded-3xl bg-white shadow-md hover:border-[#d6442a]/30 hover:shadow-lg transition-all block"
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div>
                       <span className="text-2xl mr-2">{q.emoji}</span>
-                      <span className="font-[family-name:var(--font-body)] text-2xl font-bold text-[#171712] group-hover:text-[#1fa971] transition-colors">
+                      <span className="font-[family-name:var(--font-body)] text-2xl font-bold text-[#171712] group-hover:text-[#d6442a] transition-colors">
                         {q.name}
                       </span>
                     </div>
                   </div>
-                  <p className="text-[#1fa971] text-sm font-semibold mb-1">{q.vibe}</p>
-                  <p className="text-[#178a5d] text-xs mb-3">💶 {q.budget}</p>
+                  <p className="text-[#d6442a] text-sm font-semibold mb-1">{q.vibe}</p>
+                  <p className="text-[#af3722] text-xs mb-3">💶 {q.budget}</p>
                   <p className="text-[#171712] text-sm leading-relaxed mb-3">{q.description}</p>
                   <p className="text-xs text-[#171712]/50 border-t border-[#f2f0e9] pt-3">
                     <span className="font-semibold">Idéal pour :</span> {q.forWho}
                   </p>
-                  <p className="text-[#1fa971] text-sm font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <p className="text-[#d6442a] text-sm font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
                     Lire le guide →
                   </p>
                 </Link>
@@ -213,7 +213,7 @@ export default function QuartiersPage() {
       <section className="py-24 px-6 bg-[#f2f0e9]">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
-            <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
+            <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-2">
               Au-delà de la M30
             </p>
             <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712]">
@@ -233,19 +233,19 @@ export default function QuartiersPage() {
                   <div className="flex items-start justify-between mb-3">
                     <div>
                       <span className="text-2xl mr-2">{q.emoji}</span>
-                      <span className="font-[family-name:var(--font-body)] text-2xl font-bold text-[#171712] group-hover:text-[#1fa971] transition-colors">
+                      <span className="font-[family-name:var(--font-body)] text-2xl font-bold text-[#171712] group-hover:text-[#d6442a] transition-colors">
                         {q.name}
                       </span>
                     </div>
                   </div>
-                  <p className="text-[#1fa971] text-sm font-semibold mb-1">{q.vibe}</p>
-                  <p className="text-[#178a5d] text-xs mb-3">💶 {q.budget}</p>
+                  <p className="text-[#d6442a] text-sm font-semibold mb-1">{q.vibe}</p>
+                  <p className="text-[#af3722] text-xs mb-3">💶 {q.budget}</p>
                   <p className="text-[#171712] text-sm leading-relaxed mb-3">{q.description}</p>
                   <p className="text-xs text-[#171712]/50 border-t border-[#f2f0e9] pt-3">
                     <span className="font-semibold">Idéal pour :</span> {q.forWho}
                   </p>
                   {"href" in q && (
-                    <p className="text-[#1fa971] text-sm font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p className="text-[#d6442a] text-sm font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
                       Lire le guide →
                     </p>
                   )}
@@ -272,10 +272,10 @@ export default function QuartiersPage() {
       {/* Tip block */}
       <section className="py-16 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-2xl mb-4">
+          <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-2xl mb-4">
             Notre conseil en une phrase
           </p>
-          <p className="text-[#e6f4ec] text-lg leading-relaxed">
+          <p className="text-[#fbe8e4] text-lg leading-relaxed">
             Ne te limite pas au centre parce que c&apos;est ce qu&apos;on te recommande
             par défaut. Selon ton profil — famille, budget, envie d&apos;immersion
             ou de communauté française — la bonne réponse peut être Malasaña
@@ -292,19 +292,19 @@ export default function QuartiersPage() {
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors">
+            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
               Trouver un appartement depuis la France
             </Link>
-            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors">
+            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
               Faut-il un NIE avant d&apos;arriver ?
             </Link>
-            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors">
+            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
               Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
-            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors">
+            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
               Le guide du NIE
             </Link>
-            <Link href="/logement/colocation" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors">
+            <Link href="/logement/colocation" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
               La colocation à Madrid
             </Link>
           </div>
@@ -314,9 +314,9 @@ export default function QuartiersPage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -340,7 +340,7 @@ export default function QuartiersPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

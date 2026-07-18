@@ -52,16 +52,16 @@ export default function EmploiPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/travailler"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Travailler
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide emploi
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Trouver un emploi{" "}
-            <span className="not-italic font-bold text-[#1fa971]">à Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">à Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Madrid est le premier marché de l&apos;emploi qualifié d&apos;Espagne —
@@ -81,7 +81,7 @@ export default function EmploiPage() {
           <p className="text-[#171712] leading-relaxed text-lg">
             La capitale espagnole concentre les sièges sociaux des plus grandes entreprises
             du pays, des{" "}
-            <Link href="/travailler/entreprises-francaises" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/travailler/entreprises-francaises" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               multinationales
             </Link>
             , et un écosystème tech en plein essor. Le marché
@@ -95,15 +95,15 @@ export default function EmploiPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">1 221 €</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">1 221 €</p>
               <p className="text-[#171712] text-sm">SMI brut mensuel 2026<br />(+3,1 % vs 2025)</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">3 200 €</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">3 200 €</p>
               <p className="text-[#171712] text-sm">Salaire moyen brut<br />à Madrid</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-2">25 %</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">25 %</p>
               <p className="text-[#171712] text-sm">Des offres qualifiées<br />du pays sont à Madrid</p>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function EmploiPage() {
           </h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Tech & Numérique</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Tech & Numérique</p>
               <p className="text-[#171712] leading-relaxed">
                 Madrid est devenue un hub tech européen, portée par l&apos;agenda
                 &ldquo;Digital Spain 2026&rdquo; du gouvernement. Développeurs, data engineers,
@@ -128,7 +128,7 @@ export default function EmploiPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Finance & Banque</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Finance & Banque</p>
               <p className="text-[#171712] leading-relaxed">
                 Siège de Santander, BBVA et de nombreuses institutions financières
                 internationales, Madrid offre de réels débouchés en finance. Les postes
@@ -137,7 +137,7 @@ export default function EmploiPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Support client multilingue</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Support client multilingue</p>
               <p className="text-[#171712] leading-relaxed">
                 Premier débouché pour les jeunes Français à Madrid. Les grandes entreprises
                 internationales centralisent leurs équipes de support en Espagne. Parler
@@ -147,7 +147,7 @@ export default function EmploiPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Commercial & Business Development</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Commercial & Business Development</p>
               <p className="text-[#171712] leading-relaxed">
                 Account managers, business developers, sales executives pour le marché
                 francophone — la maîtrise du français est un véritable atout. Ces postes
@@ -155,7 +155,7 @@ export default function EmploiPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">Enseignement & FLE</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">Enseignement & FLE</p>
               <p className="text-[#171712] leading-relaxed">
                 La demande pour le français langue étrangère progresse. Écoles
                 internationales, centres bilingues, cours particuliers — les profils
@@ -219,32 +219,32 @@ export default function EmploiPage() {
           </h2>
           <div className="space-y-4 mb-10">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">L&apos;espagnol est non-négociable</p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">L&apos;espagnol est non-négociable</p>
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Sauf dans les multinationales ou les postes purement anglophones,
                 un niveau B2 minimum en espagnol est attendu. C&apos;est le frein n°1
                 des Français qui peinent à trouver. Investis dans des cours avant d&apos;arriver.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">Les salaires sont plus bas qu&apos;en France</p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">Les salaires sont plus bas qu&apos;en France</p>
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 C&apos;est la réalité — mais le coût de la vie (hors logement) est aussi
                 plus bas. Le calcul est différent. Un salaire de 2 200 € net à Madrid
                 n&apos;a pas la même valeur qu&apos;en région parisienne.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">Le CV espagnol est différent</p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">Le CV espagnol est différent</p>
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Plus court (1 page), souvent avec photo, en espagnol.
                 La lettre de motivation est moins usitée — c&apos;est le profil LinkedIn
                 et le contact direct qui comptent.
               </p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Si tu envisages de travailler localement, commence à chercher depuis
               la France — les entretiens en visio sont courants, et avoir un contrat
               avant d&apos;arriver simplifie tout le reste (logement, compte bancaire).
@@ -261,7 +261,7 @@ export default function EmploiPage() {
           </h2>
           <p className="text-[#171712] leading-relaxed text-lg">
             Pour être embauché en Espagne, tu auras besoin d&apos;un{" "}
-            <Link href="/papiers/nie" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/nie" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               NIE (Número de Identificación de Extranjero)
             </Link>{" "}
             — c&apos;est ton identifiant fiscal espagnol. Ton employeur en aura besoin
@@ -269,7 +269,7 @@ export default function EmploiPage() {
           </p>
           <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Une fois en poste, tu seras automatiquement affilié à la{" "}
-            <Link href="/papiers/secu" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/secu" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               Seguridad Social
             </Link>{" "}
             par ton employeur — couverture santé, retraite, chômage inclus.
@@ -277,7 +277,7 @@ export default function EmploiPage() {
           </p>
           <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Si tu prévois de t&apos;installer durablement, pense aussi à faire ton{" "}
-            <Link href="/papiers/padron" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/padron" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               padron municipal
             </Link>{" "}
             — c&apos;est l&apos;inscription en mairie, qui sert pour de nombreuses démarches.
@@ -294,31 +294,31 @@ export default function EmploiPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/travailler/remote"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Travailler en remote depuis Madrid
             </Link>
             <Link
               href="/travailler/freelance"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Devenir autónomo (indépendant)
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE
             </Link>
             <Link
               href="/se-decider/salaire-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Salaires brut/net à Madrid
             </Link>
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Budget pour vivre à Madrid
             </Link>
@@ -329,9 +329,9 @@ export default function EmploiPage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -355,7 +355,7 @@ export default function EmploiPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

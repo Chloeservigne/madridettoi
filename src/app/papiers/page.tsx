@@ -76,19 +76,19 @@ export default function PapiersPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à l&apos;accueil
           </Link>
-          <span className="inline-block px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold mb-4">
+          <span className="inline-block px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold mb-4">
             Phase 3 — Je viens d&apos;arriver
           </span>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Démarches administratives
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Les papiers,{" "}
-            <span className="not-italic font-bold text-[#1fa971]">sans s&apos;arracher les cheveux</span>
+            <span className="not-italic font-bold text-[#d6442a]">sans s&apos;arracher les cheveux</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             L&apos;administration espagnole a sa logique propre. NIE, sécu, banque,
@@ -111,22 +111,22 @@ export default function PapiersPage() {
           </p>
           <p className="text-[#171712] leading-relaxed text-lg mb-4">
             Le bon ordre : commencer par le{" "}
-            <Link href="/papiers/nie" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/nie" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               NIE
             </Link>{" "}
             (numéro d&apos;identité étranger) dès ton arrivée — c&apos;est lui qui débloque
             tout le reste. Ensuite, l&apos;
-            <Link href="/papiers/padron" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/padron" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               empadronamiento
             </Link>{" "}
             (inscription au registre municipal), qui te donne accès aux services
             de santé et à certaines démarches administratives. Puis l&apos;
-            <Link href="/papiers/compte-bancaire" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/compte-bancaire" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               ouverture d&apos;un compte bancaire espagnol
             </Link>{" "}
             — indispensable pour payer ton loyer et tes charges. Enfin l&apos;affiliation
             à la{" "}
-            <Link href="/papiers/secu" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/secu" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               Seguridad Social
             </Link>{" "}
             pour avoir accès aux soins.
@@ -134,7 +134,7 @@ export default function PapiersPage() {
           <p className="text-[#171712] leading-relaxed text-lg">
             La question fiscale — résidence en France ou en Espagne, règle des 183 jours —
             se pose dès que tu restes plus de 6 mois. Notre guide sur les{" "}
-            <Link href="/papiers/impots" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/impots" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               impôts et la résidence fiscale
             </Link>{" "}
             t&apos;explique comment éviter la double imposition et ce que tu dois déclarer
@@ -155,11 +155,11 @@ export default function PapiersPage() {
               >
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-12 h-12 rounded-2xl bg-[#fbfaf6] flex items-center justify-center text-2xl">{card.emoji}</div>
-                  <span className="text-[#1fa971] text-xs font-semibold">
+                  <span className="text-[#d6442a] text-xs font-semibold">
                     Lire le guide →
                   </span>
                 </div>
-                <h2 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-3 group-hover:text-[#1fa971] transition-colors duration-200">
+                <h2 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-3 group-hover:text-[#d6442a] transition-colors duration-200">
                   {card.title}
                 </h2>
                 <p className="text-[#171712]/70 text-sm leading-relaxed">
@@ -173,7 +173,7 @@ export default function PapiersPage() {
               >
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-12 h-12 rounded-2xl bg-[#fbfaf6] flex items-center justify-center text-2xl">{card.emoji}</div>
-                  <span className="text-xs bg-[#1fa971]/20 text-[#1fa971] px-3 py-1 rounded-full font-semibold">
+                  <span className="text-xs bg-[#d6442a]/20 text-[#d6442a] px-3 py-1 rounded-full font-semibold">
                     Bientôt
                   </span>
                 </div>
@@ -192,9 +192,9 @@ export default function PapiersPage() {
       <EtapeSuivante label="Vivre à Madrid au quotidien" href="/vivre" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -218,7 +218,7 @@ export default function PapiersPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

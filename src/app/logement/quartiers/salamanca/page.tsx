@@ -57,13 +57,13 @@ export default function SalamancaPage() {
       {/* Hero */}
       <section className="pt-32 md:pt-40 pb-20 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <Link href="/logement/quartiers" className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all">
+          <Link href="/logement/quartiers" className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all">
             ← Tous les quartiers
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">💎 Quartier Salamanca</p>
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">💎 Quartier Salamanca</p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Salamanca —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">bourgeois, calme, haut de gamme</span>
+            <span className="not-italic font-bold text-[#d6442a]">bourgeois, calme, haut de gamme</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Le quartier le plus huppé de Madrid. Rues larges, immeubles
@@ -71,9 +71,9 @@ export default function SalamancaPage() {
             la qualité de vie est au rendez-vous.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Bourgeois & élégant</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">💶 1 500 – 2 500 € / mois</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Familles · Expatriés en mission</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Bourgeois & élégant</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">💶 1 500 – 2 500 € / mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Familles · Expatriés en mission</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
@@ -104,15 +104,15 @@ export default function SalamancaPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">Les loyers</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">1 300 – 1 700 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">1 300 – 1 700 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">Studio</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">1 500 – 2 500 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">1 500 – 2 500 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">1 chambre</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">3 000 – 4 000 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">3 000 – 4 000 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">Grand appart famille</p>
             </div>
           </div>
@@ -128,14 +128,14 @@ export default function SalamancaPage() {
       <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">Le quartier des familles françaises</h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg">
             Salamanca attire beaucoup de familles françaises expatriées, notamment
             celles qui viennent dans le cadre d&apos;une mission professionnelle.
             Plusieurs écoles françaises et internationales de qualité sont
             accessibles facilement depuis le quartier.
           </p>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-8">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Salamanca, c&apos;est Madrid — mais une version très policée de Madrid.
               Pas moins bien, juste différent. Si tu viens pour l&apos;aventure
               et l&apos;immersion, regarde d&apos;abord{" "}
@@ -152,8 +152,8 @@ export default function SalamancaPage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-8">Pour qui c&apos;est fait ?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-[#178a5d]/10 rounded-2xl p-5">
-              <p className="text-[#178a5d] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
+            <div className="bg-[#af3722]/10 rounded-2xl p-5">
+              <p className="text-[#af3722] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
               <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✓ Famille avec enfants scolarisés</li>
                 <li>✓ Expatrié(e) en mission avec package logement</li>
@@ -161,8 +161,8 @@ export default function SalamancaPage() {
                 <li>✓ Amateur(trice) de calme et de verdure</li>
               </ul>
             </div>
-            <div className="bg-[#1fa971]/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
+            <div className="bg-[#d6442a]/10 rounded-2xl p-5">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
               <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✗ Tu viens seul(e) chercher une vie sociale intense</li>
                 <li>✗ Ton budget ne dépasse pas 1 200 € de loyer</li>
@@ -179,11 +179,11 @@ export default function SalamancaPage() {
           <p className="text-[#171712] font-semibold uppercase tracking-widest text-sm mb-6">Les autres quartiers</p>
           <div className="flex flex-wrap gap-3">
             {autresQuartiers.map((q) => (
-              <Link key={q.href} href={q.href} className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
+              <Link key={q.href} href={q.href} className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors">
                 {q.emoji} {q.name}
               </Link>
             ))}
-            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
+            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors">
               Trouver un appartement depuis la France
             </Link>
           </div>
@@ -192,9 +192,9 @@ export default function SalamancaPage() {
 
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">Reçois nos guides dès qu&apos;ils sortent</h2>
           <p className="text-[#171712]/80 text-lg mb-10">Logement, NIE, sécu, travail à Madrid — on prépare des guides complets sur chaque étape de ton installation.</p>
           <div className="flex justify-center"><EmailForm /></div>
@@ -206,7 +206,7 @@ export default function SalamancaPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">© {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid</p>
+        <p className="text-[#fbe8e4]/40 text-sm">© {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid</p>
       </footer>
     </div>
   );

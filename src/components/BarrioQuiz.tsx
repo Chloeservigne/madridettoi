@@ -161,19 +161,19 @@ export default function BarrioQuiz() {
     const barrio = barrioResults[result];
     return (
       <div className="bg-white rounded-3xl p-8 shadow-md text-center max-w-xl mx-auto">
-        <p className="text-[#178a5d] text-sm font-semibold uppercase tracking-widest mb-4">
+        <p className="text-[#af3722] text-sm font-semibold uppercase tracking-widest mb-4">
           Ton barrio, c&apos;est...
         </p>
         <div className="text-6xl mb-4">{barrio.emoji}</div>
         <h3 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-2">
           {barrio.name}
         </h3>
-        <p className="text-[#1fa971] font-semibold mb-5">{barrio.vibe}</p>
+        <p className="text-[#d6442a] font-semibold mb-5">{barrio.vibe}</p>
         <p className="text-[#171712] leading-relaxed mb-4">{barrio.result}</p>
-        <p className="text-[#178a5d] text-sm mb-8">💶 {barrio.budget}</p>
+        <p className="text-[#af3722] text-sm mb-8">💶 {barrio.budget}</p>
         <button
           onClick={reset}
-          className="text-sm text-[#171712]/40 hover:text-[#1fa971] transition-colors underline underline-offset-4 cursor-pointer"
+          className="text-sm text-[#171712]/40 hover:text-[#d6442a] transition-colors underline underline-offset-4 cursor-pointer"
         >
           Recommencer le quiz
         </button>
@@ -191,12 +191,12 @@ export default function BarrioQuiz() {
           <div
             key={i}
             className={`h-1.5 flex-1 rounded-full transition-all duration-300 ${
-              i <= currentQ ? "bg-[#1fa971]" : "bg-[#f2f0e9]"
+              i <= currentQ ? "bg-[#d6442a]" : "bg-[#f2f0e9]"
             }`}
           />
         ))}
       </div>
-      <p className="text-[#178a5d] text-xs font-semibold uppercase tracking-widest mb-3">
+      <p className="text-[#af3722] text-xs font-semibold uppercase tracking-widest mb-3">
         Question {currentQ + 1} / {questions.length}
       </p>
       <h3 className="font-[family-name:var(--font-body)] text-2xl font-bold text-[#171712] mb-6">
@@ -207,7 +207,7 @@ export default function BarrioQuiz() {
           <button
             key={i}
             onClick={() => handleAnswer(answer.scores)}
-            className="text-left px-5 py-4 rounded-2xl border border-[#f2f0e9] text-[#171712] text-sm hover:border-[#1fa971] hover:bg-[#fbfaf6] transition-all cursor-pointer"
+            className="text-left px-5 py-4 rounded-2xl border border-[#f2f0e9] text-[#171712] text-sm hover:border-[#d6442a] hover:bg-[#fbfaf6] transition-all cursor-pointer"
           >
             {answer.label}
           </button>

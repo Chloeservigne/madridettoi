@@ -29,7 +29,7 @@ export default function Image() {
             left: 0,
             right: 0,
             height: 8,
-            backgroundColor: "#1fa971",
+            backgroundColor: "#d6442a",
           }}
         />
 
@@ -47,12 +47,12 @@ export default function Image() {
               width: 10,
               height: 10,
               borderRadius: "50%",
-              backgroundColor: "#1fa971",
+              backgroundColor: "#d6442a",
             }}
           />
           <span
             style={{
-              color: "#1fa971",
+              color: "#d6442a",
               fontSize: 18,
               fontWeight: 600,
               letterSpacing: "0.15em",
@@ -68,7 +68,7 @@ export default function Image() {
           style={{
             fontSize: 96,
             fontWeight: 700,
-            color: "#e6f4ec",
+            color: "#fbe8e4",
             lineHeight: 1.0,
             marginBottom: 28,
           }}
@@ -101,9 +101,9 @@ export default function Image() {
                   paddingLeft: 20,
                   paddingRight: 20,
                   borderRadius: 9999,
-                  backgroundColor: "rgba(31, 169, 113, 0.2)",
-                  border: "1px solid rgba(31, 169, 113, 0.45)",
-                  color: "#e6f4ec",
+                  backgroundColor: "rgba(214, 68, 42, 0.2)",
+                  border: "1px solid rgba(214, 68, 42, 0.45)",
+                  color: "#fbe8e4",
                   fontSize: 18,
                 }}
               >
@@ -121,7 +121,7 @@ export default function Image() {
             left: 0,
             right: 0,
             height: 4,
-            backgroundColor: "#1fa971",
+            backgroundColor: "#d6442a",
             opacity: 0.35,
           }}
         />

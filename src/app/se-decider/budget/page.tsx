@@ -194,16 +194,16 @@ export default function BudgetPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/se-decider"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Se décider
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Avant de partir
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Le coût de la vie à Madrid —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">chiffres réels&nbsp;2025</span>
+            <span className="not-italic font-bold text-[#d6442a]">chiffres réels&nbsp;2025</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Avant de prendre une décision, il faut des chiffres réels. Pas les
@@ -218,7 +218,7 @@ export default function BudgetPage() {
       {/* Loyers */}
       <section className="py-24 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-2">
             Le poste principal
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
@@ -231,7 +231,7 @@ export default function BudgetPage() {
             réelles pour un T1 (studio ou une chambre). Pour les{" "}
             <Link
               href="/logement/prix"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               prix détaillés au m² par quartier
             </Link>
@@ -248,12 +248,12 @@ export default function BudgetPage() {
                   <h3 className="font-[family-name:var(--font-body)] text-lg font-bold text-[#171712]">
                     {item.quartier}
                   </h3>
-                  <span className="font-bold text-[#1fa971] text-lg whitespace-nowrap">
+                  <span className="font-bold text-[#d6442a] text-lg whitespace-nowrap">
                     {item.prix}
                   </span>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 text-sm">
-                  <span className="flex items-start gap-2 text-[#178a5d]">
+                  <span className="flex items-start gap-2 text-[#af3722]">
                     <span>✓</span>
                     {item.pour}
                   </span>
@@ -266,7 +266,7 @@ export default function BudgetPage() {
                 {item.liens.length > 0 && (
                   <div className="mt-3 flex flex-wrap gap-3">
                     {item.liens.map((lien) => (
-                      <Link key={lien.href} href={lien.href} className="text-xs text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                      <Link key={lien.href} href={lien.href} className="text-xs text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                         {lien.label} →
                       </Link>
                     ))}
@@ -277,11 +277,11 @@ export default function BudgetPage() {
           </div>
 
           <div className="mt-8 p-5 bg-[#171712] rounded-2xl">
-            <p className="text-[#1fa971] font-semibold text-sm mb-1">
+            <p className="text-[#d6442a] font-semibold text-sm mb-1">
               💡 Le bon deal
             </p>
-            <p className="text-[#e6f4ec]/90 text-sm leading-relaxed">
-              <Link href="/logement/quartiers" className="text-[#1fa971] underline underline-offset-2 hover:text-white transition-colors">Tetuán et Hortaleza</Link> offrent le meilleur rapport qualité-prix en ce
+            <p className="text-[#fbe8e4]/90 text-sm leading-relaxed">
+              <Link href="/logement/quartiers" className="text-[#d6442a] underline underline-offset-2 hover:text-white transition-colors">Tetuán et Hortaleza</Link> offrent le meilleur rapport qualité-prix en ce
               moment. Bien desservis, appartements plus grands, et encore
               quelques offres sous les 1 000 €. Pas pour longtemps, probablement.
             </p>
@@ -292,11 +292,11 @@ export default function BudgetPage() {
       {/* Courses */}
       <section className="py-24 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-2">
             Faire ses courses
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
-            <Link href="/vivre/courses" className="hover:text-[#1fa971] transition-colors">
+            <Link href="/vivre/courses" className="hover:text-[#d6442a] transition-colors">
               Mercadona, Carrefour, Alcampo
             </Link>
           </h2>
@@ -319,7 +319,7 @@ export default function BudgetPage() {
                       {s.nom}
                     </h3>
                   </div>
-                  <span className="text-[#1fa971] text-sm font-semibold hidden sm:block">
+                  <span className="text-[#d6442a] text-sm font-semibold hidden sm:block">
                     {s.verdict}
                   </span>
                 </div>
@@ -352,7 +352,7 @@ export default function BudgetPage() {
       {/* Restos */}
       <section className="py-24 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-2">
             Manger dehors
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
@@ -371,7 +371,7 @@ export default function BudgetPage() {
                 className="bg-white rounded-3xl shadow-md p-6 flex gap-5"
               >
                 <div className="flex-shrink-0">
-                  <span className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#1fa971]">
+                  <span className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#d6442a]">
                     {r.prix}
                   </span>
                 </div>
@@ -379,7 +379,7 @@ export default function BudgetPage() {
                   <h3 className="font-semibold text-[#171712] mb-1">
                     {r.type}
                   </h3>
-                  <p className="text-[#178a5d] text-xs font-semibold mb-2">
+                  <p className="text-[#af3722] text-xs font-semibold mb-2">
                     {r.inclus}
                   </p>
                   <p className="text-[#171712]/80 text-sm leading-relaxed">
@@ -390,7 +390,7 @@ export default function BudgetPage() {
             ))}
           </div>
 
-          <div className="mt-8 py-8 px-8 bg-[#f2f0e9] rounded-2xl border-l-4 border-[#1fa971]">
+          <div className="mt-8 py-8 px-8 bg-[#f2f0e9] rounded-2xl border-l-4 border-[#d6442a]">
             <p className="text-[#171712] text-lg leading-relaxed">
               Le menu del día est probablement la meilleure chose qui soit
               arrivée à mon budget depuis que je vis en Espagne. Entrée, plat,
@@ -404,17 +404,17 @@ export default function BudgetPage() {
       {/* Transports */}
       <section className="py-16 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-2">
             Se déplacer
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-6">
-            <Link href="/vivre/transports" className="hover:text-[#1fa971] transition-colors">
+            <Link href="/vivre/transports" className="hover:text-[#d6442a] transition-colors">
               L&apos;Abono Transporte
             </Link>
           </h2>
           <div className="bg-white rounded-3xl shadow-md p-8 flex flex-col sm:flex-row items-center gap-8">
             <div className="text-center flex-shrink-0">
-              <p className="font-[family-name:var(--font-display)] text-5xl font-extrabold text-[#1fa971]">
+              <p className="font-[family-name:var(--font-display)] text-5xl font-extrabold text-[#d6442a]">
                 54,60€
               </p>
               <p className="text-[#171712]/60 text-sm mt-1">par mois</p>
@@ -438,13 +438,13 @@ export default function BudgetPage() {
       {/* Vices */}
       <section className="py-24 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#1fa971] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#d6442a] font-semibold tracking-widest uppercase text-sm mb-2">
             La section honnête
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-4">
             Les vices
           </h2>
-          <p className="text-[#e6f4ec]/70 leading-relaxed mb-10">
+          <p className="text-[#fbe8e4]/70 leading-relaxed mb-10">
             On n&apos;allait pas faire un guide budget sans parler de
             l&apos;essentiel.
           </p>
@@ -463,19 +463,19 @@ export default function BudgetPage() {
                 </div>
                 <div className="flex gap-6 mb-4">
                   <div>
-                    <p className="text-[#e6f4ec]/50 text-xs mb-1">À Madrid</p>
-                    <p className="text-[#1fa971] font-bold text-xl">
+                    <p className="text-[#fbe8e4]/50 text-xs mb-1">À Madrid</p>
+                    <p className="text-[#d6442a] font-bold text-xl">
                       {v.prixMadrid}
                     </p>
                   </div>
                   <div>
-                    <p className="text-[#e6f4ec]/50 text-xs mb-1">En France</p>
-                    <p className="text-[#e6f4ec]/40 font-bold text-xl line-through">
+                    <p className="text-[#fbe8e4]/50 text-xs mb-1">En France</p>
+                    <p className="text-[#fbe8e4]/40 font-bold text-xl line-through">
                       {v.prixFrance}
                     </p>
                   </div>
                 </div>
-                <p className="text-[#e6f4ec]/70 text-sm leading-relaxed">
+                <p className="text-[#fbe8e4]/70 text-sm leading-relaxed">
                   {v.detail}
                 </p>
               </div>
@@ -487,7 +487,7 @@ export default function BudgetPage() {
       {/* Budget récap */}
       <section className="py-24 px-6 bg-[#fbfaf6]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-2">
             Récapitulatif
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-4">
@@ -499,7 +499,7 @@ export default function BudgetPage() {
           </p>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
-            <div className="px-6 py-4 bg-[#1fa971]">
+            <div className="px-6 py-4 bg-[#d6442a]">
               <p className="text-white font-semibold">
                 💶 Estimation mensuelle — 1 personne
               </p>
@@ -520,14 +520,14 @@ export default function BudgetPage() {
                       </p>
                     )}
                   </div>
-                  <span className="font-bold text-[#1fa971] whitespace-nowrap text-sm">
+                  <span className="font-bold text-[#d6442a] whitespace-nowrap text-sm">
                     {ligne.montant}
                   </span>
                 </div>
               ))}
               <div className="px-6 py-4 bg-[#f2f0e9] flex items-center justify-between">
                 <p className="font-bold text-[#171712]">Total estimé</p>
-                <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#1fa971]">
+                <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#d6442a]">
                   1 400 – 1 900 €
                 </p>
               </div>
@@ -551,31 +551,31 @@ export default function BudgetPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors"
             >
               Quel quartier choisir ?
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors"
             >
               Le guide du NIE
             </Link>
             <Link
               href="/vivre/transports"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors"
             >
               Transports & Abono à Madrid
             </Link>
             <Link
               href="/vivre/courses"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#1fa971] hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors"
             >
               Faire ses courses à Madrid
             </Link>
@@ -586,9 +586,9 @@ export default function BudgetPage() {
       <EtapeSuivante label="Les salaires à Madrid" href="/se-decider/salaire-madrid" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -612,7 +612,7 @@ export default function BudgetPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

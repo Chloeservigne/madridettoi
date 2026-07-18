@@ -50,16 +50,16 @@ export default function SantePage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/vivre"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Vivre à Madrid
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide santé
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             La santé à Madrid —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">médecin, urgences, mutuelle</span>
+            <span className="not-italic font-bold text-[#d6442a]">médecin, urgences, mutuelle</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Comment fonctionne le système de santé espagnol pour un expatrié
@@ -68,13 +68,13 @@ export default function SantePage() {
             retrouver démuni le jour où tu en as besoin.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Médecin de famille gratuit
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               PAC sans RDV
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Mutuelle dès ~49 €/mois
             </span>
           </div>
@@ -96,7 +96,7 @@ export default function SantePage() {
             faut être affilié à la{" "}
             <Link
               href="/papiers/secu"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               Seguridad Social
             </Link>{" "}
@@ -121,12 +121,12 @@ export default function SantePage() {
             </p>
             <ul className="space-y-2">
               <li className="flex gap-2 items-start">
-                <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                 <span className="text-sm text-[#171712]">
                   Ton{" "}
                   <Link
                     href="/papiers/nie"
-                    className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                    className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                   >
                     NIE
                   </Link>{" "}
@@ -134,12 +134,12 @@ export default function SantePage() {
                 </span>
               </li>
               <li className="flex gap-2 items-start">
-                <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                 <span className="text-sm text-[#171712]">
                   Le{" "}
                   <Link
                     href="/papiers/padron"
-                    className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                    className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                   >
                     padron
                   </Link>{" "}
@@ -147,7 +147,7 @@ export default function SantePage() {
                 </span>
               </li>
               <li className="flex gap-2 items-start">
-                <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                 <span className="text-sm text-[#171712]">
                   Un justificatif d&apos;affiliation à la Seguridad Social (NUSS)
                 </span>
@@ -182,7 +182,7 @@ export default function SantePage() {
             la{" "}
             <Link
               href="/papiers/secu"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               Seguridad Social espagnole
             </Link>
@@ -220,34 +220,34 @@ export default function SantePage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-4">
             Urgences : Urgencias ou PAC ?
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mb-8">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg mb-8">
             La distinction la plus importante à retenir pour ne pas passer
             4 heures aux urgences d&apos;un hôpital pour un rhume.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div className="bg-white/10 rounded-2xl p-6">
-              <p className="text-[#1fa971] font-semibold mb-3">
+              <p className="text-[#d6442a] font-semibold mb-3">
                 Urgencias hospitalières
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Pour les cas <strong className="text-white">graves</strong> :
                 douleur thoracique, fracture, AVC, difficulté respiratoire,
                 traumatisme sévère. Ouvert 24h/24. En cas de détresse vitale,
                 appelle le <strong className="text-white">112</strong>. Personne
                 ne peut être refusé en urgence, même sans tarjeta sanitaria.
               </p>
-              <p className="text-[#e6f4ec]/50 text-xs mt-3">
+              <p className="text-[#fbe8e4]/50 text-xs mt-3">
                 Temps d&apos;attente souvent long pour les cas non urgents —
                 plusieurs heures possible.
               </p>
             </div>
 
             <div className="bg-white/10 rounded-2xl p-6">
-              <p className="text-[#1fa971] font-semibold mb-3">
+              <p className="text-[#d6442a] font-semibold mb-3">
                 PAC — Punto de Atención Continuada
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Pour tout ce qui n&apos;est{" "}
                 <strong className="text-white">pas grave</strong> : fièvre,
                 infection, douleur modérée, point de suture, gastro, angine.
@@ -256,15 +256,15 @@ export default function SantePage() {
                 <strong className="text-white">80 PAC</strong> sur la
                 Communauté de Madrid.
               </p>
-              <p className="text-[#e6f4ec]/50 text-xs mt-3">
+              <p className="text-[#fbe8e4]/50 text-xs mt-3">
                 Le bon réflexe pour 80% des situations — bien plus rapide que
                 les urgences hospitalières.
               </p>
             </div>
           </div>
 
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Le PAC, c&apos;est la clé. Fièvre à 39° un dimanche soir ?
               Tu vas au PAC de ton quartier, sans rendez-vous, tu es vu dans
               l&apos;heure. Pas besoin d&apos;aller aux urgences d&apos;un
@@ -334,7 +334,7 @@ export default function SantePage() {
 
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">
                 Sanitas
               </p>
               <p className="text-[#171712] text-sm leading-relaxed mb-3">
@@ -342,12 +342,12 @@ export default function SantePage() {
                 mobile. Accès direct aux spécialistes, téléconsultation
                 incluse dans certaines formules.
               </p>
-              <p className="text-[#1fa971] text-xs font-semibold">
+              <p className="text-[#d6442a] text-xs font-semibold">
                 À partir de ~49 €/mois
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">
                 SegurCaixa Adeslas
               </p>
               <p className="text-[#171712] text-sm leading-relaxed mb-3">
@@ -355,24 +355,24 @@ export default function SantePage() {
                 dentaire partiel dans certaines formules. Bon rapport
                 couverture / prix.
               </p>
-              <p className="text-[#1fa971] text-xs font-semibold">
+              <p className="text-[#d6442a] text-xs font-semibold">
                 À partir de ~49 €/mois
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">
                 Asisa
               </p>
               <p className="text-[#171712] text-sm leading-relaxed mb-3">
                 Réseau médical propre important. Très utilisée par les expats.
                 Bon rapport qualité-prix, avec ou sans copago selon la formule.
               </p>
-              <p className="text-[#1fa971] text-xs font-semibold">
+              <p className="text-[#d6442a] text-xs font-semibold">
                 À partir de ~35 €/mois
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-2">
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-2">
                 DKV
               </p>
               <p className="text-[#171712] text-sm leading-relaxed mb-3">
@@ -380,7 +380,7 @@ export default function SantePage() {
                 propres mais réseau de partenaires étendu. Idéal pour un
                 premier budget serré.
               </p>
-              <p className="text-[#1fa971] text-xs font-semibold">
+              <p className="text-[#d6442a] text-xs font-semibold">
                 À partir de ~25 €/mois
               </p>
             </div>
@@ -392,28 +392,28 @@ export default function SantePage() {
             </p>
             <ul className="space-y-2">
               <li className="flex gap-2 items-start">
-                <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                 <span className="text-sm text-[#171712]">
                   Les <strong>familles avec enfants</strong> : pédiatre en
                   48h, sans attente
                 </span>
               </li>
               <li className="flex gap-2 items-start">
-                <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                 <span className="text-sm text-[#171712]">
                   Ceux qui <strong>voyagent souvent</strong> : soins couverts
                   dans d&apos;autres pays selon la formule
                 </span>
               </li>
               <li className="flex gap-2 items-start">
-                <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                 <span className="text-sm text-[#171712]">
                   Ceux qui ne veulent pas <strong>attendre 3 mois</strong>{" "}
                   pour voir un spécialiste
                 </span>
               </li>
               <li className="flex gap-2 items-start">
-                <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                 <span className="text-sm text-[#171712]">
                   Les <strong>premiers mois à Madrid</strong> avant d&apos;être
                   pleinement affilié à la sécu publique
@@ -438,31 +438,31 @@ export default function SantePage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               La Seguridad Social en Espagne
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/papiers/padron"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               L&apos;empadronamiento
             </Link>
             <Link
               href="/vivre/transports"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Transports à Madrid
             </Link>
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
@@ -473,9 +473,9 @@ export default function SantePage() {
       <EtapeSuivante label="Faire ses courses à Madrid" href="/vivre/courses" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -499,7 +499,7 @@ export default function SantePage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

@@ -159,16 +159,16 @@ export default function DocumentsFrancaisPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Papiers & démarches
           </Link>
-          <span className="inline-block px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold mb-4">
+          <span className="inline-block px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold mb-4">
             Côté français
           </span>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Refaire ses papiers français{" "}
-            <span className="not-italic font-bold text-[#1fa971]">depuis Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">depuis Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed mb-4">
             Ton passeport expire dans 3 mois. Ta carte d&apos;identité date de
@@ -188,7 +188,7 @@ export default function DocumentsFrancaisPage() {
               key={s.label}
               className="bg-white rounded-2xl p-5 text-center shadow-sm"
             >
-              <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#1fa971] mb-2">
+              <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#d6442a] mb-2">
                 {s.value}
               </p>
               <p className="text-[#171712]/70 text-xs leading-snug">{s.label}</p>
@@ -226,7 +226,7 @@ export default function DocumentsFrancaisPage() {
                 "Tu reçois une confirmation par e-mail — conserve-la, elle facilite toutes les démarches suivantes",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm text-[#171712]">
-                  <span className="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-[#178a5d] text-white text-xs flex items-center justify-center font-bold">
+                  <span className="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-[#af3722] text-white text-xs flex items-center justify-center font-bold">
                     {i + 1}
                   </span>
                   {item}
@@ -254,7 +254,7 @@ export default function DocumentsFrancaisPage() {
           <div className="space-y-6 mb-10">
             {etapesCNI.map((etape) => (
               <div key={etape.num} className="flex gap-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] text-white font-bold text-sm flex items-center justify-center">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] text-white font-bold text-sm flex items-center justify-center">
                   {etape.num}
                 </div>
                 <div>
@@ -277,7 +277,7 @@ export default function DocumentsFrancaisPage() {
             <ul className="space-y-3">
               {checklistCNI.map((item) => (
                 <li key={item.doc} className="flex items-start gap-3">
-                  <span className="mt-1 w-4 h-4 flex-shrink-0 rounded bg-[#1fa971]/10 text-[#1fa971] text-xs flex items-center justify-center font-bold">
+                  <span className="mt-1 w-4 h-4 flex-shrink-0 rounded bg-[#d6442a]/10 text-[#d6442a] text-xs flex items-center justify-center font-bold">
                     ✓
                   </span>
                   <div>
@@ -311,7 +311,7 @@ export default function DocumentsFrancaisPage() {
           <div className="space-y-6 mb-10">
             {etapesPasseport.map((etape) => (
               <div key={etape.num} className="flex gap-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] text-white font-bold text-sm flex items-center justify-center">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] text-white font-bold text-sm flex items-center justify-center">
                   {etape.num}
                 </div>
                 <div>
@@ -334,7 +334,7 @@ export default function DocumentsFrancaisPage() {
             <ul className="space-y-3">
               {checklistPasseport.map((item) => (
                 <li key={item.doc} className="flex items-start gap-3">
-                  <span className="mt-1 w-4 h-4 flex-shrink-0 rounded bg-[#1fa971]/10 text-[#1fa971] text-xs flex items-center justify-center font-bold">
+                  <span className="mt-1 w-4 h-4 flex-shrink-0 rounded bg-[#d6442a]/10 text-[#d6442a] text-xs flex items-center justify-center font-bold">
                     ✓
                   </span>
                   <div>
@@ -353,14 +353,14 @@ export default function DocumentsFrancaisPage() {
       {/* Dark blockquote */}
       <section className="py-20 px-6 bg-[#171712]">
         <div className="max-w-2xl mx-auto">
-          <blockquote className="border-l-4 border-[#1fa971] pl-8">
-            <p className="font-[family-name:var(--font-body)] text-2xl text-[#e6f4ec] leading-relaxed italic mb-6">
+          <blockquote className="border-l-4 border-[#d6442a] pl-8">
+            <p className="font-[family-name:var(--font-body)] text-2xl text-[#fbe8e4] leading-relaxed italic mb-6">
               &ldquo;Les RDV consulaires pour la CNI et le passeport partent en
               quelques heures. Ouvre une alerte sur le portail ou reviens vérifier
               tôt le matin — les annulations libèrent parfois des créneaux de
               dernière minute.&rdquo;
             </p>
-            <footer className="text-[#1fa971] text-sm font-semibold">
+            <footer className="text-[#d6442a] text-sm font-semibold">
               Consulat général de France à Madrid — Calle Marqués de la Ensenada, 10, 28004 Madrid
             </footer>
           </blockquote>
@@ -424,7 +424,7 @@ export default function DocumentsFrancaisPage() {
               href="https://es.ambafrance.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               es.ambafrance.org
             </a>{" "}
@@ -436,37 +436,37 @@ export default function DocumentsFrancaisPage() {
       {/* Liens connexes */}
       <section className="py-20 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-6">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-6">
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE
             </Link>
             <Link
               href="/papiers/padron"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               L&apos;empadronamiento
             </Link>
             <Link
               href="/papiers/permis-de-conduire"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Le permis de conduire en Espagne
             </Link>
             <Link
               href="/communaute/francais-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               La communauté française à Madrid
             </Link>
             <Link
               href="/demenagement/checklist"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Checklist déménagement
             </Link>
@@ -475,9 +475,9 @@ export default function DocumentsFrancaisPage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -501,7 +501,7 @@ export default function DocumentsFrancaisPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

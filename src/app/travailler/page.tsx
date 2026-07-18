@@ -62,19 +62,19 @@ export default function TravaillerPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à l&apos;accueil
           </Link>
-          <span className="inline-block px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold mb-4">
+          <span className="inline-block px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold mb-4">
             Phase 2 — Je me prépare
           </span>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Travailler à Madrid
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Travailler depuis ou{" "}
-            <span className="not-italic font-bold text-[#1fa971]">à Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">à Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Remote, emploi local, freelance, entrepreneur — chaque situation a
@@ -98,20 +98,20 @@ export default function TravaillerPage() {
           <p className="text-[#171712] leading-relaxed text-lg mb-4">
             Si tu gardes ton emploi français et travailles depuis Madrid, tu es
             techniquement en{" "}
-            <Link href="/travailler/remote" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/travailler/remote" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               situation de remote international
             </Link>{" "}
             — ce qui a des implications fiscales dès 183 jours sur place. Si tu cherches
             un poste local, le marché madrilène recrute activement dans la tech,
             le tourisme, l&apos;éducation et la finance : le{" "}
-            <Link href="/se-decider/salaire-madrid" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/se-decider/salaire-madrid" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               salaire moyen tourne autour de 2 200 € brut
             </Link>
             , inférieur à Paris mais compensé par un coût de la vie plus bas.
           </p>
           <p className="text-[#171712] leading-relaxed text-lg mb-4">
             Pour les freelances, le statut d&apos;
-            <Link href="/travailler/freelance" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/travailler/freelance" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               autónomo
             </Link>{" "}
             est l&apos;équivalent espagnol de l&apos;auto-entrepreneur : cotisations RETA,
@@ -120,13 +120,13 @@ export default function TravaillerPage() {
           </p>
           <p className="text-[#171712] leading-relaxed text-lg">
             Pour les moins de 28 ans, le{" "}
-            <Link href="/travailler/vie" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/travailler/vie" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               VIE
             </Link>{" "}
             reste l&apos;une des meilleures portes d&apos;entrée : jusqu&apos;à 2 400 € nets
             par mois dans un grand groupe français, couverture sociale incluse.
             Les{" "}
-            <Link href="/travailler/entreprises-francaises" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/travailler/entreprises-francaises" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               entreprises françaises à Madrid
             </Link>{" "}
             — Airbus, Decathlon, L&apos;Oréal, Thales — publient régulièrement des offres VIE.
@@ -146,11 +146,11 @@ export default function TravaillerPage() {
               >
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-12 h-12 rounded-2xl bg-[#fbfaf6] flex items-center justify-center text-2xl">{card.emoji}</div>
-                  <span className="text-[#1fa971] text-xs font-semibold">
+                  <span className="text-[#d6442a] text-xs font-semibold">
                     Lire le guide →
                   </span>
                 </div>
-                <h2 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-3 group-hover:text-[#1fa971] transition-colors duration-200">
+                <h2 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-3 group-hover:text-[#d6442a] transition-colors duration-200">
                   {card.title}
                 </h2>
                 <p className="text-[#171712]/70 text-sm leading-relaxed">
@@ -164,7 +164,7 @@ export default function TravaillerPage() {
               >
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-12 h-12 rounded-2xl bg-[#fbfaf6] flex items-center justify-center text-2xl">{card.emoji}</div>
-                  <span className="text-xs bg-[#1fa971]/20 text-[#1fa971] px-3 py-1 rounded-full font-semibold">
+                  <span className="text-xs bg-[#d6442a]/20 text-[#d6442a] px-3 py-1 rounded-full font-semibold">
                     Bientôt
                   </span>
                 </div>
@@ -183,9 +183,9 @@ export default function TravaillerPage() {
       <EtapeSuivante label="Trouver un appartement à Madrid" href="/logement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -210,7 +210,7 @@ export default function TravaillerPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

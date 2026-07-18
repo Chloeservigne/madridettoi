@@ -50,16 +50,16 @@ export default function CoursesPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/vivre"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Vivre à Madrid
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Vivre à Madrid
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Tout savoir sur{" "}
-            <span className="not-italic font-bold text-[#1fa971]">les courses à Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">les courses à Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Mercadona, marchés municipaux, El Rastro — faire ses courses à
@@ -69,13 +69,13 @@ export default function CoursesPage() {
             jours.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Panier hebdo : 80–120 €
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Mercadona : ~800 magasins en Espagne
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               40+ marchés municipaux à Madrid
             </span>
           </div>
@@ -186,7 +186,7 @@ export default function CoursesPage() {
               <p className="text-[#171712]/70 text-xs mb-2">
                 <Link
                   href="/logement/quartiers/lavapies"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Lavapiés
                 </Link>
@@ -205,7 +205,7 @@ export default function CoursesPage() {
               <p className="text-[#171712]/70 text-xs mb-2">
                 <Link
                   href="/logement/quartiers/la-latina"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   La Latina
                 </Link>
@@ -250,7 +250,7 @@ export default function CoursesPage() {
               <p className="text-[#171712]/70 text-xs mb-2">
                 <Link
                   href="/logement/quartiers/chamberi"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Chamberí
                 </Link>
@@ -272,18 +272,18 @@ export default function CoursesPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             El Rastro — le marché aux puces du dimanche
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mb-6">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg mb-6">
             Chaque dimanche matin, de 9h à 15h, la{" "}
             <strong className="text-white">Ribera de Curtidores</strong> et les
             rues alentour se transforment en l&apos;un des plus grands marchés
             aux puces d&apos;Europe. Des centaines de stands : vêtements
             vintage, vinyles, antiquités, outils, bibelots, objets insolites.
           </p>
-          <p className="text-[#e6f4ec]/80 leading-relaxed mb-8">
+          <p className="text-[#fbe8e4]/80 leading-relaxed mb-8">
             Le quartier de{" "}
             <Link
               href="/logement/quartiers/la-latina"
-              className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity"
+              className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity"
             >
               La Latina
             </Link>{" "}
@@ -294,8 +294,8 @@ export default function CoursesPage() {
             auprès de particuliers qui vident leurs caves.
           </p>
 
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Comprendre Madrid passe par ses marchés. Le Rastro le dimanche,
               la Cebada le mardi matin, Vallehermoso le samedi — chaque marché
               raconte un quartier, une façon de vivre.
@@ -399,14 +399,14 @@ export default function CoursesPage() {
               l&apos;heure du déjeuner, dans les restaurants de quartier de{" "}
               <Link
                 href="/logement/quartiers/lavapies"
-                className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
               >
                 Lavapiés
               </Link>{" "}
               (cuisine du monde à des prix imbattables) et de{" "}
               <Link
                 href="/logement/quartiers/malasana"
-                className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
               >
                 Malasaña
               </Link>{" "}
@@ -416,7 +416,7 @@ export default function CoursesPage() {
             </p>
           </div>
 
-          <div className="bg-[#1fa971]/10 border border-[#1fa971]/30 rounded-2xl px-5 py-4">
+          <div className="bg-[#d6442a]/10 border border-[#d6442a]/30 rounded-2xl px-5 py-4">
             <p className="text-[#171712] text-sm leading-relaxed">
               <strong>Astuce :</strong> les menus les moins chers sont souvent
               dans les rues perpendiculaires aux grands axes. Éviter les
@@ -435,25 +435,25 @@ export default function CoursesPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/vivre/transports"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Transports à Madrid
             </Link>
             <Link
               href="/vivre/sortir"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Sortir à Madrid
             </Link>
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Les quartiers de Madrid
             </Link>
@@ -464,9 +464,9 @@ export default function CoursesPage() {
       <EtapeSuivante label="Apprendre l'espagnol à Madrid" href="/vivre/espagnol" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -490,7 +490,7 @@ export default function CoursesPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

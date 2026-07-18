@@ -94,16 +94,16 @@ export default function SecuPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Papiers
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide santé
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             La sécu en Espagne —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">comment ça marche vraiment</span>
+            <span className="not-italic font-bold text-[#d6442a]">comment ça marche vraiment</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Tarjeta sanitaria, NUSS, copago, mutuelles — on t&apos;explique le
@@ -111,13 +111,13 @@ export default function SecuPage() {
             quoi tu as droit selon ta situation.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Consultations gratuites
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Tarjeta sous 3–4 semaines
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Médicaments avec participation
             </span>
           </div>
@@ -193,7 +193,7 @@ export default function SecuPage() {
             href="https://www.comunidad.madrid/servicios/salud/tarjeta-sanitaria"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-8 px-4 py-2 rounded-full bg-[#1fa971] text-white text-sm font-semibold hover:bg-[#178a5d] transition-colors"
+            className="inline-flex items-center gap-2 mt-8 px-4 py-2 rounded-full bg-[#d6442a] text-white text-sm font-semibold hover:bg-[#af3722] transition-colors"
           >
             Demander sa tarjeta sanitaria ↗
           </a>
@@ -209,10 +209,10 @@ export default function SecuPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm mb-3">
+              <p className="text-[#d6442a] font-semibold text-sm mb-3">
                 Tu arrives en CDI ou CDD
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Ton employeur te déclare à la TGSS via le formulaire TA2/S
                 avant ton premier jour de travail. Tu obtiens ton{" "}
                 <strong className="text-white">NUSS</strong> (numéro
@@ -222,10 +222,10 @@ export default function SecuPage() {
             </div>
 
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm mb-3">
+              <p className="text-[#d6442a] font-semibold text-sm mb-3">
                 Tu es autónomo
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Tu cotises toi-même au <strong className="text-white">RETA</strong>{" "}
                 (Régimen Especial de Trabajadores Autónomos). Bonne nouvelle :
                 les nouveaux autónomos bénéficient de la{" "}
@@ -237,10 +237,10 @@ export default function SecuPage() {
             </div>
 
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm mb-3">
+              <p className="text-[#d6442a] font-semibold text-sm mb-3">
                 Tu arrives sans statut clair
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Si tu arrives de France, ta{" "}
                 <strong className="text-white">CEAM</strong> (Carte Européenne
                 d&apos;Assurance Maladie) est valable pour les soins urgents
@@ -251,8 +251,8 @@ export default function SecuPage() {
             </div>
 
           </div>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-8">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Le NUSS s&apos;obtient en ligne en 10 minutes sur le portail
               Importass de la TGSS — avec ton passeport français, aucun NIE
               n&apos;est obligatoire pour cette première étape.
@@ -283,8 +283,8 @@ export default function SecuPage() {
                 médicaments sur ordonnance (avec copago espagnol).
               </p>
             </div>
-            <div className="bg-[#1fa971]/10 rounded-2xl p-5">
-              <p className="font-semibold text-[#1fa971] text-sm mb-2">Sa limite</p>
+            <div className="bg-[#d6442a]/10 rounded-2xl p-5">
+              <p className="font-semibold text-[#d6442a] text-sm mb-2">Sa limite</p>
               <p className="text-[#171712]/80 text-sm leading-relaxed">
                 Elle n&apos;est valable que pour les séjours temporaires. Dès que
                 tu es considéré(e) comme résident(e) en Espagne, elle perd sa
@@ -300,7 +300,7 @@ export default function SecuPage() {
               href="https://www.ameli.fr/assure/droits-demarches/europe-international/partir-etranger/carte-europeenne-assurance-maladie"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               ameli.fr
             </a>.
@@ -323,7 +323,7 @@ export default function SecuPage() {
               <ul className="space-y-2">
                 {couvert.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-[#171712] text-sm leading-relaxed">
-                    <span className="text-[#178a5d] mt-0.5 flex-shrink-0">—</span>
+                    <span className="text-[#af3722] mt-0.5 flex-shrink-0">—</span>
                     {item}
                   </li>
                 ))}
@@ -337,7 +337,7 @@ export default function SecuPage() {
               <ul className="space-y-2">
                 {nonCouvert.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-[#171712] text-sm leading-relaxed">
-                    <span className="text-[#1fa971] mt-0.5 flex-shrink-0">—</span>
+                    <span className="text-[#d6442a] mt-0.5 flex-shrink-0">—</span>
                     {item}
                   </li>
                 ))}
@@ -368,7 +368,7 @@ export default function SecuPage() {
           </p>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-6">
-            <div className="px-6 py-4 bg-[#1fa971]">
+            <div className="px-6 py-4 bg-[#d6442a]">
               <p className="text-white font-semibold">Travailleurs actifs (salariés, autónomos)</p>
             </div>
             <div className="divide-y divide-[#f2f0e9]">
@@ -389,12 +389,12 @@ export default function SecuPage() {
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-6">
             <div className="px-6 py-4 bg-[#171712]">
-              <p className="text-[#1fa971] font-semibold">Retraités et pensionnés</p>
+              <p className="text-[#d6442a] font-semibold">Retraités et pensionnés</p>
             </div>
             <div className="divide-y divide-[#f2f0e9]">
               <div className="px-6 py-4 flex justify-between items-center">
                 <span className="text-[#171712] text-sm">Moins de 5 635 € / an</span>
-                <span className="font-bold text-[#178a5d]">Gratuit</span>
+                <span className="font-bold text-[#af3722]">Gratuit</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
                 <span className="text-[#171712] text-sm">Jusqu'à 18 000 €</span>
@@ -407,7 +407,7 @@ export default function SecuPage() {
             </div>
           </div>
 
-          <div className="bg-[#178a5d]/10 border border-[#178a5d]/30 rounded-2xl p-5">
+          <div className="bg-[#af3722]/10 border border-[#af3722]/30 rounded-2xl p-5">
             <p className="text-[#171712] text-sm leading-relaxed">
               <strong>Exonérés totalement (0 %) :</strong> chômeurs ayant
               épuisé leurs droits, bénéficiaires du Revenu Minimum Vital (IMV),
@@ -430,7 +430,7 @@ export default function SecuPage() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#1fa971]">
+            <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#d6442a]">
               <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg mb-3">
                 Urgences hospitalières (SUH)
               </p>
@@ -445,7 +445,7 @@ export default function SecuPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#178a5d]">
+            <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#af3722]">
               <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg mb-3">
                 PAC (Point de permanence)
               </p>
@@ -469,7 +469,7 @@ export default function SecuPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-4">
             Les mutuelles privées
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mb-8">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg mb-8">
             Le système public est solide mais les listes d&apos;attente pour
             les spécialistes peuvent être longues. Une mutuelle donne accès
             directement aux spécialistes (souvent sous 48–72h), aux cliniques
@@ -480,15 +480,15 @@ export default function SecuPage() {
             {mutuelles.map((m) => (
               <div key={m.nom} className="bg-white/10 rounded-2xl p-5">
                 <p className="font-semibold text-white mb-1">{m.nom}</p>
-                <p className="text-[#e6f4ec]/70 text-sm leading-relaxed mb-3">{m.detail}</p>
-                <p className="text-[#1fa971] text-xs font-semibold">{m.prix}</p>
+                <p className="text-[#fbe8e4]/70 text-sm leading-relaxed mb-3">{m.detail}</p>
+                <p className="text-[#d6442a] text-xs font-semibold">{m.prix}</p>
               </div>
             ))}
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-8">
-            <p className="text-[#e6f4ec]/70 text-sm leading-relaxed">
-              <strong className="text-[#e6f4ec]">Attention aux carences :</strong> la
+            <p className="text-[#fbe8e4]/70 text-sm leading-relaxed">
+              <strong className="text-[#fbe8e4]">Attention aux carences :</strong> la
               plupart des mutuelles imposent un délai avant que certains droits
               s&apos;activent — 6 mois à 2 ans pour la maternité, quelques mois
               pour certaines spécialités. L&apos;optique est rarement couverte
@@ -496,8 +496,8 @@ export default function SecuPage() {
             </p>
           </div>
 
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Le bon équilibre pour la plupart des Français à Madrid : santé
               publique pour le quotidien et les urgences, mutuelle privée pour
               les spécialistes sans attente. Environ 30–50 €/mois bien investis
@@ -517,7 +517,7 @@ export default function SecuPage() {
             Madrid compte environ{" "}
             <Link
               href="/communaute/francais-madrid"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               35 000 Français
             </Link>{" "}
@@ -526,14 +526,14 @@ export default function SecuPage() {
           </p>
           <div className="space-y-4">
             <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#1fa971] mt-2" />
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#d6442a] mt-2" />
               <div>
                 <p className="font-semibold text-[#171712] text-sm mb-1">Les groupes de la communauté française</p>
                 <p className="text-[#171712]/80 text-sm leading-relaxed">
                   Le groupe Facebook &ldquo;Français à Madrid&rdquo; et les forums de{" "}
                   <Link
                     href="/communaute/francais-madrid"
-                    className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                    className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                   >
                     Madrid Accueil
                   </Link>{" "}
@@ -543,7 +543,7 @@ export default function SecuPage() {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#1fa971] mt-2" />
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#d6442a] mt-2" />
               <div>
                 <p className="font-semibold text-[#171712] text-sm mb-1">Via ta mutuelle privée</p>
                 <p className="text-[#171712]/80 text-sm leading-relaxed">
@@ -555,7 +555,7 @@ export default function SecuPage() {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#1fa971] mt-2" />
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#d6442a] mt-2" />
               <div>
                 <p className="font-semibold text-[#171712] text-sm mb-1">L&apos;Institut français de Madrid</p>
                 <p className="text-[#171712]/80 text-sm leading-relaxed">
@@ -567,7 +567,7 @@ export default function SecuPage() {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm flex gap-4">
-              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#1fa971] mt-2" />
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#d6442a] mt-2" />
               <div>
                 <p className="font-semibold text-[#171712] text-sm mb-1">En dernier recours : Google Translate au cabinet</p>
                 <p className="text-[#171712]/80 text-sm leading-relaxed">
@@ -591,25 +591,25 @@ export default function SecuPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/papiers/padron"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               L&apos;empadronamiento
             </Link>
             <Link
               href="/papiers/compte-bancaire"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Ouvrir un compte bancaire
             </Link>
             <Link
               href="/travailler/remote"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Travailler en remote depuis Madrid
             </Link>
@@ -620,9 +620,9 @@ export default function SecuPage() {
       <EtapeSuivante label="Transports & l'Abono à Madrid" href="/vivre/transports" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -646,7 +646,7 @@ export default function SecuPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

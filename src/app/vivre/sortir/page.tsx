@@ -50,16 +50,16 @@ export default function SortirPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/vivre"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Vivre à Madrid
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Vie culturelle
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Sortir à Madrid —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">culture, parcs et nuits longues</span>
+            <span className="not-italic font-bold text-[#d6442a]">culture, parcs et nuits longues</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Madrid est l&apos;une des capitales européennes les plus généreuses
@@ -70,13 +70,13 @@ export default function SortirPage() {
             rendent la chose accessible à tous les budgets.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Prado gratuit dès 18h
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               +23 musées gratuits
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Menu del día 10–15 €
             </span>
           </div>
@@ -105,7 +105,7 @@ export default function SortirPage() {
                 <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg">
                   Museo del Prado
                 </p>
-                <span className="flex-shrink-0 px-3 py-1 rounded-full bg-[#178a5d]/10 text-[#178a5d] text-xs font-semibold">
+                <span className="flex-shrink-0 px-3 py-1 rounded-full bg-[#af3722]/10 text-[#af3722] text-xs font-semibold">
                   15 € plein tarif
                 </span>
               </div>
@@ -115,10 +115,10 @@ export default function SortirPage() {
                 Un passage obligé, même pour les non-initiés.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold">
                   Gratuit lun–sam 18h–20h
                 </span>
-                <span className="px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold">
                   Gratuit dim 12h–14h
                 </span>
               </div>
@@ -129,7 +129,7 @@ export default function SortirPage() {
                 <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg">
                   Museo Reina Sofía
                 </p>
-                <span className="flex-shrink-0 px-3 py-1 rounded-full bg-[#178a5d]/10 text-[#178a5d] text-xs font-semibold">
+                <span className="flex-shrink-0 px-3 py-1 rounded-full bg-[#af3722]/10 text-[#af3722] text-xs font-semibold">
                   Art moderne
                 </span>
               </div>
@@ -140,10 +140,10 @@ export default function SortirPage() {
                 au moins une fois.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold">
                   Gratuit lun, mer–sam 19h–21h
                 </span>
-                <span className="px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold">
                   Gratuit dim 12h30–14h30
                 </span>
               </div>
@@ -154,7 +154,7 @@ export default function SortirPage() {
                 <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg">
                   Museo Thyssen-Bornemisza
                 </p>
-                <span className="flex-shrink-0 px-3 py-1 rounded-full bg-[#178a5d]/10 text-[#178a5d] text-xs font-semibold">
+                <span className="flex-shrink-0 px-3 py-1 rounded-full bg-[#af3722]/10 text-[#af3722] text-xs font-semibold">
                   Impressionnisme
                 </span>
               </div>
@@ -165,7 +165,7 @@ export default function SortirPage() {
                 à l&apos;État espagnol.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold">
                   Gratuit le lundi (exposition permanente)
                 </span>
               </div>
@@ -176,7 +176,7 @@ export default function SortirPage() {
                 <p className="font-[family-name:var(--font-body)] font-bold text-[#171712] text-lg">
                   Museo Sorolla
                 </p>
-                <span className="flex-shrink-0 px-3 py-1 rounded-full bg-[#178a5d]/10 text-[#178a5d] text-xs font-semibold">
+                <span className="flex-shrink-0 px-3 py-1 rounded-full bg-[#af3722]/10 text-[#af3722] text-xs font-semibold">
                   Coup de cœur
                 </span>
               </div>
@@ -187,7 +187,7 @@ export default function SortirPage() {
                 des touristes. Petite taille, grande émotion.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold">
                   Gratuit sam à partir de 14h
                 </span>
               </div>
@@ -272,7 +272,7 @@ export default function SortirPage() {
             Chaque dimanche de 9h à 15h, le quartier de{" "}
             <Link
               href="/logement/quartiers/la-latina"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               La Latina
             </Link>{" "}
@@ -315,7 +315,7 @@ export default function SortirPage() {
 
           <ul className="space-y-4">
             <li className="flex gap-3 items-start">
-              <span className="text-[#1fa971] font-bold flex-shrink-0 mt-0.5">—</span>
+              <span className="text-[#d6442a] font-bold flex-shrink-0 mt-0.5">—</span>
               <div>
                 <p className="font-semibold text-[#171712] text-sm mb-1">
                   Le menu del día — l&apos;institution espagnole du déjeuner
@@ -330,7 +330,7 @@ export default function SortirPage() {
               </div>
             </li>
             <li className="flex gap-3 items-start">
-              <span className="text-[#1fa971] font-bold flex-shrink-0 mt-0.5">—</span>
+              <span className="text-[#d6442a] font-bold flex-shrink-0 mt-0.5">—</span>
               <div>
                 <p className="font-semibold text-[#171712] text-sm mb-1">
                   Concerts en plein air — les Veranos de la Villa
@@ -346,7 +346,7 @@ export default function SortirPage() {
               </div>
             </li>
             <li className="flex gap-3 items-start">
-              <span className="text-[#1fa971] font-bold flex-shrink-0 mt-0.5">—</span>
+              <span className="text-[#d6442a] font-bold flex-shrink-0 mt-0.5">—</span>
               <div>
                 <p className="font-semibold text-[#171712] text-sm mb-1">
                   Cinéma en version originale
@@ -362,7 +362,7 @@ export default function SortirPage() {
               </div>
             </li>
             <li className="flex gap-3 items-start">
-              <span className="text-[#1fa971] font-bold flex-shrink-0 mt-0.5">—</span>
+              <span className="text-[#d6442a] font-bold flex-shrink-0 mt-0.5">—</span>
               <div>
                 <p className="font-semibold text-[#171712] text-sm mb-1">
                   Les bibliothèques publiques
@@ -396,20 +396,20 @@ export default function SortirPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-xs mb-2">
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-xs mb-2">
                 Bars alternatifs
               </p>
               <p className="font-semibold text-[#171712] mb-1">
                 <Link
                   href="/logement/quartiers/malasana"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Malasaña
                 </Link>{" "}
                 &amp;{" "}
                 <Link
                   href="/logement/quartiers/chueca"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Chueca
                 </Link>
@@ -423,13 +423,13 @@ export default function SortirPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-xs mb-2">
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-xs mb-2">
                 Tapas &amp; vermouths
               </p>
               <p className="font-semibold text-[#171712] mb-1">
                 <Link
                   href="/logement/quartiers/la-latina"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   La Latina
                 </Link>
@@ -443,7 +443,7 @@ export default function SortirPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-xs mb-2">
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-xs mb-2">
                 Vie nocturne touristique
               </p>
               <p className="font-semibold text-[#171712] mb-1">Huertas</p>
@@ -456,13 +456,13 @@ export default function SortirPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-xs mb-2">
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-xs mb-2">
                 Bars haut de gamme
               </p>
               <p className="font-semibold text-[#171712] mb-1">
                 <Link
                   href="/logement/quartiers/salamanca"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Salamanca
                 </Link>
@@ -496,13 +496,13 @@ export default function SortirPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-8">
             Madrid, ville la plus accessible culturellement d&apos;Europe ?
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mb-8">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg mb-8">
             Ce n&apos;est pas une formule. Trois musées d&apos;importance mondiale
             accessibles gratuitement plusieurs soirs par semaine. Un réseau de
             transports complet à{" "}
             <Link
               href="/se-decider/budget"
-              className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity"
+              className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity"
             >
               32,70 €/mois
             </Link>
@@ -511,8 +511,8 @@ export default function SortirPage() {
             sur les terrasses, dans les parcs — sans avoir à consommer pour
             exister dans l&apos;espace public.
           </p>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               À Madrid, la richesse de la vie culturelle n&apos;est pas proportionnelle
               au budget. C&apos;est peut-être la ville d&apos;Europe où le rapport
               entre ce que tu dépenses et ce que tu vis est le plus favorable.
@@ -530,31 +530,31 @@ export default function SortirPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
             <Link
               href="/vivre/courses"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Faire ses courses à Madrid
             </Link>
             <Link
               href="/vivre/espagnol"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Apprendre l&apos;espagnol à Madrid
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Les quartiers de Madrid
             </Link>
             <Link
               href="/se-decider/pourquoi-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Pourquoi choisir Madrid ?
             </Link>
@@ -567,7 +567,7 @@ export default function SortirPage() {
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#171712]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -591,7 +591,7 @@ export default function SortirPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

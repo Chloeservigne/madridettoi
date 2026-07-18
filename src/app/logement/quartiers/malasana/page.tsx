@@ -59,16 +59,16 @@ export default function MalasanaPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/logement/quartiers"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Tous les quartiers
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             🎨 Quartier Malasaña
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Malasaña —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">le quartier des Français à Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">le quartier des Français à Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Bohème, animé, francophile. Malasaña est souvent le premier quartier
@@ -76,9 +76,9 @@ export default function MalasanaPage() {
             quels cas il vaut mieux regarder ailleurs.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Bohème & branché</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">💶 1 100 – 1 500 € / mois</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Jeunes actifs · Digital nomads</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Bohème & branché</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">💶 1 100 – 1 500 € / mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Jeunes actifs · Digital nomads</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
@@ -113,15 +113,15 @@ export default function MalasanaPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">900 – 1 200 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">900 – 1 200 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">Studio</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">1 100 – 1 500 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">1 100 – 1 500 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">1 chambre</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">500 – 700 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">500 – 700 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">Coloc (par chambre)</p>
             </div>
           </div>
@@ -149,11 +149,11 @@ export default function MalasanaPage() {
           <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Le quartier est dense et animé. Si tu cherches le calme et les espaces
             verts, c&apos;est peut-être trop central — regarde alors du côté de{" "}
-            <Link href="/logement/quartiers/chamberi" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/logement/quartiers/chamberi" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               Chamberí
             </Link>{" "}
             ou{" "}
-            <Link href="/logement/quartiers/la-latina" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/logement/quartiers/la-latina" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               La Latina
             </Link>.
           </p>
@@ -166,13 +166,13 @@ export default function MalasanaPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             La communauté française
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg">
             C&apos;est ici que vit la grande majorité des Français fraîchement installés
             à Madrid. Tu croiseras des compatriotes dans les cafés, les bars, les
             coworkings. C&apos;est rassurant au début.
           </p>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-8">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Après 6 mois, beaucoup de gens ont envie d&apos;autre chose — plus de
               calme, plus d&apos;espagnol autour d&apos;eux, moins de touristes. Ce n&apos;est pas
               un défaut, c&apos;est l&apos;évolution naturelle.
@@ -188,8 +188,8 @@ export default function MalasanaPage() {
             Pour qui c&apos;est fait ?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-[#178a5d]/10 rounded-2xl p-5">
-              <p className="text-[#178a5d] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
+            <div className="bg-[#af3722]/10 rounded-2xl p-5">
+              <p className="text-[#af3722] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
               <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✓ Jeune actif qui arrive seul(e)</li>
                 <li>✓ Digital nomad ou freelance</li>
@@ -197,8 +197,8 @@ export default function MalasanaPage() {
                 <li>✓ Créatif, curieux, ouvert</li>
               </ul>
             </div>
-            <div className="bg-[#1fa971]/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
+            <div className="bg-[#d6442a]/10 rounded-2xl p-5">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
               <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✗ Tu as des enfants (peu d&apos;espaces verts)</li>
                 <li>✗ Tu cherches le calme</li>
@@ -221,14 +221,14 @@ export default function MalasanaPage() {
               <Link
                 key={q.href}
                 href={q.href}
-                className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+                className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
               >
                 {q.emoji} {q.name}
               </Link>
             ))}
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
@@ -239,9 +239,9 @@ export default function MalasanaPage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -265,7 +265,7 @@ export default function MalasanaPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

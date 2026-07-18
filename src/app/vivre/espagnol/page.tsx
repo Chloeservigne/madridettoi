@@ -50,16 +50,16 @@ export default function EspagnolPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/vivre"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Vivre à Madrid
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide langue
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Apprendre l&apos;espagnol à Madrid —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">les vraies options</span>
+            <span className="not-italic font-bold text-[#d6442a]">les vraies options</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Cours du soir à 250 €, échanges gratuits dans les bars, immersion
@@ -68,13 +68,13 @@ export default function EspagnolPage() {
             options, du plus accessible au plus intensif.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               EOI : ~250 €/quadrimestre
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Intercambios gratuits
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Diplôme DELE officiel
             </span>
           </div>
@@ -102,19 +102,19 @@ export default function EspagnolPage() {
               <p className="font-semibold text-[#171712] text-sm mb-2">Ce qui est bien</p>
               <ul className="space-y-2">
                 <li className="flex gap-2 items-start">
-                  <span className="text-[#178a5d] font-bold flex-shrink-0">—</span>
+                  <span className="text-[#af3722] font-bold flex-shrink-0">—</span>
                   <span className="text-[#171712] text-sm">Diplôme officiel reconnu à l&apos;issue de chaque niveau</span>
                 </li>
                 <li className="flex gap-2 items-start">
-                  <span className="text-[#178a5d] font-bold flex-shrink-0">—</span>
+                  <span className="text-[#af3722] font-bold flex-shrink-0">—</span>
                   <span className="text-[#171712] text-sm">Cours du soir adaptés aux actifs</span>
                 </li>
                 <li className="flex gap-2 items-start">
-                  <span className="text-[#178a5d] font-bold flex-shrink-0">—</span>
+                  <span className="text-[#af3722] font-bold flex-shrink-0">—</span>
                   <span className="text-[#171712] text-sm">Niveaux A1 à C1, progression structurée</span>
                 </li>
                 <li className="flex gap-2 items-start">
-                  <span className="text-[#178a5d] font-bold flex-shrink-0">—</span>
+                  <span className="text-[#af3722] font-bold flex-shrink-0">—</span>
                   <span className="text-[#171712] text-sm">Prix imbattable : ~250 €/quadrimestre</span>
                 </li>
               </ul>
@@ -123,15 +123,15 @@ export default function EspagnolPage() {
               <p className="font-semibold text-[#171712] text-sm mb-2">Le point de vigilance</p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-3">
-                  <span className="flex-shrink-0 text-[#1fa971] mt-0.5 font-bold">✕</span>
+                  <span className="flex-shrink-0 text-[#d6442a] mt-0.5 font-bold">✕</span>
                   <span className="text-[#171712] text-sm">Très demandées — liste d&apos;attente fréquente</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="flex-shrink-0 text-[#1fa971] mt-0.5 font-bold">✕</span>
+                  <span className="flex-shrink-0 text-[#d6442a] mt-0.5 font-bold">✕</span>
                   <span className="text-[#171712] text-sm">Inscription en juin pour la rentrée de septembre</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="flex-shrink-0 text-[#1fa971] mt-0.5 font-bold">✕</span>
+                  <span className="flex-shrink-0 text-[#d6442a] mt-0.5 font-bold">✕</span>
                   <span className="text-[#171712] text-sm">Pas de cours intensifs — rythme plus lent</span>
                 </li>
               </ul>
@@ -165,7 +165,7 @@ export default function EspagnolPage() {
 
           <div className="space-y-4 mb-8">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-1">Inhispania</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-1">Inhispania</p>
               <p className="font-semibold text-[#171712] mb-2">Cours intensifs en petits groupes</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Spécialisée dans les cours intensifs à 20h par semaine, en
@@ -176,7 +176,7 @@ export default function EspagnolPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-1">TANDEM Madrid</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-1">TANDEM Madrid</p>
               <p className="font-semibold text-[#171712] mb-2">Reconnue par l&apos;Instituto Cervantes</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Académie accréditée par l&apos;Instituto Cervantes, la référence
@@ -187,7 +187,7 @@ export default function EspagnolPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-1">Eureka Madrid</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-1">Eureka Madrid</p>
               <p className="font-semibold text-[#171712] mb-2">Fondée en 1988 — spécialiste ELE</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 L&apos;une des académies les plus anciennes de Madrid, spécialisée
@@ -198,7 +198,7 @@ export default function EspagnolPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-1">Club de Español</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-1">Club de Español</p>
               <p className="font-semibold text-[#171712] mb-2">Cours du soir accessibles</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Format cours du soir à tarifs compétitifs pour le privé :{" "}
@@ -240,19 +240,19 @@ export default function EspagnolPage() {
               <p className="font-semibold text-[#171712] text-sm mb-3">Où en trouver</p>
               <ul className="space-y-2">
                 <li className="flex gap-2 items-start">
-                  <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                  <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                   <span className="text-[#171712] text-sm">Meetup — groupes d&apos;intercambio actifs à Madrid</span>
                 </li>
                 <li className="flex gap-2 items-start">
-                  <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                  <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                   <span className="text-[#171712] text-sm">Groupes Facebook dédiés aux expats francophones</span>
                 </li>
                 <li className="flex gap-2 items-start">
-                  <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                  <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                   <span className="text-[#171712] text-sm">Application Tandem — format digital en parallèle</span>
                 </li>
                 <li className="flex gap-2 items-start">
-                  <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
+                  <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
                   <span className="text-[#171712] text-sm">Application HelloTalk — même principe</span>
                 </li>
               </ul>
@@ -262,15 +262,15 @@ export default function EspagnolPage() {
               <p className="text-[#171712] text-sm leading-relaxed">
                 Les bars organisant des soirées intercambios régulières se
                 concentrent dans{" "}
-                <Link href="/logement/quartiers/malasana" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                <Link href="/logement/quartiers/malasana" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                   Malasaña
                 </Link>
                 ,{" "}
-                <Link href="/logement/quartiers/chueca" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                <Link href="/logement/quartiers/chueca" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                   Chueca
                 </Link>{" "}
                 et{" "}
-                <Link href="/logement/quartiers/lavapies" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                <Link href="/logement/quartiers/lavapies" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                   Lavapiés
                 </Link>
                 . Ce sont les quartiers les plus cosmopolites de Madrid — tu y
@@ -307,7 +307,7 @@ export default function EspagnolPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-1">Duolingo</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-1">Duolingo</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Gamifié, facile à intégrer dans le quotidien. Bien pour débuter
                 ou maintenir un rythme régulier. Insuffisant seul pour
@@ -315,14 +315,14 @@ export default function EspagnolPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-1">Babbel</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-1">Babbel</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Plus structuré que Duolingo, orienté situations réelles.
                 Meilleure progression grammaticale. Payant (~7 €/mois).
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-1">Pimsleur</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-1">Pimsleur</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Excellent pour l&apos;oral et la prononciation. Méthode audio,
                 à écouter pendant les trajets. Très efficace pour
@@ -330,7 +330,7 @@ export default function EspagnolPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-[#1fa971] font-semibold uppercase tracking-widest text-sm mb-1">Anki</p>
+              <p className="text-[#d6442a] font-semibold uppercase tracking-widest text-sm mb-1">Anki</p>
               <p className="text-[#171712] text-sm leading-relaxed">
                 Cartes de mémorisation par répétition espacée. La référence
                 pour ancrer le vocabulaire sur le long terme. Gratuit,
@@ -341,32 +341,32 @@ export default function EspagnolPage() {
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
             <div className="px-6 py-4 bg-[#171712]">
-              <p className="text-[#1fa971] font-semibold">Immersion quotidienne — les réflexes à prendre dès le premier jour</p>
+              <p className="text-[#d6442a] font-semibold">Immersion quotidienne — les réflexes à prendre dès le premier jour</p>
             </div>
             <div className="divide-y divide-[#f2f0e9]">
               <div className="px-6 py-4 flex items-start gap-4">
-                <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
+                <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#d6442a] mt-0.5" />
                 <div>
                   <p className="font-semibold text-[#171712] text-sm">Passer son téléphone en espagnol</p>
                   <p className="text-[#171712]/70 text-xs mt-0.5">Quelques minutes de friction, des centaines de mots vus chaque jour</p>
                 </div>
               </div>
               <div className="px-6 py-4 flex items-start gap-4">
-                <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
+                <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#d6442a] mt-0.5" />
                 <div>
                   <p className="font-semibold text-[#171712] text-sm">Regarder des séries en VO espagnole</p>
                   <p className="text-[#171712]/70 text-xs mt-0.5">Sous-titres en espagnol, pas en français — l&apos;oreille s&apos;adapte en quelques semaines</p>
                 </div>
               </div>
               <div className="px-6 py-4 flex items-start gap-4">
-                <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
+                <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#d6442a] mt-0.5" />
                 <div>
                   <p className="font-semibold text-[#171712] text-sm">Commander en espagnol dès le premier jour</p>
                   <p className="text-[#171712]/70 text-xs mt-0.5">Même si c&apos;est laborieux — les Madrilènes sont patients et encourageants</p>
                 </div>
               </div>
               <div className="px-6 py-4 flex items-start gap-4">
-                <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
+                <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#d6442a] mt-0.5" />
                 <div>
                   <p className="font-semibold text-[#171712] text-sm">Écouter des podcasts en espagnol</p>
                   <p className="text-[#171712]/70 text-xs mt-0.5">Dans les transports, en faisant la cuisine — le cerveau travaille en arrière-plan</p>
@@ -385,8 +385,8 @@ export default function EspagnolPage() {
           </h2>
 
           <div className="bg-white/10 rounded-2xl p-5 mb-8">
-            <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">Diplôme de l&apos;Instituto Cervantes</p>
-            <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+            <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">Diplôme de l&apos;Instituto Cervantes</p>
+            <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
               Le <strong className="text-white">DELE (Diplomas de Español como Lengua Extranjera)</strong>{" "}
               est le diplôme officiel délivré par l&apos;Instituto Cervantes, la
               référence institutionnelle de la langue espagnole dans le monde.
@@ -398,8 +398,8 @@ export default function EspagnolPage() {
             </p>
           </div>
 
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               L&apos;espagnol s&apos;apprend surtout dans la rue à Madrid. Les
               cours donnent la structure, les intercambios donnent
               l&apos;aisance — mais c&apos;est le bar du coin, le boulanger et
@@ -418,31 +418,31 @@ export default function EspagnolPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/vivre/sortir"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Sortir à Madrid
             </Link>
             <Link
               href="/communaute"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               La communauté française à Madrid
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Les quartiers de Madrid
             </Link>
             <Link
               href="/travailler/emploi"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un emploi à Madrid
             </Link>
             <Link
               href="/se-decider/pourquoi-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Pourquoi s&apos;installer à Madrid
             </Link>
@@ -453,9 +453,9 @@ export default function EspagnolPage() {
       <EtapeSuivante label="Sortir à Madrid" href="/vivre/sortir" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -479,7 +479,7 @@ export default function EspagnolPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

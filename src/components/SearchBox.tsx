@@ -69,8 +69,8 @@ export default function SearchBox({ variant = "nav", placeholder }: SearchBoxPro
         onSubmit={handleSubmit}
         className={
           isHero
-            ? "flex items-center gap-3 bg-white border border-[#178a5d]/50 rounded-full p-1.5 pl-5 shadow-[0_16px_40px_-26px_rgba(36,24,19,0.4)]"
-            : "flex items-center gap-2.5 bg-white border border-[#178a5d]/45 rounded-full h-[46px] px-4"
+            ? "flex items-center gap-3 bg-white border border-[#af3722]/50 rounded-full p-1.5 pl-5 shadow-[0_16px_40px_-26px_rgba(36,24,19,0.4)]"
+            : "flex items-center gap-2.5 bg-white border border-[#af3722]/45 rounded-full h-[46px] px-4"
         }
       >
         <svg
@@ -105,7 +105,7 @@ export default function SearchBox({ variant = "nav", placeholder }: SearchBoxPro
         {isHero && (
           <button
             type="submit"
-            className="flex-shrink-0 font-[family-name:var(--font-body)] font-bold text-white bg-[#1fa971] rounded-full px-6 py-3 hover:bg-[#178a5d] transition-colors"
+            className="flex-shrink-0 font-[family-name:var(--font-body)] font-bold text-white bg-[#d6442a] rounded-full px-6 py-3 hover:bg-[#af3722] transition-colors"
           >
             Chercher
           </button>
@@ -126,11 +126,11 @@ export default function SearchBox({ variant = "nav", placeholder }: SearchBoxPro
                   <span className="block font-[family-name:var(--font-body)] font-semibold text-sm text-[#171712]">
                     {r.title}
                   </span>
-                  <span className="block font-[family-name:var(--font-body)] font-medium text-[11px] uppercase tracking-wide text-[#1fa971] mt-0.5">
+                  <span className="block font-[family-name:var(--font-body)] font-medium text-[11px] uppercase tracking-wide text-[#d6442a] mt-0.5">
                     {r.category}
                   </span>
                 </span>
-                <span className="text-[#1fa971] flex-shrink-0">→</span>
+                <span className="text-[#d6442a] flex-shrink-0">→</span>
               </button>
             ))
           ) : (

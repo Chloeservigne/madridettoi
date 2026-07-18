@@ -49,16 +49,16 @@ export default function FrancaisMadridPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/communaute"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Communauté
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Communauté
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             La communauté —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">les Français à Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">les Français à Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Environ 35 000 Français vivent à Madrid — l&apos;une des plus grandes
@@ -71,21 +71,21 @@ export default function FrancaisMadridPage() {
           {/* Stat cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
             <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-1">
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-1">
                 ~35 000
               </p>
               <p className="text-[#171712] text-sm font-semibold">Français</p>
               <p className="text-[#171712]/60 text-xs mt-1">Inscrits au consulat</p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-1">
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-1">
                 1ère
               </p>
               <p className="text-[#171712] text-sm font-semibold">Communauté étrangère</p>
               <p className="text-[#171712]/60 text-xs mt-1">À Madrid</p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-1">
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-1">
                 1913
               </p>
               <p className="text-[#171712] text-sm font-semibold">Institut français</p>
@@ -183,7 +183,7 @@ export default function FrancaisMadridPage() {
                     key={item}
                     className="flex items-start gap-2 text-[#171712] text-sm"
                   >
-                    <span className="text-[#1fa971] mt-0.5 flex-shrink-0">—</span>
+                    <span className="text-[#d6442a] mt-0.5 flex-shrink-0">—</span>
                     {item}
                   </li>
                 ))}
@@ -202,7 +202,7 @@ export default function FrancaisMadridPage() {
                     key={item}
                     className="flex items-start gap-2 text-[#171712] text-sm"
                   >
-                    <span className="text-[#1fa971] mt-0.5 flex-shrink-0">—</span>
+                    <span className="text-[#d6442a] mt-0.5 flex-shrink-0">—</span>
                     {item}
                   </li>
                 ))}
@@ -218,7 +218,7 @@ export default function FrancaisMadridPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             Les intercambios
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mb-6">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg mb-6">
             Le concept espagnol d&apos;échange de langues est l&apos;un des
             meilleurs outils pour s&apos;intégrer à Madrid. Le principe : tu
             enseignes le français à quelqu&apos;un, et cette personne
@@ -228,10 +228,10 @@ export default function FrancaisMadridPage() {
 
           <div className="space-y-4 mb-10">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm mb-2">
+              <p className="text-[#d6442a] font-semibold text-sm mb-2">
                 Où trouver des intercambios
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Cafés comme Café Lago ou El Jardín Secreto organisent des
                 sessions hebdomadaires. Meetup.com (&quot;Language Exchange
                 Madrid&quot;), InterNations Madrid. Ces événements attirent
@@ -239,17 +239,17 @@ export default function FrancaisMadridPage() {
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm mb-2">
+              <p className="text-[#d6442a] font-semibold text-sm mb-2">
                 Pourquoi ça marche
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 C&apos;est l&apos;une des façons les plus naturelles de
                 rencontrer à la fois des Madrilènes et d&apos;autres expatriés.
                 Le format est détendu, sans engagement, et l&apos;utilité est
                 immédiate : ton{" "}
                 <Link
                   href="/vivre/espagnol"
-                  className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity"
+                  className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity"
                 >
                   espagnol
                 </Link>{" "}
@@ -258,8 +258,8 @@ export default function FrancaisMadridPage() {
             </div>
           </div>
 
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Un intercambio par semaine, c&apos;est souvent comme ça que
               les expatriés finissent par trouver leur cercle à Madrid.
             </p>
@@ -323,7 +323,7 @@ export default function FrancaisMadridPage() {
               étrangères.{" "}
               <Link
                 href="/papiers/documents-francais"
-                className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
               >
                 CNI, passeport, registre consulaire : notre guide complet
               </Link>
@@ -354,14 +354,14 @@ export default function FrancaisMadridPage() {
               <p className="text-[#171712] text-sm leading-relaxed">
                 <Link
                   href="/logement/quartiers/chamberi"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Chamberí
                 </Link>{" "}
                 et{" "}
                 <Link
                   href="/logement/quartiers/salamanca"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Salamanca
                 </Link>{" "}
@@ -377,14 +377,14 @@ export default function FrancaisMadridPage() {
               <p className="text-[#171712] text-sm leading-relaxed">
                 <Link
                   href="/logement/quartiers/malasana"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Malasaña
                 </Link>{" "}
                 et{" "}
                 <Link
                   href="/logement/quartiers/chueca"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Chueca
                 </Link>{" "}
@@ -407,14 +407,14 @@ export default function FrancaisMadridPage() {
                   key={item}
                   className="flex items-start gap-2 text-[#171712] text-sm"
                 >
-                  <span className="text-[#178a5d] mt-0.5 flex-shrink-0">—</span>
+                  <span className="text-[#af3722] mt-0.5 flex-shrink-0">—</span>
                   {item}
                 </li>
               ))}
             </ul>
             <Link
               href="/vivre/ecoles"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors text-sm"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors text-sm"
             >
               Guide complet : scolariser ses enfants à Madrid →
             </Link>
@@ -431,25 +431,25 @@ export default function FrancaisMadridPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/vivre/espagnol"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Apprendre l&apos;espagnol à Madrid
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Les quartiers de Madrid
             </Link>
             <Link
               href="/travailler/entreprises-francaises"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Entreprises françaises à Madrid
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
@@ -458,9 +458,9 @@ export default function FrancaisMadridPage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Rejoins la communauté
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -483,7 +483,7 @@ export default function FrancaisMadridPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

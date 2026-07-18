@@ -60,16 +60,16 @@ export default function MoncloaArguellesPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/logement/quartiers"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Tous les quartiers
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             🎓 Quartier Moncloa-Argüelles
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Moncloa-Argüelles —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">le quartier vert et estudiantin</span>
+            <span className="not-italic font-bold text-[#d6442a]">le quartier vert et estudiantin</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Entre la Cité universitaire, le Parque del Oeste et la Casa de Campo,
@@ -78,9 +78,9 @@ export default function MoncloaArguellesPage() {
             du centre.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Estudiantin & familial</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">💶 1 000 – 1 400 € / mois</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Espaces verts · Calme</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Estudiantin & familial</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">💶 1 000 – 1 400 € / mois</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Espaces verts · Calme</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
@@ -117,15 +117,15 @@ export default function MoncloaArguellesPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">800 – 1 100 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">800 – 1 100 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">Studio</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">1 000 – 1 400 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">1 000 – 1 400 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">1 chambre</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">450 – 600 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">450 – 600 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">Coloc (par chambre)</p>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function MoncloaArguellesPage() {
             une qualité d&apos;appartement souvent meilleure — les immeubles sont plus
             récents et mieux entretenus côté Argüelles. La forte présence étudiante
             fait que la{" "}
-            <Link href="/logement/colocation" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/logement/colocation" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               colocation
             </Link>{" "}
             est très répandue dans ce quartier, avec une offre abondante.
@@ -159,7 +159,7 @@ export default function MoncloaArguellesPage() {
             mais moins denses qu&apos;à Malasaña. La vie de quartier est agréable et
             sans excès. Si tu cherches la vie nocturne, il faudra prendre le métro
             — mais c&apos;est de toute façon vite fait avec l&apos;
-            <Link href="/vivre/transports" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/vivre/transports" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               Abono Transporte
             </Link>.
           </p>
@@ -174,7 +174,7 @@ export default function MoncloaArguellesPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">Argüelles</p>
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">Argüelles</p>
               <ul className="space-y-2">
                 {[
                   "Plus résidentiel et calme",
@@ -183,14 +183,14 @@ export default function MoncloaArguellesPage() {
                   "Paseo de Pintor Rosales pour l'apéro",
                 ].map((item) => (
                   <li key={item} className="flex gap-2 items-start">
-                    <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
-                    <span className="text-[#e6f4ec]/80 text-sm">{item}</span>
+                    <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
+                    <span className="text-[#fbe8e4]/80 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">Moncloa</p>
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">Moncloa</p>
               <ul className="space-y-2">
                 {[
                   "Ambiance étudiante marquée",
@@ -199,15 +199,15 @@ export default function MoncloaArguellesPage() {
                   "Hub de transport vers toute la ville",
                 ].map((item) => (
                   <li key={item} className="flex gap-2 items-start">
-                    <span className="text-[#1fa971] font-bold flex-shrink-0">—</span>
-                    <span className="text-[#e6f4ec]/80 text-sm">{item}</span>
+                    <span className="text-[#d6442a] font-bold flex-shrink-0">—</span>
+                    <span className="text-[#fbe8e4]/80 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Ce quartier-là, on ne vient pas le chercher — on le découvre, et
               souvent on regrette de ne pas y avoir pensé plus tôt.
             </p>
@@ -222,8 +222,8 @@ export default function MoncloaArguellesPage() {
             Pour qui c&apos;est fait ?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-[#178a5d]/10 rounded-2xl p-5">
-              <p className="text-[#178a5d] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
+            <div className="bg-[#af3722]/10 rounded-2xl p-5">
+              <p className="text-[#af3722] font-semibold text-sm uppercase tracking-widest mb-3">Idéal si tu es…</p>
               <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✓ Étudiant(e) ou jeune en mobilité</li>
                 <li>✓ En quête d&apos;espaces verts au quotidien</li>
@@ -231,8 +231,8 @@ export default function MoncloaArguellesPage() {
                 <li>✓ Adepte du jogging ou du vélo</li>
               </ul>
             </div>
-            <div className="bg-[#1fa971]/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
+            <div className="bg-[#d6442a]/10 rounded-2xl p-5">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">Moins adapté si…</p>
               <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✗ Tu veux être au cœur de la vie nocturne</li>
                 <li>✗ Tu n&apos;aimes pas la densité étudiante</li>
@@ -255,14 +255,14 @@ export default function MoncloaArguellesPage() {
               <Link
                 key={q.href}
                 href={q.href}
-                className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+                className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
               >
                 {q.emoji} {q.name}
               </Link>
             ))}
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
@@ -271,9 +271,9 @@ export default function MoncloaArguellesPage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
@@ -295,7 +295,7 @@ export default function MoncloaArguellesPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

@@ -85,16 +85,16 @@ export default function NiePage() {
           <div className="flex-1">
             <Link
               href="/papiers"
-              className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+              className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
             >
               ← Retour à Papiers
             </Link>
-            <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+            <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
               Guide administratif
             </p>
             <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
               Le NIE,{" "}
-              <span className="not-italic font-bold text-[#1fa971]">le guide complet</span>
+              <span className="not-italic font-bold text-[#d6442a]">le guide complet</span>
             </h1>
             <p className="text-lg text-[#171712] leading-relaxed">
               Le NIE, tout le monde en parle dès qu&apos;on évoque un
@@ -128,12 +128,12 @@ export default function NiePage() {
             presque tout :{" "}
             <Link
               href="/logement/appartement"
-              className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
             >
               signer un bail
             </Link>
             ,{" "}
-            <Link href="/papiers/compte-bancaire" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/compte-bancaire" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               ouvrir un compte bancaire
             </Link>
             , acheter une voiture, travailler légalement, ou s&apos;inscrire à la sécu.
@@ -154,7 +154,7 @@ export default function NiePage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-[#178a5d] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#af3722] font-semibold text-sm uppercase tracking-widest mb-3">
                 NIE simple — formulaire EX-15
               </p>
               <p className="text-[#171712] text-sm leading-relaxed">
@@ -163,8 +163,8 @@ export default function NiePage() {
                 C&apos;est plus rapide à obtenir mais moins complet.
               </p>
             </div>
-            <div className="bg-[#1fa971]/10 rounded-2xl p-6">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
+            <div className="bg-[#d6442a]/10 rounded-2xl p-6">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">
                 Certificado de Registro — formulaire EX-18
               </p>
               <p className="text-[#171712] text-sm leading-relaxed">
@@ -187,24 +187,24 @@ export default function NiePage() {
           <div className="space-y-8">
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center">
                 <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">1</span>
               </div>
               <div>
                 <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-white mb-2">
                   Prends ta cita previa en ligne
                 </h3>
-                <p className="text-[#e6f4ec]/80 leading-relaxed text-sm">
+                <p className="text-[#fbe8e4]/80 leading-relaxed text-sm">
                   Tout commence par le rendez-vous officiel. Il se prend en
                   ligne sur le portail de la Police nationale espagnole. Les
                   créneaux à Madrid sont très demandés — les nouveaux
-                  s&apos;ouvrent le <strong className="text-[#e6f4ec]">lundi à 8h pile</strong>.
+                  s&apos;ouvrent le <strong className="text-[#fbe8e4]">lundi à 8h pile</strong>.
                 </p>
                 <a
                   href="https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus/language/es_ES"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#1fa971] text-white text-sm font-semibold hover:bg-[#178a5d] transition-colors"
+                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-[#d6442a] text-white text-sm font-semibold hover:bg-[#af3722] transition-colors"
                 >
                   Prendre la cita previa ↗
                 </a>
@@ -212,14 +212,14 @@ export default function NiePage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center">
                 <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">2</span>
               </div>
               <div>
                 <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-white mb-2">
                   Télécharge et remplis le bon formulaire
                 </h3>
-                <p className="text-[#e6f4ec]/80 leading-relaxed text-sm">
+                <p className="text-[#fbe8e4]/80 leading-relaxed text-sm">
                   EX-15 pour un NIE simple, EX-18 pour le Certificado de
                   Registro. Les deux sont à remplir avant le rendez-vous —
                   pas sur place. Ils sont en espagnol mais simples : nom,
@@ -230,7 +230,7 @@ export default function NiePage() {
                     href="https://www.inclusion.gob.es/documents/410169/2156469/15-Formulario_NIE_y_certificados.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-[#e6f4ec] text-sm font-semibold hover:bg-white/20 transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-[#fbe8e4] text-sm font-semibold hover:bg-white/20 transition-colors"
                   >
                     Formulaire EX-15 ↗
                   </a>
@@ -238,7 +238,7 @@ export default function NiePage() {
                     href="https://www.inclusion.gob.es/documents/410169/2156469/18-Certificado_residencia_comunitaria.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-[#e6f4ec] text-sm font-semibold hover:bg-white/20 transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-[#fbe8e4] text-sm font-semibold hover:bg-white/20 transition-colors"
                   >
                     Formulaire EX-18 ↗
                   </a>
@@ -247,15 +247,15 @@ export default function NiePage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center">
                 <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">3</span>
               </div>
               <div>
                 <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-white mb-2">
                   Paye la Tasa 790 código 012
                 </h3>
-                <p className="text-[#e6f4ec]/80 leading-relaxed text-sm">
-                  C&apos;est la taxe administrative, environ <strong className="text-[#e6f4ec]">12 €</strong>. Elle se paie en banque
+                <p className="text-[#fbe8e4]/80 leading-relaxed text-sm">
+                  C&apos;est la taxe administrative, environ <strong className="text-[#fbe8e4]">12 €</strong>. Elle se paie en banque
                   (ou dans certains bureaux de tabac) <em>avant</em> le
                   rendez-vous. Sans le reçu de paiement, tu seras refusé(e)
                   au guichet — c&apos;est l&apos;erreur la plus fréquente.
@@ -264,14 +264,14 @@ export default function NiePage() {
             </div>
 
             <div className="flex gap-6">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#1fa971] flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6442a] flex items-center justify-center">
                 <span className="font-[family-name:var(--font-body)] text-white font-bold text-sm">4</span>
               </div>
               <div>
                 <h3 className="font-[family-name:var(--font-body)] text-xl font-bold text-white mb-2">
                   Présente-toi au guichet à l&apos;heure
                 </h3>
-                <p className="text-[#e6f4ec]/80 leading-relaxed text-sm">
+                <p className="text-[#fbe8e4]/80 leading-relaxed text-sm">
                   Les créneaux sont stricts. 10 minutes de retard et
                   c&apos;est perdu — tu devras reprendre un rendez-vous.
                   La démarche en elle-même prend 15 à 30 minutes. Pour
@@ -288,7 +288,7 @@ export default function NiePage() {
       {/* Checklist + Tips */}
       <section className="py-24 px-6 bg-[#f2f0e9]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-2">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-2">
             Checklist
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-[#171712] mb-10">
@@ -296,13 +296,13 @@ export default function NiePage() {
           </h2>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-8">
-            <div className="px-6 py-4 bg-[#1fa971]">
+            <div className="px-6 py-4 bg-[#d6442a]">
               <p className="text-white font-semibold">📋 Documents à apporter le jour J</p>
             </div>
             <div className="divide-y divide-[#f2f0e9]">
               {checklist.map((item) => (
                 <div key={item.doc} className="px-6 py-4 flex items-start gap-4">
-                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
+                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#d6442a] mt-0.5" />
                   <div>
                     <p className="font-semibold text-[#171712] text-sm">{item.doc}</p>
                     <p className="text-[#171712]/70 text-xs mt-0.5">{item.detail}</p>
@@ -314,7 +314,7 @@ export default function NiePage() {
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
             <div className="px-6 py-4 bg-[#171712]">
-              <p className="text-[#1fa971] font-semibold">💡 Astuces pour la cita previa</p>
+              <p className="text-[#d6442a] font-semibold">💡 Astuces pour la cita previa</p>
             </div>
             <div className="divide-y divide-[#f2f0e9]">
               {tips.map((item) => (
@@ -337,7 +337,7 @@ export default function NiePage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
             {delaisStats.map((stat) => (
               <div key={stat.value} className="bg-white rounded-2xl p-5 text-center shadow-sm">
-                <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#1fa971] mb-2">{stat.value}</p>
+                <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-[#d6442a] mb-2">{stat.value}</p>
                 <p className="text-[#171712] text-xs leading-snug">{stat.label}</p>
               </div>
             ))}
@@ -359,7 +359,7 @@ export default function NiePage() {
           <ul className="text-[#171712] leading-relaxed space-y-3">
             {erreursFrequentes.map((erreur) => (
               <li key={erreur} className="flex items-start gap-3">
-                <span className="flex-shrink-0 text-[#1fa971] mt-0.5 font-bold">✕</span>
+                <span className="flex-shrink-0 text-[#d6442a] mt-0.5 font-bold">✕</span>
                 <span>{erreur}</span>
               </li>
             ))}
@@ -390,8 +390,8 @@ export default function NiePage() {
       {/* Conseil */}
       <section className="py-16 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-2xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-2xl leading-relaxed">
               Ne bloque pas ton départ parce que tu n&apos;as pas encore le NIE
               — mais prends ta cita previa dès le premier jour à Madrid, un
               lundi matin à 8h. C&apos;est la démarche la plus urgente une fois
@@ -410,31 +410,31 @@ export default function NiePage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/papiers/padron"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               L&apos;empadronamiento — l&apos;étape d&apos;après
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Les quartiers les plus sympa pour les expats
             </Link>
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Comment fonctionne la sécu en Espagne ?
             </Link>
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
@@ -445,9 +445,9 @@ export default function NiePage() {
       <EtapeSuivante label="Le padron municipal" href="/papiers/padron" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -471,13 +471,13 @@ export default function NiePage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
-        <p className="text-[#e6f4ec]/20 text-xs mt-2">
+        <p className="text-[#fbe8e4]/20 text-xs mt-2">
           <a
             href="https://storyset.com/work"
-            className="hover:text-[#e6f4ec]/40 transition-colors"
+            className="hover:text-[#fbe8e4]/40 transition-colors"
           >
             Work illustrations by Storyset
           </a>

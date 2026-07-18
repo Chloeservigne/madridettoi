@@ -10,7 +10,7 @@ export default function AuthorBadge({ date = "mars 2026" }: AuthorBadgeProps) {
       Rédigé par{" "}
       <Link
         href="/mon-histoire"
-        className="text-[#1fa971] font-semibold hover:underline"
+        className="text-[#d6442a] font-semibold hover:underline"
       >
         Chloé
       </Link>

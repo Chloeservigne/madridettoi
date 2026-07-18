@@ -118,7 +118,7 @@ export default function Nav() {
 
         <a
           href="/#newsletter"
-          className="flex-shrink-0 ml-auto md:ml-0 px-5 py-2.5 rounded-full bg-[#1fa971] text-white text-sm font-semibold font-[family-name:var(--font-body)] hover:bg-[#178a5d] transition-colors whitespace-nowrap"
+          className="flex-shrink-0 ml-auto md:ml-0 px-5 py-2.5 rounded-full bg-[#d6442a] text-white text-sm font-semibold font-[family-name:var(--font-body)] hover:bg-[#af3722] transition-colors whitespace-nowrap"
         >
           S&apos;abonner
         </a>
@@ -143,9 +143,9 @@ export default function Nav() {
         <div className="max-w-5xl mx-auto px-6 h-[50px] flex items-center gap-1">
           <Link
             href="/#commencer"
-            className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm text-[#1fa971] px-3.5 py-2 rounded-full hover:bg-[#1fa971]/10 transition-colors"
+            className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm text-[#d6442a] px-3.5 py-2 rounded-full hover:bg-[#d6442a]/10 transition-colors"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#1fa971] inline-block" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#d6442a] inline-block" />
             Par où commencer
           </Link>
           {menuDefs.map((m) => (
@@ -153,14 +153,14 @@ export default function Nav() {
               key={m.key}
               onMouseEnter={() => setGuidesOpen(m.key)}
               className={`inline-flex items-center gap-1 font-[family-name:var(--font-body)] font-semibold text-sm px-3.5 py-2 rounded-full transition-colors cursor-pointer ${
-                guidesOpen === m.key ? "text-[#1fa971] bg-white" : isActive(m.href) ? "text-[#1fa971]" : "text-[#171712]"
+                guidesOpen === m.key ? "text-[#d6442a] bg-white" : isActive(m.href) ? "text-[#d6442a]" : "text-[#171712]"
               }`}
             >
               {m.label}
               <span className={`text-xs transition-transform duration-150 ${guidesOpen === m.key ? "rotate-180" : ""}`}>⌄</span>
             </button>
           ))}
-          <Link href="/mon-histoire" className="ml-auto font-[family-name:var(--font-body)] font-semibold text-sm text-[#171712] px-1 py-2 hover:text-[#1fa971] transition-colors">
+          <Link href="/mon-histoire" className="ml-auto font-[family-name:var(--font-body)] font-semibold text-sm text-[#171712] px-1 py-2 hover:text-[#d6442a] transition-colors">
             Mon histoire
           </Link>
         </div>
@@ -170,7 +170,7 @@ export default function Nav() {
             <div className="max-w-5xl mx-auto px-6">
               <div className="bg-white rounded-b-[20px] border border-t-0 border-[#f2f0e9] shadow-[0_34px_60px_-34px_rgba(36,24,19,0.45)] p-7 grid grid-cols-[1.5fr_1fr] gap-8 max-w-[760px]">
                 <div>
-                  <p className="font-[family-name:var(--font-body)] font-bold text-[11px] tracking-[0.12em] uppercase text-[#1fa971] mb-3.5">
+                  <p className="font-[family-name:var(--font-body)] font-bold text-[11px] tracking-[0.12em] uppercase text-[#d6442a] mb-3.5">
                     {active.label}
                   </p>
                   {active.links.map((l) => (
@@ -186,16 +186,16 @@ export default function Nav() {
                 </div>
                 <Link
                   href={active.featureHref}
-                  className="block rounded-2xl bg-[#fbfaf6] p-3.5 border border-[#178a5d]/20 hover:-translate-y-0.5 transition-transform"
+                  className="block rounded-2xl bg-[#fbfaf6] p-3.5 border border-[#af3722]/20 hover:-translate-y-0.5 transition-transform"
                 >
                   <IllustrationSlot src={active.img} alt={`Illustration ${active.label}`} className="h-[104px] rounded-xl mb-3" />
-                  <p className="font-[family-name:var(--font-body)] font-bold text-[10px] tracking-[0.1em] uppercase text-[#1fa971] mb-1.5">
+                  <p className="font-[family-name:var(--font-body)] font-bold text-[10px] tracking-[0.1em] uppercase text-[#d6442a] mb-1.5">
                     À lire en premier
                   </p>
                   <p className="font-[family-name:var(--font-body)] font-bold text-base text-[#171712] leading-snug mb-3">
                     {active.feature}
                   </p>
-                  <span className="inline-flex items-center gap-1.5 font-[family-name:var(--font-body)] font-bold text-xs tracking-wide uppercase text-[#1fa971]">
+                  <span className="inline-flex items-center gap-1.5 font-[family-name:var(--font-body)] font-bold text-xs tracking-wide uppercase text-[#d6442a]">
                     Ouvrir le guide<span>→</span>
                   </span>
                 </Link>
@@ -210,7 +210,7 @@ export default function Nav() {
         <div ref={mobileMenuRef} className="md:hidden bg-[#fbfaf6] border-t border-[#f2f0e9] px-6 py-4 flex flex-col gap-1 max-h-[calc(100vh-74px)] overflow-y-auto">
           <Link
             href="/mon-histoire"
-            className={`py-2 px-3 rounded-lg transition-colors text-sm font-medium ${isActive("/mon-histoire") ? "text-[#1fa971] bg-[#f2f0e9]" : "text-[#171712]"}`}
+            className={`py-2 px-3 rounded-lg transition-colors text-sm font-medium ${isActive("/mon-histoire") ? "text-[#d6442a] bg-[#f2f0e9]" : "text-[#171712]"}`}
           >
             Mon histoire
           </Link>
@@ -221,7 +221,7 @@ export default function Nav() {
                 <Link
                   key={l.href}
                   href={l.href}
-                  className={`block py-2 px-3 rounded-lg transition-colors text-sm font-medium ${isActive(l.href) ? "text-[#1fa971] bg-[#f2f0e9]" : "text-[#171712]"}`}
+                  className={`block py-2 px-3 rounded-lg transition-colors text-sm font-medium ${isActive(l.href) ? "text-[#d6442a] bg-[#f2f0e9]" : "text-[#171712]"}`}
                 >
                   {l.t}
                 </Link>

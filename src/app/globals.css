@@ -5,11 +5,11 @@
   --foreground: #171712;
   --bg-alt: #f2f0e9;
   --ink: #171712;
-  --accent: #1fa971;
-  --accent-hover: #178a5d;
+  --accent: #d6442a;
+  --accent-hover: #af3722;
   --accent-text: #FFFFFF;
-  --accent-deep: #178a5d;
-  --accent-pale: #e6f4ec;
+  --accent-deep: #af3722;
+  --accent-pale: #fbe8e4;
   --dark-hover: #0f0f0c;
 }
 

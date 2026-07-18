@@ -51,16 +51,16 @@ export default function ColocationPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/logement/appartement"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Logement
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Logement
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             La colocation à Madrid —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">la solution pour bien démarrer</span>
+            <span className="not-italic font-bold text-[#d6442a]">la solution pour bien démarrer</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Arriver seul à Madrid avec un petit budget ? La colocation est souvent
@@ -69,9 +69,9 @@ export default function ColocationPage() {
             rencontrer des gens.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">350 – 650 € / chambre</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Charges souvent incluses</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Idéal pour commencer</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">350 – 650 € / chambre</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Charges souvent incluses</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Idéal pour commencer</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
@@ -85,7 +85,7 @@ export default function ColocationPage() {
           </h2>
           <p className="text-[#171712] leading-relaxed text-lg">
             Le marché immobilier madrilène est tendu. Les{" "}
-            <Link href="/logement/appartement" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/logement/appartement" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               appartements
             </Link>{" "}
             partent vite, les propriétaires demandent souvent des mois de garantie,
@@ -103,7 +103,7 @@ export default function ColocationPage() {
             Enfin, pour quelqu&apos;un qui ne connaît personne à Madrid, vivre avec
             des colocataires — espagnols, latinos, européens — est un raccourci
             vers une vie sociale et vers la pratique de l&apos;
-            <Link href="/vivre/espagnol" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/vivre/espagnol" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               espagnol au quotidien
             </Link>.
           </p>
@@ -140,7 +140,7 @@ export default function ColocationPage() {
                 ].map((row) => (
                   <tr key={row.quartier} className="bg-white">
                     <td className="px-4 py-3">
-                      <Link href={row.lien} className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+                      <Link href={row.lien} className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
                         {row.quartier}
                       </Link>
                     </td>
@@ -181,7 +181,7 @@ export default function ColocationPage() {
               },
             ].map((plateforme) => (
               <div key={plateforme.nom} className="bg-white rounded-2xl p-5 shadow-sm">
-                <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-2">{plateforme.nom}</p>
+                <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-2">{plateforme.nom}</p>
                 <p className="text-[#171712] text-sm leading-relaxed">{plateforme.desc}</p>
               </div>
             ))}
@@ -199,7 +199,7 @@ export default function ColocationPage() {
             Les exigences varient selon le propriétaire, mais prépare en général :
           </p>
           <div className="bg-white rounded-3xl shadow-md overflow-hidden">
-            <div className="px-6 py-4 bg-[#1fa971]">
+            <div className="px-6 py-4 bg-[#d6442a]">
               <p className="text-white font-semibold">Documents habituellement requis</p>
             </div>
             <div className="divide-y divide-[#f2f0e9]">
@@ -211,7 +211,7 @@ export default function ColocationPage() {
                 { doc: "Photo d'identité", detail: "Pour certains formulaires ou dossiers en ligne" },
               ].map((item) => (
                 <div key={item.doc} className="px-6 py-4 flex items-start gap-4">
-                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#1fa971] mt-0.5" />
+                  <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-[#d6442a] mt-0.5" />
                   <div>
                     <p className="font-semibold text-[#171712] text-sm">{item.doc}</p>
                     <p className="text-[#171712]/70 text-xs mt-0.5">{item.detail}</p>
@@ -222,13 +222,13 @@ export default function ColocationPage() {
           </div>
           <p className="text-[#171712] leading-relaxed mt-6">
             Si tu n&apos;as pas encore ton{" "}
-            <Link href="/papiers/nie" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/nie" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               NIE
             </Link>
             , certains propriétaires acceptent de commencer sans — surtout en
             colocation entre particuliers. Mais il vaut mieux l&apos;obtenir rapidement :
             tu en auras besoin pour ouvrir un{" "}
-            <Link href="/papiers/compte-bancaire" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers/compte-bancaire" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               compte bancaire
             </Link>{" "}
             et signer un bail à ton nom.
@@ -262,16 +262,16 @@ export default function ColocationPage() {
               },
             ].map((item) => (
               <li key={item.titre} className="flex items-start gap-3">
-                <span className="flex-shrink-0 text-[#1fa971] mt-0.5 font-bold text-lg">✕</span>
+                <span className="flex-shrink-0 text-[#d6442a] mt-0.5 font-bold text-lg">✕</span>
                 <div>
                   <p className="text-white font-semibold mb-1">{item.titre}</p>
-                  <p className="text-[#e6f4ec]/70 text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-[#fbe8e4]/70 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </li>
             ))}
           </ul>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               La coloc, c&apos;est rarement l&apos;endroit où tu vas rester longtemps. Mais
               c&apos;est souvent là que tu vas vraiment commencer à vivre à Madrid.
             </p>
@@ -286,8 +286,8 @@ export default function ColocationPage() {
             La coloc, c&apos;est fait pour toi ?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-[#178a5d]/10 rounded-2xl p-5">
-              <p className="text-[#178a5d] font-semibold text-sm uppercase tracking-widest mb-3">Oui si…</p>
+            <div className="bg-[#af3722]/10 rounded-2xl p-5">
+              <p className="text-[#af3722] font-semibold text-sm uppercase tracking-widest mb-3">Oui si…</p>
               <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✓ Tu arrives sans emploi ni garanties</li>
                 <li>✓ Tu veux tester Madrid avant de t&apos;engager</li>
@@ -295,8 +295,8 @@ export default function ColocationPage() {
                 <li>✓ Tu cherches à rencontrer des gens rapidement</li>
               </ul>
             </div>
-            <div className="bg-[#1fa971]/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">Plutôt non si…</p>
+            <div className="bg-[#d6442a]/10 rounded-2xl p-5">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">Plutôt non si…</p>
               <ul className="space-y-2 text-[#171712] text-sm">
                 <li>✗ Tu as besoin d&apos;un espace de travail calme chez toi</li>
                 <li>✗ Tu vis en couple ou arrives avec des affaires</li>
@@ -315,19 +315,19 @@ export default function ColocationPage() {
             Ça pourrait aussi t&apos;aider
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
+            <Link href="/logement/appartement" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors">
               Trouver un appartement depuis la France
             </Link>
-            <Link href="/logement/quartiers" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
+            <Link href="/logement/quartiers" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors">
               Choisir son quartier à Madrid
             </Link>
-            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
+            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors">
               Obtenir son NIE
             </Link>
-            <Link href="/papiers/compte-bancaire" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
+            <Link href="/papiers/compte-bancaire" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors">
               Ouvrir un compte bancaire espagnol
             </Link>
-            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors">
+            <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors">
               Budget pour vivre à Madrid
             </Link>
           </div>
@@ -335,9 +335,9 @@ export default function ColocationPage() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">Sois parmi les premiers</p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
             Reçois nos guides dès qu&apos;ils sortent
           </h2>
@@ -359,7 +359,7 @@ export default function ColocationPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

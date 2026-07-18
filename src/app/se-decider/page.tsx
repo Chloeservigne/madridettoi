@@ -62,19 +62,19 @@ export default function SeDeciderPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à l&apos;accueil
           </Link>
-          <span className="inline-block px-3 py-1 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-xs font-semibold mb-4">
+          <span className="inline-block px-3 py-1 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-xs font-semibold mb-4">
             Phase 1 — Je rêve encore
           </span>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Avant de partir
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Tu veux sauter{" "}
-            <span className="not-italic font-bold text-[#1fa971]">le pas&nbsp;?</span>
+            <span className="not-italic font-bold text-[#d6442a]">le pas&nbsp;?</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Avant de réserver le camion, il faut être sûr(e). Pourquoi Madrid
@@ -93,7 +93,7 @@ export default function SeDeciderPage() {
           <p className="text-[#171712] leading-relaxed text-lg mb-4">
             Madrid, c&apos;est 300 jours de soleil par an, une ville de 3,4 millions
             d&apos;habitants, et environ{" "}
-            <Link href="/communaute/francais-madrid" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/communaute/francais-madrid" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               35 000 Français installés
             </Link>{" "}
             — l&apos;une des plus grandes communautés françaises d&apos;Europe. Concrètement :
@@ -101,14 +101,14 @@ export default function SeDeciderPage() {
           </p>
           <p className="text-[#171712] leading-relaxed text-lg mb-4">
             Côté finances, le{" "}
-            <Link href="/se-decider/budget" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/se-decider/budget" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               coût de la vie
             </Link>{" "}
             est 15 à 25 % inférieur à Paris selon les postes de dépense — surtout
             la restauration, les transports et certains services. En revanche,
             les loyers dans les quartiers centraux ont fortement augmenté ces
             dernières années. Le{" "}
-            <Link href="/se-decider/salaire-madrid" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/se-decider/salaire-madrid" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               salaire moyen à Madrid
             </Link>{" "}
             tourne autour de 2 200 € brut — inférieur à Paris, mais le pouvoir
@@ -118,7 +118,7 @@ export default function SeDeciderPage() {
             Le point souvent sous-estimé : l&apos;administration espagnole. NIE,
             padron, sécu, impôts — ça prend du temps et de l&apos;organisation.
             Mais ça se fait. Nos guides{" "}
-            <Link href="/papiers" className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors">
+            <Link href="/papiers" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               Papiers & démarches
             </Link>{" "}
             sont là pour que tu ne sois jamais pris(e) au dépourvu.
@@ -140,11 +140,11 @@ export default function SeDeciderPage() {
                   <div className="w-12 h-12 rounded-2xl bg-[#fbfaf6] flex items-center justify-center text-2xl">
                     {card.emoji}
                   </div>
-                  <span className="text-[#1fa971] text-xs font-semibold">
+                  <span className="text-[#d6442a] text-xs font-semibold">
                     Lire le guide →
                   </span>
                 </div>
-                <h2 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-3 group-hover:text-[#1fa971] transition-colors duration-200">
+                <h2 className="font-[family-name:var(--font-body)] text-xl font-bold text-[#171712] mb-3 group-hover:text-[#d6442a] transition-colors duration-200">
                   {card.title}
                 </h2>
                 <p className="text-[#171712]/70 text-sm leading-relaxed">
@@ -160,7 +160,7 @@ export default function SeDeciderPage() {
                   <div className="w-12 h-12 rounded-2xl bg-[#fbfaf6] flex items-center justify-center text-2xl">
                     {card.emoji}
                   </div>
-                  <span className="text-xs bg-[#1fa971]/20 text-[#1fa971] px-3 py-1 rounded-full font-semibold">
+                  <span className="text-xs bg-[#d6442a]/20 text-[#d6442a] px-3 py-1 rounded-full font-semibold">
                     Bientôt
                   </span>
                 </div>
@@ -179,9 +179,9 @@ export default function SeDeciderPage() {
       <EtapeSuivante label="Maintenant, la question du travail" href="/travailler" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -206,7 +206,7 @@ export default function SeDeciderPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

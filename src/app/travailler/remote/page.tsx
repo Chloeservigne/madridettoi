@@ -52,16 +52,16 @@ export default function RemotePage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/travailler"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Travailler
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Guide travail
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Peut-on travailler{" "}
-            <span className="not-italic font-bold text-[#1fa971]">en remote depuis Madrid&nbsp;?</span>
+            <span className="not-italic font-bold text-[#d6442a]">en remote depuis Madrid&nbsp;?</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             La question que tout le monde se pose — et dont la réponse
@@ -124,22 +124,22 @@ export default function RemotePage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">
                 Salarié en remote
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Idéalement, ton entreprise doit être enregistrée en Espagne ou
                 tu passes en portage salarial / autónomo. Beaucoup restent en
                 situation grise quelques mois — c&apos;est un risque.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">
                 Freelance
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Le statut d&apos;
-                <Link href="/travailler/freelance" className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity">
+                <Link href="/travailler/freelance" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">
                   autónomo
                 </Link>{" "}
                 est la solution la plus propre. Tu factures tes clients (y
@@ -149,18 +149,18 @@ export default function RemotePage() {
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-[#d6442a] font-semibold text-sm uppercase tracking-widest mb-3">
                 Entrepreneur
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Créer une SL (SARL espagnole) est une option si ton activité
                 est importante. Plus de structure, plus de contraintes — mais
                 une situation claire et pérenne.
               </p>
             </div>
           </div>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-10">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-10">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Consulte une <em>gestoría</em> (comptable espagnol) dès ton
               arrivée — un rendez-vous de 50 à 100 € peut t&apos;éviter des
               années de complications fiscales.
@@ -222,37 +222,37 @@ export default function RemotePage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement depuis la France
             </Link>
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Faut-il un NIE avant d&apos;arriver ?
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Les quartiers les plus sympa pour les expats
             </Link>
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Comment fonctionne la sécu en Espagne ?
             </Link>
             <Link
               href="/travailler/freelance"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Devenir autónomo à Madrid
             </Link>
             <Link
               href="/papiers/impots"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Fiscalité & impôts en Espagne
             </Link>
@@ -263,9 +263,9 @@ export default function RemotePage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -289,7 +289,7 @@ export default function RemotePage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

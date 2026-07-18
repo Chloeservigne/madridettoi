@@ -217,16 +217,16 @@ export default function Home() {
 
       {/* Hero */}
       <header className="relative overflow-hidden pt-32 md:pt-40 pb-16 px-6 bg-gradient-to-b from-[#fbfaf6] to-[#f2f0e9]">
-        <div className="absolute -top-32 -right-24 w-[420px] h-[420px] rounded-full bg-[radial-gradient(circle,#1fa97155,#178a5d22_45%,transparent_68%)] pointer-events-none" />
+        <div className="absolute -top-32 -right-24 w-[420px] h-[420px] rounded-full bg-[radial-gradient(circle,#d6442a55,#af372222_45%,transparent_68%)] pointer-events-none" />
         <div className="max-w-5xl mx-auto relative grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#1fa971] mb-5">
-              <span className="w-2 h-2 rounded-full bg-[#1fa971] inline-block" />
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#d6442a] mb-5">
+              <span className="w-2 h-2 rounded-full bg-[#d6442a] inline-block" />
               Le guide des Français à Madrid
             </p>
             <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#171712] leading-[1.02] mb-6">
               S&apos;installer à Madrid,{" "}
-              <span className="text-[#1fa971]">sans galérer</span>
+              <span className="text-[#d6442a]">sans galérer</span>
             </h1>
             <p className="text-lg sm:text-xl text-[#171712] mb-8 leading-relaxed max-w-lg">
               Logement, NIE, travail, santé, budget… Tous les guides pour préparer
@@ -245,7 +245,7 @@ export default function Home() {
                 <Link
                   key={tag.href}
                   href={tag.href}
-                  className="text-sm font-medium text-[#171712] bg-white border border-[#178a5d]/45 rounded-full px-3.5 py-1.5 hover:bg-[#1fa971] hover:text-white hover:border-[#1fa971] transition-colors"
+                  className="text-sm font-medium text-[#171712] bg-white border border-[#af3722]/45 rounded-full px-3.5 py-1.5 hover:bg-[#d6442a] hover:text-white hover:border-[#d6442a] transition-colors"
                 >
                   {tag.label}
                 </Link>
@@ -254,17 +254,17 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="absolute -top-6 -left-6 z-10 w-24 h-24 rounded-full bg-[radial-gradient(circle_at_50%_40%,#1fa971,#178a5d)] text-white flex flex-col items-center justify-center shadow-[0_16px_30px_-12px_rgba(31,169,113,0.6)]">
+            <div className="absolute -top-6 -left-6 z-10 w-24 h-24 rounded-full bg-[radial-gradient(circle_at_50%_40%,#d6442a,#af3722)] text-white flex flex-col items-center justify-center shadow-[0_16px_30px_-12px_rgba(31,169,113,0.6)]">
               <span className="font-[family-name:var(--font-body)] font-extrabold text-3xl leading-none">300</span>
               <span className="font-[family-name:var(--font-body)] font-semibold text-[9px] uppercase text-center leading-tight mt-1">
                 jours de<br />soleil / an
               </span>
             </div>
-            <div className="relative rounded-3xl p-2.5 bg-white border border-[#178a5d]/30 shadow-[0_40px_80px_-40px_rgba(36,24,19,0.5)]">
+            <div className="relative rounded-3xl p-2.5 bg-white border border-[#af3722]/30 shadow-[0_40px_80px_-40px_rgba(36,24,19,0.5)]">
               <IllustrationSlot src="/images/illus-madrid.svg" alt="Illustration de Madrid" className="w-full h-[380px] rounded-2xl" />
             </div>
-            <div className="absolute -bottom-5 right-6 z-10 font-[family-name:var(--font-body)] font-semibold text-sm text-[#171712] bg-white rounded-full px-4 py-2.5 shadow-[0_14px_30px_-12px_rgba(36,24,19,0.35)] border border-[#178a5d]/30">
-              <span className="font-extrabold text-[#1fa971] mr-1">+35 000</span>
+            <div className="absolute -bottom-5 right-6 z-10 font-[family-name:var(--font-body)] font-semibold text-sm text-[#171712] bg-white rounded-full px-4 py-2.5 shadow-[0_14px_30px_-12px_rgba(36,24,19,0.35)] border border-[#af3722]/30">
+              <span className="font-extrabold text-[#d6442a] mr-1">+35 000</span>
               Français y vivent déjà
             </div>
           </div>
@@ -277,12 +277,12 @@ export default function Home() {
           {stats.map((s, i) => (
             <div
               key={s.l}
-              className={`text-center px-4 py-1.5 ${i < stats.length - 1 ? "sm:border-r sm:border-[#e6f4ec]/10" : ""}`}
+              className={`text-center px-4 py-1.5 ${i < stats.length - 1 ? "sm:border-r sm:border-[#fbe8e4]/10" : ""}`}
             >
-              <p className="font-[family-name:var(--font-body)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#1fa971] leading-none">
+              <p className="font-[family-name:var(--font-body)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#d6442a] leading-none">
                 {s.n}
               </p>
-              <p className="font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide text-[#e6f4ec]/75 mt-2.5 leading-snug">
+              <p className="font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide text-[#fbe8e4]/75 mt-2.5 leading-snug">
                 {s.l}
               </p>
             </div>
@@ -294,8 +294,8 @@ export default function Home() {
       <section id="commencer" className="bg-[#fbfaf6] pt-20 pb-10 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
-            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#1fa971] mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#1fa971] inline-block" />
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#d6442a] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#d6442a] inline-block" />
               Tu débarques ? Commence ici
             </p>
             <h2 className="font-[family-name:var(--font-body)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#171712] mb-4">
@@ -310,13 +310,13 @@ export default function Home() {
             {journey.map((j) => (
               <div
                 key={j.num}
-                className="bg-white rounded-[20px] p-7 border border-[#178a5d]/20 shadow-[0_16px_40px_-30px_rgba(36,24,19,0.4)] hover:-translate-y-1 hover:shadow-[0_26px_50px_-28px_rgba(36,24,19,0.48)] transition-all"
+                className="bg-white rounded-[20px] p-7 border border-[#af3722]/20 shadow-[0_16px_40px_-30px_rgba(36,24,19,0.4)] hover:-translate-y-1 hover:shadow-[0_26px_50px_-28px_rgba(36,24,19,0.48)] transition-all"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className="w-11 h-11 rounded-full bg-[#1fa971] text-white font-[family-name:var(--font-body)] font-extrabold text-lg flex items-center justify-center">
+                  <span className="w-11 h-11 rounded-full bg-[#d6442a] text-white font-[family-name:var(--font-body)] font-extrabold text-lg flex items-center justify-center">
                     {j.num}
                   </span>
-                  <span className="font-[family-name:var(--font-body)] font-bold text-[11px] uppercase tracking-wide text-[#1fa971] bg-[#f2f0e9] rounded-full px-3 py-1.5">
+                  <span className="font-[family-name:var(--font-body)] font-bold text-[11px] uppercase tracking-wide text-[#d6442a] bg-[#f2f0e9] rounded-full px-3 py-1.5">
                     {j.when}
                   </span>
                 </div>
@@ -329,7 +329,7 @@ export default function Home() {
                     <Link
                       key={lien.href}
                       href={lien.href}
-                      className="text-sm font-medium text-[#171712] bg-[#fbfaf6] rounded-full px-3 py-1.5 hover:bg-[#f2f0e9] hover:text-[#1fa971] transition-colors"
+                      className="text-sm font-medium text-[#171712] bg-[#fbfaf6] rounded-full px-3 py-1.5 hover:bg-[#f2f0e9] hover:text-[#d6442a] transition-colors"
                     >
                       {lien.label}
                     </Link>
@@ -345,8 +345,8 @@ export default function Home() {
       <section className="bg-[#fbfaf6] pt-10 pb-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
-            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#1fa971] mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#1fa971] inline-block" />
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#d6442a] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#d6442a] inline-block" />
               Les grands thèmes
             </p>
             <h2 className="font-[family-name:var(--font-body)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#171712]">
@@ -358,20 +358,20 @@ export default function Home() {
               <Link
                 key={g.href}
                 href={g.href}
-                className="group block bg-white rounded-[18px] overflow-hidden border border-[#178a5d]/25 shadow-[0_16px_40px_-28px_rgba(36,24,19,0.4)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(36,24,19,0.5)] transition-all"
+                className="group block bg-white rounded-[18px] overflow-hidden border border-[#af3722]/25 shadow-[0_16px_40px_-28px_rgba(36,24,19,0.4)] hover:-translate-y-1.5 hover:shadow-[0_26px_50px_-26px_rgba(36,24,19,0.5)] transition-all"
               >
                 <div className="relative">
                   <IllustrationSlot src={g.img} alt={`Illustration ${g.name}`} className="h-[140px]" />
-                  <span className="absolute top-3 left-3 font-[family-name:var(--font-body)] font-bold text-[11px] uppercase tracking-wide text-white bg-[#1fa971] rounded-full px-3 py-1">
+                  <span className="absolute top-3 left-3 font-[family-name:var(--font-body)] font-bold text-[11px] uppercase tracking-wide text-white bg-[#d6442a] rounded-full px-3 py-1">
                     {g.tag}
                   </span>
                 </div>
                 <div className="p-5">
-                  <p className="font-[family-name:var(--font-body)] font-bold text-xl text-[#171712] mb-1.5 group-hover:text-[#1fa971] transition-colors">
+                  <p className="font-[family-name:var(--font-body)] font-bold text-xl text-[#171712] mb-1.5 group-hover:text-[#d6442a] transition-colors">
                     {g.name}
                   </p>
                   <p className="text-[#171712] text-sm leading-relaxed mb-4">{g.desc}</p>
-                  <div className="flex items-center justify-between font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide text-[#1fa971]">
+                  <div className="flex items-center justify-between font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide text-[#d6442a]">
                     {g.count}
                     <span>→</span>
                   </div>
@@ -386,22 +386,22 @@ export default function Home() {
       <section className="bg-[#f2f0e9] py-20 px-6">
         <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.25fr_1fr] gap-11 items-start">
           <div>
-            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#1fa971] mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#1fa971] inline-block" />
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#d6442a] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#d6442a] inline-block" />
               À la une
             </p>
             <Link
               href="/logement/appartement"
-              className="group block bg-white rounded-[20px] overflow-hidden border border-[#178a5d]/25 shadow-[0_20px_46px_-30px_rgba(36,24,19,0.45)] hover:-translate-y-1 hover:shadow-[0_30px_56px_-28px_rgba(36,24,19,0.5)] transition-all"
+              className="group block bg-white rounded-[20px] overflow-hidden border border-[#af3722]/25 shadow-[0_20px_46px_-30px_rgba(36,24,19,0.45)] hover:-translate-y-1 hover:shadow-[0_30px_56px_-28px_rgba(36,24,19,0.5)] transition-all"
             >
               <div className="relative">
                 <IllustrationSlot src="/images/illus-logement.svg" alt="Illustration logement" className="h-[240px]" />
-                <span className="absolute top-3 left-3 font-[family-name:var(--font-body)] font-bold text-[11px] uppercase tracking-wide text-white bg-[#1fa971] rounded-full px-3 py-1">
+                <span className="absolute top-3 left-3 font-[family-name:var(--font-body)] font-bold text-[11px] uppercase tracking-wide text-white bg-[#d6442a] rounded-full px-3 py-1">
                   Guide complet
                 </span>
               </div>
               <div className="p-7">
-                <p className="font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide text-[#1fa971] mb-2.5">
+                <p className="font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide text-[#d6442a] mb-2.5">
                   Logement · Mis à jour en mars 2026
                 </p>
                 <p className="font-[family-name:var(--font-body)] font-extrabold text-2xl sm:text-[27px] tracking-tight text-[#171712] mb-3 leading-snug">
@@ -411,15 +411,15 @@ export default function Home() {
                   Les vrais sites, les arnaques classiques et comment décrypter un
                   bail espagnol. Le guide que j&apos;aurais aimé avoir en arrivant.
                 </p>
-                <span className="font-[family-name:var(--font-body)] font-bold text-sm uppercase tracking-wide text-[#1fa971]">
+                <span className="font-[family-name:var(--font-body)] font-bold text-sm uppercase tracking-wide text-[#d6442a]">
                   Lire le guide →
                 </span>
               </div>
             </Link>
           </div>
           <div>
-            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#1fa971] mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#1fa971] inline-block" />
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#d6442a] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#d6442a] inline-block" />
               D&apos;autres guides à explorer
             </p>
             <div className="flex flex-col">
@@ -427,9 +427,9 @@ export default function Home() {
                 <Link
                   key={a.href}
                   href={a.href}
-                  className="grid grid-cols-[auto_1fr] items-center gap-3.5 py-4 border-t border-[#178a5d]/25 hover:pl-2.5 transition-[padding]"
+                  className="grid grid-cols-[auto_1fr] items-center gap-3.5 py-4 border-t border-[#af3722]/25 hover:pl-2.5 transition-[padding]"
                 >
-                  <span className="font-[family-name:var(--font-body)] font-bold text-[10px] uppercase tracking-wide text-[#1fa971] bg-[#fbfaf6] rounded-full px-2.5 py-1 whitespace-nowrap">
+                  <span className="font-[family-name:var(--font-body)] font-bold text-[10px] uppercase tracking-wide text-[#d6442a] bg-[#fbfaf6] rounded-full px-2.5 py-1 whitespace-nowrap">
                     {a.cat}
                   </span>
                   <span className="font-[family-name:var(--font-body)] font-semibold text-base text-[#171712] leading-tight">
@@ -446,8 +446,8 @@ export default function Home() {
       <section className="bg-[#fbfaf6] py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10 max-w-xl">
-            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#1fa971] mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#1fa971] inline-block" />
+            <p className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] font-bold text-sm tracking-[0.1em] uppercase text-[#d6442a] mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#d6442a] inline-block" />
               Les vraies questions
             </p>
             <h2 className="font-[family-name:var(--font-body)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#171712]">
@@ -459,16 +459,16 @@ export default function Home() {
               <Link
                 key={q.href}
                 href={q.href}
-                className="group flex flex-col bg-white rounded-[18px] p-6 border border-[#178a5d]/20 shadow-[0_14px_36px_-28px_rgba(36,24,19,0.4)] hover:-translate-y-1 hover:border-[#1fa971]/40 hover:shadow-[0_26px_48px_-26px_rgba(36,24,19,0.42)] transition-all"
+                className="group flex flex-col bg-white rounded-[18px] p-6 border border-[#af3722]/20 shadow-[0_14px_36px_-28px_rgba(36,24,19,0.4)] hover:-translate-y-1 hover:border-[#d6442a]/40 hover:shadow-[0_26px_48px_-26px_rgba(36,24,19,0.42)] transition-all"
               >
-                <span className="self-start font-[family-name:var(--font-body)] font-bold text-[11px] uppercase tracking-wide text-[#1fa971] bg-[#f2f0e9] rounded-full px-3 py-1.5 mb-4">
+                <span className="self-start font-[family-name:var(--font-body)] font-bold text-[11px] uppercase tracking-wide text-[#d6442a] bg-[#f2f0e9] rounded-full px-3 py-1.5 mb-4">
                   {q.tag}
                 </span>
                 <p className="font-[family-name:var(--font-body)] font-bold text-xl tracking-tight text-[#171712] mb-2.5">
                   {q.q}
                 </p>
                 <p className="text-[#171712] text-sm leading-relaxed mb-4 flex-1">{q.a}</p>
-                <span className="font-[family-name:var(--font-body)] font-bold text-xs uppercase tracking-wide text-[#1fa971]">
+                <span className="font-[family-name:var(--font-body)] font-bold text-xs uppercase tracking-wide text-[#d6442a]">
                   Lire la réponse →
                 </span>
               </Link>
@@ -480,25 +480,25 @@ export default function Home() {
       {/* Témoignage */}
       <section className="bg-[#171712] py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <span className="block font-[family-name:var(--font-body)] font-extrabold text-6xl text-[#1fa971] leading-none mb-2 select-none">
+          <span className="block font-[family-name:var(--font-body)] font-extrabold text-6xl text-[#d6442a] leading-none mb-2 select-none">
             &ldquo;
           </span>
-          <p className="font-[family-name:var(--font-body)] font-medium not-italic text-2xl sm:text-3xl leading-snug tracking-tight text-[#e6f4ec] mb-8">
+          <p className="font-[family-name:var(--font-body)] font-medium not-italic text-2xl sm:text-3xl leading-snug tracking-tight text-[#fbe8e4] mb-8">
             1er septembre 2020. Deux valises, une coloc de 6 à Malasaña — un
             mélange improbable de nationalités. Et une sensation immédiate,
             inexplicable, d&apos;être exactement là où je devais être.
           </p>
           <div className="inline-flex items-center gap-3.5">
-            <span className="w-[50px] h-[50px] rounded-full bg-[radial-gradient(circle_at_40%_35%,#178a5d,#1fa971)] text-white font-[family-name:var(--font-body)] font-extrabold text-xl flex items-center justify-center">
+            <span className="w-[50px] h-[50px] rounded-full bg-[radial-gradient(circle_at_40%_35%,#af3722,#d6442a)] text-white font-[family-name:var(--font-body)] font-extrabold text-xl flex items-center justify-center">
               C
             </span>
             <span className="text-left">
-              <span className="block font-[family-name:var(--font-body)] font-bold text-base text-[#e6f4ec]">
+              <span className="block font-[family-name:var(--font-body)] font-bold text-base text-[#fbe8e4]">
                 Chloé, depuis Madrid
               </span>
               <Link
                 href="/mon-histoire"
-                className="block font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide text-[#1fa971] mt-0.5 hover:opacity-80 transition-opacity"
+                className="block font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide text-[#d6442a] mt-0.5 hover:opacity-80 transition-opacity"
               >
                 Lire mon histoire →
               </Link>
@@ -508,7 +508,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="bg-[#e6f4ec] py-20 px-6">
+      <section id="newsletter" className="bg-[#fbe8e4] py-20 px-6">
         <div className="max-w-4xl mx-auto grid lg:grid-cols-[1fr_auto] gap-10 items-center">
           <div className="text-center lg:text-left">
             <h2 className="font-[family-name:var(--font-body)] font-extrabold text-3xl sm:text-4xl tracking-tight text-[#171712] mb-4">
@@ -521,7 +521,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-start">
               <EmailForm />
             </div>
-            <p className="text-[#178a5d] font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide mt-5">
+            <p className="text-[#af3722] font-[family-name:var(--font-body)] font-semibold text-xs uppercase tracking-wide mt-5">
               Rejoins la communauté · Zéro spam · Désinscription en un clic
             </p>
           </div>
@@ -535,10 +535,10 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-[#171712] pt-16 pb-8 px-6">
-        <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.3fr_2.2fr] gap-10 pb-9 border-b border-[#e6f4ec]/10">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.3fr_2.2fr] gap-10 pb-9 border-b border-[#fbe8e4]/10">
           <div>
             <Logo variant="cream" height={26} className="mb-2.5" />
-            <p className="text-[#e6f4ec]/60 text-[15px] leading-relaxed max-w-[300px]">
+            <p className="text-[#fbe8e4]/60 text-[15px] leading-relaxed max-w-[300px]">
               Guides honnêtes pour s&apos;installer à Madrid quand on est
               français.
             </p>
@@ -546,14 +546,14 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {footGroups.map((fg) => (
               <div key={fg.title} className="flex flex-col gap-3">
-                <p className="font-[family-name:var(--font-body)] font-bold text-xs uppercase tracking-wide text-[#1fa971] mb-1">
+                <p className="font-[family-name:var(--font-body)] font-bold text-xs uppercase tracking-wide text-[#d6442a] mb-1">
                   {fg.title}
                 </p>
                 {fg.links.map((l) => (
                   <Link
                     key={l.href}
                     href={l.href}
-                    className="text-[#e6f4ec]/80 text-[15px] hover:opacity-100 hover:text-[#1fa971] transition-colors"
+                    className="text-[#fbe8e4]/80 text-[15px] hover:opacity-100 hover:text-[#d6442a] transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -562,14 +562,14 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="max-w-5xl mx-auto pt-6 text-[#e6f4ec]/55 font-[family-name:var(--font-body)] font-medium text-xs uppercase tracking-wide text-center">
+        <div className="max-w-5xl mx-auto pt-6 text-[#fbe8e4]/55 font-[family-name:var(--font-body)] font-medium text-xs uppercase tracking-wide text-center">
           © {new Date().getFullYear()} Madrid &amp; Toi · Fait avec ☀️ depuis Madrid
         </div>
-        <div className="max-w-5xl mx-auto pt-2 text-[#e6f4ec]/30 text-[11px] text-center flex flex-wrap justify-center gap-x-3 gap-y-1">
-          <a href="https://storyset.com/people" className="hover:text-[#e6f4ec]/60 transition-colors">People illustrations by Storyset</a>
-          <a href="https://storyset.com/work" className="hover:text-[#e6f4ec]/60 transition-colors">Work illustrations by Storyset</a>
-          <a href="https://storyset.com/communication" className="hover:text-[#e6f4ec]/60 transition-colors">Communication illustrations by Storyset</a>
-          <a href="https://storyset.com/creativity" className="hover:text-[#e6f4ec]/60 transition-colors">Creativity illustrations by Storyset</a>
+        <div className="max-w-5xl mx-auto pt-2 text-[#fbe8e4]/30 text-[11px] text-center flex flex-wrap justify-center gap-x-3 gap-y-1">
+          <a href="https://storyset.com/people" className="hover:text-[#fbe8e4]/60 transition-colors">People illustrations by Storyset</a>
+          <a href="https://storyset.com/work" className="hover:text-[#fbe8e4]/60 transition-colors">Work illustrations by Storyset</a>
+          <a href="https://storyset.com/communication" className="hover:text-[#fbe8e4]/60 transition-colors">Communication illustrations by Storyset</a>
+          <a href="https://storyset.com/creativity" className="hover:text-[#fbe8e4]/60 transition-colors">Creativity illustrations by Storyset</a>
         </div>
       </footer>
     </div>

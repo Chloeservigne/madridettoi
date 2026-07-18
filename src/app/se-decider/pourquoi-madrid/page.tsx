@@ -52,16 +52,16 @@ export default function PourquoiMadridPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/se-decider"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Se décider
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Avant de partir
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Pourquoi Madrid,{" "}
-            <span className="not-italic font-bold text-[#1fa971]">vraiment&nbsp;?</span>
+            <span className="not-italic font-bold text-[#d6442a]">vraiment&nbsp;?</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Pas les clichés de brochure touristique. Les vraies raisons — celles
@@ -123,20 +123,20 @@ export default function PourquoiMadridPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             La culture
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg">
             Madrid, c&apos;est trois musées de rang mondial à dix minutes à
             pied les uns des autres : le Prado, le Reina Sofía, le Thyssen.
             Des expositions en permanence, une vie culturelle dense, accessible,
             et souvent moins chère qu&apos;à Paris.
           </p>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mt-4">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg mt-4">
             Mais ce qui frappe surtout, c&apos;est que les Espagnols sont fiers
             de leur culture — vraiment fiers, sans arrogance. Le flamenco, la
             cuisine, les fêtes locales, les traditions de quartier : ce ne sont
             pas des décors pour touristes, c&apos;est vivant, pratiqué, transmis.
           </p>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-8">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-8">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               On arrive dans un pays qui sait ce qu&apos;il est — et ça se
               ressent dans chaque rue, chaque bar, chaque conversation.
             </p>
@@ -162,7 +162,7 @@ export default function PourquoiMadridPage() {
             et il neige. Ce n&apos;est pas la Costa del Sol. C&apos;est un vrai
             climat continental avec ses extrêmes.
           </p>
-          <div className="mt-6 p-4 bg-[#f2f0e9] rounded-xl border-l-4 border-[#1fa971]">
+          <div className="mt-6 p-4 bg-[#f2f0e9] rounded-xl border-l-4 border-[#d6442a]">
             <p className="text-[#171712] text-sm leading-relaxed">
               <span className="font-semibold text-[#171712]">À savoir : </span>
               En août, les Madrilènes partent. La ville se vide, beaucoup de
@@ -220,10 +220,10 @@ export default function PourquoiMadridPage() {
       {/* Ce qu'on ne peut pas expliquer */}
       <section className="py-16 px-6 bg-[#171712]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-2xl mb-4">
+          <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-2xl mb-4">
             Ce qu&apos;on ne peut pas vraiment expliquer
           </p>
-          <p className="text-[#e6f4ec] text-lg leading-relaxed">
+          <p className="text-[#fbe8e4] text-lg leading-relaxed">
             Il y a une chose que je n&apos;arrive pas à mettre en mots, et que
             je retrouve dans presque tous les témoignages d&apos;expats : une
             sensation d&apos;évidence. Pas l&apos;euphorie du touriste, pas
@@ -243,37 +243,37 @@ export default function PourquoiMadridPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Budget de vie réel à Madrid
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Quel quartier choisir ?
             </Link>
             <Link
               href="/logement/appartement"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un appartement
             </Link>
             <Link
               href="/se-decider/pour-qui"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Madrid est fait pour toi ?
             </Link>
             <Link
               href="/mon-histoire"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Mon histoire
             </Link>
             <Link
               href="/communaute/francais-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               La communauté française à Madrid
             </Link>
@@ -284,9 +284,9 @@ export default function PourquoiMadridPage() {
       <EtapeSuivante label="Budget & coût de la vie à Madrid" href="/se-decider/budget" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -310,7 +310,7 @@ export default function PourquoiMadridPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

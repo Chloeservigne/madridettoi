@@ -52,16 +52,16 @@ export default function ImpotsPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/papiers"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour aux démarches
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Démarches administratives
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Impôts à Madrid —{" "}
-            <span className="not-italic font-bold text-[#1fa971]">ta fiscalité à Madrid</span>
+            <span className="not-italic font-bold text-[#d6442a]">ta fiscalité à Madrid</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Résidence fiscale, IRPF, convention France-Espagne, Modelo 720 —
@@ -71,13 +71,13 @@ export default function ImpotsPage() {
           </p>
           <AuthorBadge date="mars 2026" />
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Résidence fiscale
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               IRPF
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
               Convention Franco-Espagnole
             </span>
           </div>
@@ -85,21 +85,21 @@ export default function ImpotsPage() {
           {/* Stat cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
             <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-1">
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-1">
                 183
               </p>
               <p className="text-[#171712] text-sm font-semibold">jours/an</p>
               <p className="text-[#171712]/60 text-xs mt-1">Seuil résidence fiscale</p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-1">
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-1">
                 19–47 %
               </p>
               <p className="text-[#171712] text-sm font-semibold">IRPF</p>
               <p className="text-[#171712]/60 text-xs mt-1">Selon tes revenus</p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#1fa971] mb-1">
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-1">
                 Avril–Juin
               </p>
               <p className="text-[#171712] text-sm font-semibold">Campagne Renta</p>
@@ -151,7 +151,7 @@ export default function ImpotsPage() {
           </p>
 
           <div className="bg-white rounded-3xl shadow-md overflow-hidden mb-4">
-            <div className="px-6 py-4 bg-[#1fa971]">
+            <div className="px-6 py-4 bg-[#d6442a]">
               <div className="flex justify-between items-center">
                 <p className="text-white font-semibold">Tranche</p>
                 <p className="text-white font-semibold">Taux</p>
@@ -198,7 +198,7 @@ export default function ImpotsPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             La Renta — la déclaration annuelle
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mb-6">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg mb-6">
             Chaque année, les résidents fiscaux espagnols déclarent leurs
             revenus de l&apos;année précédente via la <strong className="text-white">Renta</strong>.
             La campagne se tient <strong className="text-white">d&apos;avril à fin juin</strong>.
@@ -207,10 +207,10 @@ export default function ImpotsPage() {
 
           <div className="space-y-4 mb-10">
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm mb-2">
+              <p className="text-[#d6442a] font-semibold text-sm mb-2">
                 Qui est obligé de déclarer
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Si tes revenus dépassent <strong className="text-white">22 000 €
                 d&apos;un seul employeur</strong> (cas classique du salarié), ou{" "}
                 <strong className="text-white">15 000 €</strong> avec plusieurs
@@ -220,10 +220,10 @@ export default function ImpotsPage() {
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
-              <p className="text-[#1fa971] font-semibold text-sm mb-2">
+              <p className="text-[#d6442a] font-semibold text-sm mb-2">
                 Comment déclarer
               </p>
-              <p className="text-[#e6f4ec]/80 text-sm leading-relaxed">
+              <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Sur le site de l&apos;<strong className="text-white">Agencia
                 Tributaria</strong> avec ton identifiant{" "}
                 <strong className="text-white">Cl@ve PIN</strong>. L&apos;Agencia
@@ -233,8 +233,8 @@ export default function ImpotsPage() {
             </div>
           </div>
 
-          <blockquote className="border-l-4 border-[#1fa971] pl-6">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Madrid a l&apos;un des taux d&apos;imposition régionaux les plus
               bas d&apos;Espagne — c&apos;est un avantage réel pour les revenus
               élevés.
@@ -265,7 +265,7 @@ export default function ImpotsPage() {
           </p>
 
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-white rounded-2xl p-5 shadow-sm border-t-4 border-[#1fa971]">
+            <div className="bg-white rounded-2xl p-5 shadow-sm border-t-4 border-[#d6442a]">
               <p className="font-semibold text-[#171712] text-sm mb-2">
                 Te désinscrire des impôts français
               </p>
@@ -276,7 +276,7 @@ export default function ImpotsPage() {
                 dans les deux pays.
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-5 shadow-sm border-t-4 border-[#178a5d]">
+            <div className="bg-white rounded-2xl p-5 shadow-sm border-t-4 border-[#af3722]">
               <p className="font-semibold text-[#171712] text-sm mb-2">
                 T&apos;inscrire au censo espagnol
               </p>
@@ -285,7 +285,7 @@ export default function ImpotsPage() {
                 avec ton{" "}
                 <Link
                   href="/papiers/nie"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   NIE
                 </Link>
@@ -331,7 +331,7 @@ export default function ImpotsPage() {
                   key={item}
                   className="flex items-start gap-2 text-[#171712] text-sm"
                 >
-                  <span className="text-[#1fa971] mt-0.5 flex-shrink-0">—</span>
+                  <span className="text-[#d6442a] mt-0.5 flex-shrink-0">—</span>
                   {item}
                 </li>
               ))}
@@ -360,7 +360,7 @@ export default function ImpotsPage() {
                 la première année. Pour en savoir plus :{" "}
                 <Link
                   href="/travailler/remote"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   travailler en remote depuis Madrid
                 </Link>
@@ -372,7 +372,7 @@ export default function ImpotsPage() {
               <p className="font-semibold text-[#171712] mb-2">
                 <Link
                   href="/travailler/freelance"
-                  className="text-[#1fa971] underline underline-offset-2 hover:text-[#178a5d] transition-colors"
+                  className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
                 >
                   Autónomo
                 </Link>{" "}
@@ -410,25 +410,25 @@ export default function ImpotsPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/papiers/nie"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Obtenir son NIE à Madrid
             </Link>
             <Link
               href="/papiers/secu"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               La sécu en Espagne
             </Link>
             <Link
               href="/travailler/freelance"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Devenir autónomo en Espagne
             </Link>
             <Link
               href="/travailler/remote"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Travailler en remote depuis Madrid
             </Link>
@@ -439,9 +439,9 @@ export default function ImpotsPage() {
       <EtapeSuivante label="La communauté française à Madrid" href="/communaute/francais-madrid" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -464,7 +464,7 @@ export default function ImpotsPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>

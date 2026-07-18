@@ -87,16 +87,16 @@ export default function SalaireMadridPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/se-decider"
-            className="inline-flex items-center gap-2 text-[#1fa971] text-sm font-semibold mb-8 hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-[#d6442a] text-sm font-semibold mb-8 hover:gap-3 transition-all"
           >
             ← Retour à Se décider
           </Link>
-          <p className="text-[#178a5d] font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#af3722] font-semibold tracking-widest uppercase text-sm mb-4">
             Avant de partir
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#171712] leading-tight mb-6">
             Combien gagne-t-on{" "}
-            <span className="not-italic font-bold text-[#1fa971]">vraiment à Madrid&nbsp;?</span>
+            <span className="not-italic font-bold text-[#d6442a]">vraiment à Madrid&nbsp;?</span>
           </h1>
           <p className="text-lg text-[#171712] leading-relaxed">
             Les salaires espagnols font peur sur le papier — inférieurs aux
@@ -105,9 +105,9 @@ export default function SalaireMadridPage() {
             comparaison Paris–Madrid qui change tout.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Données 2026</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">Salaires bruts annuels</span>
-            <span className="px-3 py-1.5 rounded-full bg-[#1fa971]/10 text-[#1fa971] text-sm font-semibold">14 mois en Espagne</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Données 2026</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">Salaires bruts annuels</span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">14 mois en Espagne</span>
           </div>
           <AuthorBadge date="mars 2026" />
         </div>
@@ -134,15 +134,15 @@ export default function SalaireMadridPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-2xl font-[family-name:var(--font-body)]">1 221 €</p>
+              <p className="text-[#d6442a] font-bold text-2xl font-[family-name:var(--font-body)]">1 221 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">SMI mensuel brut</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-2xl font-[family-name:var(--font-body)]">17 094 €</p>
+              <p className="text-[#d6442a] font-bold text-2xl font-[family-name:var(--font-body)]">17 094 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">SMI annuel (14 mois)</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="text-[#1fa971] font-bold text-2xl font-[family-name:var(--font-body)]">~1 050 €</p>
+              <p className="text-[#d6442a] font-bold text-2xl font-[family-name:var(--font-body)]">~1 050 €</p>
               <p className="text-[#171712]/70 text-sm mt-1">SMI net estimé / mois</p>
             </div>
           </div>
@@ -177,7 +177,7 @@ export default function SalaireMadridPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-4">
             Salaires par secteur à Madrid
           </h2>
-          <p className="text-[#e6f4ec]/60 text-sm mb-8">Brut annuel · Fourchettes indicatives 2025</p>
+          <p className="text-[#fbe8e4]/60 text-sm mb-8">Brut annuel · Fourchettes indicatives 2025</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {salairesParSecteur.map((item) => (
               <div key={item.secteur} className="bg-white/10 rounded-2xl p-5">
@@ -187,12 +187,12 @@ export default function SalaireMadridPage() {
                 </div>
                 <div className="space-y-1">
                   <div className="flex justify-between items-center">
-                    <span className="text-[#e6f4ec]/50 text-xs">Junior</span>
-                    <span className="text-[#e6f4ec]/90 text-sm font-semibold">{item.junior}</span>
+                    <span className="text-[#fbe8e4]/50 text-xs">Junior</span>
+                    <span className="text-[#fbe8e4]/90 text-sm font-semibold">{item.junior}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-[#1fa971] text-xs">Senior</span>
-                    <span className="text-[#1fa971] text-sm font-semibold">{item.senior}</span>
+                    <span className="text-[#d6442a] text-xs">Senior</span>
+                    <span className="text-[#d6442a] text-sm font-semibold">{item.senior}</span>
                   </div>
                 </div>
               </div>
@@ -217,17 +217,17 @@ export default function SalaireMadridPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
             <div className="bg-white rounded-2xl p-5 shadow-sm">
               <p className="text-[#171712]/60 text-xs uppercase tracking-widest mb-2">Salaire brut annuel</p>
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">25 000 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">25 000 €</p>
               <p className="text-[#171712] text-sm mt-2">→ ~1 550 € net / mois</p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
               <p className="text-[#171712]/60 text-xs uppercase tracking-widest mb-2">Salaire brut annuel</p>
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">35 000 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">35 000 €</p>
               <p className="text-[#171712] text-sm mt-2">→ ~2 100 € net / mois</p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm">
               <p className="text-[#171712]/60 text-xs uppercase tracking-widest mb-2">Salaire brut annuel</p>
-              <p className="text-[#1fa971] font-bold text-xl font-[family-name:var(--font-body)]">50 000 €</p>
+              <p className="text-[#d6442a] font-bold text-xl font-[family-name:var(--font-body)]">50 000 €</p>
               <p className="text-[#171712] text-sm mt-2">→ ~2 850 € net / mois</p>
             </div>
           </div>
@@ -257,12 +257,12 @@ export default function SalaireMadridPage() {
                     <p className="text-[#171712] font-semibold text-sm">{item.paris}</p>
                   </div>
                   <div>
-                    <p className="text-[#1fa971] text-xs uppercase tracking-widest mb-1">Madrid</p>
-                    <p className="text-[#1fa971] font-semibold text-sm">{item.madrid}</p>
+                    <p className="text-[#d6442a] text-xs uppercase tracking-widest mb-1">Madrid</p>
+                    <p className="text-[#d6442a] font-semibold text-sm">{item.madrid}</p>
                   </div>
                 </div>
                 <p className="text-[#171712]/60 text-xs border-t border-[#f2f0e9] pt-3">{item.loyer}</p>
-                <p className="text-[#178a5d] text-xs font-semibold mt-1">{item.verdict}</p>
+                <p className="text-[#af3722] text-xs font-semibold mt-1">{item.verdict}</p>
               </div>
             ))}
           </div>
@@ -275,26 +275,26 @@ export default function SalaireMadridPage() {
           <h2 className="font-[family-name:var(--font-body)] text-3xl font-bold text-white mb-6">
             Combien faut-il pour bien vivre à Madrid ?
           </h2>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg">
             Seul(e) dans un appartement dans un{" "}
-            <Link href="/logement/quartiers" className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity">
+            <Link href="/logement/quartiers" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">
               bon quartier
             </Link>
             , avec une vie sociale active (restos, sorties, voyages), le
             budget confortable tourne autour de <strong className="text-white">2 000 à 2 500 € nets par mois</strong>.
             Soit un brut annuel de 33 000 à 42 000 €.
           </p>
-          <p className="text-[#e6f4ec]/80 leading-relaxed text-lg mt-4">
+          <p className="text-[#fbe8e4]/80 leading-relaxed text-lg mt-4">
             En coloc ou avec un mode de vie plus simple, 1 500 € nets
             suffisent largement. Le{" "}
-            <Link href="/se-decider/budget" className="text-[#1fa971] underline underline-offset-2 hover:opacity-80 transition-opacity">
+            <Link href="/se-decider/budget" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">
               coût de la vie à Madrid
             </Link>{" "}
             reste nettement plus bas qu&apos;à Paris — et c&apos;est ça qui
             change tout le calcul.
           </p>
-          <blockquote className="border-l-4 border-[#1fa971] pl-6 mt-10">
-            <p className="text-[#e6f4ec] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
+          <blockquote className="border-l-4 border-[#d6442a] pl-6 mt-10">
+            <p className="text-[#fbe8e4] font-[family-name:var(--font-body)] not-italic text-xl leading-relaxed">
               Un salaire qui semble décevant sur le papier peut permettre une
               vie meilleure qu&apos;à Paris. L&apos;erreur classique, c&apos;est
               de comparer les chiffres bruts sans comparer les loyers, les
@@ -313,43 +313,43 @@ export default function SalaireMadridPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/se-decider/budget"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Coût de la vie réel à Madrid
             </Link>
             <Link
               href="/travailler/remote"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Travailler en remote depuis Madrid
             </Link>
             <Link
               href="/se-decider/pourquoi-madrid"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Pourquoi Madrid ?
             </Link>
             <Link
               href="/logement/quartiers"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Choisir son quartier
             </Link>
             <Link
               href="/travailler/emploi"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Trouver un emploi à Madrid
             </Link>
             <Link
               href="/travailler/freelance"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Devenir autónomo
             </Link>
             <Link
               href="/papiers/impots"
-              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#1fa971] transition-colors"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
             >
               Impôts & IRPF en Espagne
             </Link>
@@ -360,9 +360,9 @@ export default function SalaireMadridPage() {
       <EtapeSuivante label="Trouver un appartement depuis la France" href="/logement/appartement" />
 
       {/* Newsletter */}
-      <section id="newsletter" className="py-24 px-6 bg-[#e6f4ec]">
+      <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#178a5d] text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#af3722] text-sm uppercase tracking-widest mb-4">
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
@@ -386,7 +386,7 @@ export default function SalaireMadridPage() {
         <Link href="/" className="inline-block mb-2 hover:opacity-80 transition-opacity">
           <Logo variant="cream" height={24} className="mx-auto" />
         </Link>
-        <p className="text-[#e6f4ec]/40 text-sm">
+        <p className="text-[#fbe8e4]/40 text-sm">
           © {new Date().getFullYear()} — Fait avec ☀️ depuis Madrid
         </p>
       </footer>
