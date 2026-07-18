@@ -36,7 +36,7 @@ export default function EmailForm() {
       </button>
       {status === "coming-soon" && (
         <p className="text-[#171712]/70 text-sm mt-1 sm:basis-full">
-          Oups, la newsletter n&apos;est pas encore branchée — merci de ton intérêt, j&apos;y travaille ! 🛠️
+          La newsletter arrive bientôt, promis — je finalise encore la formule avant de te la proposer. Merci de ton intérêt !
         </p>
       )}
     </form>
