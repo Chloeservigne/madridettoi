@@ -132,6 +132,16 @@ Hero (gradient from-[#fbfaf6] to-[#f2f0e9])
 ### `/communaute`
 - `/communaute/francais-madrid` — éditorial : 35 000 Français, Madrid Accueil, Institut français, groupes Facebook, intercambios, CCIFE
 
+### `/erasmus`
+Section pour les étudiants Erasmus — audience distincte de l'installation durable, pas de badge "Phase X" sur ces pages.
+- `/erasmus` — index : universités, démarches, logement étudiant, budget, vie étudiante, checklist
+- `/erasmus/universites` — éditorial : UCM, UAM, UC3M, Comillas, Alcalá, Learning Agreement
+- `/erasmus/demarches` — éditorial : pas de visa, certificat UE (EX-18) au-delà de 3 mois, padrón, CEAM + assurance complémentaire
+- `/erasmus/logement-etudiant` — éditorial + tableau prix : résidences, coloc, Uniplaces/Spotahome/HousingAnywhere/Erasmusu
+- `/erasmus/budget-etudiant` — éditorial : bourse Erasmus+ (225-550 €/mois), compléments stage/inclusion/transport, réductions étudiantes
+- `/erasmus/vie-etudiante` — éditorial : ESN Madrid, intercambios, sorties, communauté française
+- `/erasmus/checklist` — étapes numérotées : Learning Agreement → bourse → logement → assurance → padrón → certificat UE → Abono → ESN
+
 ### Autres
 - `/mon-histoire` — prose éditorial, pas de structure imposée
 
@@ -192,6 +202,10 @@ Chaque fois qu'une notion est citée et qu'une page lui est dédiée, la lier. *
 - Animal / chien / chat / passeport européen animaux mentionné → `/vivre/animaux`
 - Forfait mobile / opérateur / internet / fibre mentionné → `/vivre/telephone-internet`
 - Portage salarial mentionné → `/travailler/portage-salarial`
+- Erasmus mentionné → `/erasmus`
+- Université Erasmus mentionnée → `/erasmus/universites`
+- Logement étudiant mentionné → `/erasmus/logement-etudiant`
+- Bourse Erasmus+ / budget étudiant mentionné → `/erasmus/budget-etudiant`
 
 ### Styles de liens
 - Fond clair : `className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"`

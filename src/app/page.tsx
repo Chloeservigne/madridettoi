@@ -123,6 +123,14 @@ const guides = [
     href: "/vivre",
     img: "/images/illus-vie-quotidienne.svg",
   },
+  {
+    name: "Erasmus",
+    tag: "Pour les étudiants",
+    desc: "Universités, démarches, logement étudiant, budget.",
+    count: "6 guides",
+    href: "/erasmus",
+    img: "/images/illus-vie-quotidienne.svg",
+  },
 ];
 
 const otherGuides = [
@@ -198,6 +206,15 @@ const footGroups = [
       { label: "Devenir autónomo", href: "/travailler/freelance" },
       { label: "Se déplacer", href: "/vivre/transports" },
       { label: "Sortir à Madrid", href: "/vivre/sortir" },
+    ],
+  },
+  {
+    title: "Erasmus",
+    links: [
+      { label: "Universités", href: "/erasmus/universites" },
+      { label: "Logement étudiant", href: "/erasmus/logement-etudiant" },
+      { label: "Budget étudiant", href: "/erasmus/budget-etudiant" },
+      { label: "Checklist", href: "/erasmus/checklist" },
     ],
   },
   {
@@ -543,7 +560,7 @@ export default function Home() {
               français.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-6">
             {footGroups.map((fg) => (
               <div key={fg.title} className="flex flex-col gap-3">
                 <p className="font-[family-name:var(--font-body)] font-bold text-xs uppercase tracking-wide text-[#d6442a] mb-1">

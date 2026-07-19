@@ -7,7 +7,7 @@ import IllustrationSlot from "./IllustrationSlot";
 import Logo from "./Logo";
 import SearchBox from "./SearchBox";
 
-type MenuKey = "logement" | "paperasses" | "travail" | "vie";
+type MenuKey = "logement" | "paperasses" | "travail" | "vie" | "erasmus";
 
 interface MenuDef {
   key: MenuKey;
@@ -74,6 +74,20 @@ const menuDefs: MenuDef[] = [
       { t: "Santé au quotidien", d: "Médecin, pharmacie, urgences", href: "/vivre/sante" },
       { t: "Faire ses courses", d: "Dépenser moins", href: "/vivre/courses" },
       { t: "Sortir à Madrid", d: "Musées, parcs, vie nocturne", href: "/vivre/sortir" },
+    ],
+  },
+  {
+    key: "erasmus",
+    label: "Erasmus",
+    href: "/erasmus",
+    feature: "Universités, démarches, logement étudiant : ton semestre préparé",
+    featureHref: "/erasmus/checklist",
+    img: "/images/illus-vie-quotidienne.svg",
+    links: [
+      { t: "Universités", d: "UCM, UAM, Carlos III, Comillas", href: "/erasmus/universites" },
+      { t: "Démarches", d: "Padrón, certificat UE, assurance", href: "/erasmus/demarches" },
+      { t: "Logement étudiant", d: "Résidences, coloc, plateformes", href: "/erasmus/logement-etudiant" },
+      { t: "Budget étudiant", d: "Bourse Erasmus+, coût de la vie", href: "/erasmus/budget-etudiant" },
     ],
   },
 ];
