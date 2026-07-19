@@ -69,6 +69,17 @@ export default function AnimauxPage() {
             bons documents dans le bon ordre. Aucune quarantaine n&apos;est
             nécessaire, mais quelques étapes sont incontournables.
           </p>
+          <div className="flex flex-wrap gap-3 mt-8">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
+              Aucune quarantaine
+            </span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
+              Passeport européen
+            </span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
+              21 jours après le vaccin
+            </span>
+          </div>
           <AuthorBadge date="juillet 2026" />
         </div>
       </section>

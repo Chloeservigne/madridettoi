@@ -407,6 +407,18 @@ export default function CompteBancairePage() {
             >
               Budget de vie réel à Madrid
             </Link>
+            <Link
+              href="/vivre/telephone-internet"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
+            >
+              Forfait mobile et internet à Madrid
+            </Link>
+            <Link
+              href="/travailler/freelance"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
+            >
+              Devenir autónomo en Espagne
+            </Link>
           </div>
         </div>
       </section>

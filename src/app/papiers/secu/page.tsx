@@ -232,7 +232,12 @@ export default function SecuPage() {
                 <strong className="text-white">tarifa plana à 80 €/mois</strong>{" "}
                 les 12 premiers mois (prorogeable si revenus sous le SMI).
                 Ensuite, la cotisation dépend de tes revenus réels — entre
-                200 € et 590 €/mois selon 15 tranches.
+                200 € et 590 €/mois selon 15 tranches. Détail complet des
+                tranches sur notre{" "}
+                <Link href="/travailler/freelance" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">
+                  guide autónomo
+                </Link>
+                .
               </p>
             </div>
 
@@ -397,7 +402,7 @@ export default function SecuPage() {
                 <span className="font-bold text-[#af3722]">Gratuit</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
-                <span className="text-[#171712] text-sm">Jusqu'à 18 000 €</span>
+                <span className="text-[#171712] text-sm">Jusqu&apos;à 18 000 €</span>
                 <span className="font-bold text-[#171712]">10 % (plafond 8,23 €/mois)</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
@@ -415,6 +420,9 @@ export default function SecuPage() {
               professionnelles (pour les médicaments liés).
             </p>
           </div>
+          <p className="text-[#171712]/50 text-xs mt-3">
+            Source : Ministerio de Sanidad / Seguridad Social (seg-social.es).
+          </p>
         </div>
       </section>
 
@@ -476,7 +484,7 @@ export default function SecuPage() {
             privées, et couvre partiellement le dentaire selon la formule.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             {mutuelles.map((m) => (
               <div key={m.nom} className="bg-white/10 rounded-2xl p-5">
                 <p className="font-semibold text-white mb-1">{m.nom}</p>
@@ -485,6 +493,14 @@ export default function SecuPage() {
               </div>
             ))}
           </div>
+          <p className="text-[#fbe8e4]/40 text-xs mb-8">
+            Tarifs indicatifs relevés sur les sites des assureurs, mars 2026 —
+            comparatif détaillé sur notre{" "}
+            <Link href="/vivre/sante" className="text-[#d6442a] underline underline-offset-2 hover:opacity-80 transition-opacity">
+              guide santé
+            </Link>
+            .
+          </p>
 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-8">
             <p className="text-[#fbe8e4]/70 text-sm leading-relaxed">

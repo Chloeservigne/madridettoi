@@ -438,6 +438,12 @@ export default function NiePage() {
             >
               Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
+            <Link
+              href="/vivre/telephone-internet"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
+            >
+              Forfait mobile et internet à Madrid
+            </Link>
           </div>
         </div>
       </section>

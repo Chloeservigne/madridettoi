@@ -482,6 +482,12 @@ export default function TransportsPage() {
             >
               Déménagement Paris–Madrid
             </Link>
+            <Link
+              href="/vivre/animaux"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
+            >
+              Déménager avec son animal
+            </Link>
           </div>
         </div>
       </section>

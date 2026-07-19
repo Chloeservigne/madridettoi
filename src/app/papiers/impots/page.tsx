@@ -93,10 +93,10 @@ export default function ImpotsPage() {
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
               <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-1">
-                19–47 %
+                19–43,5 %
               </p>
               <p className="text-[#171712] text-sm font-semibold">IRPF</p>
-              <p className="text-[#171712]/60 text-xs mt-1">Selon tes revenus</p>
+              <p className="text-[#171712]/60 text-xs mt-1">Barème Madrid, selon tes revenus</p>
             </div>
             <div className="bg-white rounded-2xl p-5 shadow-sm text-center">
               <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-1">
@@ -176,18 +176,21 @@ export default function ImpotsPage() {
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
                 <span className="text-[#171712] text-sm">60 000 € – 300 000 €</span>
-                <span className="font-bold text-[#171712]">45 %</span>
+                <span className="font-bold text-[#171712]">42 %</span>
               </div>
               <div className="px-6 py-4 flex justify-between items-center">
                 <span className="text-[#171712] text-sm">Au-delà de 300 000 €</span>
-                <span className="font-bold text-[#171712]">47 %</span>
+                <span className="font-bold text-[#171712]">43,5 %</span>
               </div>
             </div>
           </div>
 
           <p className="text-[#171712]/60 text-xs">
-            Taux combiné État + Communauté autonome. Madrid est parmi les
-            communautés les plus avantageuses fiscalement d&apos;Espagne.
+            Taux combiné État + Communauté de Madrid. Le barème régional
+            madrilène va de 8,5 % à 20,5 % — le plus bas d&apos;Espagne —, ce
+            qui plafonne le taux marginal maximal à 43,5 % contre jusqu&apos;à
+            54 % en Catalogne ou en Communauté valencienne. Source : Agencia
+            Tributaria (agenciatributaria.gob.es), barème 2026.
           </p>
         </div>
       </section>
@@ -213,10 +216,11 @@ export default function ImpotsPage() {
               <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
                 Si tes revenus dépassent <strong className="text-white">22 000 €
                 d&apos;un seul employeur</strong> (cas classique du salarié), ou{" "}
-                <strong className="text-white">15 000 €</strong> avec plusieurs
+                <strong className="text-white">15 876 €</strong> avec plusieurs
                 sources de revenus. En dessous de ces seuils, la déclaration est
                 optionnelle — mais souvent avantageuse si tu as droit à des
-                déductions.
+                déductions. Seuils officiels : Agencia Tributaria
+                (sede.agenciatributaria.gob.es).
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">
@@ -224,11 +228,19 @@ export default function ImpotsPage() {
                 Comment déclarer
               </p>
               <p className="text-[#fbe8e4]/80 text-sm leading-relaxed">
-                Sur le site de l&apos;<strong className="text-white">Agencia
-                Tributaria</strong> avec ton identifiant{" "}
-                <strong className="text-white">Cl@ve PIN</strong>. L&apos;Agencia
-                pre-remplit une grande partie des données. Il est aussi possible
-                d&apos;être assisté gratuitement en bureau sur rendez-vous.
+                Sur le site de l&apos;{" "}
+                <a
+                  href="https://sede.agenciatributaria.gob.es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#d6442a] font-bold underline underline-offset-2 hover:opacity-80 transition-opacity"
+                >
+                  Agencia Tributaria
+                </a>{" "}
+                avec ton identifiant <strong className="text-white">Cl@ve PIN</strong>.
+                L&apos;Agencia pre-remplit une grande partie des données. Il
+                est aussi possible d&apos;être assisté gratuitement en bureau
+                sur rendez-vous.
               </p>
             </div>
           </div>
@@ -314,6 +326,19 @@ export default function ImpotsPage() {
             suivante. Ce n&apos;est pas un impôt supplémentaire — c&apos;est
             une déclaration informative. Mais les sanctions en cas d&apos;oubli
             ou d&apos;omission sont très élevées. Ne pas négliger.
+          </p>
+          <p className="text-[#171712]/50 text-xs mt-3">
+            Source :{" "}
+            <a
+              href="https://sede.agenciatributaria.gob.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors"
+            >
+              Agencia Tributaria
+            </a>{" "}
+            — le seuil de 50 000 € s&apos;applique par catégorie de biens
+            (comptes, valeurs, immobilier).
           </p>
 
           <div className="mt-8 bg-[#171712]/5 border border-[#171712]/10 rounded-2xl p-5">
@@ -445,10 +470,11 @@ export default function ImpotsPage() {
             Sois parmi les premiers
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
-            Reçois nos guides pratiques
+            Reçois nos guides dès qu&apos;ils sortent
           </h2>
           <p className="text-[#171712]/80 text-lg mb-10">
-            Reçois nos guides pratiques pour t&apos;installer sereinement
+            NIE, sécu, comptes bancaires, fiscalité — tous nos guides
+            démarches pour t&apos;installer sereinement.
           </p>
           <div className="flex justify-center">
             <EmailForm />

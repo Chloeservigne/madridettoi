@@ -301,8 +301,8 @@ export default function QuartiersPage() {
             <Link href="/se-decider/budget" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
               Combien ça coûte vraiment de vivre à Madrid ?
             </Link>
-            <Link href="/papiers/nie" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
-              Le guide du NIE
+            <Link href="/logement/prix" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
+              Prix au m² par quartier
             </Link>
             <Link href="/logement/colocation" className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:border-[#d6442a] hover:text-[#d6442a] transition-colors">
               La colocation à Madrid

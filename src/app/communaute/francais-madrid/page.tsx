@@ -464,10 +464,11 @@ export default function FrancaisMadridPage() {
             Rejoins la communauté
           </p>
           <h2 className="font-[family-name:var(--font-body)] text-4xl font-bold text-[#171712] mb-6">
-            Rejoins les Français qui s&apos;installent à Madrid
+            Reçois nos guides dès qu&apos;ils sortent
           </h2>
           <p className="text-[#171712]/80 text-lg mb-10">
-            Rejoins la communauté des Français qui s&apos;installent à Madrid
+            Groupes, events, associations franco-espagnoles — de quoi ne
+            jamais te sentir seul(e) à Madrid.
           </p>
           <div className="flex justify-center">
             <EmailForm />

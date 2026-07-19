@@ -254,6 +254,12 @@ export default function ParisMadridPage() {
             >
               Coût de la vie à Madrid
             </Link>
+            <Link
+              href="/demenagement/cout-demenagement"
+              className="px-4 py-2 rounded-full bg-white shadow-md text-[#171712] text-sm hover:text-[#d6442a] transition-colors"
+            >
+              Combien coûte le déménagement lui-même
+            </Link>
           </div>
         </div>
       </section>

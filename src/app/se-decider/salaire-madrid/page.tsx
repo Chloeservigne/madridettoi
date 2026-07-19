@@ -156,17 +156,24 @@ export default function SalaireMadridPage() {
             Le salaire moyen à Madrid
           </h2>
           <p className="text-[#171712] leading-relaxed text-lg">
-            Madrid est la ville la mieux payée d&apos;Espagne. Le salaire
-            annuel brut moyen y tourne autour de <strong>30 000 à 35 000 €</strong>
-            — soit environ 2 000 à 2 300 € nets par mois selon le taux
-            d&apos;imposition. C&apos;est nettement au-dessus de la moyenne
-            nationale espagnole (~26 000 €), mais inférieur à Paris.
+            Selon l&apos;<strong>INE</strong> (Instituto Nacional de
+            Estadística), le salaire brut annuel moyen dans la Communauté de
+            Madrid est de <strong>34 410 €</strong> — la région la mieux payée
+            d&apos;Espagne après le Pays basque. Soit environ{" "}
+            <strong>2 460 €/mois</strong> sur 14 mensualités, ou{" "}
+            <strong>~1 950 € nets</strong> une fois l&apos;IRPF et les
+            cotisations retirées. C&apos;est nettement au-dessus de la moyenne
+            nationale espagnole (~29 540 €), mais inférieur à Paris.
           </p>
           <p className="text-[#171712] leading-relaxed text-lg mt-4">
             Les profils expérimentés, bilingues ou dans la tech peuvent
-            largement dépasser ces moyennes — surtout dans les filiales de
+            largement dépasser cette moyenne — surtout dans les filiales de
             multinationales qui calquent souvent leurs grilles sur des
             standards internationaux.
+          </p>
+          <p className="text-[#171712]/50 text-xs mt-3">
+            Source : INE, Encuesta de Estructura Salarial — données 2024,
+            publiées en 2026 (l&apos;INE publie avec deux ans de décalage).
           </p>
         </div>
       </section>
@@ -211,8 +218,17 @@ export default function SalaireMadridPage() {
             En Espagne, les cotisations salariales sont d&apos;environ{" "}
             <strong>6,35 %</strong> du brut (retraite + chômage + formation).
             L&apos;impôt sur le revenu (<em>IRPF</em>) est progressif et
-            prélevé à la source, comme en France. Pour des salaires entre
-            20 000 et 40 000 €, le taux effectif tourne entre <strong>15 et 25 %</strong>.
+            prélevé à la source, comme en France — et la Communauté de Madrid
+            applique le barème régional le plus bas d&apos;Espagne (de 8,5 %
+            à 20,5 % de tranche autonomique, contre jusqu&apos;à 25,5 %
+            ailleurs), pour un taux marginal maximal combiné de 43,5 % contre
+            jusqu&apos;à 54 % en Catalogne ou en Communauté valencienne. Pour
+            des salaires entre 20 000 et 40 000 €, le taux effectif tourne
+            entre <strong>15 et 25 %</strong>. Notre{" "}
+            <Link href="/papiers/impots" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
+              guide impôts
+            </Link>{" "}
+            détaille le barème complet.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
             <div className="bg-white rounded-2xl p-5 shadow-sm">

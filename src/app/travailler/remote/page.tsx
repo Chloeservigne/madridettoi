@@ -148,8 +148,9 @@ export default function RemotePage() {
                 </Link>{" "}
                 est la solution la plus propre. Tu factures tes clients (y
                 compris français) depuis l&apos;Espagne et tu cotises
-                localement. Cotisation minimale ~230 €/mois, impôt sur le
-                revenu (IRPF) en Espagne.
+                localement. Cotisation RETA dès ~205 €/mois (ou 80 €/mois la
+                première année avec la Tarifa Plana), impôt sur le revenu
+                (IRPF) en Espagne.
               </p>
             </div>
             <div className="bg-white/10 rounded-2xl p-5">

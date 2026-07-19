@@ -69,6 +69,17 @@ export default function TelephoneInternetPage() {
             bourre sur les prix. Voici comment t&apos;y retrouver et à qui
             confier ta ligne.
           </p>
+          <div className="flex flex-wrap gap-3 mt-8">
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
+              Fibre dès ~10 €/mois
+            </span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
+              Mobile dès ~7 €/mois
+            </span>
+            <span className="px-3 py-1.5 rounded-full bg-[#d6442a]/10 text-[#d6442a] text-sm font-semibold">
+              Sans engagement possible
+            </span>
+          </div>
           <AuthorBadge date="juillet 2026" />
         </div>
       </section>

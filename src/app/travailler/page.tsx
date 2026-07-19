@@ -112,9 +112,10 @@ export default function TravaillerPage() {
             un poste local, le marché madrilène recrute activement dans la tech,
             le tourisme, l&apos;éducation et la finance : le{" "}
             <Link href="/se-decider/salaire-madrid" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
-              salaire moyen tourne autour de 2 200 € brut
-            </Link>
-            , inférieur à Paris mais compensé par un coût de la vie plus bas.
+              salaire moyen tourne autour de 34 400 €/an brut
+            </Link>{" "}
+            (données INE), inférieur à Paris mais compensé par un coût de la
+            vie plus bas.
           </p>
           <p className="text-[#171712] leading-relaxed text-lg mb-4">
             Pour les freelances, le statut d&apos;

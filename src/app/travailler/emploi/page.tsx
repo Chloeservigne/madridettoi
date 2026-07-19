@@ -99,8 +99,8 @@ export default function EmploiPage() {
               <p className="text-[#171712] text-sm">SMI brut mensuel 2026<br />(+3,1 % vs 2025)</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
-              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">3 200 €</p>
-              <p className="text-[#171712] text-sm">Salaire moyen brut<br />à Madrid</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">2 460 €</p>
+              <p className="text-[#171712] text-sm">Salaire moyen brut mensuel<br />à Madrid (source INE)</p>
             </div>
             <div className="bg-white rounded-2xl p-5 text-center shadow-sm">
               <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold text-[#d6442a] mb-2">25 %</p>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   title: "Communauté française à Madrid — Madrid & Toi",
   description:
-    "Groupes Facebook et Discord de Français à Madrid, events réguliers, comment rencontrer des gens, associations franco-espagnoles.",
+    "35 000 Français vivent à Madrid : associations, Institut français, groupes Facebook, intercambios — comment trouver ta communauté dès ton arrivée.",
 };
 
 const cards = [

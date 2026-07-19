@@ -101,7 +101,8 @@ export default function DemenagementPage() {
             volume réduit (studio ou chambre), une voiture avec remorque ou un
             service de livraison de colis suffit souvent. Pour un appartement
             entier, les sociétés de déménagement international pratiquent des
-            tarifs entre 800 et 2 500 € selon le volume et la formule — notre{" "}
+            tarifs entre 750 € (groupage petit volume) et plus de 4 000 €
+            (prise en charge complète) selon le volume et la formule — notre{" "}
             <Link href="/demenagement/cout-demenagement" className="text-[#d6442a] underline underline-offset-2 hover:text-[#af3722] transition-colors">
               guide des budgets réels
             </Link>{" "}

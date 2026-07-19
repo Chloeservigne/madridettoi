@@ -3,6 +3,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import Logo from "@/components/Logo";
 import EmailForm from "@/components/EmailForm";
+import EtapeSuivante from "@/components/EtapeSuivante";
 import AuthorBadge from "@/components/AuthorBadge";
 
 export const metadata: Metadata = {
@@ -509,6 +510,8 @@ export default function EcolesPage() {
           </div>
         </div>
       </section>
+
+      <EtapeSuivante label="Sortir à Madrid" href="/vivre/sortir" />
 
       {/* Newsletter */}
       <section id="newsletter" className="py-24 px-6 bg-[#fbe8e4]">
